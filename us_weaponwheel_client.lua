@@ -5,7 +5,7 @@ end
 Citizen.CreateThread(function()
 	AddTextEntry('WEAPON_LSPD40MM', '40mm Launcher')
 	AddTextEntry('WEAPON_LSSD40MM', '40mm Launcher')
-	
+	AddTextEntry('WEAPON_FLASHBANG_MYRES', 'Flashbang')
     AddTextEntry("WT_HAMMER", "Телескопическая дубинка")
     AddTextEntry("WT_PIST_CBT", "Служебный пистолет")
     AddTextEntry("WT_PIST", "Beretta M9A3")
