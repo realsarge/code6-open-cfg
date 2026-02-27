@@ -1,0 +1,2133 @@
+{
+    "teleports": [
+        {
+            "name": "Фотороботная",
+            "coordinates": {
+                "x": 403.03,
+                "y": -998.79,
+                "z": -99.01
+            },
+            "heading": 357.08
+        },
+        {
+            "name": "Respawn",
+            "coordinates": {
+                "x": -2009.39,
+                "y": 3382.31,
+                "z": 31.28
+            },
+            "heading": 35.71
+        },
+        {
+            "name": "LSPD Mission Row",
+            "coordinates": {
+                "x": 464.85,
+                "y": -1001.74,
+                "z": 30.71
+            },
+            "heading": 269.43
+        },
+        {
+            "name": "LSPD Alta",
+            "coordinates": {
+                "x": 104.27,
+                "y": -335.05,
+                "z": 45.07
+            },
+            "heading": 120.62
+        },
+        {
+            "name": "FIB HQ",
+            "coordinates": {
+                "x": 155.71,
+                "y": -740.41,
+                "z": 242.15
+            },
+            "heading": 67.69
+        },
+        {
+            "name": "USBP HQ",
+            "coordinates": {
+                "x": 2476.91,
+                "y": -384.09,
+                "z": 94.4
+            },
+            "heading": 270.55
+        },
+        {
+            "name": "NPS Vinewood Hills",
+            "coordinates": {
+                "x": 386.64,
+                "y": 794.34,
+                "z": 187.68
+            },
+            "heading": 271.85
+        },
+        {
+            "name": "NPS Paleto Bay",
+            "coordinates": {
+                "x": -1487.57,
+                "y": 4980.72,
+                "z": 63.79
+            },
+            "heading": 81.99
+        },
+        {
+            "name": "LSSD Davis",
+            "coordinates": {
+                "x": 368.9,
+                "y": -1602.77,
+                "z": 29.29
+            },
+            "heading": 48.47
+        },
+        {
+            "name": "LSSD Sandy Shores",
+            "coordinates": {
+                "x": 1838.32,
+                "y": 3677.48,
+                "z": 38.93
+            },
+            "heading": 302.58
+        },
+        {
+            "name": "LSSD Paleto Bay",
+            "coordinates": {
+                "x": -453.15,
+                "y": 6011.62,
+                "z": 31.84
+            },
+            "heading": 184.39
+        },
+        {
+            "name": "LSSD Harmony",
+            "coordinates": {
+                "x": 1068.53,
+                "y": 2734.63,
+                "z": 37.8
+            },
+            "heading": 87.53
+        },
+        {
+            "name": "SAHP HQ",
+            "coordinates": {
+                "x": 845.74,
+                "y": -1278.0,
+                "z": 24.32
+            },
+            "heading": 208.63
+        },
+        {
+            "name": "SAHP Grapeseed",
+            "coordinates": {
+                "x": 2813.28,
+                "y": 4729.99,
+                "z": 47.89
+            },
+            "heading": 193.7
+        },
+        {
+            "name": "SAHP Airport",
+            "coordinates": {
+                "x": -1158.4,
+                "y": -2792.65,
+                "z": 13.95
+            },
+            "heading": 62.23
+        },
+        {
+            "name": "LSCoFD Paleto Bay",
+            "coordinates": {
+                "x": -366.48,
+                "y": 6101.15,
+                "z": 31.64
+            },
+            "heading": 101.8
+        },
+        {
+            "name": "LSCoFD Sandy Shores",
+            "coordinates": {
+                "x": 1686.82,
+                "y": 3588.89,
+                "z": 35.63
+            },
+            "heading": 211.34
+        },
+        {
+            "name": "LSCoFD Grapeseed",
+            "coordinates": {
+                "X": 1657.79,
+                "Y": 4965.2,
+                "Z": 46.49
+            },
+            "heading": 223.35
+        },
+        {
+            "name": "LSCoFD El Burro Heights",
+            "coordinates": {
+                "x": 1192.24,
+                "y": -1474.47,
+                "z": 34.86
+            },
+            "heading": 271.08
+        },
+        {
+            "name": "LSCoFD Davis",
+            "coordinates": {
+                "x": 198.69,
+                "y": -1646.71,
+                "z": 29.8
+            },
+            "heading": 229.9
+        },
+        {
+            "name": "LSCoFD Fleet",
+            "coordinates": {
+                "x": 151.84,
+                "y": 2763.1,
+                "z": 43.58
+            },
+            "heading": 237.66
+        },
+        {
+            "name": "LSFD Little Seoul",
+            "coordinates": {
+                "X": -807.41,
+                "Y": -784.11,
+                "Z": 19.18
+            },
+            "heading": 91.23
+        },
+        {
+            "name": "LSFD Richman",
+            "coordinates": {
+                "X": -1695.23,
+                "Y": 54.4,
+                "Z": 67.55
+            },
+            "heading": 139.01
+        },
+        {
+            "name": "EMS Pillbox Hill",
+            "coordinates": {
+                "x": 301.34,
+                "y": -600.0,
+                "z": 43.28
+            },
+            "heading": 338.63
+        },
+        {
+            "name": "EMS Davis",
+            "coordinates": {
+                "x": 373.29,
+                "y": -1441.92,
+                "z": 28.43
+            },
+            "heading": 215.76
+        },
+        {
+            "name": "EMS Rockford Hills",
+            "coordinates": {
+                "x": -498.63,
+                "y": -335.56,
+                "z": 33.5
+            },
+            "heading": 248.71
+        },
+        {
+            "name": "EMS Paleto Bay",
+            "coordinates": {
+                "x": -252.23,
+                "y": 6309.78,
+                "z": 31.43
+            },
+            "heading": 118.48
+        },
+        {
+            "name": "EMS Sandy Shores",
+            "coordinates": {
+                "x": 1769.79,
+                "y": 3635.49,
+                "z": 34.8
+            },
+            "heading": 208.5
+        },
+        {
+            "name": "EMS Harmony",
+            "coordinates": {
+                "x": 1107.66,
+                "y": 2729.82,
+                "z": 37.8
+            },
+            "heading": 87.53
+        },
+        {
+            "name": "Coroner office",
+            "coordinates": {
+                "x": 232.27,
+                "y": -1360.78,
+                "z": 27.65
+            },
+            "heading": 39.65
+        },
+        {
+            "name": "OPG Paleto Bay",
+            "coordinates": {
+                "x": -290.12,
+                "y": 6114.64,
+                "z": 30.55
+            },
+            "heading": 23.53
+        },
+        {
+            "name": "OPG Harmony",
+            "coordinates": {
+                "x": 937.05,
+                "y": 2715.73,
+                "z": 39.3
+            },
+            "heading": 75.59
+        },
+        {
+            "name": "OPG Los Santos",
+            "coordinates": {
+                "x": -191.83,
+                "y": -1166.38,
+                "z": 23.67
+            },
+            "heading": 273.98
+        }
+    ],
+    "blips": [
+        {
+            "name": "Автомастерская",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 729.00,
+                "y": -1088.00,
+                "z": 21.00
+            }
+        },
+        {
+            "name": "Автосалон",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -38.00,
+                "y": -1100.00,
+                "z": 26.00
+            }
+        },
+        {
+            "name": "Алкомаркет",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1166.00,
+                "y": 2702.00,
+                "z": 38.00
+            }
+        },
+        {
+            "name": "Алкомаркет",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1144.00,
+                "y": -979.00,
+                "z": 138.00
+            }
+        },
+        {
+            "name": "Аммунация",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 18.00,
+                "y": -1113.00,
+                "z": 29.00
+            }
+        },
+        {
+            "name": "Аммунация",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1110.00,
+                "y": 2688.00,
+                "z": 18.00
+            }
+        },
+        {
+            "name": "Аммунация",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 2569.51,
+                "y": 305.08,
+                "z": 108.61
+            }
+        },
+        {
+            "name": "Апартаменты",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -774.00,
+                "y": 316.00,
+                "z": 85.00
+            }
+        },
+        {
+            "name": "Апартаменты",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1447.00,
+                "y": -538.00,
+                "z": 34.00
+            }
+        },
+        {
+            "name": "Апартаменты",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -469.00,
+                "y": -677.00,
+                "z": 32.00
+            }
+        },
+        {
+            "name": "Апартаменты",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -265.00,
+                "y": -960.00,
+                "z": 31.00
+            }
+        },
+        {
+            "name": "Апартаменты",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1371.5,
+                "y": -503.7,
+                "z": 33.16
+            }
+        },
+        {
+            "name": "Аптека",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -172.00,
+                "y": 6380.00,
+                "z": 31.00
+            }
+        },
+        {
+            "name": "Байкерский клуб",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 974.00,
+                "y": -100.00,
+                "z": 75.00
+            }
+        },
+        {
+            "name": "Байкерский клуб",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1980.23,
+                "y": 3049.54,
+                "z": 50.43
+            }
+        },
+        {
+            "name": "Банк",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -111.00,
+                "y": 6462.00,
+                "z": 31.00
+            }
+        },
+        {
+            "name": "Ломбард",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1177.00,
+                "y": 2702.00,
+                "z": 38.00
+            }
+        },
+        {
+            "name": "Банк",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -2964.00,
+                "y": 479.00,
+                "z": 15.00
+            }
+        },
+        {
+            "name": "Банк",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 150.00,
+                "y": -1040.00,
+                "z": 29.00
+            }
+        },
+        {
+            "name": "Банк",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 235.00,
+                "y": 217.00,
+                "z": 106.00
+            }
+        },
+        {
+            "name": "Бар",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1992.00,
+                "y": 3056.00,
+                "z": 47.00
+            }
+        },
+        {
+            "name": "Бар",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1659.37,
+                "y": 4851.49,
+                "z": 41.95
+            }
+        },
+        {
+            "name": "Парикмахерская",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1935.00,
+                "y": 3722.00,
+                "z": 32.00
+            }
+        },
+        {
+            "name": "Парикмахерская",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1290.65,
+                "y": -1116.63,
+                "z": 6.63
+            }
+        },
+        {
+            "name": "Парикмахерская",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -29.88,
+                "y": -145.26,
+                "z": 57.03
+            }
+        },
+        {
+            "name": "Парикмахерская",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -824.62,
+                "y": -188.79,
+                "z": 37.62
+            }
+        },
+        {
+            "name": "Больница",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -247.00,
+                "y": 6331.00,
+                "z": 32.00
+            }
+        },
+        {
+            "name": "Закусочная",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1183.00,
+                "y": -884.00,
+                "z": 13.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1395.00,
+                "y": 1141.00,
+                "z": 114.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1275.00,
+                "y": -1721.00,
+                "z": 54.00
+            }
+        },
+        {
+            "name": "Ранчо",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 2451.00,
+                "y": 4969.00,
+                "z": 46.00
+            }
+        },
+        {
+            "name": "Трейлер",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 2735.00,
+                "y": 4279.00,
+                "z": 48.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1.00,
+                "y": 6613.00,
+                "z": 31.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -214.00,
+                "y": 6444.00,
+                "z": 31.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -432.00,
+                "y": 6262.00,
+                "z": 30.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 3304.00,
+                "y": 5185.00,
+                "z": 19.00
+            }
+        },
+        {
+            "name": "Трейлер",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1981.00,
+                "y": 3816.00,
+                "z": 32.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1386.00,
+                "y": 3618.00,
+                "z": 38.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -3101.00,
+                "y": 345.00,
+                "z": 10.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 8.00,
+                "y": 527.00,
+                "z": 174.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -813.00,
+                "y": 179.00,
+                "z": 72.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 946.00,
+                "y": -518.00,
+                "z": 60.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 950.00,
+                "y": -652.00,
+                "z": 57.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1219.00,
+                "y": -667.00,
+                "z": 63.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1150.00,
+                "y": -1520.00,
+                "z": 10.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 52.00,
+                "y": -1861.00,
+                "z": 23.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -14.19,
+                "y": -1444.98,
+                "z": 30.65
+            }
+        },
+        {
+            "name": "Завод",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1085.00,
+                "y": -1972.00,
+                "z": 30.00
+            }
+        },
+        {
+            "name": "Завод",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -72.00,
+                "y": 6267.00,
+                "z": 31.00
+            }
+        },
+        {
+            "name": "Завод",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -610.00,
+                "y": -1608.00,
+                "z": 27.00
+            }
+        },
+        {
+            "name": "Закусочная",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1595.00,
+                "y": 6451.00,
+                "z": 26.00
+            }
+        },
+        {
+            "name": "Клабхаус",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -38.00,
+                "y": 6419.00,
+                "z": 31.00
+            }
+        },
+        {
+            "name": "Клабхаус",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1726.00,
+                "y": 3707.00,
+                "z": 34.00
+            }
+        },
+        {
+            "name": "Клуб",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -553.00,
+                "y": 278.00,
+                "z": 82.00
+            }
+        },
+        {
+            "name": "Комбинат",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 955.00,
+                "y": -2184.00,
+                "z": 30.00
+            }
+        },
+        {
+            "name": "Магазин - дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 44.00,
+                "y": 2787.00,
+                "z": 57.00
+            }
+        },
+        {
+            "name": "Магазин 24/7",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1965.00,
+                "y": 3739.00,
+                "z": 32.00
+            }
+        },
+        {
+            "name": "Магазин 24/7",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 2684.1,
+                "y": 3281.53,
+                "z": 55.24
+            }
+        },
+        {
+            "name": "Алкомаркет",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1395.00,
+                "y": 3596.00,
+                "z": 34.00
+            }
+        },
+        {
+            "name": "Магазин 24/7",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 543.00,
+                "y": 2676.00,
+                "z": 42.00
+            }
+        },
+        {
+            "name": "Магазин 24/7",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -3249.00,
+                "y": 1003.00,
+                "z": 12.00
+            }
+        },
+        {
+            "name": "Магазин 24/7",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -3046.00,
+                "y": 584.00,
+                "z": 7.00
+            }
+        },
+        {
+            "name": "Магазин 24/7",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 377.00,
+                "y": 326.00,
+                "z": 103.00
+            }
+        },
+        {
+            "name": "Магазин 24/7",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 29.00,
+                "y": -1347.00,
+                "z": 29.00
+            }
+        },
+        {
+            "name": "Магазин 24/7",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 2561.31,
+                "y": 385.3,
+                "z": 108.62
+            }
+        },
+        {
+            "name": "Магазин 24/7",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1730.5,
+                "y": 6409.98,
+                "z": 35
+            }
+        },
+        {
+            "name": "Магазин 24/7",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1202.44,
+                "y": 2656.38,
+                "z": 37.85
+            }
+        },
+        {
+            "name": "Магазин одежды",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -2.00,
+                "y": 6518.00,
+                "z": 31.00
+            }
+        },
+        {
+            "name": "Магазин одежды",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1686.00,
+                "y": 4820.00,
+                "z": 42.00
+            }
+        },
+        {
+            "name": "Магазин одежды",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 84.8,
+                "y": -1391.67,
+                "z": 29.3
+            }
+        },
+        {
+            "name": "Магазин одежды",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 618.00,
+                "y": 2743.00,
+                "z": 42.00
+            }
+        },
+        {
+            "name": "Магазин одежды",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1197.00,
+                "y": 2702.00,
+                "z": 38.00
+            }
+        },
+        {
+            "name": "Магазин одежды",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -3171.00,
+                "y": 1048.00,
+                "z": 20.00
+            }
+        },
+        {
+            "name": "Магазин одежды",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1202.00,
+                "y": -778.00,
+                "z": 17.00
+            }
+        },
+        {
+            "name": "Магазин одежды",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1094.00,
+                "y": 2704.00,
+                "z": 19.00
+            }
+        },
+        {
+            "name": "Магазин одежды",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 128.73,
+                "y": -206.69,
+                "z": 54.55
+            }
+        },
+        {
+            "name": "Магазин одежды",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -720.31,
+                "y": -158.95,
+                "z": 37.01
+            }
+        },
+        {
+            "name": "Аммунация",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -324.00,
+                "y": 6075.00,
+                "z": 31.00
+            }
+        },
+        {
+            "name": "Аммунация",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -3170.00,
+                "y": 1086.00,
+                "z": 20.00
+            }
+        },
+        {
+            "name": "Аммунация",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 247.00,
+                "y": -46.00,
+                "z": 69.00
+            }
+        },
+        {
+            "name": "Аммунация",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 812.00,
+                "y": -2143.00,
+                "z": 28.00
+            }
+        },
+        {
+            "name": "Аммунация",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 843.87,
+                "y": -1020.93,
+                "z": 27.53
+            }
+        },
+        {
+            "name": "Аммунация",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -663.96,
+                "y": -946.89,
+                "z": 21.6
+            }
+        },
+        {
+            "name": "Алкомаркет",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -2970.00,
+                "y": 390.00,
+                "z": 15.00
+            }
+        },
+        {
+            "name": "Автомастерская",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -205.00,
+                "y": -1309.00,
+                "z": 31.00
+            }
+        },
+        {
+            "name": "Автомастерская",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1177.6,
+                "y": 2652.71,
+                "z": 37.81
+            }
+        },
+        {
+            "name": "Автомастерская",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 489.00,
+                "y": -1315.00,
+                "z": 29.00
+            }
+        },
+        {
+            "name": "Мотель",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 340.00,
+                "y": 2620.00,
+                "z": 44.00
+            }
+        },
+        {
+            "name": "Мотель",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1142.00,
+                "y": 2651.00,
+                "z": 38.00
+            }
+        },
+        {
+            "name": "Офис FIB",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 104.00,
+                "y": -744.00,
+                "z": 45.00
+            }
+        },
+        {
+            "name": "Офис Lifeinvader",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1048.00,
+                "y": -232.00,
+                "z": 39.00
+            }
+        },
+        {
+            "name": "Офис",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1012.56,
+                "y": -480.78,
+                "z": 39.97
+            }
+        },
+        {
+            "name": "Офис",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 109.78,
+                "y": -1088.99,
+                "z": 29.3
+            }
+        },
+        {
+            "name": "Парикмахерская",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -282.00,
+                "y": 6233.00,
+                "z": 31.00
+            }
+        },
+        {
+            "name": "Парикмахерская",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1206.00,
+                "y": -470.00,
+                "z": 65.00
+            }
+        },
+        {
+            "name": "Парикмахерская",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 136.00,
+                "y": -1708.00,
+                "z": 29.00
+            }
+        },
+        {
+            "name": "Производство",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 614.00,
+                "y": 2790.00,
+                "z": 42.00
+            }
+        },
+        {
+            "name": "Пожарная станция",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 205.00,
+                "y": -1651.00,
+                "z": 29.00
+            }
+        },
+        {
+            "name": "Пожарная станция",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1698.15,
+                "y": 3584.16,
+                "z": 35.54
+            }
+        },
+        {
+            "name": "Пожарная станция",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1200.00,
+                "y": -1462.00,
+                "z": 34.00
+            }
+        },
+        {
+            "name": "Пожарная станция",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1696.13,
+                "y": 37,
+                "z": 67.55
+            }
+        },
+        {
+            "name": "Пожарная станция",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -811.41,
+                "y": -814.12,
+                "z": 19.19
+            }
+        },
+        {
+            "name": "Пожарная станция",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 197.4,
+                "y": 2732.88,
+                "z": 43.21
+            }
+        },
+        {
+            "name": "Пожарная станция",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1657.79,
+                "y": 4965.2,
+                "z": 46.49
+            }
+        },
+        {
+            "name": "Пожарная станция",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -380.67,
+                "y": 6119.25,
+                "z": 31.48
+            }
+        },
+        {
+            "name": "Полицейский участок",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 838.00,
+                "y": -1303.00,
+                "z": 27.00
+            }
+        },
+        {
+            "name": "Полицейский участок",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 432.54,
+                "y": -983.44,
+                "z": 30.71
+            }
+        },
+        {
+            "name": "Полицейский участок",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 360.5,
+                "y": -1584.25,
+                "z": 29.29
+            }
+        },
+        {
+            "name": "Полицейский участок",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1825.29,
+                "y": 3677.93,
+                "z": 34.24
+            }
+        },
+        {
+            "name": "Полицейский участок",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -442.21,
+                "y": 6017.44,
+                "z": 31.69
+            }
+        },
+        {
+            "name": "Прачечная",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 367.00,
+                "y": -1272.00,
+                "z": 32.00
+            }
+        },
+        {
+            "name": "Производство",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1289.00,
+                "y": -820.00,
+                "z": 14.00
+            }
+        },
+        {
+            "name": "Станция метро",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -282.00,
+                "y": -305.00,
+                "z": 18.00
+            }
+        },
+        {
+            "name": "Станция метро",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1353.00,
+                "y": -516.00,
+                "z": 23.00
+            }
+        },
+        {
+            "name": "Станция метро",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -491.00,
+                "y": -720.00,
+                "z": 23.00
+            }
+        },
+        {
+            "name": "Станция метро",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -826.00,
+                "y": -110.00,
+                "z": 27.00
+            }
+        },
+        {
+            "name": "Автомастерская",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1138.00,
+                "y": -1983.00,
+                "z": 13.00
+            }
+        },
+        {
+            "name": "Клуб",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 129.00,
+                "y": -1299.00,
+                "z": 29.00
+            }
+        },
+        {
+            "name": "Тату-салон",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -288.00,
+                "y": 6200.00,
+                "z": 31.00
+            }
+        },
+        {
+            "name": "Тату-салон",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1858.00,
+                "y": 3747.00,
+                "z": 33.00
+            }
+        },
+        {
+            "name": "Тату-салон",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -3174.00,
+                "y": 1075.00,
+                "z": 20.00
+            }
+        },
+        {
+            "name": "Тату-салон",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 322.00,
+                "y": 182.00,
+                "z": 103.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -262.00,
+                "y": 2196.00,
+                "z": 130.00
+            }
+        },
+        {
+            "name": "Хьюман Лабс",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 3609.00,
+                "y": 3740.00,
+                "z": 28.00
+            }
+        },
+        {
+            "name": "Швейная фабрика",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 717.00,
+                "y": -977.00,
+                "z": 24.00
+            }
+        },
+        {
+            "name": "Ювелирный магазин",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -629.00,
+                "y": -229.00,
+                "z": 38.00
+            }
+        },
+        {
+            "name": "Клуб",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1387.00,
+                "y": -588.00,
+                "z": 30.00
+            }
+        },
+        {
+            "name": "Автомастерская",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 114.00,
+                "y": 6617.00,
+                "z": 32.00
+            }
+        },
+        {
+            "name": "Спортивная арена ",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -249.00,
+                "y": -2024.00,
+                "z": 29.00
+            }
+        },
+        {
+            "name": "Банк",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 315.00,
+                "y": -275.00,
+                "z": 54.00
+            }
+        },
+        {
+            "name": "Банк",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1214.84,
+                "y": -326.88,
+                "z": 37.67
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1911.00,
+                "y": -576.00,
+                "z": 19.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 371.86,
+                "y": 430.49,
+                "z": 145.11
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 348.86,
+                "y": 441.97,
+                "z": 147.7
+            }
+        },
+        {
+            "name": "Больница",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 298.00,
+                "y": -584.00,
+                "z": 43.00
+            }
+        },
+        {
+            "name": "Станция метро",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1040.00,
+                "y": -2742.00,
+                "z": 14.00
+            }
+        },
+        {
+            "name": "Станция метро",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -947.00,
+                "y": -2341.00,
+                "z": 5.00
+            }
+        },
+        {
+            "name": "Апартаменты",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1563.00,
+                "y": -405.00,
+                "z": 42.00
+            }
+        },
+        {
+            "name": "Апартаменты",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -614.25,
+                "y": 43.64,
+                "z": 43.59
+            }
+        },
+        {
+            "name": "Апартаменты",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -50.8,
+                "y": -584.78,
+                "z": 36.82
+            }
+        },
+        {
+            "name": "Автомастерская",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -358.00,
+                "y": -134.00,
+                "z": 39.00
+            }
+        },
+        {
+            "name": "Магазин одежды",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -155.00,
+                "y": -306.00,
+                "z": 39.00
+            }
+        },
+        {
+            "name": "Магазин одежды",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 418.00,
+                "y": -807.00,
+                "z": 39.00
+            }
+        },
+        {
+            "name": "Магазин одежды",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -817.00,
+                "y": -1080.00,
+                "z": 11.00
+            }
+        },
+        {
+            "name": "Магазин одежды",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1457.07,
+                "y": -230.96,
+                "z": 49.34
+            }
+        },
+        {
+            "name": "Тату-салон",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1155.00,
+                "y": -1422.00,
+                "z": 5.00
+            }
+        },
+        {
+            "name": "Морг",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 254.00,
+                "y": -1372.00,
+                "z": 30.00
+            }
+        },
+        {
+            "name": "Алкомаркет",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1491.00,
+                "y": -384.00,
+                "z": 40.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1098.00,
+                "y": -1673.00,
+                "z": 8.00
+            }
+        },
+        {
+            "name": "Прачечная",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1143.00,
+                "y": -986.00,
+                "z": 46.00
+            }
+        },
+        {
+            "name": "Станция рейнджеров",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 386.94,
+                "y": 791.12,
+                "z": 187.69
+            }
+        },
+        {
+            "name": "Станция рейнджеров",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1487.57,
+                "y": 4980.72,
+                "z": 63.79
+            }
+        },
+        {
+            "name": "Ломбард",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 183.00,
+                "y": -1319.00,
+                "z": 29.00
+            }
+        },
+        {
+            "name": "Университет",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1635.00,
+                "y": 181.00,
+                "z": 62.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1809.00,
+                "y": 3907.00,
+                "z": 34.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1827.00,
+                "y": 3729.00,
+                "z": 34.00
+            }
+        },
+        {
+            "name": "Алкомаркет",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1227.00,
+                "y": -901.00,
+                "z": 12.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1132.00,
+                "y": -1072.00,
+                "z": 2.00
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 119.18,
+                "y": 566.31,
+                "z": 183.64
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -177.83,
+                "y": 503.58,
+                "z": 136.85
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -557.1,
+                "y": 665.58,
+                "z": 145.11
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -688.02,
+                "y": 598.02,
+                "z": 143.64
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -749.99,
+                "y": 621.74,
+                "z": 142.24
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -853.93,
+                "y": 700.83,
+                "z": 148.76
+            }
+        },
+        {
+            "name": "Дом",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1295.26,
+                "y": 457.1,
+                "z": 97.17
+            }
+        },
+        {
+            "name": "Банк",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 986.00,
+                "y": 2662.00,
+                "z": 39.00
+            }
+        },
+        {
+            "name": "Закусочная",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1043.00,
+                "y": 2669.00,
+                "z": 39.00
+            }
+        },
+        {
+            "name": "Закусочная",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 2550.00,
+                "y": 2623.00,
+                "z": 37.00
+            }
+        },
+        {
+            "name": "Полицейский участок",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1062.00,
+                "y": 2715.00,
+                "z": 38.00
+            }
+        },
+        {
+            "name": "Полицейский участок",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 104.27,
+                "y": -335.05,
+                "z": 45.07
+            }
+        },
+        {
+            "name": "Полицейский участок",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 2820.4,
+                "y": 4754.63,
+                "z": 47
+            }
+        },
+        {
+            "name": "Больница",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1102.00,
+                "y": 2718.00,
+                "z": 38.00
+            }
+        },
+        {
+            "name": "Магазин запчастей",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1224.00,
+                "y": 2725.00,
+                "z": 38.00
+            }
+        },
+        {
+            "name": "Шахта",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -596.78,
+                "y": 2090.89,
+                "z": 131.41
+            }
+        },
+        {
+            "name": "Гараж",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1203.95,
+                "y": -3105.89,
+                "z": 5.65
+            }
+        },
+        {
+            "name": "Помещение",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 132.96,
+                "y": -2203.21,
+                "z": 7.19
+            }
+        },
+        {
+            "name": "Склад",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 760.56,
+                "y": -899.47,
+                "z": 25.2
+            }
+        },
+        {
+            "name": "Гаражные помещения",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1719.06,
+                "y": -735.2,
+                "z": 10.19
+            }
+        },
+        {
+            "name": "Яхта",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -2030.88,
+                "y": -1035.45,
+                "z": 5.88
+            }
+        },
+        {
+            "name": "Яхта",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1376.35,
+                "y": 6738.31,
+                "z": 5.88
+            }
+        },
+        {
+            "name": "Аммунация",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 1700.00,
+                "y": 3751.00,
+                "z": 34.00
+            }
+        },
+        {
+            "name": "Аммунация",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": -1316.38,
+                "y": -390.19,
+                "z": 36.46
+            }
+        },
+        {
+            "name": "Бар",
+            "spriteID": 465,
+            "color": 0,
+            "coordinates": {
+                "x": 897.00,
+                "y": -1034.00,
+                "z": 34.00
+            }
+        }
+    ]
+}
