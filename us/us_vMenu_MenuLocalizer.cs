@@ -378,4 +378,7 @@ private static readonly Dictionary<string, string> Translations = new(StringComp
             ["~r~YES, DELETE"] = "~r~ДА, УДАЛИТЬ",
             ["NO, CANCEL"] = "НЕТ, ОТМЕНА",
             ["Are you sure?"] = "Вы уверены?",
+            ["Current Vehicle"] = "Текущий траспорт",
+            ["None"] = "Отсутствует",
+            [""] = "",
         };
