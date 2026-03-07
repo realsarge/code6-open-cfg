@@ -424,7 +424,9 @@
         "Unlock Vehicle Doors": "Разблокировать двери транспорта",
         "Sound Horn": "Подать звуковой сигнал",
         "Toggle Alarm Sound": "Вкл/Выкл звук сигнализации",
-        "Add Blip For Personal Vehicle": "Добавить метку на личный транспорт"
+        "Add Blip For Personal Vehicle": "Добавить метку на личный транспорт",
+        "Outfit Presets": "Пресеты одежды",
+        "Apply Outfit Preset": "Пресеты одежды"
     },
     "notifications": {
         "vMenu": "vMenu",
