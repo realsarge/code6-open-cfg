@@ -1,3 +1,4 @@
+-- WEAPONS ON THE BACK
 local SETTINGS = {
     update_interval = 350,
     carry_profiles = {
@@ -60,11 +61,12 @@ for _, weaponName in ipairs({"WEAPON_CARBINERIFLE", "WEAPON_CARBINERIFLE_MK2", "
                              "WEAPON_ADVANCEDRIFLE", "WEAPON_BULLPUPRIFLE", "WEAPON_BULLPUPRIFLE_MK2", "WEAPON_SMG",
                              "WEAPON_SMG_MK2", "WEAPON_ASSAULTSMG", "WEAPON_COMBATPDW", "WEAPON_PUMPSHOTGUN",
                              "WEAPON_PUMPSHOTGUN_MK2", "WEAPON_HEAVYSHOTGUN", "WEAPON_ASSAULTSHOTGUN",
-                             "WEAPON_BULLPUPSHOTGUN", "WEAPON_BEANBAG"}) do
+                             "WEAPON_BULLPUPSHOTGUN", "WEAPON_BEANBAG", "weapon_mp9"}) do
     RegisterCarryWeapon("front", weaponName)
 end
 
-for _, weaponName in ipairs({"WEAPON_LSPD40MM", "WEAPON_LSSD40MM", "WEAPON_BCSO40MM", "WEAPON_GRENADELAUNCHER_SMOKE"}) do
+for _, weaponName in ipairs({"WEAPON_LSPD40MM", "WEAPON_LSSD40MM", "WEAPON_BCSO40MM", "WEAPON_GRENADELAUNCHER_SMOKE",
+                             "weapon_lspdbb", "weapon_lssdbb", "weapon_sahpbb"}) do
     RegisterCarryWeapon("compact_back", weaponName)
 end
 
