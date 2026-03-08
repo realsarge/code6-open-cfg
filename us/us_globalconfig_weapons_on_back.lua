@@ -61,7 +61,7 @@ for _, weaponName in ipairs({"WEAPON_CARBINERIFLE", "WEAPON_CARBINERIFLE_MK2", "
                              "WEAPON_ADVANCEDRIFLE", "WEAPON_BULLPUPRIFLE", "WEAPON_BULLPUPRIFLE_MK2", "WEAPON_SMG",
                              "WEAPON_SMG_MK2", "WEAPON_ASSAULTSMG", "WEAPON_COMBATPDW", "WEAPON_PUMPSHOTGUN",
                              "WEAPON_PUMPSHOTGUN_MK2", "WEAPON_HEAVYSHOTGUN", "WEAPON_ASSAULTSHOTGUN",
-                             "WEAPON_BULLPUPSHOTGUN", "WEAPON_BEANBAG", "weapon_mp9"}) do
+                             "WEAPON_BULLPUPSHOTGUN", "WEAPON_BEANBAG"}) do
     RegisterCarryWeapon("front", weaponName)
 end
 
