@@ -1,4 +1,4 @@
--- Verified 18 pages
+-- Verified 57 pages
 
 Animations = {}
 
@@ -2226,47 +2226,11 @@ Animations.List = {
         prop = "prop_fire_exting_1a",
         propPos = {0.15, 0.14, -0.52, 179.7874004, -178.5954846, 4.5961806}
     },
-    ["firefighterunmask"] = {
-        category = "prop",
-        label = "Firefighter Unmask",
-        animDict = "anim@mp_helmets@on_foot",
-        animName = "visor_up",
-        animFlag = 1,
-        bone = 28422,
-        prop = ""
-    },
-    ["firefightermask"] = {
-        category = "prop",
-        label = "Firefighter Mask",
-        animDict = "anim@mp_helmets@on_foot",
-        animName = "visor_down",
-        animFlag = 1,
-        bone = 28422,
-        prop = ""
-    },
     ["takeoffmask"] = {
         category = "prop",
         label = "Take Off Mask",
         animDict = "anim@scripted@bty5@ig1_intimidate_actor@female_heeled@",
         animName = "mask_action_b",
-        animFlag = 1,
-        bone = 28422,
-        prop = ""
-    },
-    ["firefighteradjusttank/bag"] = {
-        category = "prop",
-        label = "Firefighter Adjust Tank / Bag",
-        animDict = "amb@world_human_hiker_standing@male@idle_a",
-        animName = "idle_b",
-        animFlag = 1,
-        bone = 28422,
-        prop = ""
-    },
-    ["firefighterpumppsi"] = {
-        category = "prop",
-        label = "Firefighter Pump PSI",
-        animDict = "anim@scripted@heist@ig9_control_tower@male@",
-        animName = "loop",
         animFlag = 1,
         bone = 28422,
         prop = ""
@@ -5701,16 +5665,6 @@ Animations.List = {
         prop = "prop_tool_shovel5",
         propPos = {0.0, 0.0, -0.5, 0.0, 0.0, 0.0}
     },
-    ["hoe3"] = {
-        category = "prop",
-        label = "Hoe 3",
-        animDict = "anim@amb@drug_field_workers@rake@male_b@base",
-        animName = "idle_b",
-        animFlag = 1,
-        bone = 28422,
-        prop = "prop_tool_shovel5",
-        propPos = {0.0, 0.0, -0.5, 0.0, 0.0, 0.0}
-    },
     ["hoe4"] = {
         category = "prop",
         label = "Hoe 4",
@@ -5840,42 +5794,6 @@ Animations.List = {
         bone = 28422,
         prop = "prop_toilet_roll_01",
         propPos = {0.07, -0.02, -0.21, 0.0, 0.0, 0.0, 0.0}
-    },
-    ["puke"] = {
-        category = "prop",
-        label = "Puke",
-        animDict = "cross_arms@dark",
-        animName = "cross_arms_clip",
-        animFlag = 1,
-        bone = 28422,
-        prop = ""
-    },
-    ["puke2"] = {
-        category = "prop",
-        label = "Puke 2",
-        animDict = "missheistpaletoscore1leadinout",
-        animName = "trv_puking_leadout",
-        animFlag = 1,
-        bone = 28422,
-        prop = ""
-    },
-    ["puke3"] = {
-        category = "prop",
-        label = "Puke 3",
-        animDict = "anim@scripted@ulp_missions@injured_agent@",
-        animName = "idle",
-        animFlag = 1,
-        bone = 28422,
-        prop = ""
-    },
-    ["puke4"] = {
-        category = "prop",
-        label = "Puke 4",
-        animDict = "anim@scripted@freemode@throw_up_toilet@male@",
-        animName = "vomit",
-        animFlag = 1,
-        bone = 28422,
-        prop = ""
     },
     ["selfie"] = {
         category = "prop",
@@ -8939,123 +8857,11 @@ Animations.List = {
         animFlag = 1,
         can_shared = true
     },
-    ["drill"] = {
-        label = "drill",
-        category = "stand",
-        animDict = "WORLD_HUMAN_CONST_DRILL",
-        animName = "Construction Drilling",
-        animFlag = 1,
-        can_shared = true
-    },
     ["filmshocking"] = {
         label = "filmshocking",
         category = "party",
         animDict = "WORLD_HUMAN_MOBILE_FILM_SHOCKING",
         animName = "Film Shocking",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["flex"] = {
-        label = "flex",
-        category = "help",
-        animDict = "WORLD_HUMAN_MUSCLE_FLEX",
-        animName = "Flex",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["guard"] = {
-        label = "guard",
-        category = "sport",
-        animDict = "WORLD_HUMAN_GUARD_STAND",
-        animName = "Guard",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["garden"] = {
-        label = "garden",
-        category = "other",
-        animDict = "WORLD_HUMAN_GARDENER_PLANT",
-        animName = "Gardening",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["hammer"] = {
-        label = "hammer",
-        category = "main",
-        animDict = "WORLD_HUMAN_HAMMERING",
-        animName = "Hammer",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["hangout"] = {
-        label = "Hangout 1",
-        category = "stand",
-        animDict = "WORLD_HUMAN_HANG_OUT_STREET",
-        animName = "Hangout",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["impatient"] = {
-        label = "impatient",
-        category = "party",
-        animDict = "WORLD_HUMAN_STAND_IMPATIENT",
-        animName = "Impatient",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["janitor"] = {
-        label = "janitor",
-        category = "help",
-        animDict = "WORLD_HUMAN_JANITOR",
-        animName = "Janitor",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["jog"] = {
-        label = "jog",
-        category = "sport",
-        animDict = "WORLD_HUMAN_JOG_STANDING",
-        animName = "Jog",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["kneel"] = {
-        label = "kneel",
-        category = "other",
-        animDict = "CODE_HUMAN_MEDIC_KNEEL",
-        animName = "Kneel",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["lean"] = {
-        label = "lean",
-        category = "stand",
-        animDict = "WORLD_HUMAN_LEANING",
-        animName = "Lean",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["leanbar"] = {
-        label = "leanbar",
-        category = "stand",
-        animDict = "PROP_HUMAN_BUM_SHOPPING_CART",
-        animName = "Lean Bar",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["lookout"] = {
-        label = "lookout",
-        category = "party",
-        animDict = "CODE_HUMAN_CROSS_ROAD_WAIT",
-        animName = "Lookout",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["maid"] = {
-        label = "maid",
-        category = "help",
-        animDict = "WORLD_HUMAN_MAID_CLEAN",
-        animName = "Maid",
         animFlag = 1,
         can_shared = true
     },
@@ -9067,75 +8873,11 @@ Animations.List = {
         animFlag = 1,
         can_shared = true
     },
-    ["musician"] = {
-        label = "musician",
-        category = "other",
-        animDict = "WORLD_HUMAN_MUSICIAN",
-        animName = "Musician",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["notepad2"] = {
-        label = "notepad2",
-        category = "main",
-        animDict = "CODE_HUMAN_MEDIC_TIME_OF_DEATH",
-        animName = "Notepad 2",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["parkingmeter"] = {
-        label = "parkingmeter",
-        category = "stand",
-        animDict = "PROP_HUMAN_PARKING_METER",
-        animName = "Parking Meter",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["party"] = {
-        label = "party",
-        category = "party",
-        animDict = "WORLD_HUMAN_PARTYING",
-        animName = "Party",
-        animFlag = 1,
-        can_shared = true
-    },
     ["texting"] = {
         label = "texting",
         category = "help",
         animDict = "WORLD_HUMAN_STAND_MOBILE",
         animName = "Texting",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["prosthigh"] = {
-        label = "prosthigh",
-        category = "sport",
-        animDict = "WORLD_HUMAN_PROSTITUTE_HIGH_CLASS",
-        animName = "Prostitue High",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["prostlow"] = {
-        label = "prostlow",
-        category = "other",
-        animDict = "WORLD_HUMAN_PROSTITUTE_LOW_CLASS",
-        animName = "Prostitue Low",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["puddle"] = {
-        label = "puddle",
-        category = "main",
-        animDict = "WORLD_HUMAN_BUM_WASH",
-        animName = "Puddle",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["record"] = {
-        label = "record",
-        category = "stand",
-        animDict = "WORLD_HUMAN_MOBILE_FILM_SHOCKING",
-        animName = "Record",
         animFlag = 1,
         can_shared = true
     },
@@ -9520,14 +9262,6 @@ Animations.List = {
         category = "stand",
         animDict = "girl_groupe_d@darksj",
         animName = "girl_groupe_d_clip",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["koreanhandhearts🇰🇷"] = {
-        label = "Korean Hand Hearts 🇰🇷",
-        category = "party",
-        animDict = "ebrwny_heart000",
-        animName = "ebrwny_hrt000",
         animFlag = 1,
         can_shared = true
     },
@@ -10456,14 +10190,6 @@ Animations.List = {
         category = "stand",
         animDict = "anim@scripted@bty2@ig1_hiding_target@male@",
         animName = "hiding_kneel",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["kneelthotinstagram"] = {
-        label = "Kneel Thot Instagram",
-        category = "party",
-        animDict = "anim@model_kylie_insta",
-        animName = "kylie_insta_clip",
         animFlag = 1,
         can_shared = true
     },
@@ -13219,14 +12945,6 @@ Animations.List = {
         animFlag = 1,
         can_shared = true
     },
-    ["modelpose2"] = {
-        label = "Model Pose 2",
-        category = "stand",
-        animDict = "sitdownonknees@queensisters",
-        animName = "sitdown_clip",
-        animFlag = 1,
-        can_shared = true
-    },
     ["modelpose3"] = {
         label = "Model Pose 3",
         category = "stand",
@@ -14443,54 +14161,6 @@ Animations.List = {
         animFlag = 1,
         can_shared = true
     },
-    ["footballbackmiddle"] = {
-        label = "Football Back Middle",
-        category = "other",
-        animDict = "pazeee@football1@animations",
-        animName = "pazeee@football1@clip",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["footballbackright"] = {
-        label = "Football Back Right",
-        category = "main",
-        animDict = "pazeee@football2@animations",
-        animName = "pazeee@football2@clip",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["footballfrontright"] = {
-        label = "Football Front Right",
-        category = "stand",
-        animDict = "pazeee@football3@animations",
-        animName = "pazeee@football3@clip",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["footballfrontmiddle"] = {
-        label = "Football Front Middle",
-        category = "party",
-        animDict = "pazeee@football4@animations",
-        animName = "pazeee@football4@clip",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["footballfrontleft"] = {
-        label = "Football Front Left",
-        category = "help",
-        animDict = "pazeee@football5@animations",
-        animName = "pazeee@football5@clip",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["footballbackleft"] = {
-        label = "Football Back Left",
-        category = "sport",
-        animDict = "pazeee@football6@animations",
-        animName = "pazeee@football6@clip",
-        animFlag = 1,
-        can_shared = true
-    },
     ["9alert"] = {
         label = "K9 Alert",
         category = "other",
@@ -15275,16 +14945,6 @@ Animations.List = {
         animName = "drunk_idle",
         animFlag = 1
     },
-    ["dufbag"] = {
-        label = "Duffel Bag",
-        category = "prop",
-        animDict = "move_weapon@jerrycan@generic",
-        animName = "idle",
-        animFlag = 1,
-        bone = 28422,
-        prop = "bkr_prop_duffel_bag_01a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
-    },
     ["fishing"] = {
         label = "Fishing 1",
         category = "prop",
@@ -15496,16 +15156,6 @@ Animations.List = {
         animDict = "random@shop_robbery_reactions@",
         animName = "screw_you",
         animFlag = 1
-    },
-    ["fuel2"] = {
-        label = "Fuel 2 (Carry)",
-        category = "prop",
-        animDict = "weapons@misc@jerrycan@franklin",
-        animName = "idle",
-        animFlag = 1,
-        bone = 28422,
-        prop = "w_am_jerrycan",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["gbag"] = {
         label = "Garbage Bag",
@@ -15804,16 +15454,6 @@ Animations.List = {
         animName = "look_plan_c_worker2",
         animFlag = 1
     },
-    ["medbag"] = {
-        label = "Medic Bag",
-        category = "prop",
-        animDict = "move_weapon@jerrycan@generic",
-        animName = "idle",
-        animFlag = 1,
-        bone = 57005,
-        prop = "xm_prop_x17_bag_med_01a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
-    },
     ["newsbmic"] = {
         label = "News Boom Microphone",
         category = "prop",
@@ -16032,26 +15672,6 @@ Animations.List = {
         animName = "prone_dave",
         animFlag = 1
     },
-    ["protest2"] = {
-        label = "Protest 2 - Pride ",
-        category = "prop",
-        animDict = "rcmnigel1d",
-        animName = "base_club_shoulder",
-        animFlag = 1,
-        bone = 57005,
-        prop = "pride_sign_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
-    },
-    ["ps"] = {
-        label = "Read Messages 2 · Female",
-        category = "prop",
-        animDict = "custom@anim@pepperspray_1",
-        animName = "pepperspray",
-        animFlag = 1,
-        bone = 28422,
-        prop = "p_pepper_01",
-        propPos = {0.060, -0.050, -0.050, -90.0, 90.0, 20.0}
-    },
     ["pump"] = {
         label = "Pumpkin",
         category = "prop",
@@ -16177,26 +15797,6 @@ Animations.List = {
         animDict = "anim@mp_player_intcelebrationfemale@respect",
         animName = "respect",
         animFlag = 1
-    },
-    ["rose2"] = {
-        label = "Rose 2 (Male)",
-        category = "prop",
-        animDict = "missheistdocksprep1hold_cellphone",
-        animName = "static",
-        animFlag = 1,
-        bone = 31086,
-        prop = "prop_single_rose",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
-    },
-    ["rose3"] = {
-        label = "Rose 3 (Female)",
-        category = "prop",
-        animDict = "missheistdocksprep1hold_cellphone",
-        animName = "static",
-        animFlag = 1,
-        bone = 31086,
-        prop = "prop_single_rose",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["salsa"] = {
         label = "Salso Roll",
