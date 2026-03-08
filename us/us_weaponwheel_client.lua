@@ -19,6 +19,4 @@ Citizen.CreateThread(function()
 	AddTextEntry("WT_SMG", "HK MP5")
 	AddTextEntry("WT_MKRIFLE", "Remington M110")
 	AddTextEntry("WT_SNIP_RIF", "Remington M700")
-	
-	
 end)

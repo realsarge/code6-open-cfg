@@ -59,9 +59,7 @@
         "drybulktr",
         "docktrailer2"
     ],
-    "peds": [
-
-    ],
+    "peds": [],
     "weapons": [
         "WEAPON_TASER7",
         "weapon_flashbang_myres",
@@ -80,6 +78,10 @@
         "WEAPON_FLATHEAD",
         "WEAPON_SLEDGE",
         "WEAPON_FORESTER",
-        "WEAPON_HYDRANT"
+        "WEAPON_HYDRANT",
+        "weapon_mp9",
+        "weapon_lspdbb",
+        "weapon_lssdbb",
+        "weapon_sahpbb"
     ]
 }
