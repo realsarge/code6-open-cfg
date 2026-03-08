@@ -1,97 +1,469 @@
+-- Verified 18 pages
+
 Animations = {}
 
-Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_female = "move_f@multiplayer", label = "Style: Standard", category = "style"},
-["style_lame"] = {anim = "move_m@injured", label = "Style: Lame", category = "style"},
-["style_lame2"] = {anim = "move_heist_lester", label = "Style: Lame 2", category = "style"},
-["style_ladies"] = {anim = "move_f@generic", label = "Style: Ladies", category = "style"},
-["style_ladies2"] = {anim = "move_f@sexy@a", label = "Style: Ladies 2", category = "style"},
-["style_ladies3"] = {anim = "MOVE_F@FEMME@", label = "Style: Ladies 3", category = "style"},
-["style_casual"] = {anim = "move_m@casual@a", label = "Style: Casual", category = "style"},
-["style_casual2"] = {anim = "move_m@casual@b", label = "Style: Casual 2", category = "style"},
-["style_casual3"] = {anim = "move_m@casual@c", label = "Style: Casual 3", category = "style"},
-["style_professor"] = {anim = "move_m@business@c", label = "Style: Professor", category = "style"},
-["style_slow"] = {anim = "move_characters@Jimmy@slow@", label = "Style: Slow", category = "style"},
-["style_slow2"] = {anim = "move_p_m_zero_slow", label = "Style: Slow 2", category = "style"},
-["style_haste"] = {anim = "move_m@hurry@a", label = "Style: Haste", category = "style"},
-["style_trot"] = {anim = "move_m@quick", label = "Style: Trot", category = "style"},
-["style_sassy"] = {anim = "move_m@sassy", label = "Style: Sassy", category = "style"},
-["style_loose"] = {anim = "move_m@casual@e", label = "Style: Loose", category = "style"},
-["style_loose2"] = {anim = "move_m@casual@d", label = "Style: Loose 2", category = "style"},
-["style_loose3"] = {anim = "move_m@tough_guy@", label = "Style: Loose 3", category = "style"},
-["style_loose4"] = {anim = "move_m@hipster@a", label = "Style: Loose 4", category = "style"},
-["style_loose5"] = {anim = "move_m@bag", label = "Style: Loose 5", category = "style"},
-["style_sad"] = {anim = "move_m@sad@a", label = "Style: Sad", category = "style"},
-["style_sad2"] = {anim = "move_m@gangster@var_f", label = "Style: Sad 2", category = "style"},
-["style_depressed"] = {anim = "move_m@depressed@a", label = "Style: Depressed", category = "style"},
-["style_business"] = {anim_male = "move_m@business@a", anim_female = "move_f@business@a", label = "Style: Business", category = "style"},
-["style_belated"] = {anim = "move_m@casual@f", label = "Style: Belated", category = "style"},
-["style_nervous"] = {anim = "move_m@fire", label = "Style: Nervous", category = "style"},
-["style_nervous2"] = {anim = "move_m@hurry_butch@a", label = "Style: Nervous 2", category = "style"},
-["style_nervous3"] = {anim = "move_m@hurry_butch@b", label = "Style: Nervous 3", category = "style"},
-["style_freak"] = {anim = "move_m@hobo@a", label = "Style: Freak", category = "style"},
-["style_scared"] = {anim = "move_m@scared", label = "Style: Scared", category = "style"},
-["style_cossack"] = {anim = "move_m@brave@a", label = "Style: Cossack", category = "style"},
-["style_cossack2"] = {anim = "move_m@muscle@a", label = "Style: Cossack 2", category = "style"},
-["style_cossack3"] = {anim = "move_m@intimidation@1h", label = "Style: Cossack 3", category = "style"},
-["style_cossack4"] = {anim = "move_p_m_one", label = "Style: Cossack 4", category = "style"},
-["style_gangster"] = {anim = "move_m@gangster@generic", label = "Style: Gangster", category = "style"},
-["style_gangster2"] = {anim = "move_m@shadyped@a", label = "Style: Gangster 2", category = "style"},
-["style_swag"] = {anim = "move_m@swagger", label = "Style: Swag", category = "style"},
-["style_skinnyguy"] = {anim_male = "move_m@fat@a",anim_female = "move_f@fat@a", label = "Style: Skinny guy", category = "style"},
-["style_skinnyguy2"] = {anim = "ANIM_GROUP_MOVE_BALLISTIC", label = "Style: Skinny guy 2", category = "style"},
-["style_skinnyguy3"] = {anim = "move_characters@franklin@fire", label = "Style: Skinny guy 3", category = "style"},
-["style_skinnyguy4"] = {anim = "move_characters@michael@fire", label = "Style: Skinny guy 4", category = "style"},
-["style_crooked"] = {anim = "move_ped_bucket", label = "Style: Crooked", category = "style"},
-["style_grace"] = {anim = "move_m@money", label = "Style: with Grace", category = "style"},
-["style_gay"] = {anim = "MOVE_M@FEMME@", label = "Style: Gay", category = "style"},
-["style_poseur"] = {anim = "move_m@posh@", label = "Style: Poseur", category = "style"},
-["style_party"] = {anim = "anim@move_m@grooving@slow@", label = "Style: Party", category = "style"},
-["style_cop"] = {anim = "move_m@intimidation@cop@unarmed", label = "Style: Cop", category = "style"},
-["style_drunk2"] = {anim = "move_m@drunk@verydrunk", label = "Style: Drunk 2", category = "style"},
-["style_gangster3"] = {anim = "move_m@gangster@var_e", label = "Style: Gangster 3", category = "style"},
-["style_gangster4"] = {anim = "move_m@gangster@var_i", label = "Style: Gangster 4", category = "style"},
-["style_grooving"] = {anim_male = "anim@move_m@grooving@", anim_female = "anim@move_f@grooving@", label = "Style: Grooving", category = "style"},
-["style_grooving2"] = {anim_male = "anim@move_m@grooving@slow@", anim_female = "anim@move_f@grooving@slow@", label = "Style: Grooving 2", category = "style"},
-["style_guard"] = {anim = "move_m@prison_gaurd", label = "Style: Guard", category = "style"},
-["style_handcuffs"] = {anim = "move_m@prisoner_cuffed", label = "Style: Handcuffs", category = "style"},
-["style_heels"] = {anim = "move_f@heels@c", label = "Style: Heels", category = "style"},
-["style_heels2"] = {anim = "move_f@heels@d", label = "Style: Heels 2", category = "style"},
-["style_trash"] = {anim = "clipset@move@trash_fast_turn", label = "Style: Trash ", category = "style"},
-["style_trash2"] = {anim = "missfbi4prepp1_garbageman", label = "Style: Trash 2", category = "style"},
-["style_runner"] = {anim = "female_fast_runner", label = "Style: Runner", category = "style"},
-["style_chichi"] = {anim = "move_f@chichi", label = "Style: Chichi", category = "style"},
-["style_confident"] = {anim = "move_m@confident", label = "Style: Confident", category = "style"},
-["style_cop2"] = {anim = "move_m@business@b", label = "Style: Cop 2", category = "style"},
-["style_flee"] = {anim = "move_f@flee@a", label = "Style: Flee", category = "style"},
-["style_prison"] = {anim = "anim@move_m@prison_gaurd", label = "Style: Prison Guard", category = "style"},
-["style_alien"] = {anim = "move_m@alien", label = "Style: Alien", category = "style"},
-["style_clipboard"] = {anim = "move_m@clipboard", label = "Style: Clipboard", category = "style"},
-["style_coward"] = {anim = "move_m@coward", label = "Style: Coward", category = "style"},
-["style_drunk"] = {anim = "move_m@drunk@a", label = "Style: Drunk", category = "style"},
-["style_exhausted"] = {anim = "move_f@exhausted", label = "Style: Exhausted Female", category = "style"},
-["face_standard"] = {category = "face", anim = "mood_normal_1", label = "Face: Standard"},
-["face_stressedout"] = {category = "face", anim = "mood_stressed_1", label = "Face: Stressed out"},
-["face_obstinate"] = {category = "face", anim = "effort_2", label = "Face: Obstinate"},
-["face_smiling"] = {category = "face", anim = "mood_smug_1", label = "Face: Smiling"},
-["face_smiling2"] = {category = "face", anim = "mood_happy_1", label = "Face: Smiling 2"},
-["face_smiling3"] = {category = "face", anim = "mood_dancing_low_1", label = "Face: Smiling 3"},
-["face_angry"] = {category = "face", anim = "mood_angry_1", label = "Face: Angry"},
-["face_angry2"] = {category = "face", anim = "pose_angry_1", label = "Face: Angry 2"},
-["face_angry3"] = {category = "face", anim = "effort_1", label = "Face: Angry 3"},
-["face_shocked"] = {category = "face", anim = "shocked_2", label = "Face: Shocked"},
-["face_shocked2"] = {category = "face", anim = "pose_injured_1", label = "Face: Shocked 2"},
-["face_shocked3"] = {category = "face", anim = "shocked_1", label = "Face: Shocked 3"},
-["face_shocked4"] = {category = "face", anim = "smoking_hold_1", label = "Face: Shocked 4"},
-["face_grumpy"] = {category = "face", anim = "mood_drivefast_1", label = "Face: Grumpy"},
-["face_whimsical"] = {category = "face", anim = "mood_sulk_1", label = "Face: Whimsical"},
-["face_drunk6"] = {category = "face", anim = "mood_drunk_1", label = "Face: Drunk"},
-["face_suspicious"] = {category = "face", anim = "mood_aiming_1", label = "Face: Suspicious"},
-["face_weirdo"] = {category = "face", anim = "effort_3", label = "Face: Weirdo"},
-["face_jaw"] = {category = "face", anim = "electrocuted_1", label = "Face: Jaw"},
-["face_oneeye"] = {category = "face", anim = "pose_aiming_1", label = "Face: One-eyed"},
-["face_sleeping"] = {category = "face", anim = "dead_1", label = "Face: Sleeping"},
-["face_sleeping2"] = {category = "face", anim = "mood_sleeping_1", label = "Face: Sleeping 2"},
-["handshake"] = {
+Animations.List = {
+    ["style_standard"] = {
+        anim_male = "move_m@generic",
+        anim_female = "move_f@multiplayer",
+        label = "Style: Standard",
+        category = "style"
+    },
+    ["style_lame"] = {
+        anim = "move_m@injured",
+        label = "Style: Lame",
+        category = "style"
+    },
+    ["style_lame2"] = {
+        anim = "move_heist_lester",
+        label = "Style: Lame 2",
+        category = "style"
+    },
+    ["style_ladies"] = {
+        anim = "move_f@generic",
+        label = "Style: Ladies",
+        category = "style"
+    },
+    ["style_ladies2"] = {
+        anim = "move_f@sexy@a",
+        label = "Style: Ladies 2",
+        category = "style"
+    },
+    ["style_ladies3"] = {
+        anim = "MOVE_F@FEMME@",
+        label = "Style: Ladies 3",
+        category = "style"
+    },
+    ["style_casual"] = {
+        anim = "move_m@casual@a",
+        label = "Style: Casual",
+        category = "style"
+    },
+    ["style_casual2"] = {
+        anim = "move_m@casual@b",
+        label = "Style: Casual 2",
+        category = "style"
+    },
+    ["style_casual3"] = {
+        anim = "move_m@casual@c",
+        label = "Style: Casual 3",
+        category = "style"
+    },
+    ["style_professor"] = {
+        anim = "move_m@business@c",
+        label = "Style: Professor",
+        category = "style"
+    },
+    ["style_slow"] = {
+        anim = "move_characters@Jimmy@slow@",
+        label = "Style: Slow",
+        category = "style"
+    },
+    ["style_slow2"] = {
+        anim = "move_p_m_zero_slow",
+        label = "Style: Slow 2",
+        category = "style"
+    },
+    ["style_haste"] = {
+        anim = "move_m@hurry@a",
+        label = "Style: Haste",
+        category = "style"
+    },
+    ["style_trot"] = {
+        anim = "move_m@quick",
+        label = "Style: Trot",
+        category = "style"
+    },
+    ["style_sassy"] = {
+        anim = "move_m@sassy",
+        label = "Style: Sassy",
+        category = "style"
+    },
+    ["style_loose"] = {
+        anim = "move_m@casual@e",
+        label = "Style: Loose",
+        category = "style"
+    },
+    ["style_loose2"] = {
+        anim = "move_m@casual@d",
+        label = "Style: Loose 2",
+        category = "style"
+    },
+    ["style_loose3"] = {
+        anim = "move_m@tough_guy@",
+        label = "Style: Loose 3",
+        category = "style"
+    },
+    ["style_loose4"] = {
+        anim = "move_m@hipster@a",
+        label = "Style: Loose 4",
+        category = "style"
+    },
+    ["style_loose5"] = {
+        anim = "move_m@bag",
+        label = "Style: Loose 5",
+        category = "style"
+    },
+    ["style_sad"] = {
+        anim = "move_m@sad@a",
+        label = "Style: Sad",
+        category = "style"
+    },
+    ["style_sad2"] = {
+        anim = "move_m@gangster@var_f",
+        label = "Style: Sad 2",
+        category = "style"
+    },
+    ["style_depressed"] = {
+        anim = "move_m@depressed@a",
+        label = "Style: Depressed",
+        category = "style"
+    },
+    ["style_business"] = {
+        anim_male = "move_m@business@a",
+        anim_female = "move_f@business@a",
+        label = "Style: Business",
+        category = "style"
+    },
+    ["style_belated"] = {
+        anim = "move_m@casual@f",
+        label = "Style: Belated",
+        category = "style"
+    },
+    ["style_nervous"] = {
+        anim = "move_m@fire",
+        label = "Style: Nervous",
+        category = "style"
+    },
+    ["style_nervous2"] = {
+        anim = "move_m@hurry_butch@a",
+        label = "Style: Nervous 2",
+        category = "style"
+    },
+    ["style_nervous3"] = {
+        anim = "move_m@hurry_butch@b",
+        label = "Style: Nervous 3",
+        category = "style"
+    },
+    ["style_freak"] = {
+        anim = "move_m@hobo@a",
+        label = "Style: Freak",
+        category = "style"
+    },
+    ["style_scared"] = {
+        anim = "move_m@scared",
+        label = "Style: Scared",
+        category = "style"
+    },
+    ["style_cossack"] = {
+        anim = "move_m@brave@a",
+        label = "Style: Cossack",
+        category = "style"
+    },
+    ["style_cossack2"] = {
+        anim = "move_m@muscle@a",
+        label = "Style: Cossack 2",
+        category = "style"
+    },
+    ["style_cossack3"] = {
+        anim = "move_m@intimidation@1h",
+        label = "Style: Cossack 3",
+        category = "style"
+    },
+    ["style_cossack4"] = {
+        anim = "move_p_m_one",
+        label = "Style: Cossack 4",
+        category = "style"
+    },
+    ["style_gangster"] = {
+        anim = "move_m@gangster@generic",
+        label = "Style: Gangster",
+        category = "style"
+    },
+    ["style_gangster2"] = {
+        anim = "move_m@shadyped@a",
+        label = "Style: Gangster 2",
+        category = "style"
+    },
+    ["style_swag"] = {
+        anim = "move_m@swagger",
+        label = "Style: Swag",
+        category = "style"
+    },
+    ["style_skinnyguy"] = {
+        anim_male = "move_m@fat@a",
+        anim_female = "move_f@fat@a",
+        label = "Style: Skinny guy",
+        category = "style"
+    },
+    ["style_skinnyguy2"] = {
+        anim = "ANIM_GROUP_MOVE_BALLISTIC",
+        label = "Style: Skinny guy 2",
+        category = "style"
+    },
+    ["style_skinnyguy3"] = {
+        anim = "move_characters@franklin@fire",
+        label = "Style: Skinny guy 3",
+        category = "style"
+    },
+    ["style_skinnyguy4"] = {
+        anim = "move_characters@michael@fire",
+        label = "Style: Skinny guy 4",
+        category = "style"
+    },
+    ["style_crooked"] = {
+        anim = "move_ped_bucket",
+        label = "Style: Crooked",
+        category = "style"
+    },
+    ["style_grace"] = {
+        anim = "move_m@money",
+        label = "Style: with Grace",
+        category = "style"
+    },
+    ["style_gay"] = {
+        anim = "MOVE_M@FEMME@",
+        label = "Style: Gay",
+        category = "style"
+    },
+    ["style_poseur"] = {
+        anim = "move_m@posh@",
+        label = "Style: Poseur",
+        category = "style"
+    },
+    ["style_party"] = {
+        anim = "anim@move_m@grooving@slow@",
+        label = "Style: Party",
+        category = "style"
+    },
+    ["style_cop"] = {
+        anim = "move_m@intimidation@cop@unarmed",
+        label = "Style: Cop",
+        category = "style"
+    },
+    ["style_drunk2"] = {
+        anim = "move_m@drunk@verydrunk",
+        label = "Style: Drunk 2",
+        category = "style"
+    },
+    ["style_gangster3"] = {
+        anim = "move_m@gangster@var_e",
+        label = "Style: Gangster 3",
+        category = "style"
+    },
+    ["style_gangster4"] = {
+        anim = "move_m@gangster@var_i",
+        label = "Style: Gangster 4",
+        category = "style"
+    },
+    ["style_grooving"] = {
+        anim_male = "anim@move_m@grooving@",
+        anim_female = "anim@move_f@grooving@",
+        label = "Style: Grooving",
+        category = "style"
+    },
+    ["style_grooving2"] = {
+        anim_male = "anim@move_m@grooving@slow@",
+        anim_female = "anim@move_f@grooving@slow@",
+        label = "Style: Grooving 2",
+        category = "style"
+    },
+    ["style_guard"] = {
+        anim = "move_m@prison_gaurd",
+        label = "Style: Guard",
+        category = "style"
+    },
+    ["style_handcuffs"] = {
+        anim = "move_m@prisoner_cuffed",
+        label = "Style: Handcuffs",
+        category = "style"
+    },
+    ["style_heels"] = {
+        anim = "move_f@heels@c",
+        label = "Style: Heels",
+        category = "style"
+    },
+    ["style_heels2"] = {
+        anim = "move_f@heels@d",
+        label = "Style: Heels 2",
+        category = "style"
+    },
+    ["style_trash"] = {
+        anim = "clipset@move@trash_fast_turn",
+        label = "Style: Trash ",
+        category = "style"
+    },
+    ["style_trash2"] = {
+        anim = "missfbi4prepp1_garbageman",
+        label = "Style: Trash 2",
+        category = "style"
+    },
+    ["style_runner"] = {
+        anim = "female_fast_runner",
+        label = "Style: Runner",
+        category = "style"
+    },
+    ["style_chichi"] = {
+        anim = "move_f@chichi",
+        label = "Style: Chichi",
+        category = "style"
+    },
+    ["style_confident"] = {
+        anim = "move_m@confident",
+        label = "Style: Confident",
+        category = "style"
+    },
+    ["style_cop2"] = {
+        anim = "move_m@business@b",
+        label = "Style: Cop 2",
+        category = "style"
+    },
+    ["style_flee"] = {
+        anim = "move_f@flee@a",
+        label = "Style: Flee",
+        category = "style"
+    },
+    ["style_prison"] = {
+        anim = "anim@move_m@prison_gaurd",
+        label = "Style: Prison Guard",
+        category = "style"
+    },
+    ["style_alien"] = {
+        anim = "move_m@alien",
+        label = "Style: Alien",
+        category = "style"
+    },
+    ["style_clipboard"] = {
+        anim = "move_m@clipboard",
+        label = "Style: Clipboard",
+        category = "style"
+    },
+    ["style_coward"] = {
+        anim = "move_m@coward",
+        label = "Style: Coward",
+        category = "style"
+    },
+    ["style_drunk"] = {
+        anim = "move_m@drunk@a",
+        label = "Style: Drunk",
+        category = "style"
+    },
+    ["style_exhausted"] = {
+        anim = "move_f@exhausted",
+        label = "Style: Exhausted Female",
+        category = "style"
+    },
+    ["face_standard"] = {
+        category = "face",
+        anim = "mood_normal_1",
+        label = "Face: Standard"
+    },
+    ["face_stressedout"] = {
+        category = "face",
+        anim = "mood_stressed_1",
+        label = "Face: Stressed out"
+    },
+    ["face_obstinate"] = {
+        category = "face",
+        anim = "effort_2",
+        label = "Face: Obstinate"
+    },
+    ["face_smiling"] = {
+        category = "face",
+        anim = "mood_smug_1",
+        label = "Face: Smiling"
+    },
+    ["face_smiling2"] = {
+        category = "face",
+        anim = "mood_happy_1",
+        label = "Face: Smiling 2"
+    },
+    ["face_smiling3"] = {
+        category = "face",
+        anim = "mood_dancing_low_1",
+        label = "Face: Smiling 3"
+    },
+    ["face_angry"] = {
+        category = "face",
+        anim = "mood_angry_1",
+        label = "Face: Angry"
+    },
+    ["face_angry2"] = {
+        category = "face",
+        anim = "pose_angry_1",
+        label = "Face: Angry 2"
+    },
+    ["face_angry3"] = {
+        category = "face",
+        anim = "effort_1",
+        label = "Face: Angry 3"
+    },
+    ["face_shocked"] = {
+        category = "face",
+        anim = "shocked_2",
+        label = "Face: Shocked"
+    },
+    ["face_shocked2"] = {
+        category = "face",
+        anim = "pose_injured_1",
+        label = "Face: Shocked 2"
+    },
+    ["face_shocked3"] = {
+        category = "face",
+        anim = "shocked_1",
+        label = "Face: Shocked 3"
+    },
+    ["face_shocked4"] = {
+        category = "face",
+        anim = "smoking_hold_1",
+        label = "Face: Shocked 4"
+    },
+    ["face_grumpy"] = {
+        category = "face",
+        anim = "mood_drivefast_1",
+        label = "Face: Grumpy"
+    },
+    ["face_whimsical"] = {
+        category = "face",
+        anim = "mood_sulk_1",
+        label = "Face: Whimsical"
+    },
+    ["face_drunk6"] = {
+        category = "face",
+        anim = "mood_drunk_1",
+        label = "Face: Drunk"
+    },
+    ["face_suspicious"] = {
+        category = "face",
+        anim = "mood_aiming_1",
+        label = "Face: Suspicious"
+    },
+    ["face_weirdo"] = {
+        category = "face",
+        anim = "effort_3",
+        label = "Face: Weirdo"
+    },
+    ["face_jaw"] = {
+        category = "face",
+        anim = "electrocuted_1",
+        label = "Face: Jaw"
+    },
+    ["face_oneeye"] = {
+        category = "face",
+        anim = "pose_aiming_1",
+        label = "Face: One-eyed"
+    },
+    ["face_sleeping"] = {
+        category = "face",
+        anim = "dead_1",
+        label = "Face: Sleeping"
+    },
+    ["face_sleeping2"] = {
+        category = "face",
+        anim = "mood_sleeping_1",
+        label = "Face: Sleeping 2"
+    },
+    ["handshake"] = {
         label = "Handshake",
         category = "main",
         animDict = "mp_ped_interaction",
@@ -99,7 +471,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["handshake2"] = {
+    ["handshake2"] = {
         label = "Handshake 2",
         category = "stand",
         animDict = "mp_ped_interaction",
@@ -107,17 +479,47 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["hug"] = {category = "synced", label = "Hug"},
-["hug2"] = {category = "synced", label = "Hug 2"},
-["hugromantic1"] = {category = "synced", label = "Hug Romantic 1"},
-["hugromantic2"] = {category = "synced", label = "Hug Romantic 2"},
-["bro"] = {category = "synced", label = "Bro"},
-["bro2"] = {category = "synced", label = "Bro 2"},
-["give"] = {category = "synced", label = "Give"},
-["give2"] = {category = "synced", label = "Give 2"},
-["baseball"] = {category = "synced", label = "Baseball"},
-["baseballthrow"] = {category = "synced", label = "Baseball Throw"},
-["stickup"] = {
+    ["hug"] = {
+        category = "synced",
+        label = "Hug"
+    },
+    ["hug2"] = {
+        category = "synced",
+        label = "Hug 2"
+    },
+    ["hugromantic1"] = {
+        category = "synced",
+        label = "Hug Romantic 1"
+    },
+    ["hugromantic2"] = {
+        category = "synced",
+        label = "Hug Romantic 2"
+    },
+    ["bro"] = {
+        category = "synced",
+        label = "Bro"
+    },
+    ["bro2"] = {
+        category = "synced",
+        label = "Bro 2"
+    },
+    ["give"] = {
+        category = "synced",
+        label = "Give"
+    },
+    ["give2"] = {
+        category = "synced",
+        label = "Give 2"
+    },
+    ["baseball"] = {
+        category = "synced",
+        label = "Baseball"
+    },
+    ["baseballthrow"] = {
+        category = "synced",
+        label = "Baseball Throw"
+    },
+    ["stickup"] = {
         label = "Stick Up",
         category = "main",
         animDict = "random@countryside_gang_fight",
@@ -125,10 +527,19 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["stickupscared"] = {category = "synced", label = "Stickup Scared"},
-["punch"] = {category = "synced", label = "Punch"},
-["punched"] = {category = "synced", label = "Punched"},
-["headbutt"] = {
+    ["stickupscared"] = {
+        category = "synced",
+        label = "Stickup Scared"
+    },
+    ["punch"] = {
+        category = "synced",
+        label = "Punch"
+    },
+    ["punched"] = {
+        category = "synced",
+        label = "Punched"
+    },
+    ["headbutt"] = {
         label = "Headbutt",
         category = "sport",
         animDict = "melee@unarmed@streamed_variations",
@@ -136,9 +547,15 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["headbutted"] = {category = "synced", label = "Headbutted"},
-["slap2"] = {category = "synced", label = "Slap 2"},
-["slap"] = {
+    ["headbutted"] = {
+        category = "synced",
+        label = "Headbutted"
+    },
+    ["slap2"] = {
+        category = "synced",
+        label = "Slap 2"
+    },
+    ["slap"] = {
         label = "Slap",
         category = "help",
         animDict = "melee@unarmed@streamed_variations",
@@ -146,92 +563,360 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["slapped"] = {category = "synced", label = "Slapped"},
-["slapped2"] = {category = "synced", label = "Slapped 2"},
-["carry"] = {category = "synced", label = "Carry"},
-["becarried"] = {category = "synced", label = "Be carried"},
-["carry2"] = {category = "synced", label = "Carry 2"},
-["becarried2"] = {category = "synced", label = "Be carried 2"},
-["carrymecute"] = {category = "synced", label = "Carry Me Cute"},
-["carrymecute2"] = {category = "synced", label = "Carry Me Cute 2"},
-["carrymecute3"] = {category = "synced", label = "Carry Me Cute 3"},
-["carrymecute4"] = {category = "synced", label = "Carry Me Cute 4"},
-["bestfriends1"] = {category = "synced", label = "Best Friends 1"},
-["bestfriends2"] = {category = "synced", label = "Best Friends 2"},
-["bffpose"] = {category = "synced", label = "BFF Pose"},
-["bffpose2"] = {category = "synced", label = "BFF Pose 2"},
-["sitwithme"] = {category = "synced", label = "Sit With Me"},
-["sitwithmeplease?"] = {category = "synced", label = "Sit With Me Please?"},
-["hugpose"] = {category = "synced", label = "Hug Pose"},
-["hugposewithme?"] = {category = "synced", label = "Hug Pose With Me?"},
-["hugposetippytoes"] = {category = "synced", label = "Hug Pose Tippy Toes"},
-["hugposetippytoes2"] = {category = "synced", label = "Hug Pose Tippy Toes 2"},
-["cutepicpose"] = {category = "synced", label = "Cute Pic Pose"},
-["cutepicpose2"] = {category = "synced", label = "Cute Pic Pose 2"},
-["couplehearthands"] = {category = "synced", label = "Couple Heart Hands"},
-["couplehearthands2"] = {category = "synced", label = "Couple Heart Hands 2"},
-["coupleweddingpose1a"] = {category = "synced", label = "Couple Wedding Pose 1A"},
-["coupleweddingpose1b"] = {category = "synced", label = "Couple Wedding Pose 1B"},
-["coupleweddingpose2a"] = {category = "synced", label = "Couple Wedding Pose 2A"},
-["coupleweddingpose2b"] = {category = "synced", label = "Couple Wedding Pose 2B"},
-["liftme"] = {category = "synced", label = "Lift Me"},
-["liftme2"] = {category = "synced", label = "Lift Me 2"},
-["liftme3"] = {category = "synced", label = "Lift Me 3"},
-["liftme4"] = {category = "synced", label = "Lift Me 4"},
-["liftme5"] = {category = "synced", label = "Lift Me 5"},
-["liftme6"] = {category = "synced", label = "Lift Me 6"},
-["carrysmalldog"] = {category = "synced", label = "Carry Small Dog"},
-["smalldogcarried"] = {category = "synced", label = "Small Dog Carried"},
-["carrysmalldog2"] = {category = "synced", label = "Carry Small Dog 2"},
-["smalldogcarried2"] = {category = "synced", label = "Small Dog Carried 2"},
-["carrybigdog"] = {category = "synced", label = "Carry Big Dog"},
-["bigdogcarried"] = {category = "synced", label = "Big Dog Carried"},
-["offerpiggyback"] = {category = "synced", label = "Offer Piggy Back"},
-["bepiggybacked"] = {category = "synced", label = "Be Piggy Backed"},
-["givecpr"] = {category = "synced", label = "Give CPR"},
-["getcpr"] = {category = "synced", label = "Get CPR"},
-["givecpr2"] = {category = "synced", label = "Give CPR 2"},
-["getcpr2"] = {category = "synced", label = "Get CPR 2"},
-["takehostage"] = {category = "synced", label = "Take hostage"},
-["behostage"] = {category = "synced", label = "Be hostage"},
-["search"] = {category = "synced", label = "Search"},
-["besearched"] = {category = "synced", label = "Be searched"},
-["followa(front)"] = {category = "synced", label = "Follow A (Front)"},
-["followb(back)"] = {category = "synced", label = "Follow B (Back)"},
-["kiss"] = {category = "synced", label = "Kiss"},
-["kiss2"] = {category = "synced", label = "Kiss 2"},
-["kiss3"] = {category = "synced", label = "Kiss 3"},
-["kiss4"] = {category = "synced", label = "Kiss 4"},
-["kisscute-neck(male)"] = {category = "synced", label = "Kiss Cute - Neck (Male)"},
-["kisscute-neck(female)"] = {category = "synced", label = "Kiss Cute - Neck (Female)"},
-["kisscutecheek(male)"] = {category = "synced", label = "Kiss Cute Cheek (Male)"},
-["kisscutecheek(female)"] = {category = "synced", label = "Kiss Cute Cheek (Female)"},
-["kissforehead(male)"] = {category = "synced", label = "Kiss Forehead (Male)"},
-["kisscutelips(female)"] = {category = "synced", label = "Kiss Cute Lips (Female)"},
-["kisscutelips(male)"] = {category = "synced", label = "Kiss Cute Lips (Male)"},
-["kissforehead(female)"] = {category = "synced", label = "Kiss Forehead (Female)"},
-["coupledrinking(wineglasses)"] = {category = "synced", label = "Couple Drinking (Wine Glasses)"},
-["coupledrinkingf(wineglasses)"] = {category = "synced", label = "Couple Drinking F (Wine Glasses)"},
-["holdme"] = {category = "synced", label = "Hold Me"},
-["beheld"] = {category = "synced", label = "Be Held"},
-["holdme2"] = {category = "synced", label = "Hold Me 2"},
-["beheld2"] = {category = "synced", label = "Be Held 2"},
-["holdme3"] = {category = "synced", label = "Hold Me 3"},
-["beheld3"] = {category = "synced", label = "Be Held 3"},
-["style_chubby"] = {anim = "move_chubby", label = "Style: Chubby Male", category = "style"},
-["style_chubbyf"] = {anim = "move_f@chubby@a", label = "Style: Chubby Female", category = "style"},
-["style_trevor"] = {anim = "move_p_m_two", label = "Style: Trevor", category = "style"},
-["style_tough"] = {anim = "move_f@tough_guy@", label = "Style: Tough Female", category = "style"},
-["style_scaredf"] = {anim = "move_f@scared", label = "Style: Scared Female", category = "style"},
-["style_sassyf"] = {anim = "move_f@sassy", label = "Style: Sassy Female", category = "style"},
-["style_maneater"] = {anim = "move_f@maneater", label = "Style: Maneater Female", category = "style"},
-["style_jog"] = {anim = "move_m@jog@", label = "Style: Jog", category = "style"},
-["style_janitor"] = {anim = "move_p_m_zero_janitor", label = "Style: Janitor", category = "style"},
-["style_hurryf"] = {anim = "move_f@hurry@a", label = "Style: Hurry Female", category = "style"},
-["style_hiking"] = {anim = "move_m@hiking", label = "Style: Hiking", category = "style"},
-["style_gangster5"] = {anim = "move_m@gangster@ng", label = "Style: Gangster 5", category = "style"},
-["style_arrogant"] = {anim = "move_f@arrogant@a", label = "Style: Arrogant", category = "style"},
-["danceglowstick"] = {
+    ["slapped"] = {
+        category = "synced",
+        label = "Slapped"
+    },
+    ["slapped2"] = {
+        category = "synced",
+        label = "Slapped 2"
+    },
+    ["carry"] = {
+        category = "synced",
+        label = "Carry"
+    },
+    ["becarried"] = {
+        category = "synced",
+        label = "Be carried"
+    },
+    ["carry2"] = {
+        category = "synced",
+        label = "Carry 2"
+    },
+    ["becarried2"] = {
+        category = "synced",
+        label = "Be carried 2"
+    },
+    ["carrymecute"] = {
+        category = "synced",
+        label = "Carry Me Cute"
+    },
+    ["carrymecute2"] = {
+        category = "synced",
+        label = "Carry Me Cute 2"
+    },
+    ["carrymecute3"] = {
+        category = "synced",
+        label = "Carry Me Cute 3"
+    },
+    ["carrymecute4"] = {
+        category = "synced",
+        label = "Carry Me Cute 4"
+    },
+    ["bestfriends1"] = {
+        category = "synced",
+        label = "Best Friends 1"
+    },
+    ["bestfriends2"] = {
+        category = "synced",
+        label = "Best Friends 2"
+    },
+    ["bffpose"] = {
+        category = "synced",
+        label = "BFF Pose"
+    },
+    ["bffpose2"] = {
+        category = "synced",
+        label = "BFF Pose 2"
+    },
+    ["sitwithme"] = {
+        category = "synced",
+        label = "Sit With Me"
+    },
+    ["sitwithmeplease?"] = {
+        category = "synced",
+        label = "Sit With Me Please?"
+    },
+    ["hugpose"] = {
+        category = "synced",
+        label = "Hug Pose"
+    },
+    ["hugposewithme?"] = {
+        category = "synced",
+        label = "Hug Pose With Me?"
+    },
+    ["hugposetippytoes"] = {
+        category = "synced",
+        label = "Hug Pose Tippy Toes"
+    },
+    ["hugposetippytoes2"] = {
+        category = "synced",
+        label = "Hug Pose Tippy Toes 2"
+    },
+    ["cutepicpose"] = {
+        category = "synced",
+        label = "Cute Pic Pose"
+    },
+    ["cutepicpose2"] = {
+        category = "synced",
+        label = "Cute Pic Pose 2"
+    },
+    ["couplehearthands"] = {
+        category = "synced",
+        label = "Couple Heart Hands"
+    },
+    ["couplehearthands2"] = {
+        category = "synced",
+        label = "Couple Heart Hands 2"
+    },
+    ["coupleweddingpose1a"] = {
+        category = "synced",
+        label = "Couple Wedding Pose 1A"
+    },
+    ["coupleweddingpose1b"] = {
+        category = "synced",
+        label = "Couple Wedding Pose 1B"
+    },
+    ["coupleweddingpose2a"] = {
+        category = "synced",
+        label = "Couple Wedding Pose 2A"
+    },
+    ["coupleweddingpose2b"] = {
+        category = "synced",
+        label = "Couple Wedding Pose 2B"
+    },
+    ["liftme"] = {
+        category = "synced",
+        label = "Lift Me"
+    },
+    ["liftme2"] = {
+        category = "synced",
+        label = "Lift Me 2"
+    },
+    ["liftme3"] = {
+        category = "synced",
+        label = "Lift Me 3"
+    },
+    ["liftme4"] = {
+        category = "synced",
+        label = "Lift Me 4"
+    },
+    ["liftme5"] = {
+        category = "synced",
+        label = "Lift Me 5"
+    },
+    ["liftme6"] = {
+        category = "synced",
+        label = "Lift Me 6"
+    },
+    ["carrysmalldog"] = {
+        category = "synced",
+        label = "Carry Small Dog"
+    },
+    ["smalldogcarried"] = {
+        category = "synced",
+        label = "Small Dog Carried"
+    },
+    ["carrysmalldog2"] = {
+        category = "synced",
+        label = "Carry Small Dog 2"
+    },
+    ["smalldogcarried2"] = {
+        category = "synced",
+        label = "Small Dog Carried 2"
+    },
+    ["carrybigdog"] = {
+        category = "synced",
+        label = "Carry Big Dog"
+    },
+    ["bigdogcarried"] = {
+        category = "synced",
+        label = "Big Dog Carried"
+    },
+    ["offerpiggyback"] = {
+        category = "synced",
+        label = "Offer Piggy Back"
+    },
+    ["bepiggybacked"] = {
+        category = "synced",
+        label = "Be Piggy Backed"
+    },
+    ["givecpr"] = {
+        category = "synced",
+        label = "Give CPR"
+    },
+    ["getcpr"] = {
+        category = "synced",
+        label = "Get CPR"
+    },
+    ["givecpr2"] = {
+        category = "synced",
+        label = "Give CPR 2"
+    },
+    ["getcpr2"] = {
+        category = "synced",
+        label = "Get CPR 2"
+    },
+    ["takehostage"] = {
+        category = "synced",
+        label = "Take hostage"
+    },
+    ["behostage"] = {
+        category = "synced",
+        label = "Be hostage"
+    },
+    ["search"] = {
+        category = "synced",
+        label = "Search"
+    },
+    ["besearched"] = {
+        category = "synced",
+        label = "Be searched"
+    },
+    ["followa(front)"] = {
+        category = "synced",
+        label = "Follow A (Front)"
+    },
+    ["followb(back)"] = {
+        category = "synced",
+        label = "Follow B (Back)"
+    },
+    ["kiss"] = {
+        category = "synced",
+        label = "Kiss"
+    },
+    ["kiss2"] = {
+        category = "synced",
+        label = "Kiss 2"
+    },
+    ["kiss3"] = {
+        category = "synced",
+        label = "Kiss 3"
+    },
+    ["kiss4"] = {
+        category = "synced",
+        label = "Kiss 4"
+    },
+    ["kisscute-neck(male)"] = {
+        category = "synced",
+        label = "Kiss Cute - Neck (Male)"
+    },
+    ["kisscute-neck(female)"] = {
+        category = "synced",
+        label = "Kiss Cute - Neck (Female)"
+    },
+    ["kisscutecheek(male)"] = {
+        category = "synced",
+        label = "Kiss Cute Cheek (Male)"
+    },
+    ["kisscutecheek(female)"] = {
+        category = "synced",
+        label = "Kiss Cute Cheek (Female)"
+    },
+    ["kissforehead(male)"] = {
+        category = "synced",
+        label = "Kiss Forehead (Male)"
+    },
+    ["kisscutelips(female)"] = {
+        category = "synced",
+        label = "Kiss Cute Lips (Female)"
+    },
+    ["kisscutelips(male)"] = {
+        category = "synced",
+        label = "Kiss Cute Lips (Male)"
+    },
+    ["kissforehead(female)"] = {
+        category = "synced",
+        label = "Kiss Forehead (Female)"
+    },
+    ["coupledrinking(wineglasses)"] = {
+        category = "synced",
+        label = "Couple Drinking (Wine Glasses)"
+    },
+    ["coupledrinkingf(wineglasses)"] = {
+        category = "synced",
+        label = "Couple Drinking F (Wine Glasses)"
+    },
+    ["holdme"] = {
+        category = "synced",
+        label = "Hold Me"
+    },
+    ["beheld"] = {
+        category = "synced",
+        label = "Be Held"
+    },
+    ["holdme2"] = {
+        category = "synced",
+        label = "Hold Me 2"
+    },
+    ["beheld2"] = {
+        category = "synced",
+        label = "Be Held 2"
+    },
+    ["holdme3"] = {
+        category = "synced",
+        label = "Hold Me 3"
+    },
+    ["beheld3"] = {
+        category = "synced",
+        label = "Be Held 3"
+    },
+    ["style_chubby"] = {
+        anim = "move_chubby",
+        label = "Style: Chubby Male",
+        category = "style"
+    },
+    ["style_chubbyf"] = {
+        anim = "move_f@chubby@a",
+        label = "Style: Chubby Female",
+        category = "style"
+    },
+    ["style_trevor"] = {
+        anim = "move_p_m_two",
+        label = "Style: Trevor",
+        category = "style"
+    },
+    ["style_tough"] = {
+        anim = "move_f@tough_guy@",
+        label = "Style: Tough Female",
+        category = "style"
+    },
+    ["style_scaredf"] = {
+        anim = "move_f@scared",
+        label = "Style: Scared Female",
+        category = "style"
+    },
+    ["style_sassyf"] = {
+        anim = "move_f@sassy",
+        label = "Style: Sassy Female",
+        category = "style"
+    },
+    ["style_maneater"] = {
+        anim = "move_f@maneater",
+        label = "Style: Maneater Female",
+        category = "style"
+    },
+    ["style_jog"] = {
+        anim = "move_m@jog@",
+        label = "Style: Jog",
+        category = "style"
+    },
+    ["style_janitor"] = {
+        anim = "move_p_m_zero_janitor",
+        label = "Style: Janitor",
+        category = "style"
+    },
+    ["style_hurryf"] = {
+        anim = "move_f@hurry@a",
+        label = "Style: Hurry Female",
+        category = "style"
+    },
+    ["style_hiking"] = {
+        anim = "move_m@hiking",
+        label = "Style: Hiking",
+        category = "style"
+    },
+    ["style_gangster5"] = {
+        anim = "move_m@gangster@ng",
+        label = "Style: Gangster 5",
+        category = "style"
+    },
+    ["style_arrogant"] = {
+        anim = "move_f@arrogant@a",
+        label = "Style: Arrogant",
+        category = "style"
+    },
+    ["danceglowstick"] = {
         category = "prop",
         label = "Dance glowstick",
         animDict = "anim@amb@nightclub@lazlow@hi_railing@",
@@ -242,9 +927,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.07, 0.14, 0.0, -80.0, 20.0, 0.0},
         SecondpropBone = 60309,
         Secondprop = "ba_prop_battle_glowstick_01",
-        SecondpropPos = {0.07, 0.09, 0.0, -120.0, -20.0, 0.0},
+        SecondpropPos = {0.07, 0.09, 0.0, -120.0, -20.0, 0.0}
     },
-["danceglowstick2"] = {
+    ["danceglowstick2"] = {
         category = "prop",
         label = "Dance glowstick2",
         animDict = "anim@amb@nightclub@lazlow@hi_railing@",
@@ -255,9 +940,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.07, 0.14, 0.0, -80.0, 20.0, 0.0},
         SecondpropBone = 60309,
         Secondprop = "ba_prop_battle_glowstick_01",
-        SecondpropPos = {0.07, 0.09, 0.0, -120.0, -20.0, 0.0},
+        SecondpropPos = {0.07, 0.09, 0.0, -120.0, -20.0, 0.0}
     },
-["danceglowstick3"] = {
+    ["danceglowstick3"] = {
         category = "prop",
         label = "Dance glowstick3",
         animDict = "anim@amb@nightclub@lazlow@hi_railing@",
@@ -268,9 +953,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.07, 0.14, 0.0, -80.0, 20.0, 0.0},
         SecondpropBone = 60309,
         Secondprop = "ba_prop_battle_glowstick_01",
-        SecondpropPos = {0.07, 0.09, 0.0, -120.0, -20.0, 0.0},
+        SecondpropPos = {0.07, 0.09, 0.0, -120.0, -20.0, 0.0}
     },
-["dancepride"] = {
+    ["dancepride"] = {
         category = "prop",
         label = "Dance pride",
         animDict = "anim@amb@nightclub@lazlow@hi_railing@",
@@ -281,9 +966,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.09, 0.0, 0.03, -39.911, 93.9166, -5.8062},
         SecondpropBone = 57005,
         Secondprop = "lilprideflag1",
-        SecondpropPos = {0.09, -0.02, -0.03, -90.2454, 5.7068, -28.7797},
+        SecondpropPos = {0.09, -0.02, -0.03, -90.2454, 5.7068, -28.7797}
     },
-["danceprideb"] = {
+    ["danceprideb"] = {
         category = "prop",
         label = "Dance pride 2",
         animDict = "anim@amb@nightclub@lazlow@hi_railing@",
@@ -294,9 +979,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.09, 0.0, 0.03, -39.911, 93.9166, -5.8062},
         SecondpropBone = 57005,
         Secondprop = "lilprideflag2",
-        SecondpropPos = {0.09, -0.02, -0.03, -90.2454, 5.7068, -28.7797},
+        SecondpropPos = {0.09, -0.02, -0.03, -90.2454, 5.7068, -28.7797}
     },
-["dancepridea"] = {
+    ["dancepridea"] = {
         category = "prop",
         label = "Dance pride 2",
         animDict = "anim@amb@nightclub@lazlow@hi_railing@",
@@ -307,9 +992,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.09, 0.0, 0.03, -39.911, 93.9166, -5.8062},
         SecondpropBone = 57005,
         Secondprop = "lilprideflag3",
-        SecondpropPos = {0.09, -0.02, -0.03, -90.2454, 5.7068, -28.7797},
+        SecondpropPos = {0.09, -0.02, -0.03, -90.2454, 5.7068, -28.7797}
     },
-["dancepridec"] = {
+    ["dancepridec"] = {
         category = "prop",
         label = "Dance pride 3",
         animDict = "anim@amb@nightclub@lazlow@hi_railing@",
@@ -320,9 +1005,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.09, 0.0, 0.03, -39.911, 93.9166, -5.8062},
         SecondpropBone = 57005,
         Secondprop = "lilprideflag4",
-        SecondpropPos = {0.09, -0.02, -0.03, -90.2454, 5.7068, -28.7797},
+        SecondpropPos = {0.09, -0.02, -0.03, -90.2454, 5.7068, -28.7797}
     },
-["danceprided"] = {
+    ["danceprided"] = {
         category = "prop",
         label = "Dance pride 4",
         animDict = "anim@amb@nightclub@lazlow@hi_railing@",
@@ -333,9 +1018,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.09, 0.0, 0.03, -39.911, 93.9166, -5.8062},
         SecondpropBone = 57005,
         Secondprop = "lilprideflag5",
-        SecondpropPos = {0.09, -0.02, -0.03, -90.2454, 5.7068, -28.7797},
+        SecondpropPos = {0.09, -0.02, -0.03, -90.2454, 5.7068, -28.7797}
     },
-["dancepridee"] = {
+    ["dancepridee"] = {
         category = "prop",
         label = "Dance pride 5",
         animDict = "anim@amb@nightclub@lazlow@hi_railing@",
@@ -346,9 +1031,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.09, 0.0, 0.03, -39.911, 93.9166, -5.8062},
         SecondpropBone = 57005,
         Secondprop = "lilprideflag6",
-        SecondpropPos = {0.09, -0.02, -0.03, -90.2454, 5.7068, -28.7797},
+        SecondpropPos = {0.09, -0.02, -0.03, -90.2454, 5.7068, -28.7797}
     },
-["dancepridef"] = {
+    ["dancepridef"] = {
         category = "prop",
         label = "Dance pride 6",
         animDict = "anim@amb@nightclub@lazlow@hi_railing@",
@@ -359,9 +1044,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.09, 0.0, 0.03, -39.911, 93.9166, -5.8062},
         SecondpropBone = 57005,
         Secondprop = "lilprideflag7",
-        SecondpropPos = {0.09, -0.02, -0.03, -90.2454, 5.7068, -28.7797},
+        SecondpropPos = {0.09, -0.02, -0.03, -90.2454, 5.7068, -28.7797}
     },
-["danceprideg"] = {
+    ["danceprideg"] = {
         category = "prop",
         label = "Dance pride 7",
         animDict = "anim@amb@nightclub@lazlow@hi_railing@",
@@ -372,9 +1057,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.09, 0.0, 0.03, -39.911, 93.9166, -5.8062},
         SecondpropBone = 57005,
         Secondprop = "lilprideflag8",
-        SecondpropPos = {0.09, -0.02, -0.03, -90.2454, 5.7068, -28.7797},
+        SecondpropPos = {0.09, -0.02, -0.03, -90.2454, 5.7068, -28.7797}
     },
-["danceprideh"] = {
+    ["danceprideh"] = {
         category = "prop",
         label = "Dance pride 8",
         animDict = "anim@amb@nightclub@lazlow@hi_railing@",
@@ -385,9 +1070,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.09, 0.0, 0.03, -39.911, 93.9166, -5.8062},
         SecondpropBone = 57005,
         Secondprop = "lilprideflag9",
-        SecondpropPos = {0.09, -0.02, -0.03, -90.2454, 5.7068, -28.7797},
+        SecondpropPos = {0.09, -0.02, -0.03, -90.2454, 5.7068, -28.7797}
     },
-["bdogpridea"] = {
+    ["bdogpridea"] = {
         category = "prop",
         label = "Big dog pride",
         animDict = "creatures@rottweiler@amb@world_dog_sitting@base",
@@ -398,9 +1083,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.19, 0.0, -0.05, 100.0, 90.0, 0.0},
         SecondpropBone = 31086,
         Secondprop = "lilprideflag1",
-        SecondpropPos = {0.194, 0.02, -0.05, -90.0, -90.0, 0.0},
+        SecondpropPos = {0.194, 0.02, -0.05, -90.0, -90.0, 0.0}
     },
-["bdogprideb"] = {
+    ["bdogprideb"] = {
         category = "prop",
         label = "Big dog pride 2",
         animDict = "creatures@rottweiler@amb@world_dog_sitting@base",
@@ -411,9 +1096,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.19, 0.0, -0.05, 100.0, 90.0, 0.0},
         SecondpropBone = 31086,
         Secondprop = "lilprideflag2",
-        SecondpropPos = {0.194, 0.02, -0.05, -90.0, -90.0, 0.0},
+        SecondpropPos = {0.194, 0.02, -0.05, -90.0, -90.0, 0.0}
     },
-["bdogpridec"] = {
+    ["bdogpridec"] = {
         category = "prop",
         label = "Big dog pride 3",
         animDict = "creatures@rottweiler@amb@world_dog_sitting@base",
@@ -424,9 +1109,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.19, 0.0, -0.05, 100.0, 90.0, 0.0},
         SecondpropBone = 31086,
         Secondprop = "lilprideflag3",
-        SecondpropPos = {0.194, 0.02, -0.05, -90.0, -90.0, 0.0},
+        SecondpropPos = {0.194, 0.02, -0.05, -90.0, -90.0, 0.0}
     },
-["bdogprided"] = {
+    ["bdogprided"] = {
         category = "prop",
         label = "Big dog pride 4",
         animDict = "creatures@rottweiler@amb@world_dog_sitting@base",
@@ -437,9 +1122,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.19, 0.0, -0.05, 100.0, 90.0, 0.0},
         SecondpropBone = 31086,
         Secondprop = "lilprideflag4",
-        SecondpropPos = {0.194, 0.02, -0.05, -90.0, -90.0, 0.0},
+        SecondpropPos = {0.194, 0.02, -0.05, -90.0, -90.0, 0.0}
     },
-["bdogpridee"] = {
+    ["bdogpridee"] = {
         category = "prop",
         label = "Big dog pride 5",
         animDict = "creatures@rottweiler@amb@world_dog_sitting@base",
@@ -450,9 +1135,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.19, 0.0, -0.05, 100.0, 90.0, 0.0},
         SecondpropBone = 31086,
         Secondprop = "lilprideflag5",
-        SecondpropPos = {0.194, 0.02, -0.05, -90.0, -90.0, 0.0},
+        SecondpropPos = {0.194, 0.02, -0.05, -90.0, -90.0, 0.0}
     },
-["bdogpridef"] = {
+    ["bdogpridef"] = {
         category = "prop",
         label = "Big dog pride 6",
         animDict = "creatures@rottweiler@amb@world_dog_sitting@base",
@@ -463,9 +1148,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.19, 0.0, -0.05, 100.0, 90.0, 0.0},
         SecondpropBone = 31086,
         Secondprop = "lilprideflag6",
-        SecondpropPos = {0.194, 0.02, -0.05, -90.0, -90.0, 0.0},
+        SecondpropPos = {0.194, 0.02, -0.05, -90.0, -90.0, 0.0}
     },
-["bdogprideg"] = {
+    ["bdogprideg"] = {
         category = "prop",
         label = "Big dog pride 7",
         animDict = "creatures@rottweiler@amb@world_dog_sitting@base",
@@ -476,9 +1161,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.19, 0.0, -0.05, 100.0, 90.0, 0.0},
         SecondpropBone = 31086,
         Secondprop = "lilprideflag7",
-        SecondpropPos = {0.194, 0.02, -0.05, -90.0, -90.0, 0.0},
+        SecondpropPos = {0.194, 0.02, -0.05, -90.0, -90.0, 0.0}
     },
-["bdogprideh"] = {
+    ["bdogprideh"] = {
         category = "prop",
         label = "Big dog pride 8",
         animDict = "creatures@rottweiler@amb@world_dog_sitting@base",
@@ -489,9 +1174,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.19, 0.0, -0.05, 100.0, 90.0, 0.0},
         SecondpropBone = 31086,
         Secondprop = "lilprideflag8",
-        SecondpropPos = {0.194, 0.02, -0.05, -90.0, -90.0, 0.0},
+        SecondpropPos = {0.194, 0.02, -0.05, -90.0, -90.0, 0.0}
     },
-["bdogpridei"] = {
+    ["bdogpridei"] = {
         category = "prop",
         label = "Big dog pride 9",
         animDict = "creatures@rottweiler@amb@world_dog_sitting@base",
@@ -502,9 +1187,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.19, 0.0, -0.05, 100.0, 90.0, 0.0},
         SecondpropBone = 31086,
         Secondprop = "lilprideflag9",
-        SecondpropPos = {0.194, 0.02, -0.05, -90.0, -90.0, 0.0},
+        SecondpropPos = {0.194, 0.02, -0.05, -90.0, -90.0, 0.0}
     },
-["sdogdance2"] = {
+    ["sdogdance2"] = {
         category = "prop",
         label = "Small dog dance 2",
         animDict = "creatures@pug@move",
@@ -515,9 +1200,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.15, -0.03, 0.0, 0.0, 0.0, 0.0},
         SecondpropBone = 31086,
         Secondprop = "prop_cs_sol_glasses",
-        SecondpropPos = {0.05, 0.03, 0.0, -100.0000003, 90.0, 0.0},
+        SecondpropPos = {0.05, 0.03, 0.0, -100.0000003, 90.0, 0.0}
     },
-["sdogdancepridea"] = {
+    ["sdogdancepridea"] = {
         category = "prop",
         label = "Small dog dance pride",
         animDict = "creatures@pug@move",
@@ -528,9 +1213,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.124, -0.008, 0.0, 0.0, 0.0, -74.6999},
         SecondpropBone = 31086,
         Secondprop = "prop_cs_sol_glasses",
-        SecondpropPos = {0.05, 0.03, 0.0, -100.0000003, 90.0, 0.0},
+        SecondpropPos = {0.05, 0.03, 0.0, -100.0000003, 90.0, 0.0}
     },
-["sdogdanceprideb"] = {
+    ["sdogdanceprideb"] = {
         category = "prop",
         label = "Small dog dance pride 2",
         animDict = "creatures@pug@move",
@@ -541,9 +1226,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.124, -0.008, 0.0, 0.0, 0.0, -74.6999},
         SecondpropBone = 31086,
         Secondprop = "prop_cs_sol_glasses",
-        SecondpropPos = {0.05, 0.03, 0.0, -100.0000003, 90.0, 0.0},
+        SecondpropPos = {0.05, 0.03, 0.0, -100.0000003, 90.0, 0.0}
     },
-["sdogdancepridec"] = {
+    ["sdogdancepridec"] = {
         category = "prop",
         label = "Small dog dance pride 3",
         animDict = "creatures@pug@move",
@@ -554,9 +1239,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.124, -0.008, 0.0, 0.0, 0.0, -74.6999},
         SecondpropBone = 31086,
         Secondprop = "prop_cs_sol_glasses",
-        SecondpropPos = {0.05, 0.03, 0.0, -100.0000003, 90.0, 0.0},
+        SecondpropPos = {0.05, 0.03, 0.0, -100.0000003, 90.0, 0.0}
     },
-["sdogdanceprided"] = {
+    ["sdogdanceprided"] = {
         category = "prop",
         label = "Small dog dance pride 4",
         animDict = "creatures@pug@move",
@@ -567,9 +1252,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.124, -0.008, 0.0, 0.0, 0.0, -74.6999},
         SecondpropBone = 31086,
         Secondprop = "prop_cs_sol_glasses",
-        SecondpropPos = {0.05, 0.03, 0.0, -100.0000003, 90.0, 0.0},
+        SecondpropPos = {0.05, 0.03, 0.0, -100.0000003, 90.0, 0.0}
     },
-["sdogdancepridee"] = {
+    ["sdogdancepridee"] = {
         category = "prop",
         label = "Small dog dance pride 5",
         animDict = "creatures@pug@move",
@@ -580,9 +1265,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.124, -0.008, 0.0, 0.0, 0.0, -74.6999},
         SecondpropBone = 31086,
         Secondprop = "prop_cs_sol_glasses",
-        SecondpropPos = {0.05, 0.03, 0.0, -100.0000003, 90.0, 0.0},
+        SecondpropPos = {0.05, 0.03, 0.0, -100.0000003, 90.0, 0.0}
     },
-["sdogdancepridef"] = {
+    ["sdogdancepridef"] = {
         category = "prop",
         label = "Small dog dance pride 6",
         animDict = "creatures@pug@move",
@@ -593,9 +1278,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.124, -0.008, 0.0, 0.0, 0.0, -74.6999},
         SecondpropBone = 31086,
         Secondprop = "prop_cs_sol_glasses",
-        SecondpropPos = {0.05, 0.03, 0.0, -100.0000003, 90.0, 0.0},
+        SecondpropPos = {0.05, 0.03, 0.0, -100.0000003, 90.0, 0.0}
     },
-["sdogdanceprideg"] = {
+    ["sdogdanceprideg"] = {
         category = "prop",
         label = "Small dog dance pride 7",
         animDict = "creatures@pug@move",
@@ -606,9 +1291,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.124, -0.008, 0.0, 0.0, 0.0, -74.6999},
         SecondpropBone = 31086,
         Secondprop = "prop_cs_sol_glasses",
-        SecondpropPos = {0.05, 0.03, 0.0, -100.0000003, 90.0, 0.0},
+        SecondpropPos = {0.05, 0.03, 0.0, -100.0000003, 90.0, 0.0}
     },
-["sdogdanceprideh"] = {
+    ["sdogdanceprideh"] = {
         category = "prop",
         label = "Small dog dance pride 8",
         animDict = "creatures@pug@move",
@@ -619,9 +1304,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.124, -0.008, 0.0, 0.0, 0.0, -74.6999},
         SecondpropBone = 31086,
         Secondprop = "prop_cs_sol_glasses",
-        SecondpropPos = {0.05, 0.03, 0.0, -100.0000003, 90.0, 0.0},
+        SecondpropPos = {0.05, 0.03, 0.0, -100.0000003, 90.0, 0.0}
     },
-["sdogdancepridei"] = {
+    ["sdogdancepridei"] = {
         category = "prop",
         label = "Small dog dance pride 9",
         animDict = "creatures@pug@move",
@@ -632,9 +1317,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.124, -0.008, 0.0, 0.0, 0.0, -74.6999},
         SecondpropBone = 31086,
         Secondprop = "prop_cs_sol_glasses",
-        SecondpropPos = {0.05, 0.03, 0.0, -100.0000003, 90.0, 0.0},
+        SecondpropPos = {0.05, 0.03, 0.0, -100.0000003, 90.0, 0.0}
     },
-["sdoghat"] = {
+    ["sdoghat"] = {
         category = "prop",
         label = "Small dog hat",
         animDict = "creatures@pug@move",
@@ -645,9 +1330,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.0, 0.12, 0.0, -99.8510766, 80.1489234, 1.7279411},
         SecondpropBone = 31086,
         Secondprop = "prop_aviators_01",
-        SecondpropPos = {0.05, 0.04, 0.0, -90.0, 90.0, 0.0},
+        SecondpropPos = {0.05, 0.04, 0.0, -90.0, 90.0, 0.0}
     },
-["sdoghat2"] = {
+    ["sdoghat2"] = {
         category = "prop",
         label = "Small dog hat2",
         animDict = "creatures@pug@amb@world_dog_sitting@idle_a",
@@ -658,9 +1343,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.0, 0.12, 0.0, -99.8510766, 80.1489234, 1.7279411},
         SecondpropBone = 31086,
         Secondprop = "prop_aviators_01",
-        SecondpropPos = {0.05, 0.04, 0.0, -90.0, 90.0, 0.0},
+        SecondpropPos = {0.05, 0.04, 0.0, -90.0, 90.0, 0.0}
     },
-["notepad"] = {
+    ["notepad"] = {
         category = "prop",
         label = "Notepad",
         animDict = "missheistdockssetup1clipboard@base",
@@ -671,9 +1356,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.1, 0.02, 0.05, 10.0, 0.0, 0.0},
         SecondpropBone = 58866,
         Secondprop = "prop_pencil_01",
-        SecondpropPos = {0.11, -0.02, 0.001, -120.0, 0.0, 0.0},
+        SecondpropPos = {0.11, -0.02, 0.001, -120.0, 0.0, 0.0}
     },
-["icefishing2"] = {
+    ["icefishing2"] = {
         category = "prop",
         label = "Ice fishing 2",
         animDict = "move_weapon@jerrycan@generic",
@@ -684,9 +1369,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.8, 0.03, 0.04, 0.0, -90.0, 100.0},
         SecondpropBone = 24818,
         Secondprop = "pprp_icefishing_augur",
-        SecondpropPos = {-0.8, -0.2, 0.0, 0.0, 90.0, 0.0},
+        SecondpropPos = {-0.8, -0.2, 0.0, 0.0, 90.0, 0.0}
     },
-["boombox2"] = {
+    ["boombox2"] = {
         category = "prop",
         label = "Boombox 2",
         animDict = "molly@boombox1",
@@ -697,9 +1382,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.044, 0.074, 0.0, -160.9843, -88.7288, -0.6197},
         SecondpropBone = 10706,
         Secondprop = "prop_ghettoblast_02",
-        SecondpropPos = {-0.231, -0.077, 0.241, -179.7256, 176.7406, 23.019},
+        SecondpropPos = {-0.231, -0.077, 0.241, -179.7256, 176.7406, 23.019}
     },
-["coffeecall"] = {
+    ["coffeecall"] = {
         category = "prop",
         label = "Coffee call",
         animDict = "switch@michael@coffee_w_dave",
@@ -710,9 +1395,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.0, 0.0, -0.014, 0.0, 0.0, 90.0},
         SecondpropBone = 60309,
         Secondprop = "prop_phone_ing",
-        SecondpropPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        SecondpropPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["xmasic"] = {
+    ["xmasic"] = {
         category = "prop",
         label = "Xmasic",
         animDict = "anim@scripted@island@special_peds@pavel@hs4_pavel_ig5_caviar_p1",
@@ -723,9 +1408,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {-0.046, 0.0, -0.03, 0.0, 0.0, -50.0},
         SecondpropBone = 28422,
         Secondprop = "h4_prop_h4_coke_spoon_01",
-        SecondpropPos = {0.0, 0.0, 0.0, 0.0, 20.0, 0.0},
+        SecondpropPos = {0.0, 0.0, 0.0, 0.0, 20.0, 0.0}
     },
-["burgerpose"] = {
+    ["burgerpose"] = {
         category = "prop",
         label = "Burger pose",
         animDict = "brugershot_dark_fixed@dark",
@@ -736,9 +1421,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.046, 0.014, 0.046, 3.4346, 20.1823, -10.0},
         SecondpropBone = 28422,
         Secondprop = "ba_prop_battle_sports_helmet",
-        SecondpropPos = {0.04, -0.01, -0.2, 176.3835, -169.3724, 19.6834},
+        SecondpropPos = {0.04, -0.01, -0.2, 176.3835, -169.3724, 19.6834}
     },
-["bookc"] = {
+    ["bookc"] = {
         category = "prop",
         label = "Book 2",
         animDict = "holding_book_2@dark",
@@ -749,9 +1434,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.03, -0.16, -0.09, -170.774, 112.8415, -20.0836},
         SecondpropBone = 18905,
         Secondprop = "prop_cs_book_01",
-        SecondpropPos = {0.04, 0.04, 0.03, -69.0815, 176.3905, 19.3724},
+        SecondpropPos = {0.04, 0.04, 0.03, -69.0815, 176.3905, 19.3724}
     },
-["tennisplay"] = {
+    ["tennisplay"] = {
         category = "prop",
         label = "Tennis play",
         animDict = "move_weapon@jerrycan@generic",
@@ -762,9 +1447,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.27, 0.0, 0.0, 91.0, 0.0, -82.9999951},
         SecondpropBone = 60309,
         Secondprop = "prop_tennis_rack_01",
-        SecondpropPos = {0.08, 0.03, 0.0, -130.2907295, 3.8782324, 6.588224},
+        SecondpropPos = {0.08, 0.03, 0.0, -130.2907295, 3.8782324, 6.588224}
     },
-["weights4"] = {
+    ["weights4"] = {
         category = "prop",
         label = "Weights 4",
         animDict = "frabi@malepose@solo@firstsport",
@@ -775,9 +1460,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.052, -0.001, 0.0131, 21.5428, 70.2098, 74.5019},
         SecondpropBone = 28422,
         Secondprop = "prop_barbell_01",
-        SecondpropPos = {0.066, 0.01, -0.03, 90.0, 90.0, -79.9999},
+        SecondpropPos = {0.066, 0.01, -0.03, 90.0, 90.0, -79.9999}
     },
-["weights5"] = {
+    ["weights5"] = {
         category = "prop",
         label = "Weights 5",
         animDict = "frabi@femalepose@solo@firstsport",
@@ -788,9 +1473,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.058, -0.006, 0.03, -11.8498, 170.2644, 7.8352},
         SecondpropBone = 60309,
         Secondprop = "v_res_tre_weight",
-        SecondpropPos = {0.088, 0.0, 0.059, -29.1132, -128.5627, 13.7517},
+        SecondpropPos = {0.088, 0.0, 0.059, -29.1132, -128.5627, 13.7517}
     },
-["weights6"] = {
+    ["weights6"] = {
         category = "prop",
         label = "Weights 6",
         animDict = "frabi@femalepose@solo@firstsport",
@@ -801,9 +1486,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.07, 0.04, -0.06, 24.5966, 6.4814, -13.9845},
         SecondpropBone = 60309,
         Secondprop = "v_res_tre_weight",
-        SecondpropPos = {0.055, -0.007, -0.0309, -20.5854, -15.0123, 0.571},
+        SecondpropPos = {0.055, -0.007, -0.0309, -20.5854, -15.0123, 0.571}
     },
-["hitchhike"] = {
+    ["hitchhike"] = {
         category = "prop",
         label = "Hitchhike",
         animDict = "random@hitch_lift",
@@ -814,11 +1499,11 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.32, -0.01, 0.0, -162.423, 74.83, 58.79},
         SecondpropBone = 40269,
         Secondprop = "prop_michael_backpack",
-        SecondpropPos = {-0.07, -0.21, -0.11, -144.93, 117.358, -6.16},
+        SecondpropPos = {-0.07, -0.21, -0.11, -144.93, 117.358, -6.16}
     },
-["foodtrayf"] = {
+    ["foodtrayf"] = {
         category = "prop",
-        label = "Foodtray f",
+        label = "Food Tray F",
         animDict = "anim@heists@box_carry@",
         animName = "idle",
         animFlag = 51,
@@ -827,11 +1512,11 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.25, 0.1, 0.07, -110.5483936, 73.3529273, -16.338362},
         SecondpropBone = 18905,
         Secondprop = "prop_food_bs_tray_03",
-        SecondpropPos = {0.22, 0.13, -0.1, -127.7725487, 110.2074758, -3.5886263},
+        SecondpropPos = {0.22, 0.13, -0.1, -127.7725487, 110.2074758, -3.5886263}
     },
-["foodtrayg"] = {
+    ["foodtrayg"] = {
         category = "prop",
-        label = "Foodtray g",
+        label = "Food Tray G",
         animDict = "anim@heists@box_carry@",
         animName = "idle",
         animFlag = 51,
@@ -840,11 +1525,11 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.25, 0.1, 0.07, -110.5483936, 73.3529273, -16.338362},
         SecondpropBone = 18905,
         Secondprop = "prop_food_cb_tray_02",
-        SecondpropPos = {0.22, 0.13, -0.1, -127.7725487, 110.2074758, -3.5886263},
+        SecondpropPos = {0.22, 0.13, -0.1, -127.7725487, 110.2074758, -3.5886263}
     },
-["foodtrayh"] = {
+    ["foodtrayh"] = {
         category = "prop",
-        label = "Foodtray h",
+        label = "Food Tray H",
         animDict = "anim@heists@box_carry@",
         animName = "idle",
         animFlag = 51,
@@ -853,11 +1538,11 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.25, 0.1, 0.07, -110.5483936, 73.3529273, -16.338362},
         SecondpropBone = 18905,
         Secondprop = "prop_food_tray_03",
-        SecondpropPos = {0.22, 0.13, -0.1, -127.7725487, 110.2074758, -3.5886263},
+        SecondpropPos = {0.22, 0.13, -0.1, -127.7725487, 110.2074758, -3.5886263}
     },
-["foodtrayi"] = {
+    ["foodtrayi"] = {
         category = "prop",
-        label = "Foodtray i",
+        label = "Food Tray I",
         animDict = "anim@heists@box_carry@",
         animName = "idle",
         animFlag = 51,
@@ -866,9 +1551,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.25, 0.1, 0.07, -110.5483936, 73.3529273, -16.338362},
         SecondpropBone = 18905,
         Secondprop = "prop_food_tray_02",
-        SecondpropPos = {0.22, 0.13, -0.1, -127.7725487, 110.2074758, -3.5886263},
+        SecondpropPos = {0.22, 0.13, -0.1, -127.7725487, 110.2074758, -3.5886263}
     },
-["mnc"] = {
+    ["mnc"] = {
         category = "prop",
         label = "Mnc",
         animDict = "anim@heists@box_carry@",
@@ -879,9 +1564,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.215, 0.114, 0.024, -81.9185, -176.2526, -28.4674},
         SecondpropBone = 18905,
         Secondprop = "m23_2_prop_m32_milkncookies_01a",
-        SecondpropPos = {0.215, 0.114, 0.024, -95.9185, -176.2526, -28.4674},
+        SecondpropPos = {0.215, 0.114, 0.024, -95.9185, -176.2526, -28.4674}
     },
-["beans"] = {
+    ["beans"] = {
         category = "prop",
         label = "Beans",
         animDict = "anim@scripted@island@special_peds@pavel@hs4_pavel_ig5_caviar_p1",
@@ -892,9 +1577,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.0, 0.03, 0.01, 0.0, 0.0, 0.0},
         SecondpropBone = 28422,
         Secondprop = "h4_prop_h4_caviar_spoon_01a",
-        SecondpropPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        SecondpropPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["pho"] = {
+    ["pho"] = {
         category = "prop",
         label = "Pho",
         animDict = "anim@scripted@island@special_peds@pavel@hs4_pavel_ig5_caviar_p1",
@@ -905,9 +1590,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.0, 0.03, 0.01, 0.0, 0.0, 0.0},
         SecondpropBone = 28422,
         Secondprop = "scully_spoon_pho",
-        SecondpropPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        SecondpropPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["dinner"] = {
+    ["dinner"] = {
         category = "prop",
         label = "Dinner",
         animDict = "anim@scripted@island@special_peds@pavel@hs4_pavel_ig5_caviar_p1",
@@ -918,9 +1603,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
         SecondpropBone = 28422,
         Secondprop = "h4_prop_h4_caviar_spoon_01a",
-        SecondpropPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        SecondpropPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["champw"] = {
+    ["champw"] = {
         category = "prop",
         label = "Champ w",
         animDict = "anim@move_f@waitress",
@@ -931,9 +1616,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.0, 0.0, 0.01, 0.0, 0.0, 0.0},
         SecondpropBone = 28422,
         Secondprop = "prop_champ_cool",
-        SecondpropPos = {0.0, 0.0, 0.01, 0.0, 0.0, 0.0},
+        SecondpropPos = {0.0, 0.0, 0.01, 0.0, 0.0, 0.0}
     },
-["selfiesit"] = {
+    ["selfiesit"] = {
         category = "prop",
         label = "Selfie sit",
         animDict = "mouse@female_sitting_selfie",
@@ -944,9 +1629,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.138, 0.03, -0.043, -111.0946, -117.8069, 11.7386},
         SecondpropBone = 0,
         Secondprop = "apa_mp_h_stn_chairarm_23",
-        SecondpropPos = {-0.01, -0.08, -0.68, -180.0, -180.0, 10.0},
+        SecondpropPos = {-0.01, -0.08, -0.68, -180.0, -180.0, 10.0}
     },
-["selfiefloor3"] = {
+    ["selfiefloor3"] = {
         category = "prop",
         label = "Selfie floor 3",
         animDict = "chocoholic@single90",
@@ -957,9 +1642,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.08, 0.017, 0.081, -174.2748, -11.5083, 29.4987},
         SecondpropBone = 4186,
         Secondprop = "prop_phone_ing",
-        SecondpropPos = {-0.01, 0.0, 0.02, -80.0, 0.0, -20.0},
+        SecondpropPos = {-0.01, 0.0, 0.02, -80.0, 0.0, -20.0}
     },
-["selfiefu3"] = {
+    ["selfiefu3"] = {
         category = "prop",
         label = "Selfie fu 3",
         animDict = "selfiekilye@queensisters",
@@ -970,9 +1655,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.045, 0.005, -0.015, 92.081, 1.3049, -2.8863},
         SecondpropBone = 26613,
         Secondprop = "prop_phone_ing",
-        SecondpropPos = {0.065, -0.028, 0.044, 10.6808, 13.7526, 2.6457},
+        SecondpropPos = {0.065, -0.028, 0.044, 10.6808, 13.7526, 2.6457}
     },
-["selfiewine"] = {
+    ["selfiewine"] = {
         category = "prop",
         label = "Selfie wine",
         animDict = "holding_wine@taking_selfie",
@@ -983,9 +1668,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.042, -0.07, -0.044, -82.6657, 1.2898, -19.9222},
         SecondpropBone = 4090,
         Secondprop = "prop_phone_ing",
-        SecondpropPos = {0.025, -0.008, -0.005, -140.5541, -24.7476, 13.7795},
+        SecondpropPos = {0.025, -0.008, -0.005, -140.5541, -24.7476, 13.7795}
     },
-["sitchairf6"] = {
+    ["sitchairf6"] = {
         category = "prop",
         label = "Sit chair f6",
         animDict = "mouse@female_sitting_laptop",
@@ -996,9 +1681,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.086, -0.137, -0.175, -79.9999, -90.0, 0.0},
         SecondpropBone = 0,
         Secondprop = "ba_prop_battle_club_chair_02",
-        SecondpropPos = {-0.04, -0.19, 0.0, -180.0, -180.0, 9.0999},
+        SecondpropPos = {-0.04, -0.19, 0.0, -180.0, -180.0, 9.0999}
     },
-["sitchairf7"] = {
+    ["sitchairf7"] = {
         category = "prop",
         label = "Sit chair f7",
         animDict = "mouse@female_sitting_tablet",
@@ -1009,9 +1694,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.087, 0.103, -0.124, 144.354, 157.8527, -4.6318},
         SecondpropBone = 0,
         Secondprop = "ba_prop_battle_club_chair_02",
-        SecondpropPos = {0.01, -0.08, 0.02, 150.0, -180.0, 10.0},
+        SecondpropPos = {0.01, -0.08, 0.02, 150.0, -180.0, 10.0}
     },
-["sitchairf8"] = {
+    ["sitchairf8"] = {
         category = "prop",
         label = "Sit chair f8",
         animDict = "mouse@female_sitting_tablet",
@@ -1022,9 +1707,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.13, 0.11, -0.12, 120.3356, -15.9891, 26.1497},
         SecondpropBone = 0,
         Secondprop = "ba_prop_battle_club_chair_02",
-        SecondpropPos = {0.01, -0.08, 0.02, 150.0, -180.0, 10.0},
+        SecondpropPos = {0.01, -0.08, 0.02, 150.0, -180.0, 10.0}
     },
-["dig"] = {
+    ["dig"] = {
         category = "prop",
         label = "Dig",
         animDict = "random@burial",
@@ -1035,9 +1720,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.0, 0.0, 0.24, 0.0, 0.0, 0.0},
         SecondpropBone = 28422,
         Secondprop = "prop_ld_shovel_dirt",
-        SecondpropPos = {0.0, 0.0, 0.24, 0.0, 0.0, 0.0},
+        SecondpropPos = {0.0, 0.0, 0.24, 0.0, 0.0, 0.0}
     },
-["airportbag2"] = {
+    ["airportbag2"] = {
         category = "prop",
         label = "Airport bag 2",
         animDict = "suitcase_phone@dark",
@@ -1048,9 +1733,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.47, -0.04, -0.35, -120.0, -180.0, -79.9999},
         SecondpropBone = 28422,
         Secondprop = "prop_phone_ing",
-        SecondpropPos = {0.104, 0.032, -0.02, -108.6997, -150.5805, 46.708},
+        SecondpropPos = {0.104, 0.032, -0.02, -108.6997, -150.5805, 46.708}
     },
-["easter"] = {
+    ["easter"] = {
         category = "prop",
         label = "Easter",
         animDict = "anim@heists@narcotics@trash",
@@ -1061,9 +1746,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.004, 0.04, -0.242, 19.9999, 0.0, -10.0},
         SecondpropBone = 60309,
         Secondprop = "bzzz_event_easter_egg_d",
-        SecondpropPos = {0.079, 0.009, 0.019, -120.0, 0.0, 0.0},
+        SecondpropPos = {0.079, 0.009, 0.019, -120.0, 0.0, 0.0}
     },
-["crackhead"] = {
+    ["crackhead"] = {
         category = "prop",
         label = "Crackhead",
         animDict = "special_ped@zombie@base",
@@ -1074,9 +1759,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {-0.128, -0.022, 0.021, -150.0005, 179.9989, -30.0105},
         SecondpropBone = 26614,
         Secondprop = "ng_proc_cigpak01a",
-        SecondpropPos = {0.01, -0.019, 0.092, -82.4073, 178.6009, 29.9195},
+        SecondpropPos = {0.01, -0.019, 0.092, -82.4073, 178.6009, 29.9195}
     },
-["patrolf4"] = {
+    ["patrolf4"] = {
         category = "prop",
         label = "Torch - 1",
         animDict = "amb@incar@male@patrol@torch@base",
@@ -1087,9 +1772,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.0, -0.001, 0.0, 0.0, 0.0, 90.0},
         SecondpropBone = 60309,
         Secondprop = "prop_cs_walkie_talkie",
-        SecondpropPos = {0.056, 0.047, 0.011, -43.82733, 164.6747, -7.5569},
+        SecondpropPos = {0.056, 0.047, 0.011, -43.82733, 164.6747, -7.5569}
     },
-["skatehold"] = {
+    ["skatehold"] = {
         category = "prop",
         label = "Skate hold",
         animDict = "molly@boombox1",
@@ -1100,9 +1785,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.044, 0.074, 0.0, -160.9843, -88.7288, -0.6197},
         SecondpropBone = 60309,
         Secondprop = "rpemotesreborn_skateboard01",
-        SecondpropPos = {-0.005, 0.032, 0.164, 44.6076, -112.2983, -86.1199},
+        SecondpropPos = {-0.005, 0.032, 0.164, 44.6076, -112.2983, -86.1199}
     },
-["skatehold4"] = {
+    ["skatehold4"] = {
         category = "prop",
         label = "Skate hold 4",
         animDict = "molly@boombox1",
@@ -1113,9 +1798,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.044, 0.074, 0.0, -160.9843, -88.7288, -0.6197},
         SecondpropBone = 60309,
         Secondprop = "rpemotesreborn_skateboard02",
-        SecondpropPos = {-0.005, 0.032, 0.164, 44.6076, -112.2983, -86.1199},
+        SecondpropPos = {-0.005, 0.032, 0.164, 44.6076, -112.2983, -86.1199}
     },
-["mafia"] = {
+    ["mafia"] = {
         category = "prop",
         label = "Mafia",
         animDict = "chocoholic@single12",
@@ -1126,9 +1811,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.115, 0.059, -0.01, -69.7101, 1.4074, -13.7554},
         SecondpropBone = 17188,
         Secondprop = "prop_cigar_01",
-        SecondpropPos = {0.045, 0.013, 0.017, 0.0, 0.0, 0.0},
+        SecondpropPos = {0.045, 0.013, 0.017, 0.0, 0.0, 0.0}
     },
-["cofpose"] = {
+    ["cofpose"] = {
         category = "prop",
         label = "Coffee pose",
         animDict = "chocoholic@single23",
@@ -1139,9 +1824,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.072, 0.039, -0.023, -125.8797, -168.4347, 17.4518},
         SecondpropBone = 60309,
         Secondprop = "prop_cs_burger_01",
-        SecondpropPos = {0.086, 0.003, 0.057, 106.1459, 8.0371, 17.0945},
+        SecondpropPos = {0.086, 0.003, 0.057, 106.1459, 8.0371, 17.0945}
     },
-["selfiesquat"] = {
+    ["selfiesquat"] = {
         category = "prop",
         label = "Selfie squat",
         animDict = "mrwitt@selfie02_male",
@@ -1152,9 +1837,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.03, -0.03, 0.07, -90.0, -180.0, 6.9999},
         SecondpropBone = 64112,
         Secondprop = "prop_phone_ing",
-        SecondpropPos = {0.018, 0.038, 0.026, 179.6474, -177.9691, 9.9938},
+        SecondpropPos = {0.018, 0.038, 0.026, 179.6474, -177.9691, 9.9938}
     },
-["murder1"] = {
+    ["murder1"] = {
         category = "prop",
         label = "Murder axe",
         animDict = "dead",
@@ -1165,248 +1850,267 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {-0.22, 0.34, -0.3, -56.0, 98.0, 34.0},
         SecondpropBone = 57005,
         Secondprop = "p_bloodsplat_s",
-        SecondpropPos = {0.28, 0.17, -0.12, -98.0, -51.0, 237.0},
+        SecondpropPos = {0.28, 0.17, -0.12, -98.0, -51.0, 237.0}
     },
-["shieldaim"] = {
-    category = "prop",
-    label = "77 Shield Aim",
-    animDict = "shieldaim@cartoon",
-    animName = "shieldaim_clip",
-    animFlag = 1,
-    bone = 36029,
-    prop = "prop_lspd_shield_off",
-    propPos = {0.027805600627403, -0.03255339951872, -0.060990139100079, 90.982160207201, -21.248165304219, 156.23947846669},
-},
-["binveh"] = {
-    category = "prop",
-    label = "77 Binoculars Vehicle",
-    animDict = "binocularsvehicle@cartoon",
-    animName = "binocularsvehicle_clip",
-    animFlag = 1,
-    bone = 6286,
-    prop = "prop_binoc_01",
-    propPos = {0.11880772274878, 0.044755202937534, -0.030747995481285, 10.712522278647, 0.64370422614106, -0.65416974457932},
-},
-["carrybag"] = {
-    category = "prop",
-    label = "77 Carry Bag",
-    animDict = "carrybag@cartoon",
-    animName = "carrybag_clip",
-    animFlag = 1,
-    bone = 6286,
-    prop = "prop_michael_backpack",
-    propPos = {0.23478111022837, -0.062836073036813, 0.05806906884708, 0.0, -85.490671204531, -108.86722308239},
-},
-["binoculars"] = {
-    category = "prop",
-    label = "77 Binoculars",
-    animDict = "binoculars@cartoon",
-    animName = "binoculars_clip",
-    animFlag = 1,
-    bone = 6286,
-    prop = "prop_binoc_01",
-    propPos = {0.11880772274878, 0.044755202937534, -0.030747995481285, 10.712522278647, 0.64370422614106, -0.65416974457932},
-},
-["cb"] = {
-    category = "prop",
-    label = "77 Clipboard A2",
-    animDict = "cb@cartoon",
-    animName = "cb_clip",
-    animFlag = 1,
-    bone = 6286,
-    prop = "prop_pencil_01",
-    propPos = {0.082928788343793, 0.050464208571481, 0.0020748404558257, -141.74078727319, -53.322357680409, -32.311792760138},
-    SecondpropBone = 36029,
-    Secondprop = "p_cs_clipboard",
-    SecondpropPos = {0.13524608440798, 0.0085414392542884, 0.03848810645006, -102.9315136172, -9.6983151103175, -0.69277493769757},
-},
-["lidar"] = {
-    category = "prop",
-    label = "77 LIDAR",
-    animDict = "lidar@cartoon",
-    animName = "lidar_clip",
-    animFlag = 1,
-    bone = 36029,
-    prop = "w_pi_prolaser4",
-    propPos = {0.062651141213223, 0.0021050199691081, -0.018159487266964, -74.522617160545, 46.233061926035, -49.36915210942},
-},
-["leocamera"] = {
-    category = "prop",
-    label = "77 LEO Camera",
-    animDict = "leocamera@cartoon",
-    animName = "leocamera_clip",
-    animFlag = 1,
-    bone = 36029,
-    prop = "prop_pap_camera_01",
-    propPos = {0.13285316052281, 0.0, 0.069871774864649, 33.227620230838, -6.1944443550355, -175.88357401961},
-},
-["paperwr"] = {
-    category = "prop",
-    label = "77 paperwr",
-    animDict = "paperwr@cartoon",
-    animName = "paperwr_clip",
-    animFlag = 1,
-    bone = 6286,
-    prop = "prop_pencil_01",
-    propPos = {0.060599656206591, 0.046732695888124, -0.0063937846508236, -26.607334872995, 15.587682866106, -103.26106259071},
-    SecondpropBone = 36029,
-    Secondprop = "prop_amanda_note_01",
-    SecondpropPos = {0.090581818952046, -0.021753491438448, 0.024546692684615, -14.695840764735, -23.31810343791, -26.166845974374},
-},
-["coffeecop"] = {
-    category = "prop",
-    label = "77 Belt Coffee",
-    animDict = "coffeebelt@cartoon",
-    animName = "coffeebelt_clip",
-    animFlag = 1,
-    bone = 6286,
-    prop = "p_ing_coffeecup_01",
-    propPos = {0.068731374555, 0.03139214340836, -0.023351558352198, -75.318575192433, -44.33497282459, -12.336044694332},
-},
-["handshield"] = {
-    category = "prop",
-    label = "77 One Hand Shield",
-    animDict = "onehandshield@cartoon",
-    animName = "onehandshield_clip",
-    animFlag = 1,
-    bone = 36029,
-    prop = "prop_lspd_shield_off",
-    propPos = {0.019623858871796, -0.025687859612967, -0.054956156874566, 126.81588071928, -45.954690237389, 95.11293093132},
-},
-["handshield2"] = {
-    category = "prop",
-    label = "77 One Hand Shield",
-    animDict = "onehandshield@cartoon",
-    animName = "onehandshield_clip",
-    animFlag = 1,
-    bone = 36029,
-    prop = "prop_jsheriff_shield",
-    propPos = {0.019623858871796, -0.025687859612967, -0.054956156874566, 126.81588071928, -45.954690237389, 95.11293093132},
-},
-["handshield3"] = {
-    category = "prop",
-    label = "77 One Hand Shield",
-    animDict = "onehandshield@cartoon",
-    animName = "onehandshield_clip",
-    animFlag = 1,
-    bone = 36029,
-    prop = "prop_ballistic_shield",
-    propPos = {0.019623858871796, -0.025687859612967, -0.054956156874566, 126.81588071928, -45.954690237389, 95.11293093132},
-},
-["duinotepad"] = {
-    category = "prop",
-    label = "77 DUI Notepad",
-    animDict = "duinotepad@cartoon",
-    animName = "duinotepad_clip",
-    animFlag = 1,
-    bone = 36029,
-    prop = "prop_notepad_02",
-    propPos = {0.07304768553945, 0.023114004912767, 0.027331673261111, -14.658680041603, -20.876521690057, 7.0228241658896},
-},
-["duiclipboard"] = {
-    category = "prop",
-    label = "77 DUI Clipboard",
-    animDict = "duiclipboard@cartoon",
-    animName = "duiclipboard_clip",
-    animFlag = 1,
-    bone = 36029,
-    prop = "p_amb_clipboard_01",
-    propPos = {0.13993051195837, 0.0, 0.04676158289303, -110.49532870263, -11.090240893683, 4.0392707320484},
-},
-["radio9"] = {
-    category = "prop",
-    label = "77 Notepad Radio",
-    animDict = "notepadradio@cartoon",
-    animName = "notepadradio_clip",
-    animFlag = 1,
-    bone = 6286,
-    prop = "prop_notepad_01",
-    propPos = {0.098910831737612, 0.033324336140049, -0.016786314964707, 168.36498169008, 2.9810680288095, -179.95204094406},
-    SecondpropBone = 36029,
-    Secondprop = "prop_cs_walkie_talkie",
-    SecondpropPos = {0.094187177673234, 0.043123484030153, 0.015793690996083, -119.28410788475, -21.670778059502, -38.557657668088},
-},
-["holddocs"] = {
-    category = "prop",
-    label = "77 Hold Documents",
-    animDict = "holddocs@cartoon",
-    animName = "holddocs_clip",
-    animFlag = 1,
-    bone = 36029,
-    prop = "prop_cs_documents_01",
-    propPos = {0.005071469297377, 0.072759381748999, 0.015371456632382, -2.1161039832604, 0.82599121143218, -25.02156640569},
-},
-["guntaser"] = {
-    category = "prop",
-    label = "77 Gun Down Taser",
-    animDict = "gundowntaser@cartoon",
-    animName = "gundowntaser_clip",
-    animFlag = 1,
-    bone = 36029,
-    prop = "w_pi_taser7",
-    propPos = {0.067057589686442, 0.038482745768633, 0.018129898457137, -112.9863938932, -8.5258401847759, 2.6502677532856},
-},
-["baton1"] = {
-    category = "prop",
-    label = "skirmishholdbaton",
-    animDict = "lapdbatonone@animation",
-    animName = "lapdbatonone_clip",
-    animFlag = 1,
-    bone = 64017,
-    prop = "w_me_nightstick",
-    propPos = {-0.0077, -0.144, 0.065, 101.40, 53.74, 113.40},
-},
-["baton2"] = {
-    category = "prop",
-    label = "skirmishholdbaton2",
-    animDict = "lapdbatontwo@animation",
-    animName = "lapdbatontwo_clip",
-    animFlag = 1,
-    bone = 43810,
-    prop = "w_me_nightstick",
-    propPos = {0.1067, -0.0603, -0.0364, 126.07, -28.16, 55.34},
-},
-["radio8"] = {
-    category = "prop",
-    label = "Radio Belt",
-    animDict = "radiobelt@pose",
-    animName = "radiobelt_clip",
-    animFlag = 1,
-    bone = 60309,
-    prop = "prop_cs_walkie_talkie",
-    propPos = {0.0600, 0.0200, 0.0200, 88.6281503, -0.8235034, 140.0298588},
-},
-["lookatid"] = {
-    category = "prop",
-    label = "Look At Id",
-    animDict = "lookatid@cartoon",
-    animName = "lookatid_clip",
-    animFlag = 1,
-    bone = 6286,
-    prop = "p_ld_id_card_01",
-    propPos = {0.11304445246242, 0.028003036321367, -0.031583692702317, 80.978694853045, 26.951486732965, -178.55342959818},
-},
-["giveid"] = {
-    category = "prop",
-    label = "Give Id",
-    animDict = "giveid@cartoon",
-    animName = "giveid_clip",
-    animFlag = 1,
-    bone = 6286,
-    prop = "p_ld_id_card_01",
-    propPos = {0.091250607906773, 0.028614009169774, -0.018701051065531, 69.701309967312, 29.86241567707, 178.31198743671},
-},
-["idveh"] = {
-    category = "prop",
-    label = "idveh",
-    animDict = "idveh@cartoon",
-    animName = "idveh_clip",
-    animFlag = 1,
-    bone = 36029,
-    prop = "p_ld_id_card_01",
-    propPos = {0.14040987197257, 0.013717454485732, 0.0, 0.0, 0.0, 0.0},
-},
-["murder2"] = {
+    ["shieldaim"] = {
+        category = "prop",
+        label = "77 Shield Aim",
+        animDict = "shieldaim@cartoon",
+        animName = "shieldaim_clip",
+        animFlag = 1,
+        bone = 36029,
+        prop = "prop_lspd_shield_off",
+        propPos = {0.027805600627403, -0.03255339951872, -0.060990139100079, 90.982160207201, -21.248165304219,
+                   156.23947846669}
+    },
+    ["binveh"] = {
+        category = "prop",
+        label = "77 Binoculars Vehicle",
+        animDict = "binocularsvehicle@cartoon",
+        animName = "binocularsvehicle_clip",
+        animFlag = 1,
+        bone = 6286,
+        prop = "prop_binoc_01",
+        propPos = {0.11880772274878, 0.044755202937534, -0.030747995481285, 10.712522278647, 0.64370422614106,
+                   -0.65416974457932}
+    },
+    ["carrybag"] = {
+        category = "prop",
+        label = "77 Carry Bag",
+        animDict = "carrybag@cartoon",
+        animName = "carrybag_clip",
+        animFlag = 1,
+        bone = 6286,
+        prop = "prop_michael_backpack",
+        propPos = {0.23478111022837, -0.062836073036813, 0.05806906884708, 0.0, -85.490671204531, -108.86722308239}
+    },
+    ["binoculars"] = {
+        category = "prop",
+        label = "77 Binoculars",
+        animDict = "binoculars@cartoon",
+        animName = "binoculars_clip",
+        animFlag = 1,
+        bone = 6286,
+        prop = "prop_binoc_01",
+        propPos = {0.11880772274878, 0.044755202937534, -0.030747995481285, 10.712522278647, 0.64370422614106,
+                   -0.65416974457932}
+    },
+    ["cb"] = {
+        category = "prop",
+        label = "77 Clipboard A2",
+        animDict = "cb@cartoon",
+        animName = "cb_clip",
+        animFlag = 1,
+        bone = 6286,
+        prop = "prop_pencil_01",
+        propPos = {0.082928788343793, 0.050464208571481, 0.0020748404558257, -141.74078727319, -53.322357680409,
+                   -32.311792760138},
+        SecondpropBone = 36029,
+        Secondprop = "p_cs_clipboard",
+        SecondpropPos = {0.13524608440798, 0.0085414392542884, 0.03848810645006, -102.9315136172, -9.6983151103175,
+                         -0.69277493769757}
+    },
+    ["lidar"] = {
+        category = "prop",
+        label = "77 LIDAR",
+        animDict = "lidar@cartoon",
+        animName = "lidar_clip",
+        animFlag = 1,
+        bone = 36029,
+        prop = "w_pi_prolaser4",
+        propPos = {0.062651141213223, 0.0021050199691081, -0.018159487266964, -74.522617160545, 46.233061926035,
+                   -49.36915210942}
+    },
+    ["leocamera"] = {
+        category = "prop",
+        label = "77 LEO Camera",
+        animDict = "leocamera@cartoon",
+        animName = "leocamera_clip",
+        animFlag = 1,
+        bone = 36029,
+        prop = "prop_pap_camera_01",
+        propPos = {0.13285316052281, 0.0, 0.069871774864649, 33.227620230838, -6.1944443550355, -175.88357401961}
+    },
+    ["paperwr"] = {
+        category = "prop",
+        label = "77 paperwr",
+        animDict = "paperwr@cartoon",
+        animName = "paperwr_clip",
+        animFlag = 1,
+        bone = 6286,
+        prop = "prop_pencil_01",
+        propPos = {0.060599656206591, 0.046732695888124, -0.0063937846508236, -26.607334872995, 15.587682866106,
+                   -103.26106259071},
+        SecondpropBone = 36029,
+        Secondprop = "prop_amanda_note_01",
+        SecondpropPos = {0.090581818952046, -0.021753491438448, 0.024546692684615, -14.695840764735, -23.31810343791,
+                         -26.166845974374}
+    },
+    ["coffeecop"] = {
+        category = "prop",
+        label = "Belt Coffee",
+        animDict = "coffeebelt@cartoon",
+        animName = "coffeebelt_clip",
+        animFlag = 1,
+        bone = 6286,
+        prop = "p_ing_coffeecup_01",
+        propPos = {0.068731374555, 0.03139214340836, -0.023351558352198, -75.318575192433, -44.33497282459,
+                   -12.336044694332}
+    },
+    ["handshield"] = {
+        category = "prop",
+        label = "77 One Hand Shield",
+        animDict = "onehandshield@cartoon",
+        animName = "onehandshield_clip",
+        animFlag = 1,
+        bone = 36029,
+        prop = "prop_lspd_shield_off",
+        propPos = {0.019623858871796, -0.025687859612967, -0.054956156874566, 126.81588071928, -45.954690237389,
+                   95.11293093132}
+    },
+    ["handshield2"] = {
+        category = "prop",
+        label = "77 One Hand Shield",
+        animDict = "onehandshield@cartoon",
+        animName = "onehandshield_clip",
+        animFlag = 1,
+        bone = 36029,
+        prop = "prop_jsheriff_shield",
+        propPos = {0.019623858871796, -0.025687859612967, -0.054956156874566, 126.81588071928, -45.954690237389,
+                   95.11293093132}
+    },
+    ["handshield3"] = {
+        category = "prop",
+        label = "77 One Hand Shield",
+        animDict = "onehandshield@cartoon",
+        animName = "onehandshield_clip",
+        animFlag = 1,
+        bone = 36029,
+        prop = "prop_ballistic_shield",
+        propPos = {0.019623858871796, -0.025687859612967, -0.054956156874566, 126.81588071928, -45.954690237389,
+                   95.11293093132}
+    },
+    ["duinotepad"] = {
+        category = "prop",
+        label = "DUI Notepad",
+        animDict = "duinotepad@cartoon",
+        animName = "duinotepad_clip",
+        animFlag = 1,
+        bone = 36029,
+        prop = "prop_notepad_02",
+        propPos = {0.07304768553945, 0.023114004912767, 0.027331673261111, -14.658680041603, -20.876521690057,
+                   7.0228241658896}
+    },
+    ["duiclipboard"] = {
+        category = "prop",
+        label = "DUI Clipboard",
+        animDict = "duiclipboard@cartoon",
+        animName = "duiclipboard_clip",
+        animFlag = 1,
+        bone = 36029,
+        prop = "p_amb_clipboard_01",
+        propPos = {0.13993051195837, 0.0, 0.04676158289303, -110.49532870263, -11.090240893683, 4.0392707320484}
+    },
+    ["radio9"] = {
+        category = "prop",
+        label = "Notepad Radio",
+        animDict = "notepadradio@cartoon",
+        animName = "notepadradio_clip",
+        animFlag = 1,
+        bone = 6286,
+        prop = "prop_notepad_01",
+        propPos = {0.098910831737612, 0.033324336140049, -0.016786314964707, 168.36498169008, 2.9810680288095,
+                   -179.95204094406},
+        SecondpropBone = 36029,
+        Secondprop = "prop_cs_walkie_talkie",
+        SecondpropPos = {0.094187177673234, 0.043123484030153, 0.015793690996083, -119.28410788475, -21.670778059502,
+                         -38.557657668088}
+    },
+    ["holddocs"] = {
+        category = "prop",
+        label = "Hold Documents",
+        animDict = "holddocs@cartoon",
+        animName = "holddocs_clip",
+        animFlag = 1,
+        bone = 36029,
+        prop = "prop_cs_documents_01",
+        propPos = {0.005071469297377, 0.072759381748999, 0.015371456632382, -2.1161039832604, 0.82599121143218,
+                   -25.02156640569}
+    },
+    ["guntaser"] = {
+        category = "prop",
+        label = "Gun Down Taser",
+        animDict = "gundowntaser@cartoon",
+        animName = "gundowntaser_clip",
+        animFlag = 1,
+        bone = 36029,
+        prop = "w_pi_taser7",
+        propPos = {0.067057589686442, 0.038482745768633, 0.018129898457137, -112.9863938932, -8.5258401847759,
+                   2.6502677532856}
+    },
+    ["baton1"] = {
+        category = "prop",
+        label = "Baton Hold 1",
+        animDict = "lapdbatonone@animation",
+        animName = "lapdbatonone_clip",
+        animFlag = 1,
+        bone = 64017,
+        prop = "w_me_nightstick",
+        propPos = {-0.0077, -0.144, 0.065, 101.40, 53.74, 113.40}
+    },
+    ["baton2"] = {
+        category = "prop",
+        label = "Baton Hold 2",
+        animDict = "lapdbatontwo@animation",
+        animName = "lapdbatontwo_clip",
+        animFlag = 1,
+        bone = 43810,
+        prop = "w_me_nightstick",
+        propPos = {0.1067, -0.0603, -0.0364, 126.07, -28.16, 55.34}
+    },
+    ["radio8"] = {
+        category = "prop",
+        label = "Radio Belt",
+        animDict = "radiobelt@pose",
+        animName = "radiobelt_clip",
+        animFlag = 1,
+        bone = 60309,
+        prop = "prop_cs_walkie_talkie",
+        propPos = {0.0600, 0.0200, 0.0200, 88.6281503, -0.8235034, 140.0298588}
+    },
+    ["lookatid"] = {
+        category = "prop",
+        label = "Look At Id",
+        animDict = "lookatid@cartoon",
+        animName = "lookatid_clip",
+        animFlag = 1,
+        bone = 6286,
+        prop = "p_ld_id_card_01",
+        propPos = {0.11304445246242, 0.028003036321367, -0.031583692702317, 80.978694853045, 26.951486732965,
+                   -178.55342959818}
+    },
+    ["giveid"] = {
+        category = "prop",
+        label = "Give Id",
+        animDict = "giveid@cartoon",
+        animName = "giveid_clip",
+        animFlag = 1,
+        bone = 6286,
+        prop = "p_ld_id_card_01",
+        propPos = {0.091250607906773, 0.028614009169774, -0.018701051065531, 69.701309967312, 29.86241567707,
+                   178.31198743671}
+    },
+    ["idveh"] = {
+        category = "prop",
+        label = "idveh",
+        animDict = "idveh@cartoon",
+        animName = "idveh_clip",
+        animFlag = 1,
+        bone = 36029,
+        prop = "p_ld_id_card_01",
+        propPos = {0.14040987197257, 0.013717454485732, 0.0, 0.0, 0.0, 0.0}
+    },
+    ["murder2"] = {
         category = "prop",
         label = "Murder pistol",
         animDict = "dead",
@@ -1417,9 +2121,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {0.27, 0.35, 0.05, -98.0, 2.0, 183.0},
         SecondpropBone = 57005,
         Secondprop = "p_bloodsplat_s",
-        SecondpropPos = {-0.8, 0.41, 0.0, -98.0, -7.0, 237.0},
+        SecondpropPos = {-0.8, 0.41, 0.0, -98.0, -7.0, 237.0}
     },
-["murder3"] = {
+    ["murder3"] = {
         category = "prop",
         label = "Murder machete",
         animDict = "dead",
@@ -1430,9 +2134,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         propPos = {-0.22, 0.18, -0.67, 196.0, 157.0, -35.0},
         SecondpropBone = 57005,
         Secondprop = "p_bloodsplat_s",
-        SecondpropPos = {-0.28, -0.15, 0.0, 266.2, 182.3, -10.0},
+        SecondpropPos = {-0.28, -0.15, 0.0, 266.2, 182.3, -10.0}
     },
-["umbrella-middle"] = {
+    ["umbrella-middle"] = {
         category = "prop",
         label = "Umbrella - Middle",
         animDict = "amb@world_human_drinking@coffee@male@base",
@@ -1440,9 +2144,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "p_amb_brolly_01",
-        propPos = {0.0, 0.02, -0.036, 0.0, 10.0, 0.0},
+        propPos = {0.0, 0.02, -0.036, 0.0, 10.0, 0.0}
     },
-["box"] = {
+    ["box"] = {
         category = "prop",
         label = "Box",
         animDict = "anim@heists@box_carry@",
@@ -1450,9 +2154,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "hei_prop_heist_box",
-        propPos = {0.025, 0.08, 0.255, -145.0, 290.0, 0.0},
+        propPos = {0.025, 0.08, 0.255, -145.0, 290.0, 0.0}
     },
-["gift"] = {
+    ["gift"] = {
         category = "prop",
         label = "Gift",
         animDict = "hold_flowers@dad",
@@ -1460,9 +2164,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "bzzz_prop_gift_orange",
-        propPos = {0.018, 0.039, 0.116, -82.4097, -157.5768, -27.6738},
+        propPos = {0.018, 0.039, 0.116, -82.4097, -157.5768, -27.6738}
     },
-["gift2"] = {
+    ["gift2"] = {
         category = "prop",
         label = "Gift 2",
         animDict = "hold_flowers@dad",
@@ -1470,9 +2174,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "bzzz_prop_gift_purple",
-        propPos = {0.018, 0.039, 0.116, -82.4097, -157.5768, -27.6738},
+        propPos = {0.018, 0.039, 0.116, -82.4097, -157.5768, -27.6738}
     },
-["mallet"] = {
+    ["mallet"] = {
         category = "prop",
         label = "Mallet",
         animDict = "amb@world_human_hammering@male@base",
@@ -1480,9 +2184,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_tool_mallet",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["cranialsaw"] = {
+    ["cranialsaw"] = {
         category = "prop",
         label = "Cranial Saw",
         animDict = "anim@heists@fleeca_bank@drilling",
@@ -1490,9 +2194,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cranial_saw",
-        propPos = {0.0, 0.0, 0.05, 90.0, 0.0, 90.0},
+        propPos = {0.0, 0.0, 0.05, 90.0, 0.0, 90.0}
     },
-["nailgun"] = {
+    ["nailgun"] = {
         category = "prop",
         label = "Nail Gun",
         animDict = "anim@heists@fleeca_bank@drilling",
@@ -1500,9 +2204,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_tool_nailgun",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 90.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 90.0}
     },
-["firefighterk12saw"] = {
+    ["firefighterk12saw"] = {
         category = "prop",
         label = "Firefighter K12 Saw",
         animDict = "anim@heists@fleeca_bank@drilling",
@@ -1510,9 +2214,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_tool_consaw",
-        propPos = {0.0, 0.09, 0.05, -70.3009797, 71.0092017, 83.759421},
+        propPos = {0.0, 0.09, 0.05, -70.3009797, 71.0092017, 83.759421}
     },
-["firefighterextinguisher"] = {
+    ["firefighterextinguisher"] = {
         category = "prop",
         label = "Firefighter Extinguisher",
         animDict = "amb@lo_res_idles@",
@@ -1520,54 +2224,54 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_fire_exting_1a",
-        propPos = {0.15, 0.14, -0.52, 179.7874004, -178.5954846, 4.5961806},
+        propPos = {0.15, 0.14, -0.52, 179.7874004, -178.5954846, 4.5961806}
     },
-["firefighterunmask"] = {
+    ["firefighterunmask"] = {
         category = "prop",
         label = "Firefighter Unmask",
         animDict = "anim@mp_helmets@on_foot",
         animName = "visor_up",
         animFlag = 1,
         bone = 28422,
-        prop = "",
+        prop = ""
     },
-["firefightermask"] = {
+    ["firefightermask"] = {
         category = "prop",
         label = "Firefighter Mask",
         animDict = "anim@mp_helmets@on_foot",
         animName = "visor_down",
         animFlag = 1,
         bone = 28422,
-        prop = "",
+        prop = ""
     },
-["takeoffmask"] = {
+    ["takeoffmask"] = {
         category = "prop",
         label = "Take Off Mask",
         animDict = "anim@scripted@bty5@ig1_intimidate_actor@female_heeled@",
         animName = "mask_action_b",
         animFlag = 1,
         bone = 28422,
-        prop = "",
+        prop = ""
     },
-["firefighteradjusttank/bag"] = {
+    ["firefighteradjusttank/bag"] = {
         category = "prop",
         label = "Firefighter Adjust Tank / Bag",
         animDict = "amb@world_human_hiker_standing@male@idle_a",
         animName = "idle_b",
         animFlag = 1,
         bone = 28422,
-        prop = "",
+        prop = ""
     },
-["firefighterpumppsi"] = {
+    ["firefighterpumppsi"] = {
         category = "prop",
         label = "Firefighter Pump PSI",
         animDict = "anim@scripted@heist@ig9_control_tower@male@",
         animName = "loop",
         animFlag = 1,
         bone = 28422,
-        prop = "",
+        prop = ""
     },
-["birthdaycake"] = {
+    ["birthdaycake"] = {
         category = "prop",
         label = "Birthday Cake",
         animDict = "anim@heists@box_carry@",
@@ -1575,9 +2279,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_prop_cake_birthday_001",
-        propPos = {0.33, 0.09, 0.2, -128.0, -245.0, 2.0},
+        propPos = {0.33, 0.09, 0.2, -128.0, -245.0, 2.0}
     },
-["babycake"] = {
+    ["babycake"] = {
         category = "prop",
         label = "Baby Cake",
         animDict = "anim@heists@box_carry@",
@@ -1585,9 +2289,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_prop_cake_baby_001",
-        propPos = {0.33, 0.09, 0.2, -94.0, -162.0, -44.0},
+        propPos = {0.33, 0.09, 0.2, -94.0, -162.0, -44.0}
     },
-["casinocake"] = {
+    ["casinocake"] = {
         category = "prop",
         label = "Casino Cake",
         animDict = "anim@heists@box_carry@",
@@ -1595,9 +2299,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_prop_cake_casino001",
-        propPos = {0.33, 0.09, 0.2, -54.0, -72.0, -6.0},
+        propPos = {0.33, 0.09, 0.2, -54.0, -72.0, -6.0}
     },
-["lovecake"] = {
+    ["lovecake"] = {
         category = "prop",
         label = "Love Cake",
         animDict = "anim@heists@box_carry@",
@@ -1605,9 +2309,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_prop_cake_love_001",
-        propPos = {0.28, 0.06, 0.2, -54.0, -72.0, -6.0},
+        propPos = {0.28, 0.06, 0.2, -54.0, -72.0, -6.0}
     },
-["unicorncake"] = {
+    ["unicorncake"] = {
         category = "prop",
         label = "Unicorn Cake",
         animDict = "anim@heists@box_carry@",
@@ -1615,9 +2319,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "pata_cake",
-        propPos = {0.0, -0.07, -0.04, 10.0, 0.0, 0.0},
+        propPos = {0.0, -0.07, -0.04, 10.0, 0.0, 0.0}
     },
-["pridecake"] = {
+    ["pridecake"] = {
         category = "prop",
         label = "Pride Cake",
         animDict = "anim@heists@box_carry@",
@@ -1625,9 +2329,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "pata_cake2",
-        propPos = {0.0, -0.07, -0.04, 10.0, 0.0, 0.0},
+        propPos = {0.0, -0.07, -0.04, 10.0, 0.0, 0.0}
     },
-["chocolatemudcake"] = {
+    ["chocolatemudcake"] = {
         category = "prop",
         label = "Chocolate Mud Cake",
         animDict = "anim@heists@box_carry@",
@@ -1635,9 +2339,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "pata_cake3",
-        propPos = {-0.01, -0.039, -0.08, 10.0, 0.0, 0.0},
+        propPos = {-0.01, -0.039, -0.08, 10.0, 0.0, 0.0}
     },
-["cakewaiter-birthday"] = {
+    ["cakewaiter-birthday"] = {
         category = "prop",
         label = "Cake Waiter - Birthday",
         animDict = "anim@move_f@waitress",
@@ -1645,9 +2349,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "bzzz_prop_cake_birthday_001",
-        propPos = {0.0, 0.0, 0.01, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.01, 0.0, 0.0, 0.0}
     },
-["cakewaiter-baby"] = {
+    ["cakewaiter-baby"] = {
         category = "prop",
         label = "Cake Waiter - Baby",
         animDict = "anim@move_f@waitress",
@@ -1655,9 +2359,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "bzzz_prop_cake_baby_001",
-        propPos = {0.0, 0.0, 0.01, 0.0, 0.0, 80.0},
+        propPos = {0.0, 0.0, 0.01, 0.0, 0.0, 80.0}
     },
-["cakewaiter-casino"] = {
+    ["cakewaiter-casino"] = {
         category = "prop",
         label = "Cake Waiter - Casino",
         animDict = "anim@move_f@waitress",
@@ -1665,9 +2369,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "bzzz_prop_cake_casino001",
-        propPos = {0.0, 0.0, 0.01, 0.0, 0.0, -160.0},
+        propPos = {0.0, 0.0, 0.01, 0.0, 0.0, -160.0}
     },
-["cakewaiter-love"] = {
+    ["cakewaiter-love"] = {
         category = "prop",
         label = "Cake Waiter - Love",
         animDict = "anim@move_f@waitress",
@@ -1675,9 +2379,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "bzzz_prop_cake_love_001",
-        propPos = {0.0, 0.0, 0.01, 0.0, 0.0, 180.0},
+        propPos = {0.0, 0.0, 0.01, 0.0, 0.0, 180.0}
     },
-["cakewaiter-unicorn"] = {
+    ["cakewaiter-unicorn"] = {
         category = "prop",
         label = "Cake Waiter - Unicorn",
         animDict = "anim@move_f@waitress",
@@ -1685,9 +2389,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "pata_cake",
-        propPos = {0.0, 0.0, 0.11, 0.0, 0.0, 30.0},
+        propPos = {0.0, 0.0, 0.11, 0.0, 0.0, 30.0}
     },
-["cakewaiter-pride"] = {
+    ["cakewaiter-pride"] = {
         category = "prop",
         label = "Cake Waiter - Pride",
         animDict = "anim@move_f@waitress",
@@ -1695,9 +2399,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "pata_cake2",
-        propPos = {0.0, 0.0, 0.11, 0.0, 0.0, 20.0},
+        propPos = {0.0, 0.0, 0.11, 0.0, 0.0, 20.0}
     },
-["cakewaiter-chocolatemud"] = {
+    ["cakewaiter-chocolatemud"] = {
         category = "prop",
         label = "Cake Waiter - Chocolate Mud",
         animDict = "anim@move_f@waitress",
@@ -1705,9 +2409,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "pata_cake3",
-        propPos = {0.0, 0.0, 0.11, 0.0, 0.0, 30.0},
+        propPos = {0.0, 0.0, 0.11, 0.0, 0.0, 30.0}
     },
-["rose"] = {
+    ["rose"] = {
         category = "prop",
         label = "Rose",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -1715,9 +2419,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_single_rose",
-        propPos = {0.13, 0.15, 0.0, -100.0, 0.0, -20.0},
+        propPos = {0.13, 0.15, 0.0, -100.0, 0.0, -20.0}
     },
-["syringe"] = {
+    ["syringe"] = {
         category = "prop",
         label = "Syringe",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -1725,9 +2429,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_syringe_01",
-        propPos = {0.11, 0.03, 0.01, 90.0, 0.0, -50.0},
+        propPos = {0.11, 0.03, 0.01, 90.0, 0.0, -50.0}
     },
-["scalpel"] = {
+    ["scalpel"] = {
         category = "prop",
         label = "Scalpel",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -1735,9 +2439,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_scalpel",
-        propPos = {0.11, 0.03, 0.01, 0.0, 180.0, -70.0},
+        propPos = {0.11, 0.03, 0.01, 0.0, 180.0, -70.0}
     },
-["bonesaw"] = {
+    ["bonesaw"] = {
         category = "prop",
         label = "Bonesaw",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -1745,9 +2449,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_bonesaw",
-        propPos = {0.11, 0.03, 0.01, 0.0, 180.0, -10.0},
+        propPos = {0.11, 0.03, 0.01, 0.0, 180.0, -10.0}
     },
-["vulture"] = {
+    ["vulture"] = {
         category = "prop",
         label = "Vulture",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -1755,9 +2459,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "ch_prop_arcade_gun_bird_01a",
-        propPos = {0.65, -1.65, 0.55, -65.0, 180.0, 0.0},
+        propPos = {0.65, -1.65, 0.55, -65.0, 180.0, 0.0}
     },
-["stickbutterfly"] = {
+    ["stickbutterfly"] = {
         category = "prop",
         label = "Stick Butterfly",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -1765,9 +2469,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_stickbfly",
-        propPos = {0.11, 0.01, 0.01, -90.0, 90.0, -25.0},
+        propPos = {0.11, 0.01, 0.01, -90.0, 90.0, -25.0}
     },
-["stickhummingbird"] = {
+    ["stickhummingbird"] = {
         category = "prop",
         label = "Stick Hummingbird",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -1775,9 +2479,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_stickhbird",
-        propPos = {0.11, 0.01, 0.01, -90.0, 90.0, -25.0},
+        propPos = {0.11, 0.01, 0.01, -90.0, 90.0, -25.0}
     },
-["dollar"] = {
+    ["dollar"] = {
         category = "prop",
         label = "Dollar",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -1785,9 +2489,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "p_banknote_onedollar_s",
-        propPos = {-0.002, -0.003, 0.032, 82.2434, -106.9746, 1.3733},
+        propPos = {-0.002, -0.003, 0.032, 82.2434, -106.9746, 1.3733}
     },
-["balloon"] = {
+    ["balloon"] = {
         category = "prop",
         label = "Balloon",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -1795,9 +2499,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "heart_balloon",
-        propPos = {0.25, -0.84, 0.53, -157.2041, -101.1702, 28.0243},
+        propPos = {0.25, -0.84, 0.53, -157.2041, -101.1702, 28.0243}
     },
-["balloon2-pride"] = {
+    ["balloon2-pride"] = {
         category = "prop",
         label = "Balloon 2 - Pride",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -1805,9 +2509,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "pride_heart_balloon",
-        propPos = {1.06, 0.49, 0.014, 73.5103, -30.9638, 19.3946},
+        propPos = {1.06, 0.49, 0.014, 73.5103, -30.9638, 19.3946}
     },
-["smoke2"] = {
+    ["smoke2"] = {
         category = "prop",
         label = "Smoke 2",
         animDict = "amb@world_human_aa_smoke@male@idle_a",
@@ -1815,9 +2519,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "ng_proc_cigarette01a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["smoke3"] = {
+    ["smoke3"] = {
         category = "prop",
         label = "Smoke 3",
         animDict = "amb@world_human_aa_smoke@male@idle_a",
@@ -1825,9 +2529,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "ng_proc_cigarette01a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["smoke4"] = {
+    ["smoke4"] = {
         category = "prop",
         label = "Smoke 4",
         animDict = "amb@world_human_smoking@female@idle_a",
@@ -1835,9 +2539,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "ng_proc_cigarette01a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["smoke5"] = {
+    ["smoke5"] = {
         category = "prop",
         label = "Smoke 5",
         animDict = "mrwitt@composed_photo_moments",
@@ -1845,9 +2549,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64097,
         prop = "ng_proc_cigarette01a",
-        propPos = {0.002, 0.001, -0.009, 0.0, 0.0, 50.0},
+        propPos = {0.002, 0.001, -0.009, 0.0, 0.0, 50.0}
     },
-["smoke6"] = {
+    ["smoke6"] = {
         category = "prop",
         label = "Smoke 6",
         animDict = "anim@amb@carmeet@checkout_car@",
@@ -1855,9 +2559,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "ng_proc_cigarette01a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["vape"] = {
+    ["vape"] = {
         category = "prop",
         label = "Vape",
         animDict = "amb@world_human_smoking@male@male_b@base",
@@ -1865,9 +2569,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "ba_prop_battle_vape_01",
-        propPos = {-0.029, 0.007, -0.005, 91.0, 270.0, -360.0},
+        propPos = {-0.029, 0.007, -0.005, 91.0, 270.0, -360.0}
     },
-["vape2"] = {
+    ["vape2"] = {
         category = "prop",
         label = "Vape 2",
         animDict = "amb@world_human_smoking@male@male_b@base",
@@ -1875,9 +2579,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "xm3_prop_xm3_vape_01a",
-        propPos = {-0.02, -0.02, 0.02, 58.0, 110.0, 10.0},
+        propPos = {-0.02, -0.02, 0.02, 58.0, 110.0, 10.0}
     },
-["bong"] = {
+    ["bong"] = {
         category = "prop",
         label = "Bong",
         animDict = "anim@safehouse@bong",
@@ -1885,9 +2589,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_bong_01",
-        propPos = {0.1, -0.25, 0.0, 95.0, 190.0, 180.0},
+        propPos = {0.1, -0.25, 0.0, 95.0, 190.0, 180.0}
     },
-["bong2"] = {
+    ["bong2"] = {
         category = "prop",
         label = "Bong 2",
         animDict = "anim@safehouse@bong",
@@ -1895,9 +2599,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "xm3_prop_xm3_bong_01a",
-        propPos = {0.1, -0.25, 0.0, 95.0, 190.0, 180.0},
+        propPos = {0.1, -0.25, 0.0, 95.0, 190.0, 180.0}
     },
-["bong3-sit&rip"] = {
+    ["bong3-sit&rip"] = {
         category = "prop",
         label = "Bong 3 - Sit & Rip",
         animDict = "sit_bong@dark",
@@ -1905,9 +2609,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_bong_01",
-        propPos = {0.049, -0.2, 0.08, -85.0199, 102.332, -15.0085},
+        propPos = {0.049, -0.2, 0.08, -85.0199, 102.332, -15.0085}
     },
-["bong4-sit&rippurple"] = {
+    ["bong4-sit&rippurple"] = {
         category = "prop",
         label = "Bong 4 - Sit & Rip Purple",
         animDict = "sit_bong@dark",
@@ -1915,9 +2619,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "xm3_prop_xm3_bong_01a",
-        propPos = {0.049, -0.2, 0.08, -85.0199, 102.332, -15.0085},
+        propPos = {0.049, -0.2, 0.08, -85.0199, 102.332, -15.0085}
     },
-["passtheblunt"] = {
+    ["passtheblunt"] = {
         category = "prop",
         label = "Pass The Blunt",
         animDict = "smoke_m@sel",
@@ -1925,9 +2629,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 26612,
         prop = "p_cs_joint_01",
-        propPos = {0.054, -0.012, 0.048, 172.304, -131.4506, 45.1778},
+        propPos = {0.054, -0.012, 0.048, 172.304, -131.4506, 45.1778}
     },
-["fishing1"] = {
+    ["fishing1"] = {
         category = "prop",
         label = "Fishing 1",
         animDict = "amb@world_human_stand_fishing@idle_a",
@@ -1935,9 +2639,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_fishing_rod_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["fishing2"] = {
+    ["fishing2"] = {
         category = "prop",
         label = "Fishing 2",
         animDict = "amb@world_human_stand_fishing@idle_a",
@@ -1945,9 +2649,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_fishing_rod_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["fishing3"] = {
+    ["fishing3"] = {
         category = "prop",
         label = "Fishing 3",
         animDict = "amb@world_human_stand_fishing@idle_a",
@@ -1955,9 +2659,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_fishing_rod_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["icefishing"] = {
+    ["icefishing"] = {
         category = "prop",
         label = "Ice Fishing",
         animDict = "timetable@ron@ig_3_couch",
@@ -1965,9 +2669,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 0,
         prop = "pprp_icefishing_box_02",
-        propPos = {-0.05, 0.0, -0.63, 7.0, 0.0, 180.0},
+        propPos = {-0.05, 0.0, -0.63, 7.0, 0.0, 180.0}
     },
-["suitcase"] = {
+    ["suitcase"] = {
         category = "prop",
         label = "Suitcase",
         animDict = "move_weapon@jerrycan@generic",
@@ -1975,9 +2679,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_ld_suitcase_01",
-        propPos = {0.35, 0.0, 0.0, 0.0, 266.0, 90.0},
+        propPos = {0.35, 0.0, 0.0, 0.0, 266.0, 90.0}
     },
-["suitcase2"] = {
+    ["suitcase2"] = {
         category = "prop",
         label = "Suitcase 2",
         animDict = "move_weapon@jerrycan@generic",
@@ -1985,9 +2689,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_security_case_01",
-        propPos = {0.13, 0.0, -0.01, 0.0, 280.0, 90.0},
+        propPos = {0.13, 0.0, -0.01, 0.0, 280.0, 90.0}
     },
-["boombox"] = {
+    ["boombox"] = {
         category = "prop",
         label = "Boombox",
         animDict = "move_weapon@jerrycan@generic",
@@ -1995,9 +2699,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_boombox_01",
-        propPos = {0.27, 0.0, 0.0, 0.0, 263.0, 58.0},
+        propPos = {0.27, 0.0, 0.0, 0.0, 263.0, 58.0}
     },
-["toolbox"] = {
+    ["toolbox"] = {
         category = "prop",
         label = "Toolbox",
         animDict = "move_weapon@jerrycan@generic",
@@ -2005,9 +2709,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_tool_box_04",
-        propPos = {0.396, 0.041, -0.003, -90.0, 0.0, 90.0},
+        propPos = {0.396, 0.041, -0.003, -90.0, 0.0, 90.0}
     },
-["toolbox2"] = {
+    ["toolbox2"] = {
         category = "prop",
         label = "Toolbox 2",
         animDict = "move_weapon@jerrycan@generic",
@@ -2015,9 +2719,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "imp_prop_tool_box_01a",
-        propPos = {0.37, 0.02, 0.0, 90.0, 0.0, -90.0},
+        propPos = {0.37, 0.02, 0.0, 90.0, 0.0, -90.0}
     },
-["toolbox3"] = {
+    ["toolbox3"] = {
         category = "prop",
         label = "Toolbox 3",
         animDict = "move_weapon@jerrycan@generic",
@@ -2025,9 +2729,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "xm3_prop_xm3_tool_box_01a",
-        propPos = {0.37, 0.02, 0.0, 90.0, 0.0, -90.0},
+        propPos = {0.37, 0.02, 0.0, 90.0, 0.0, -90.0}
     },
-["toolbox4"] = {
+    ["toolbox4"] = {
         category = "prop",
         label = "Toolbox 4",
         animDict = "move_weapon@jerrycan@generic",
@@ -2035,9 +2739,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "xm3_prop_xm3_tool_box_02a",
-        propPos = {0.37, 0.02, 0.0, 90.0, 0.0, -90.0},
+        propPos = {0.37, 0.02, 0.0, 90.0, 0.0, -90.0}
     },
-["cashbox"] = {
+    ["cashbox"] = {
         category = "prop",
         label = "Cash Box",
         animDict = "move_weapon@jerrycan@generic",
@@ -2045,9 +2749,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "m23_1_prop_m31_cashbox_01a",
-        propPos = {0.055, 0.009, -0.01, 90.0, 0.0, -81.0},
+        propPos = {0.055, 0.009, -0.01, 90.0, 0.0, -81.0}
     },
-["garbagebag"] = {
+    ["garbagebag"] = {
         category = "prop",
         label = "Garbage Bag",
         animDict = "missfbi4prepp1",
@@ -2055,9 +2759,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_street_binbag_01",
-        propPos = {0.0, 0.04, -0.02, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.04, -0.02, 0.0, 0.0, 0.0}
     },
-["beerbox1"] = {
+    ["beerbox1"] = {
         category = "prop",
         label = "Beer Box 1",
         animDict = "move_weapon@jerrycan@generic",
@@ -2065,9 +2769,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "v_ret_ml_beerdus",
-        propPos = {0.22, 0.0, 0.0, 0.0, 266.0, 48.0},
+        propPos = {0.22, 0.0, 0.0, 0.0, 266.0, 48.0}
     },
-["beerbox2"] = {
+    ["beerbox2"] = {
         category = "prop",
         label = "Beer Box 2",
         animDict = "move_weapon@jerrycan@generic",
@@ -2075,9 +2779,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "v_ret_ml_beeram",
-        propPos = {0.22, 0.0, 0.0, 0.0, 266.0, 48.0},
+        propPos = {0.22, 0.0, 0.0, 0.0, 266.0, 48.0}
     },
-["beerbox3"] = {
+    ["beerbox3"] = {
         category = "prop",
         label = "Beer Box 3",
         animDict = "move_weapon@jerrycan@generic",
@@ -2085,9 +2789,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "v_ret_ml_beerpride",
-        propPos = {0.22, 0.0, 0.0, 0.0, 266.0, 48.0},
+        propPos = {0.22, 0.0, 0.0, 0.0, 266.0, 48.0}
     },
-["beerbox4"] = {
+    ["beerbox4"] = {
         category = "prop",
         label = "Beer Box 4",
         animDict = "move_weapon@jerrycan@generic",
@@ -2095,9 +2799,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "v_ret_ml_beerbar",
-        propPos = {0.22, 0.0, 0.0, 0.0, 266.0, 60.0},
+        propPos = {0.22, 0.0, 0.0, 0.0, 266.0, 60.0}
     },
-["mugshot"] = {
+    ["mugshot"] = {
         category = "prop",
         label = "Mugshot",
         animDict = "mp_character_creation@customise@male_a",
@@ -2105,9 +2809,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 58868,
         prop = "prop_police_id_board",
-        propPos = {0.12, 0.24, 0.0, 5.0, 0.0, 70.0},
+        propPos = {0.12, 0.24, 0.0, 5.0, 0.0, 70.0}
     },
-["coffee"] = {
+    ["coffee"] = {
         category = "prop",
         label = "Coffee",
         animDict = "amb@world_human_drinking@coffee@male@idle_a",
@@ -2115,9 +2819,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "p_amb_coffeecup_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["whiskey"] = {
+    ["whiskey"] = {
         category = "prop",
         label = "Whiskey",
         animDict = "amb@world_human_drinking@coffee@male@idle_a",
@@ -2125,9 +2829,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_drink_whisky",
-        propPos = {0.01, -0.01, -0.06, 0.0, 0.0, 0.0},
+        propPos = {0.01, -0.01, -0.06, 0.0, 0.0, 0.0}
     },
-["whiskeybottle"] = {
+    ["whiskeybottle"] = {
         category = "prop",
         label = "Whiskey Bottle",
         animDict = "amb@world_human_drinking@beer@male@idle_a",
@@ -2135,9 +2839,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "ba_prop_battle_whiskey_bottle_2_s",
-        propPos = {0.0, 0.0, 0.05, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.05, 0.0, 0.0, 0.0}
     },
-["beer"] = {
+    ["beer"] = {
         category = "prop",
         label = "Beer",
         animDict = "amb@world_human_drinking@beer@male@idle_a",
@@ -2145,9 +2849,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_amb_beer_bottle",
-        propPos = {0.0, 0.0, 0.06, 0.0, 15.0, 0.0},
+        propPos = {0.0, 0.0, 0.06, 0.0, 15.0, 0.0}
     },
-["beer2"] = {
+    ["beer2"] = {
         category = "prop",
         label = "Beer 2",
         animDict = "amb@world_human_drinking@beer@male@idle_a",
@@ -2155,9 +2859,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_amb_beer_bottle",
-        propPos = {0.0, 0.0, 0.06, 0.0, 15.0, 0.0},
+        propPos = {0.0, 0.0, 0.06, 0.0, 15.0, 0.0}
     },
-["beer3"] = {
+    ["beer3"] = {
         category = "prop",
         label = "Beer 3",
         animDict = "amb@world_human_drinking@beer@male@idle_a",
@@ -2165,9 +2869,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "p_cs_bottle_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["beer4-pouroneoutforthehomies"] = {
+    ["beer4-pouroneoutforthehomies"] = {
         category = "prop",
         label = "Beer 4 - Pour One Out For The Homies",
         animDict = "amb@world_human_drinking@beer@male@idle_a",
@@ -2175,9 +2879,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "p_cs_bottle_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["beer5"] = {
+    ["beer5"] = {
         category = "prop",
         label = "Beer 5",
         animDict = "amb@world_human_drinking@beer@male@idle_a",
@@ -2185,9 +2889,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "p_cs_bottle_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["whiskeybottle2"] = {
+    ["whiskeybottle2"] = {
         category = "prop",
         label = "Whiskey Bottle 2",
         animDict = "amb@world_human_drinking@beer@male@idle_a",
@@ -2195,9 +2899,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "ba_prop_battle_whiskey_bottle_2_s",
-        propPos = {0.0, 0.0, 0.05, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.05, 0.0, 0.0, 0.0}
     },
-["whiskeybottle3"] = {
+    ["whiskeybottle3"] = {
         category = "prop",
         label = "Whiskey Bottle 3",
         animDict = "amb@world_human_drinking@beer@male@idle_a",
@@ -2205,9 +2909,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "ba_prop_battle_whiskey_bottle_2_s",
-        propPos = {0.0, 0.0, 0.05, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.05, 0.0, 0.0, 0.0}
     },
-["beerfemale"] = {
+    ["beerfemale"] = {
         category = "prop",
         label = "Beer Female",
         animDict = "amb@world_human_drinking@beer@female@idle_a",
@@ -2215,9 +2919,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_amb_beer_bottle",
-        propPos = {0.0, -0.0, 0.05, 15.0, 15.0, 0.0},
+        propPos = {0.0, -0.0, 0.05, 15.0, 15.0, 0.0}
     },
-["beercan"] = {
+    ["beercan"] = {
         category = "prop",
         label = "Beer Can",
         animDict = "amb@world_human_drinking@coffee@male@idle_a",
@@ -2225,9 +2929,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "v_res_tt_can01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 80.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 80.0}
     },
-["beercan2"] = {
+    ["beercan2"] = {
         category = "prop",
         label = "Beer Can 2",
         animDict = "amb@world_human_drinking@coffee@male@idle_a",
@@ -2235,9 +2939,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "v_res_tt_can02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, -150.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, -150.0}
     },
-["beercan3"] = {
+    ["beercan3"] = {
         category = "prop",
         label = "Beer Can 3",
         animDict = "amb@world_human_drinking@coffee@male@idle_a",
@@ -2245,9 +2949,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "h4_prop_h4_can_beer_01a",
-        propPos = {0.0, 0.0, -0.07, 0.0, 0.0, 90.0},
+        propPos = {0.0, 0.0, -0.07, 0.0, 0.0, 90.0}
     },
-["wine2-bottle"] = {
+    ["wine2-bottle"] = {
         category = "prop",
         label = "Wine 2 - Bottle",
         animDict = "amb@world_human_drinking@beer@female@idle_a",
@@ -2255,9 +2959,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_wine_rose",
-        propPos = {-0.0, 0.04, -0.19, 10.0, 0.0, 0.0},
+        propPos = {-0.0, 0.04, -0.19, 10.0, 0.0, 0.0}
     },
-["beerfemale3"] = {
+    ["beerfemale3"] = {
         category = "prop",
         label = "Beer Female 3",
         animDict = "amb@world_human_drinking@beer@female@idle_a",
@@ -2265,9 +2969,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_amb_beer_bottle",
-        propPos = {0.0, -0.0, 0.05, 15.0, 15.0, 0.0},
+        propPos = {0.0, -0.0, 0.05, 15.0, 15.0, 0.0}
     },
-["beerfemale4"] = {
+    ["beerfemale4"] = {
         category = "prop",
         label = "Beer Female 4",
         animDict = "fix_stu_ext-1",
@@ -2275,9 +2979,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_amb_beer_bottle",
-        propPos = {0.08, 0.11, 0.0, -74.0, 0.0, 0.0},
+        propPos = {0.08, 0.11, 0.0, -74.0, 0.0, 0.0}
     },
-["beerfemale5"] = {
+    ["beerfemale5"] = {
         category = "prop",
         label = "Beer Female 5",
         animDict = "anim@scripted@freemode_npc@fix_dre_studio_entourage_b@",
@@ -2285,9 +2989,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_amb_beer_bottle",
-        propPos = {0.0, -0.0, 0.05, 15.0, 15.0, 0.0},
+        propPos = {0.0, -0.0, 0.05, 15.0, 15.0, 0.0}
     },
-["wine3-bottle"] = {
+    ["wine3-bottle"] = {
         category = "prop",
         label = "Wine 3 - Bottle",
         animDict = "amb@world_human_drinking@beer@female@idle_a",
@@ -2295,9 +2999,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_wine_rose",
-        propPos = {-0.0, 0.04, -0.19, 10.0, 0.0, 0.0},
+        propPos = {-0.0, 0.04, -0.19, 10.0, 0.0, 0.0}
     },
-["cup"] = {
+    ["cup"] = {
         category = "prop",
         label = "Cup",
         animDict = "amb@world_human_drinking@coffee@male@idle_a",
@@ -2305,9 +3009,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_plastic_cup_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["apple"] = {
+    ["apple"] = {
         category = "prop",
         label = "Apple",
         animDict = "mp_player_inteat@burger",
@@ -2315,9 +3019,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "sf_prop_sf_apple_01b",
-        propPos = {0.0, 0.015, -0.02, -124.6964, -166.576, 8.4572},
+        propPos = {0.0, 0.015, -0.02, -124.6964, -166.576, 8.4572}
     },
-["taco"] = {
+    ["taco"] = {
         category = "prop",
         label = "Taco",
         animDict = "mp_player_inteat@burger",
@@ -2325,9 +3029,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_taco_01",
-        propPos = {-0.017, 0.007, -0.021, 107.9846, -105.0251, 55.7779},
+        propPos = {-0.017, 0.007, -0.021, 107.9846, -105.0251, 55.7779}
     },
-["hotdog"] = {
+    ["hotdog"] = {
         category = "prop",
         label = "Hotdog",
         animDict = "mp_player_inteat@burger",
@@ -2335,9 +3039,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_cs_hotdog_02",
-        propPos = {-0.03, 0.01, -0.01, 95.1071, 94.7001, -66.9179},
+        propPos = {-0.03, 0.01, -0.01, 95.1071, 94.7001, -66.9179}
     },
-["bagel"] = {
+    ["bagel"] = {
         category = "prop",
         label = "Bagel",
         animDict = "mp_player_inteat@burger",
@@ -2345,9 +3049,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "p_ing_bagel_01",
-        propPos = {0.14, 0.05, 0.03, 145.3975, -53.8984, 4.8412},
+        propPos = {0.14, 0.05, 0.03, 145.3975, -53.8984, 4.8412}
     },
-["donut"] = {
+    ["donut"] = {
         category = "prop",
         label = "Donut",
         animDict = "mp_player_inteat@burger",
@@ -2355,9 +3059,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_amb_donut",
-        propPos = {0.13, 0.05, 0.02, -50.0, 16.0, 60.0},
+        propPos = {0.13, 0.05, 0.02, -50.0, 16.0, 60.0}
     },
-["donutchocolate"] = {
+    ["donutchocolate"] = {
         category = "prop",
         label = "Donut Chocolate",
         animDict = "mp_player_inteat@burger",
@@ -2365,9 +3069,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "bzzz_foodpack_donut002",
-        propPos = {0.0, -0.03, -0.01, 10.0, 0.0, -1.0},
+        propPos = {0.0, -0.03, -0.01, 10.0, 0.0, -1.0}
     },
-["donutraspberry"] = {
+    ["donutraspberry"] = {
         category = "prop",
         label = "Donut Raspberry",
         animDict = "mp_player_inteat@burger",
@@ -2375,9 +3079,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "bzzz_foodpack_donut001",
-        propPos = {0.0, -0.03, -0.01, 10.0, 0.0, -1.0},
+        propPos = {0.0, -0.03, -0.01, 10.0, 0.0, -1.0}
     },
-["eatdessert"] = {
+    ["eatdessert"] = {
         category = "prop",
         label = "Eat dessert",
         animDict = "mp_player_inteat@burger",
@@ -2385,9 +3089,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_food_dessert_a",
-        propPos = {0.15, 0.03, 0.03, -42.0, -36.0, 0.0},
+        propPos = {0.15, 0.03, 0.03, -42.0, -36.0, 0.0}
     },
-["croissant"] = {
+    ["croissant"] = {
         category = "prop",
         label = "Croissant",
         animDict = "mp_player_inteat@burger",
@@ -2395,9 +3099,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "bzzz_foodpack_croissant001",
-        propPos = {0.0, 0.0, -0.01, 0.0, 0.0, 90.0},
+        propPos = {0.0, 0.0, -0.01, 0.0, 0.0, 90.0}
     },
-["xmasgingerbreadman"] = {
+    ["xmasgingerbreadman"] = {
         category = "prop",
         label = "Xmas Gingerbread Man",
         animDict = "mp_player_inteat@burger",
@@ -2405,9 +3109,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_food_xmas_gingerbread_a",
-        propPos = {0.16, 0.04, 0.03, 18.0, 164.0, -5.0},
+        propPos = {0.16, 0.04, 0.03, 18.0, 164.0, -5.0}
     },
-["xmascandycane-red"] = {
+    ["xmascandycane-red"] = {
         category = "prop",
         label = "Xmas Candy Cane - Red",
         animDict = "mp_player_inteat@burger",
@@ -2415,9 +3119,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_food_xmas_lollipop_a",
-        propPos = {0.16, 0.02, 0.03, -73.0, 146.0, -5.0},
+        propPos = {0.16, 0.02, 0.03, -73.0, 146.0, -5.0}
     },
-["xmascandycane-green"] = {
+    ["xmascandycane-green"] = {
         category = "prop",
         label = "Xmas Candy Cane - Green",
         animDict = "mp_player_inteat@burger",
@@ -2425,9 +3129,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_food_xmas_lollipop_b",
-        propPos = {0.16, 0.02, 0.03, -73.0, 146.0, -5.0},
+        propPos = {0.16, 0.02, 0.03, -73.0, 146.0, -5.0}
     },
-["xmascandycane-purple"] = {
+    ["xmascandycane-purple"] = {
         category = "prop",
         label = "Xmas Candy Cane - Purple",
         animDict = "mp_player_inteat@burger",
@@ -2435,9 +3139,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_food_xmas_lollipop_c",
-        propPos = {0.16, 0.02, 0.03, -73.0, 146.0, -5.0},
+        propPos = {0.16, 0.02, 0.03, -73.0, 146.0, -5.0}
     },
-["xmascandycane-yellow"] = {
+    ["xmascandycane-yellow"] = {
         category = "prop",
         label = "Xmas Candy Cane - Yellow",
         animDict = "mp_player_inteat@burger",
@@ -2445,9 +3149,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_food_xmas_lollipop_d",
-        propPos = {0.16, 0.02, 0.03, -73.0, 146.0, -5.0},
+        propPos = {0.16, 0.02, 0.03, -73.0, 146.0, -5.0}
     },
-["xmascandycane-blue"] = {
+    ["xmascandycane-blue"] = {
         category = "prop",
         label = "Xmas Candy Cane - Blue",
         animDict = "mp_player_inteat@burger",
@@ -2455,9 +3159,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_food_xmas_lollipop_e",
-        propPos = {0.16, 0.02, 0.03, -73.0, 146.0, -5.0},
+        propPos = {0.16, 0.02, 0.03, -73.0, 146.0, -5.0}
     },
-["meatonastick"] = {
+    ["meatonastick"] = {
         category = "prop",
         label = "Meat On A Stick",
         animDict = "move_crouch_proto",
@@ -2465,9 +3169,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64080,
         prop = "bzzz_camp_stick_kebab",
-        propPos = {0.06, 0.05, -0.16, 17.0651, -30.9089, 60.0374},
+        propPos = {0.06, 0.05, -0.16, 17.0651, -30.9089, 60.0374}
     },
-["meatonafork"] = {
+    ["meatonafork"] = {
         category = "prop",
         label = "Meat On A Fork",
         animDict = "mp_player_inteat@burger",
@@ -2475,9 +3179,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_camp_food_kebab",
-        propPos = {0.14, 0.02, 0.01, -24.0, -80.0, 9.0},
+        propPos = {0.14, 0.02, 0.01, -24.0, -80.0, 9.0}
     },
-["marshmallowstick-white"] = {
+    ["marshmallowstick-white"] = {
         category = "prop",
         label = "Marshmallow Stick - White",
         animDict = "move_crouch_proto",
@@ -2485,9 +3189,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64080,
         prop = "bzzz_camp_stick_marshmallow",
-        propPos = {0.06, 0.05, -0.16, 17.0651, -30.9089, 60.0374},
+        propPos = {0.06, 0.05, -0.16, 17.0651, -30.9089, 60.0374}
     },
-["marshmallowstick-pink"] = {
+    ["marshmallowstick-pink"] = {
         category = "prop",
         label = "Marshmallow Stick - Pink",
         animDict = "move_crouch_proto",
@@ -2495,9 +3199,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64080,
         prop = "bzzz_camp_stick_mellopink",
-        propPos = {0.06, 0.05, -0.16, 17.0651, -30.9089, 60.0374},
+        propPos = {0.06, 0.05, -0.16, 17.0651, -30.9089, 60.0374}
     },
-["marshmallowstick-burnt"] = {
+    ["marshmallowstick-burnt"] = {
         category = "prop",
         label = "Marshmallow Stick - Burnt",
         animDict = "move_crouch_proto",
@@ -2505,9 +3209,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64080,
         prop = "bzzz_camp_stick_melloburnt",
-        propPos = {0.06, 0.05, -0.16, 17.0651, -30.9089, 60.0374},
+        propPos = {0.06, 0.05, -0.16, 17.0651, -30.9089, 60.0374}
     },
-["marshmallowonafork-white"] = {
+    ["marshmallowonafork-white"] = {
         category = "prop",
         label = "Marshmallow On A Fork - White",
         animDict = "mp_player_inteat@burger",
@@ -2515,9 +3219,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_camp_food_marshmallow",
-        propPos = {0.14, 0.02, 0.01, -24.0, -80.0, 9.0},
+        propPos = {0.14, 0.02, 0.01, -24.0, -80.0, 9.0}
     },
-["marshmallowonafork-pink"] = {
+    ["marshmallowonafork-pink"] = {
         category = "prop",
         label = "Marshmallow On A Fork - Pink",
         animDict = "mp_player_inteat@burger",
@@ -2525,9 +3229,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_camp_food_mellopink",
-        propPos = {0.14, 0.02, 0.01, -24.0, -80.0, 9.0},
+        propPos = {0.14, 0.02, 0.01, -24.0, -80.0, 9.0}
     },
-["marshmallowonafork-burnt"] = {
+    ["marshmallowonafork-burnt"] = {
         category = "prop",
         label = "Marshmallow On A Fork - Burnt",
         animDict = "mp_player_inteat@burger",
@@ -2535,9 +3239,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_camp_food_melloburnt",
-        propPos = {0.14, 0.02, 0.01, -24.0, -80.0, 9.0},
+        propPos = {0.14, 0.02, 0.01, -24.0, -80.0, 9.0}
     },
-["macaroon"] = {
+    ["macaroon"] = {
         category = "prop",
         label = "Macaroon",
         animDict = "mp_player_inteat@burger",
@@ -2545,9 +3249,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_food_xmas_macaroon_a",
-        propPos = {0.15, 0.07, 0.0, 38.0, 7.0, 7.0},
+        propPos = {0.15, 0.07, 0.0, 38.0, 7.0, 7.0}
     },
-["xmasmug-tea"] = {
+    ["xmasmug-tea"] = {
         category = "prop",
         label = "Xmas Mug - Tea",
         animDict = "mp_player_intdrink",
@@ -2555,9 +3259,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_food_xmas_mug_a",
-        propPos = {0.09, -0.01, 0.08, -44.0, 137.0, 9.0},
+        propPos = {0.09, -0.01, 0.08, -44.0, 137.0, 9.0}
     },
-["xmasmug-coffee"] = {
+    ["xmasmug-coffee"] = {
         category = "prop",
         label = "Xmas Mug - Coffee",
         animDict = "mp_player_intdrink",
@@ -2565,9 +3269,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_food_xmas_mug_b",
-        propPos = {0.09, -0.01, 0.08, -44.0, 137.0, 9.0},
+        propPos = {0.09, -0.01, 0.08, -44.0, 137.0, 9.0}
     },
-["xmasmulledwine"] = {
+    ["xmasmulledwine"] = {
         category = "prop",
         label = "Xmas Mulled Wine",
         animDict = "mp_player_intdrink",
@@ -2575,9 +3279,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_food_xmas_mulled_wine_a",
-        propPos = {0.13, 0.03, 0.05, -110.0, -47.0, 7.0},
+        propPos = {0.13, 0.03, 0.05, -110.0, -47.0, 7.0}
     },
-["xmascocoa"] = {
+    ["xmascocoa"] = {
         category = "prop",
         label = "Xmas Cocoa",
         animDict = "amb@world_human_aa_coffee@base",
@@ -2585,9 +3289,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "pata_christmasfood1",
-        propPos = {0.01, -0.11, -0.13, 0.0, 0.0, 0.0},
+        propPos = {0.01, -0.11, -0.13, 0.0, 0.0, 0.0}
     },
-["xmassnowflakecookie"] = {
+    ["xmassnowflakecookie"] = {
         category = "prop",
         label = "Xmas Snowflake Cookie",
         animDict = "mp_player_inteat@burger",
@@ -2595,9 +3299,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "pata_christmasfood2",
-        propPos = {0.02, -0.05, 0.02, 0.0, 0.0, 0.0},
+        propPos = {0.02, -0.05, 0.02, 0.0, 0.0, 0.0}
     },
-["xmascupcake"] = {
+    ["xmascupcake"] = {
         category = "prop",
         label = "Xmas Cupcake",
         animDict = "mp_player_inteat@burger",
@@ -2605,9 +3309,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "pata_christmasfood6",
-        propPos = {0.01, 0.02, -0.01, -170.1788, 87.6716, 30.054},
+        propPos = {0.01, 0.02, -0.01, -170.1788, 87.6716, 30.054}
     },
-["xmascupcake2"] = {
+    ["xmascupcake2"] = {
         category = "prop",
         label = "Xmas Cupcake 2",
         animDict = "mp_player_inteat@burger",
@@ -2615,9 +3319,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "pata_christmasfood8",
-        propPos = {0.02, 0.0, -0.01, 9.3608, -90.1809, 66.3689},
+        propPos = {0.02, 0.0, -0.01, 9.3608, -90.1809, 66.3689}
     },
-["pizzaslice-jalapeñoandpeperoni"] = {
+    ["pizzaslice-jalapeñoandpeperoni"] = {
         category = "prop",
         label = "Pizza Slice - Jalapeño And Peperoni",
         animDict = "mp_player_inteat@burger",
@@ -2625,9 +3329,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "knjgh_pizzaslice1",
-        propPos = {0.05, -0.02, -0.02, 73.6928, -66.7427, 68.3677},
+        propPos = {0.05, -0.02, -0.02, 73.6928, -66.7427, 68.3677}
     },
-["pizzaslice-tomatoandpesto"] = {
+    ["pizzaslice-tomatoandpesto"] = {
         category = "prop",
         label = "Pizza Slice - Tomato And Pesto",
         animDict = "mp_player_inteat@burger",
@@ -2635,9 +3339,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "knjgh_pizzaslice2",
-        propPos = {0.05, -0.02, -0.02, 73.6928, -66.7427, 68.3677},
+        propPos = {0.05, -0.02, -0.02, 73.6928, -66.7427, 68.3677}
     },
-["pizzaslice-mushroom"] = {
+    ["pizzaslice-mushroom"] = {
         category = "prop",
         label = "Pizza Slice - Mushroom",
         animDict = "mp_player_inteat@burger",
@@ -2645,9 +3349,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "knjgh_pizzaslice3",
-        propPos = {0.05, -0.02, -0.02, 73.6928, -66.7427, 68.3677},
+        propPos = {0.05, -0.02, -0.02, 73.6928, -66.7427, 68.3677}
     },
-["pizzaslice-margherita"] = {
+    ["pizzaslice-margherita"] = {
         category = "prop",
         label = "Pizza Slice - Margherita",
         animDict = "mp_player_inteat@burger",
@@ -2655,9 +3359,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "knjgh_pizzaslice4",
-        propPos = {0.05, -0.02, -0.02, 73.6928, -66.7427, 68.3677},
+        propPos = {0.05, -0.02, -0.02, 73.6928, -66.7427, 68.3677}
     },
-["pizzaslice-doublepeperoni"] = {
+    ["pizzaslice-doublepeperoni"] = {
         category = "prop",
         label = "Pizza Slice - Double Peperoni",
         animDict = "mp_player_inteat@burger",
@@ -2665,9 +3369,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "knjgh_pizzaslice5",
-        propPos = {0.05, -0.02, -0.02, 73.6928, -66.7427, 68.3677},
+        propPos = {0.05, -0.02, -0.02, 73.6928, -66.7427, 68.3677}
     },
-["eat"] = {
+    ["eat"] = {
         category = "prop",
         label = "Eat",
         animDict = "mp_player_inteat@burger",
@@ -2675,9 +3379,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_cs_burger_01",
-        propPos = {0.0, 0.0, -0.02, 30.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, -0.02, 30.0, 0.0, 0.0}
     },
-["burger"] = {
+    ["burger"] = {
         category = "prop",
         label = "Burger",
         animDict = "mp_player_inteat@burger",
@@ -2685,9 +3389,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_cs_burger_01",
-        propPos = {0.0, 0.0, -0.02, 30.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, -0.02, 30.0, 0.0, 0.0}
     },
-["burger-pose"] = {
+    ["burger-pose"] = {
         category = "prop",
         label = "Burger - Pose",
         animDict = "brugershot_dark_fixed@dark",
@@ -2695,9 +3399,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_cs_burger_01",
-        propPos = {0.046, 0.014, 0.046, 3.4346, 20.1823, -10.0},
+        propPos = {0.046, 0.014, 0.046, 3.4346, 20.1823, -10.0}
     },
-["sandwich"] = {
+    ["sandwich"] = {
         category = "prop",
         label = "Sandwich",
         animDict = "mp_player_inteat@burger",
@@ -2705,9 +3409,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_sandwich_01",
-        propPos = {0.13, 0.05, 0.02, -50.0, 16.0, 60.0},
+        propPos = {0.13, 0.05, 0.02, -50.0, 16.0, 60.0}
     },
-["soda-ecolacan"] = {
+    ["soda-ecolacan"] = {
         category = "prop",
         label = "Soda - eCola Can",
         animDict = "amb@world_human_drinking@coffee@male@idle_a",
@@ -2715,9 +3419,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_ecola_can",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 130.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 130.0}
     },
-["soda2-sprunkcan"] = {
+    ["soda2-sprunkcan"] = {
         category = "prop",
         label = "Soda 2 - Sprunk Can",
         animDict = "amb@world_human_drinking@coffee@male@idle_a",
@@ -2725,9 +3429,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "ng_proc_sodacan_01b",
-        propPos = {0.005, -0.001, -0.08, 0.0, 0.0, 160.0},
+        propPos = {0.005, -0.001, -0.08, 0.0, 0.0, 160.0}
     },
-["soda3-p's&q'scup"] = {
+    ["soda3-p's&q'scup"] = {
         category = "prop",
         label = "Soda 3 - P's & Q's Cup",
         animDict = "amb@code_human_wander_drinking@male@base",
@@ -2735,9 +3439,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "v_ret_fh_bscup",
-        propPos = {0.0, 0.0, 0.04, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.04, 0.0, 0.0, 0.0}
     },
-["soda4-burgershotcup"] = {
+    ["soda4-burgershotcup"] = {
         category = "prop",
         label = "Soda 4 - Burger Shot Cup",
         animDict = "amb@code_human_wander_drinking@male@base",
@@ -2745,9 +3449,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_bs_cup",
-        propPos = {0.006, 0.001, 0.0, 0.0, 0.0, -150.0},
+        propPos = {0.006, 0.001, 0.0, 0.0, 0.0, -150.0}
     },
-["soda5-herculespowerfuelcup"] = {
+    ["soda5-herculespowerfuelcup"] = {
         category = "prop",
         label = "Soda 5 - Hercules Power Fuel Cup",
         animDict = "amb@code_human_wander_drinking@male@base",
@@ -2755,9 +3459,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "rpemotesreborn_soda03",
-        propPos = {0.006, 0.001, 0.0, 0.0, 0.0, 80.0},
+        propPos = {0.006, 0.001, 0.0, 0.0, 0.0, 80.0}
     },
-["soda6-orang-o-tangcup"] = {
+    ["soda6-orang-o-tangcup"] = {
         category = "prop",
         label = "Soda 6 - Orang-O-Tang Cup",
         animDict = "amb@code_human_wander_drinking@male@base",
@@ -2765,9 +3469,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "rpemotesreborn_soda04",
-        propPos = {0.006, 0.001, 0.0, 0.0, 0.0, 80.0},
+        propPos = {0.006, 0.001, 0.0, 0.0, 0.0, 80.0}
     },
-["soda7-junkcup"] = {
+    ["soda7-junkcup"] = {
         category = "prop",
         label = "Soda 7- Junk Cup",
         animDict = "amb@code_human_wander_drinking@male@base",
@@ -2775,9 +3479,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "rpemotesreborn_soda01",
-        propPos = {0.006, 0.001, 0.0, 0.0, 0.0, 80.0},
+        propPos = {0.006, 0.001, 0.0, 0.0, 0.0, 80.0}
     },
-["soda8-junkcup"] = {
+    ["soda8-junkcup"] = {
         category = "prop",
         label = "Soda 8 - Junk Cup",
         animDict = "amb@code_human_wander_drinking@male@base",
@@ -2785,9 +3489,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "rpemotesreborn_soda02",
-        propPos = {0.006, 0.001, 0.0, 0.0, 0.0, 80.0},
+        propPos = {0.006, 0.001, 0.0, 0.0, 0.0, 80.0}
     },
-["soda9-orangeflavouredcan"] = {
+    ["soda9-orangeflavouredcan"] = {
         category = "prop",
         label = "Soda 9 - Orange Flavoured Can",
         animDict = "amb@world_human_drinking@coffee@male@idle_a",
@@ -2795,9 +3499,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_orang_can_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 130.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 130.0}
     },
-["boba"] = {
+    ["boba"] = {
         category = "prop",
         label = "Boba",
         animDict = "amb@world_human_drinking@coffee@male@idle_a",
@@ -2805,9 +3509,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "scully_boba",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["boba2"] = {
+    ["boba2"] = {
         category = "prop",
         label = "Boba 2",
         animDict = "amb@world_human_drinking@coffee@male@idle_a",
@@ -2815,9 +3519,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "scully_boba2",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["boba3"] = {
+    ["boba3"] = {
         category = "prop",
         label = "Boba 3",
         animDict = "amb@world_human_drinking@coffee@male@idle_a",
@@ -2825,9 +3529,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "scully_boba3",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["sipsodacup-junk"] = {
+    ["sipsodacup-junk"] = {
         category = "prop",
         label = "Sip Soda Cup - Junk",
         animDict = "smo@milkshake_idle",
@@ -2835,9 +3539,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "rpemotesreborn_soda01",
-        propPos = {0.047, 0.004, -0.06, -88.0263, -25.0367, -27.3898},
+        propPos = {0.047, 0.004, -0.06, -88.0263, -25.0367, -27.3898}
     },
-["sipsodacup-sprunk"] = {
+    ["sipsodacup-sprunk"] = {
         category = "prop",
         label = "Sip Soda Cup - Sprunk",
         animDict = "smo@milkshake_idle",
@@ -2845,9 +3549,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "rpemotesreborn_soda02",
-        propPos = {0.047, 0.004, -0.06, -88.0263, -25.0367, -27.3898},
+        propPos = {0.047, 0.004, -0.06, -88.0263, -25.0367, -27.3898}
     },
-["sipsodacup-herculespowerfuel"] = {
+    ["sipsodacup-herculespowerfuel"] = {
         category = "prop",
         label = "Sip Soda Cup - Hercules Power Fuel",
         animDict = "smo@milkshake_idle",
@@ -2855,9 +3559,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "rpemotesreborn_soda03",
-        propPos = {0.047, 0.004, -0.06, -88.0263, -25.0367, -27.3898},
+        propPos = {0.047, 0.004, -0.06, -88.0263, -25.0367, -27.3898}
     },
-["sipsodacup-orang-o-tang"] = {
+    ["sipsodacup-orang-o-tang"] = {
         category = "prop",
         label = "Sip Soda Cup - Orang-O-Tang",
         animDict = "smo@milkshake_idle",
@@ -2865,9 +3569,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "rpemotesreborn_soda04",
-        propPos = {0.047, 0.004, -0.06, -88.0263, -25.0367, -27.3898},
+        propPos = {0.047, 0.004, -0.06, -88.0263, -25.0367, -27.3898}
     },
-["soda-dumbbitch"] = {
+    ["soda-dumbbitch"] = {
         category = "prop",
         label = "Soda - Dumb Bitch",
         animDict = "amb@code_human_wander_drinking@male@base",
@@ -2875,9 +3579,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "dumbbitchjuice",
-        propPos = {0.006, -0.002, -0.07, 180.0, 180.0, -10.0},
+        propPos = {0.006, -0.002, -0.07, 180.0, 180.0, -10.0}
     },
-["mojito"] = {
+    ["mojito"] = {
         category = "prop",
         label = "Mojito",
         animDict = "amb@code_human_wander_drinking@female@base",
@@ -2885,9 +3589,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_mojito",
-        propPos = {0.0, 0.0, -0.09, 0.0, 0.0, 130.0},
+        propPos = {0.0, 0.0, -0.09, 0.0, 0.0, 130.0}
     },
-["frappe"] = {
+    ["frappe"] = {
         category = "prop",
         label = "Frappe",
         animDict = "amb@code_human_wander_drinking@male@base",
@@ -2895,9 +3599,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_heartfrappe",
-        propPos = {0.0, -0.015, -0.01, 0.0, -3.9999, 0.0},
+        propPos = {0.0, -0.015, -0.01, 0.0, -3.9999, 0.0}
     },
-["frappe2"] = {
+    ["frappe2"] = {
         category = "prop",
         label = "Frappe 2",
         animDict = "amb@code_human_wander_drinking@female@base",
@@ -2905,9 +3609,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "beanmachine_cup",
-        propPos = {0.011, 0.0, 0.03, 0.0, 0.0, -140.0},
+        propPos = {0.011, 0.0, 0.03, 0.0, 0.0, -140.0}
     },
-["frappe3"] = {
+    ["frappe3"] = {
         category = "prop",
         label = "Frappe 3",
         animDict = "amb@code_human_wander_drinking@female@base",
@@ -2915,9 +3619,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "beanmachine_cup2",
-        propPos = {0.0, 0.0, -0.06, 0.0, 0.0, -178.0},
+        propPos = {0.0, 0.0, -0.06, 0.0, 0.0, -178.0}
     },
-["frappe4"] = {
+    ["frappe4"] = {
         category = "prop",
         label = "Frappe 4",
         animDict = "amb@code_human_wander_drinking@female@base",
@@ -2925,9 +3629,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "beanmachine_cup3",
-        propPos = {0.0, 0.0, -0.06, 0.0, 0.0, -178.0},
+        propPos = {0.0, 0.0, -0.06, 0.0, 0.0, -178.0}
     },
-["energydrink-bottle"] = {
+    ["energydrink-bottle"] = {
         category = "prop",
         label = "Energy Drink - Bottle",
         animDict = "mp_player_intdrink",
@@ -2935,9 +3639,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_energy_drink",
-        propPos = {0.008, 0.001, 0.016, 3.569, 4.6611, -49.9065},
+        propPos = {0.008, 0.001, 0.016, 3.569, 4.6611, -49.9065}
     },
-["energydrink-can"] = {
+    ["energydrink-can"] = {
         category = "prop",
         label = "Energy Drink - Can",
         animDict = "amb@world_human_drinking@coffee@male@idle_a",
@@ -2945,9 +3649,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "sf_prop_sf_can_01a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, -110.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, -110.0}
     },
-["energydrink-xxlcan"] = {
+    ["energydrink-xxlcan"] = {
         category = "prop",
         label = "Energy Drink - XXL Can",
         animDict = "amb@world_human_drinking@coffee@male@idle_a",
@@ -2955,9 +3659,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "sf_p_sf_grass_gls_s_01a",
-        propPos = {0.0, 0.0, -0.14, 0.0, 0.0, 9.0},
+        propPos = {0.0, 0.0, -0.14, 0.0, 0.0, 9.0}
     },
-["milkshake-bubblegum"] = {
+    ["milkshake-bubblegum"] = {
         category = "prop",
         label = "Milkshake - Bubblegum",
         animDict = "amb@code_human_wander_drinking@female@base",
@@ -2965,9 +3669,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_bubblegum",
-        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0},
+        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0}
     },
-["milkshake-cherry"] = {
+    ["milkshake-cherry"] = {
         category = "prop",
         label = "Milkshake - Cherry",
         animDict = "amb@code_human_wander_drinking@female@base",
@@ -2975,9 +3679,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_cherry",
-        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0},
+        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0}
     },
-["milkshake-chocolate"] = {
+    ["milkshake-chocolate"] = {
         category = "prop",
         label = "Milkshake - Chocolate",
         animDict = "amb@code_human_wander_drinking@female@base",
@@ -2985,9 +3689,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_chocolate",
-        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0},
+        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0}
     },
-["milkshake-coffee"] = {
+    ["milkshake-coffee"] = {
         category = "prop",
         label = "Milkshake - Coffee",
         animDict = "amb@code_human_wander_drinking@female@base",
@@ -2995,9 +3699,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_coffee",
-        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0},
+        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0}
     },
-["milkshake-doublechocolate"] = {
+    ["milkshake-doublechocolate"] = {
         category = "prop",
         label = "Milkshake - Double Chocolate",
         animDict = "amb@code_human_wander_drinking@female@base",
@@ -3005,9 +3709,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_doublechocolate",
-        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0},
+        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0}
     },
-["milkshake-frappe"] = {
+    ["milkshake-frappe"] = {
         category = "prop",
         label = "Milkshake - Frappe",
         animDict = "amb@code_human_wander_drinking@female@base",
@@ -3015,9 +3719,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_frappe",
-        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0},
+        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0}
     },
-["milkshake-lemon"] = {
+    ["milkshake-lemon"] = {
         category = "prop",
         label = "Milkshake - Lemon",
         animDict = "amb@code_human_wander_drinking@female@base",
@@ -3025,9 +3729,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_lemon",
-        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0},
+        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0}
     },
-["milkshake-mint"] = {
+    ["milkshake-mint"] = {
         category = "prop",
         label = "Milkshake - Mint",
         animDict = "amb@code_human_wander_drinking@female@base",
@@ -3035,9 +3739,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_mint",
-        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0},
+        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0}
     },
-["milkshake-strawberry"] = {
+    ["milkshake-strawberry"] = {
         category = "prop",
         label = "Milkshake - Strawberry",
         animDict = "amb@code_human_wander_drinking@female@base",
@@ -3045,9 +3749,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_strawberry",
-        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0},
+        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0}
     },
-["milkshake-raspberry"] = {
+    ["milkshake-raspberry"] = {
         category = "prop",
         label = "Milkshake - Raspberry",
         animDict = "amb@code_human_wander_drinking@female@base",
@@ -3055,9 +3759,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_raspberry",
-        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0},
+        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0}
     },
-["milkshake-salted"] = {
+    ["milkshake-salted"] = {
         category = "prop",
         label = "Milkshake - Salted",
         animDict = "amb@code_human_wander_drinking@female@base",
@@ -3065,9 +3769,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_salted",
-        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0},
+        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0}
     },
-["milkshake-vanilla"] = {
+    ["milkshake-vanilla"] = {
         category = "prop",
         label = "Milkshake - Vanilla",
         animDict = "amb@code_human_wander_drinking@female@base",
@@ -3075,9 +3779,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_vanilla",
-        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0},
+        propPos = {0.003, 0.028, 0.08, -180.0, -180.0, 30.0}
     },
-["sipmilkshake-bubblegum"] = {
+    ["sipmilkshake-bubblegum"] = {
         category = "prop",
         label = "Sip Milkshake - Bubblegum",
         animDict = "smo@milkshake_idle",
@@ -3085,9 +3789,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_raspberry",
-        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318},
+        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318}
     },
-["sipmilkshake-cherry"] = {
+    ["sipmilkshake-cherry"] = {
         category = "prop",
         label = "Sip Milkshake - Cherry",
         animDict = "smo@milkshake_idle",
@@ -3095,9 +3799,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_cherry",
-        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318},
+        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318}
     },
-["sipmilkshake-chocolate"] = {
+    ["sipmilkshake-chocolate"] = {
         category = "prop",
         label = "Sip Milkshake - Chocolate",
         animDict = "smo@milkshake_idle",
@@ -3105,9 +3809,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_chocolate",
-        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318},
+        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318}
     },
-["sipmilkshake-coffee"] = {
+    ["sipmilkshake-coffee"] = {
         category = "prop",
         label = "Sip Milkshake - Coffee",
         animDict = "smo@milkshake_idle",
@@ -3115,9 +3819,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_coffee",
-        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318},
+        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318}
     },
-["sipmilkshake-doublechocolate"] = {
+    ["sipmilkshake-doublechocolate"] = {
         category = "prop",
         label = "Sip Milkshake - Double Chocolate",
         animDict = "smo@milkshake_idle",
@@ -3125,9 +3829,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_doublechocolate",
-        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318},
+        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318}
     },
-["sipmilkshake-frappe"] = {
+    ["sipmilkshake-frappe"] = {
         category = "prop",
         label = "Sip Milkshake - Frappe",
         animDict = "smo@milkshake_idle",
@@ -3135,9 +3839,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_frappe",
-        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318},
+        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318}
     },
-["sipmilkshake-lemon"] = {
+    ["sipmilkshake-lemon"] = {
         category = "prop",
         label = "Sip Milkshake - Lemon",
         animDict = "smo@milkshake_idle",
@@ -3145,9 +3849,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_lemon",
-        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318},
+        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318}
     },
-["sipmilkshake-mint"] = {
+    ["sipmilkshake-mint"] = {
         category = "prop",
         label = "Sip Milkshake - Mint",
         animDict = "smo@milkshake_idle",
@@ -3155,9 +3859,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_mint",
-        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318},
+        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318}
     },
-["sipmilkshake-strawberry"] = {
+    ["sipmilkshake-strawberry"] = {
         category = "prop",
         label = "Sip Milkshake - Strawberry",
         animDict = "smo@milkshake_idle",
@@ -3165,9 +3869,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_strawberry",
-        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318},
+        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318}
     },
-["sipmilkshake-raspberry"] = {
+    ["sipmilkshake-raspberry"] = {
         category = "prop",
         label = "Sip Milkshake - Raspberry",
         animDict = "smo@milkshake_idle",
@@ -3175,9 +3879,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_raspberry",
-        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318},
+        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318}
     },
-["sipmilkshake-salted"] = {
+    ["sipmilkshake-salted"] = {
         category = "prop",
         label = "Sip Milkshake - Salted",
         animDict = "smo@milkshake_idle",
@@ -3185,9 +3889,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_salted",
-        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318},
+        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318}
     },
-["sipmilkshake-vanilla"] = {
+    ["sipmilkshake-vanilla"] = {
         category = "prop",
         label = "Sip Milkshake - Vanilla",
         animDict = "smo@milkshake_idle",
@@ -3195,9 +3899,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_cherryshake_vanilla",
-        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318},
+        propPos = {0.085, 0.067, -0.035, -115.0862, -165.7841, 24.1318}
     },
-["sodamiddlefingerecola"] = {
+    ["sodamiddlefingerecola"] = {
         category = "prop",
         label = "Soda Middle Finger eCola",
         animDict = "anim@male_drinking_01",
@@ -3205,9 +3909,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 26613,
         prop = "prop_ecola_can",
-        propPos = {0.04, -0.05, 0.039, 0.0, 0.0, -69.9999},
+        propPos = {0.04, -0.05, 0.039, 0.0, 0.0, -69.9999}
     },
-["sodamiddlefingersprunk"] = {
+    ["sodamiddlefingersprunk"] = {
         category = "prop",
         label = "Soda Middle Finger Sprunk",
         animDict = "anim@male_drinking_01",
@@ -3215,9 +3919,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 26613,
         prop = "ng_proc_sodacan_01b",
-        propPos = {0.03, -0.06, -0.07, 0.0, 0.0, 0.0},
+        propPos = {0.03, -0.06, -0.07, 0.0, 0.0, 0.0}
     },
-["waterbottle"] = {
+    ["waterbottle"] = {
         category = "prop",
         label = "Water Bottle",
         animDict = "mp_player_intdrink",
@@ -3225,9 +3929,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "vw_prop_casino_water_bottle_01a",
-        propPos = {0.008, 0.0, -0.05, 0.0, 0.0, -40.0},
+        propPos = {0.008, 0.0, -0.05, 0.0, 0.0, -40.0}
     },
-["egobar"] = {
+    ["egobar"] = {
         category = "prop",
         label = "Ego Bar",
         animDict = "mp_player_inteat@burger",
@@ -3235,9 +3939,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_choc_ego",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["candy"] = {
+    ["candy"] = {
         category = "prop",
         label = "Candy",
         animDict = "mp_player_inteat@pnq",
@@ -3245,9 +3949,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_candy_pqs",
-        propPos = {-0.03, 0.018, 0.0, 180.0, 180.0, -88.099},
+        propPos = {-0.03, 0.018, 0.0, 180.0, 180.0, -88.099}
     },
-["lollipopspiralred"] = {
+    ["lollipopspiralred"] = {
         category = "prop",
         label = "Lollipop Spiral Red",
         animDict = "mp_player_inteat@burger",
@@ -3255,9 +3959,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "natty_lollipop_spiral01",
-        propPos = {-0.01, 0.02, -0.01, -175.1935, 97.6975, 20.9598},
+        propPos = {-0.01, 0.02, -0.01, -175.1935, 97.6975, 20.9598}
     },
-["lollipopspiralpink"] = {
+    ["lollipopspiralpink"] = {
         category = "prop",
         label = "Lollipop Spiral Pink",
         animDict = "mp_player_inteat@burger",
@@ -3265,9 +3969,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "natty_lollipop_spiral02",
-        propPos = {-0.01, 0.02, -0.01, -175.1935, 97.6975, 20.9598},
+        propPos = {-0.01, 0.02, -0.01, -175.1935, 97.6975, 20.9598}
     },
-["lollipopspiralgreen"] = {
+    ["lollipopspiralgreen"] = {
         category = "prop",
         label = "Lollipop Spiral Green",
         animDict = "mp_player_inteat@burger",
@@ -3275,9 +3979,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "natty_lollipop_spiral03",
-        propPos = {-0.01, 0.02, -0.01, -175.1935, 97.6975, 20.9598},
+        propPos = {-0.01, 0.02, -0.01, -175.1935, 97.6975, 20.9598}
     },
-["lollipopspiralblue"] = {
+    ["lollipopspiralblue"] = {
         category = "prop",
         label = "Lollipop Spiral Blue",
         animDict = "mp_player_inteat@burger",
@@ -3285,9 +3989,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "natty_lollipop_spiral04",
-        propPos = {-0.01, 0.02, -0.01, -175.1935, 97.6975, 20.9598},
+        propPos = {-0.01, 0.02, -0.01, -175.1935, 97.6975, 20.9598}
     },
-["lollipopspiralyellow"] = {
+    ["lollipopspiralyellow"] = {
         category = "prop",
         label = "Lollipop Spiral Yellow",
         animDict = "mp_player_inteat@burger",
@@ -3295,9 +3999,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "natty_lollipop_spiral05",
-        propPos = {-0.01, 0.02, -0.01, -175.1935, 97.6975, 20.9598},
+        propPos = {-0.01, 0.02, -0.01, -175.1935, 97.6975, 20.9598}
     },
-["lollipopspiralpurple"] = {
+    ["lollipopspiralpurple"] = {
         category = "prop",
         label = "Lollipop Spiral Purple",
         animDict = "mp_player_inteat@burger",
@@ -3305,9 +4009,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "natty_lollipop_spiral06",
-        propPos = {-0.01, 0.02, -0.01, -175.1935, 97.6975, 20.9598},
+        propPos = {-0.01, 0.02, -0.01, -175.1935, 97.6975, 20.9598}
     },
-["lollipopspinred"] = {
+    ["lollipopspinred"] = {
         category = "prop",
         label = "Lollipop Spin Red",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -3315,9 +4019,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "natty_lollipop_spin01",
-        propPos = {-0.03, -0.05, 0.05, 112.4227, -128.8559, 15.6107},
+        propPos = {-0.03, -0.05, 0.05, 112.4227, -128.8559, 15.6107}
     },
-["lollipopspinyellowandpink"] = {
+    ["lollipopspinyellowandpink"] = {
         category = "prop",
         label = "Lollipop Spin Yellow And Pink",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -3325,9 +4029,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "natty_lollipop_spin02",
-        propPos = {-0.03, -0.05, 0.05, 112.4227, -128.8559, 15.6107},
+        propPos = {-0.03, -0.05, 0.05, 112.4227, -128.8559, 15.6107}
     },
-["lollipopspinyellowandgreen"] = {
+    ["lollipopspinyellowandgreen"] = {
         category = "prop",
         label = "Lollipop Spin Yellow And Green",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -3335,9 +4039,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "natty_lollipop_spin03",
-        propPos = {-0.03, -0.05, 0.05, 112.4227, -128.8559, 15.6107},
+        propPos = {-0.03, -0.05, 0.05, 112.4227, -128.8559, 15.6107}
     },
-["lollipopspinyellowandwhite"] = {
+    ["lollipopspinyellowandwhite"] = {
         category = "prop",
         label = "Lollipop Spin Yellow And White",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -3345,9 +4049,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "natty_lollipop_spin04",
-        propPos = {-0.03, -0.05, 0.05, 112.4227, -128.8559, 15.6107},
+        propPos = {-0.03, -0.05, 0.05, 112.4227, -128.8559, 15.6107}
     },
-["lollipopspinpinkandwhite"] = {
+    ["lollipopspinpinkandwhite"] = {
         category = "prop",
         label = "Lollipop Spin Pink And White",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -3355,9 +4059,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "natty_lollipop_spin05",
-        propPos = {-0.03, -0.05, 0.05, 112.4227, -128.8559, 15.6107},
+        propPos = {-0.03, -0.05, 0.05, 112.4227, -128.8559, 15.6107}
     },
-["lollipopsuck"] = {
+    ["lollipopsuck"] = {
         category = "prop",
         label = "Lollipop Suck",
         animDict = "amb@world_human_smoking@male@male_a@enter",
@@ -3365,9 +4069,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 47419,
         prop = "natty_lollipop01",
-        propPos = {0.01, 0.03, 0.01, -90.0, 10.0, -10.0},
+        propPos = {0.01, 0.03, 0.01, -90.0, 10.0, -10.0}
     },
-["icecreamcherry"] = {
+    ["icecreamcherry"] = {
         category = "prop",
         label = "Ice cream Cherry",
         animDict = "mp_player_inteat@burger",
@@ -3375,9 +4079,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_icecream_cherry",
-        propPos = {0.14, 0.03, 0.01, 85.0, 70.0, -203.0},
+        propPos = {0.14, 0.03, 0.01, 85.0, 70.0, -203.0}
     },
-["icecreamchocolate"] = {
+    ["icecreamchocolate"] = {
         category = "prop",
         label = "Ice cream Chocolate",
         animDict = "mp_player_inteat@burger",
@@ -3385,9 +4089,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_icecream_chocolate",
-        propPos = {0.14, 0.03, 0.01, 85.0, 70.0, -203.0},
+        propPos = {0.14, 0.03, 0.01, 85.0, 70.0, -203.0}
     },
-["icecreamlemon"] = {
+    ["icecreamlemon"] = {
         category = "prop",
         label = "Ice cream Lemon",
         animDict = "mp_player_inteat@burger",
@@ -3395,9 +4099,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_icecream_lemon",
-        propPos = {0.14, 0.03, 0.01, 85.0, 70.0, -203.0},
+        propPos = {0.14, 0.03, 0.01, 85.0, 70.0, -203.0}
     },
-["icecreampistachio"] = {
+    ["icecreampistachio"] = {
         category = "prop",
         label = "Ice cream Pistachio",
         animDict = "mp_player_inteat@burger",
@@ -3405,9 +4109,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_icecream_pistachio",
-        propPos = {0.14, 0.03, 0.01, 85.0, 70.0, -203.0},
+        propPos = {0.14, 0.03, 0.01, 85.0, 70.0, -203.0}
     },
-["icecreamraspberry"] = {
+    ["icecreamraspberry"] = {
         category = "prop",
         label = "Ice cream Raspberry",
         animDict = "mp_player_inteat@burger",
@@ -3415,9 +4119,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_icecream_raspberry",
-        propPos = {0.14, 0.03, 0.01, 85.0, 70.0, -203.0},
+        propPos = {0.14, 0.03, 0.01, 85.0, 70.0, -203.0}
     },
-["icecreamstracciatella"] = {
+    ["icecreamstracciatella"] = {
         category = "prop",
         label = "Ice cream Stracciatella",
         animDict = "mp_player_inteat@burger",
@@ -3425,9 +4129,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_icecream_stracciatella",
-        propPos = {0.14, 0.03, 0.01, 85.0, 70.0, -203.0},
+        propPos = {0.14, 0.03, 0.01, 85.0, 70.0, -203.0}
     },
-["icecreamstrawberry"] = {
+    ["icecreamstrawberry"] = {
         category = "prop",
         label = "Ice cream Strawberry",
         animDict = "mp_player_inteat@burger",
@@ -3435,9 +4139,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_icecream_strawberry",
-        propPos = {0.14, 0.03, 0.01, 85.0, 70.0, -203.0},
+        propPos = {0.14, 0.03, 0.01, 85.0, 70.0, -203.0}
     },
-["icecreamwalnut"] = {
+    ["icecreamwalnut"] = {
         category = "prop",
         label = "Ice cream Walnut",
         animDict = "mp_player_inteat@burger",
@@ -3445,9 +4149,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_icecream_walnut",
-        propPos = {0.14, 0.03, 0.01, 85.0, 70.0, -203.0},
+        propPos = {0.14, 0.03, 0.01, 85.0, 70.0, -203.0}
     },
-["wine"] = {
+    ["wine"] = {
         category = "prop",
         label = "Wine",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -3455,9 +4159,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_drink_redwine",
-        propPos = {0.1, -0.03, 0.03, -100.0, 0.0, -10.0},
+        propPos = {0.1, -0.03, 0.03, -100.0, 0.0, -10.0}
     },
-["flute"] = {
+    ["flute"] = {
         category = "prop",
         label = "Flute",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -3465,9 +4169,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_champ_flute",
-        propPos = {0.1, -0.03, 0.03, -100.0, 0.0, -10.0},
+        propPos = {0.1, -0.03, 0.03, -100.0, 0.0, -10.0}
     },
-["champagne"] = {
+    ["champagne"] = {
         category = "prop",
         label = "Champagne",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -3475,9 +4179,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_drink_champ",
-        propPos = {0.1, -0.03, 0.03, -100.0, 0.0, -10.0},
+        propPos = {0.1, -0.03, 0.03, -100.0, 0.0, -10.0}
     },
-["cigar"] = {
+    ["cigar"] = {
         category = "prop",
         label = "Cigar",
         animDict = "amb@world_human_smoking@male@male_a@enter",
@@ -3485,9 +4189,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 47419,
         prop = "prop_cigar_02",
-        propPos = {0.01, 0.0, 0.0, 50.0, 0.0, -80.0},
+        propPos = {0.01, 0.0, 0.0, 50.0, 0.0, -80.0}
     },
-["cigar2"] = {
+    ["cigar2"] = {
         category = "prop",
         label = "Cigar 2",
         animDict = "amb@world_human_smoking@male@male_a@enter",
@@ -3495,9 +4199,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 47419,
         prop = "prop_cigar_01",
-        propPos = {0.01, 0.0, 0.0, 50.0, 0.0, -80.0},
+        propPos = {0.01, 0.0, 0.0, 50.0, 0.0, -80.0}
     },
-["guitar"] = {
+    ["guitar"] = {
         category = "prop",
         label = "Guitar",
         animDict = "amb@world_human_musician@guitar@male@idle_a",
@@ -3505,9 +4209,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 24818,
         prop = "prop_acc_guitar_01",
-        propPos = {-0.1, 0.31, 0.1, 0.0, 20.0, 150.0},
+        propPos = {-0.1, 0.31, 0.1, 0.0, 20.0, 150.0}
     },
-["guitar2"] = {
+    ["guitar2"] = {
         category = "prop",
         label = "Guitar 2",
         animDict = "switch@trevor@guitar_beatdown",
@@ -3515,9 +4219,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 24818,
         prop = "prop_acc_guitar_01",
-        propPos = {-0.05, 0.31, 0.1, 0.0, 20.0, 150.0},
+        propPos = {-0.05, 0.31, 0.1, 0.0, 20.0, 150.0}
     },
-["guitar3-pink"] = {
+    ["guitar3-pink"] = {
         category = "prop",
         label = "Guitar 3 - Pink",
         animDict = "amb@world_human_musician@guitar@male@idle_a",
@@ -3525,9 +4229,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 24818,
         prop = "prop_rpemotesreborn_guitar_001",
-        propPos = {-0.1, 0.31, 0.1, 0.0, 20.0, 150.0},
+        propPos = {-0.1, 0.31, 0.1, 0.0, 20.0, 150.0}
     },
-["guitar4-pink"] = {
+    ["guitar4-pink"] = {
         category = "prop",
         label = "Guitar 4 - Pink",
         animDict = "switch@trevor@guitar_beatdown",
@@ -3535,9 +4239,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 24818,
         prop = "prop_rpemotesreborn_guitar_001",
-        propPos = {-0.05, 0.31, 0.1, 0.0, 20.0, 150.0},
+        propPos = {-0.05, 0.31, 0.1, 0.0, 20.0, 150.0}
     },
-["guitar-pride"] = {
+    ["guitar-pride"] = {
         category = "prop",
         label = "Guitar - Pride",
         animDict = "amb@world_human_musician@guitar@male@idle_a",
@@ -3545,9 +4249,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 24818,
         prop = "prop_rpemotesreborn_guitar_002",
-        propPos = {-0.1, 0.31, 0.1, 0.0, 20.0, 150.0},
+        propPos = {-0.1, 0.31, 0.1, 0.0, 20.0, 150.0}
     },
-["guitar-pride2"] = {
+    ["guitar-pride2"] = {
         category = "prop",
         label = "Guitar - Pride 2",
         animDict = "switch@trevor@guitar_beatdown",
@@ -3555,9 +4259,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 24818,
         prop = "prop_rpemotesreborn_guitar_002",
-        propPos = {-0.05, 0.31, 0.1, 0.0, 20.0, 150.0},
+        propPos = {-0.05, 0.31, 0.1, 0.0, 20.0, 150.0}
     },
-["guitarelectric"] = {
+    ["guitarelectric"] = {
         category = "prop",
         label = "Guitar Electric",
         animDict = "amb@world_human_musician@guitar@male@idle_a",
@@ -3565,9 +4269,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 24818,
         prop = "prop_el_guitar_01",
-        propPos = {-0.1, 0.31, 0.1, 0.0, 20.0, 150.0},
+        propPos = {-0.1, 0.31, 0.1, 0.0, 20.0, 150.0}
     },
-["guitarelectric2"] = {
+    ["guitarelectric2"] = {
         category = "prop",
         label = "Guitar Electric 2",
         animDict = "amb@world_human_musician@guitar@male@idle_a",
@@ -3575,9 +4279,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 24818,
         prop = "prop_el_guitar_03",
-        propPos = {-0.1, 0.31, 0.1, 0.0, 20.0, 150.0},
+        propPos = {-0.1, 0.31, 0.1, 0.0, 20.0, 150.0}
     },
-["guitarcasecarry"] = {
+    ["guitarcasecarry"] = {
         category = "prop",
         label = "Guitar Case Carry",
         animDict = "move_weapon@jerrycan@generic",
@@ -3585,9 +4289,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "sf_prop_sf_guitar_case_01a",
-        propPos = {0.28, -0.2, -0.06, 0.0, 0.0, 15.0},
+        propPos = {0.28, -0.2, -0.06, 0.0, 0.0, 15.0}
     },
-["guitarcarryaccoustic"] = {
+    ["guitarcarryaccoustic"] = {
         category = "prop",
         label = "Guitar Carry Accoustic",
         animDict = "move_weapon@jerrycan@generic",
@@ -3595,9 +4299,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_acc_guitar_01",
-        propPos = {0.15, -0.14, -0.02, -101.5083, 5.7251, 29.4987},
+        propPos = {0.15, -0.14, -0.02, -101.5083, 5.7251, 29.4987}
     },
-["guitarcarryaccoustic-pink"] = {
+    ["guitarcarryaccoustic-pink"] = {
         category = "prop",
         label = "Guitar Carry Accoustic - Pink",
         animDict = "move_weapon@jerrycan@generic",
@@ -3605,9 +4309,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_rpemotesreborn_guitar_001",
-        propPos = {0.15, -0.14, -0.02, -101.5083, 5.7251, 29.4987},
+        propPos = {0.15, -0.14, -0.02, -101.5083, 5.7251, 29.4987}
     },
-["guitarcarryaccoustic-pride"] = {
+    ["guitarcarryaccoustic-pride"] = {
         category = "prop",
         label = "Guitar Carry Accoustic - Pride",
         animDict = "move_weapon@jerrycan@generic",
@@ -3615,9 +4319,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_rpemotesreborn_guitar_002",
-        propPos = {0.11, -0.12, -0.05, -80.0, 0.0, 21.9999},
+        propPos = {0.11, -0.12, -0.05, -80.0, 0.0, 21.9999}
     },
-["guitarcarryelectric"] = {
+    ["guitarcarryelectric"] = {
         category = "prop",
         label = "Guitar Carry Electric",
         animDict = "move_weapon@jerrycan@generic",
@@ -3625,9 +4329,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_el_guitar_01",
-        propPos = {0.11, -0.12, -0.05, -80.0, 0.0, 21.9999},
+        propPos = {0.11, -0.12, -0.05, -80.0, 0.0, 21.9999}
     },
-["guitarcarryelectric2"] = {
+    ["guitarcarryelectric2"] = {
         category = "prop",
         label = "Guitar Carry Electric 2",
         animDict = "move_weapon@jerrycan@generic",
@@ -3635,9 +4339,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_el_guitar_02",
-        propPos = {0.11, -0.12, -0.05, -80.0, 0.0, 21.9999},
+        propPos = {0.11, -0.12, -0.05, -80.0, 0.0, 21.9999}
     },
-["guitarcarryelectric3"] = {
+    ["guitarcarryelectric3"] = {
         category = "prop",
         label = "Guitar Carry Electric 3",
         animDict = "move_weapon@jerrycan@generic",
@@ -3645,9 +4349,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_el_guitar_03",
-        propPos = {0.11, -0.12, -0.05, -80.0, 0.0, 21.9999},
+        propPos = {0.11, -0.12, -0.05, -80.0, 0.0, 21.9999}
     },
-["guitarcarryelectric4"] = {
+    ["guitarcarryelectric4"] = {
         category = "prop",
         label = "Guitar Carry Electric 4",
         animDict = "move_weapon@jerrycan@generic",
@@ -3655,9 +4359,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "vw_prop_casino_art_guitar_01a",
-        propPos = {0.11, -0.12, -0.05, -80.0, 0.0, 21.9999},
+        propPos = {0.11, -0.12, -0.05, -80.0, 0.0, 21.9999}
     },
-["guitarcarryelectric5"] = {
+    ["guitarcarryelectric5"] = {
         category = "prop",
         label = "Guitar Carry Electric 5",
         animDict = "move_weapon@jerrycan@generic",
@@ -3665,9 +4369,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "sf_prop_sf_el_guitar_02a",
-        propPos = {0.11, -0.12, -0.05, -80.0, 0.0, 21.9999},
+        propPos = {0.11, -0.12, -0.05, -80.0, 0.0, 21.9999}
     },
-["guitarsitandplay"] = {
+    ["guitarsitandplay"] = {
         category = "prop",
         label = "Guitar Sit And Play",
         animDict = "misssnowie@gatlax",
@@ -3675,9 +4379,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 24818,
         prop = "prop_acc_guitar_01",
-        propPos = {-0.051, 0.277, -0.0299, -140.3349, 166.33, 29.759},
+        propPos = {-0.051, 0.277, -0.0299, -140.3349, 166.33, 29.759}
     },
-["guitarsitandplay2-pink"] = {
+    ["guitarsitandplay2-pink"] = {
         category = "prop",
         label = "Guitar Sit And Play 2 - Pink",
         animDict = "misssnowie@gatlax",
@@ -3685,9 +4389,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 24818,
         prop = "prop_rpemotesreborn_guitar_001",
-        propPos = {-0.051, 0.277, -0.0299, -140.3349, 166.33, 29.759},
+        propPos = {-0.051, 0.277, -0.0299, -140.3349, 166.33, 29.759}
     },
-["guitarsitandplay2-pride"] = {
+    ["guitarsitandplay2-pride"] = {
         category = "prop",
         label = "Guitar Sit And Play 2 - Pride",
         animDict = "misssnowie@gatlax",
@@ -3695,9 +4399,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 24818,
         prop = "prop_rpemotesreborn_guitar_002",
-        propPos = {-0.051, 0.277, -0.0299, -140.3349, 166.33, 29.759},
+        propPos = {-0.051, 0.277, -0.0299, -140.3349, 166.33, 29.759}
     },
-["book"] = {
+    ["book"] = {
         category = "prop",
         label = "Book",
         animDict = "cellphone@",
@@ -3705,9 +4409,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 6286,
         prop = "prop_novel_01",
-        propPos = {0.15, 0.03, -0.065, 0.0, 180.0, 90.0},
+        propPos = {0.15, 0.03, -0.065, 0.0, 180.0, 90.0}
     },
-["book2"] = {
+    ["book2"] = {
         category = "prop",
         label = "Book 2",
         animDict = "holding_book_1@dark",
@@ -3715,9 +4419,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_cs_book_01",
-        propPos = {0.09, 0.09, -0.04, 80.1585, 158.5623, 24.708},
+        propPos = {0.09, 0.09, -0.04, 80.1585, 158.5623, 24.708}
     },
-["book4"] = {
+    ["book4"] = {
         category = "prop",
         label = "Book 4",
         animDict = "holding_book_3@dark",
@@ -3725,9 +4429,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_cs_stock_book",
-        propPos = {0.07, 0.04, 0.07, 0.0, 0.0, -15.0},
+        propPos = {0.07, 0.04, 0.07, 0.0, 0.0, -15.0}
     },
-["book5"] = {
+    ["book5"] = {
         category = "prop",
         label = "Book 5",
         animDict = "holding_book_4@dark",
@@ -3735,9 +4439,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_cs_stock_book",
-        propPos = {0.01, 0.01, -0.06, 15.1511, 3.1232, -21.2448},
+        propPos = {0.01, 0.01, -0.06, 15.1511, 3.1232, -21.2448}
     },
-["book6"] = {
+    ["book6"] = {
         category = "prop",
         label = "Book 6",
         animDict = "holding_book_5@dark",
@@ -3745,9 +4449,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "v_ilev_mp_bedsidebook",
-        propPos = {0.21, 0.06, 0.04, 170.6161, -14.296, 28.8727},
+        propPos = {0.21, 0.06, 0.04, 170.6161, -14.296, 28.8727}
     },
-["bouquet"] = {
+    ["bouquet"] = {
         category = "prop",
         label = "Bouquet",
         animDict = "hold_flowers@dad",
@@ -3755,9 +4459,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_snow_flower_02",
-        propPos = {0.11, -0.13, 0.12, -18.7186, 121.0529, -11.7724},
+        propPos = {0.11, -0.13, 0.12, -18.7186, 121.0529, -11.7724}
     },
-["bouquet2"] = {
+    ["bouquet2"] = {
         category = "prop",
         label = "Bouquet 2",
         animDict = "hold_flowers@dad",
@@ -3765,9 +4469,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "pata_freevalentinesday3",
-        propPos = {-0.01, 0.03, -0.17, -6.0697, 60.1852, 3.4934},
+        propPos = {-0.01, 0.03, -0.17, -6.0697, 60.1852, 3.4934}
     },
-["teddy"] = {
+    ["teddy"] = {
         category = "prop",
         label = "Teddy",
         animDict = "impexp_int-0",
@@ -3775,9 +4479,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 24817,
         prop = "v_ilev_mr_rasberryclean",
-        propPos = {-0.2, 0.46, -0.016, -180.0, -90.0, 0.0},
+        propPos = {-0.2, 0.46, -0.016, -180.0, -90.0, 0.0}
     },
-["doggy"] = {
+    ["doggy"] = {
         category = "prop",
         label = "Doggy",
         animDict = "impexp_int-0",
@@ -3785,9 +4489,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 24817,
         prop = "xm3_prop_xm3_toy_dog_01a",
-        propPos = {-0.1, 0.46, -0.016, -180.0, -90.0, 0.0},
+        propPos = {-0.1, 0.46, -0.016, -180.0, -90.0, 0.0}
     },
-["backpack"] = {
+    ["backpack"] = {
         category = "prop",
         label = "Backpack",
         animDict = "move_p_m_zero_rucksack",
@@ -3795,9 +4499,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 24818,
         prop = "p_michael_backpack_s",
-        propPos = {0.07, -0.11, -0.05, 0.0, 90.0, 175.0},
+        propPos = {0.07, -0.11, -0.05, 0.0, 90.0, 175.0}
     },
-["clipboard"] = {
+    ["clipboard"] = {
         category = "prop",
         label = "Clipboard",
         animDict = "missfam4",
@@ -3805,9 +4509,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 36029,
         prop = "p_amb_clipboard_01",
-        propPos = {0.16, 0.08, 0.1, -130.0, -50.0, 0.0},
+        propPos = {0.16, 0.08, 0.1, -130.0, -50.0, 0.0}
     },
-["map"] = {
+    ["map"] = {
         category = "prop",
         label = "Map",
         animDict = "amb@world_human_tourist_map@male@base",
@@ -3815,9 +4519,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_tourist_map_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["map2"] = {
+    ["map2"] = {
         category = "prop",
         label = "Map 2",
         animDict = "amb@code_human_in_bus_passenger_idles@female@tablet@idle_a",
@@ -3825,9 +4529,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_tourist_map_01",
-        propPos = {-0.05, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {-0.05, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["beg"] = {
+    ["beg"] = {
         category = "prop",
         label = "Beg",
         animDict = "amb@world_human_bum_freeway@male@base",
@@ -3835,9 +4539,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_beggers_sign_03",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["beg2"] = {
+    ["beg2"] = {
         category = "prop",
         label = "Beg 2",
         animDict = "amb@world_human_bum_freeway@male@base",
@@ -3845,9 +4549,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_beggers_sign_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["beg3"] = {
+    ["beg3"] = {
         category = "prop",
         label = "Beg 3",
         animDict = "amb@world_human_bum_freeway@male@base",
@@ -3855,9 +4559,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_beggers_sign_02",
-        propPos = {0.0, 0.0, 0.08, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.08, 0.0, 0.0, 0.0}
     },
-["beg4"] = {
+    ["beg4"] = {
         category = "prop",
         label = "Beg 4",
         animDict = "amb@world_human_bum_freeway@male@base",
@@ -3865,9 +4569,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_beggers_sign_04",
-        propPos = {0.0, 0.0, 0.08, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.08, 0.0, 0.0, 0.0}
     },
-["newspaper"] = {
+    ["newspaper"] = {
         category = "prop",
         label = "Newspaper",
         animDict = "amb@world_human_clipboard@male@idle_a",
@@ -3875,9 +4579,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_cliff_paper",
-        propPos = {0.097, -0.028, -0.017, 107.4008, 3.2712, -10.508},
+        propPos = {0.097, -0.028, -0.017, 107.4008, 3.2712, -10.508}
     },
-["newspaper2"] = {
+    ["newspaper2"] = {
         category = "prop",
         label = "Newspaper 2",
         animDict = "amb@world_human_clipboard@male@idle_a",
@@ -3885,9 +4589,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "ng_proc_paper_news_quik",
-        propPos = {0.159, 0.029, -0.01, 90.9998, 0.0087, 0.5},
+        propPos = {0.159, 0.029, -0.01, 90.9998, 0.0087, 0.5}
     },
-["newspaper3"] = {
+    ["newspaper3"] = {
         category = "prop",
         label = "Newspaper 3",
         animDict = "amb@world_human_clipboard@male@idle_a",
@@ -3895,9 +4599,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "ng_proc_paper_news_rag",
-        propPos = {0.176, -0.0007, 0.02, 99.8306, 3.2841, -4.7185},
+        propPos = {0.176, -0.0007, 0.02, 99.8306, 3.2841, -4.7185}
     },
-["pornmagazine"] = {
+    ["pornmagazine"] = {
         category = "prop",
         label = "Porn Magazine",
         animDict = "amb@world_human_clipboard@male@base",
@@ -3905,9 +4609,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_porn_mag_02",
-        propPos = {0.1, -0.036, -0.03, -86.9096, 179.2527, 13.8804},
+        propPos = {0.1, -0.036, -0.03, -86.9096, 179.2527, 13.8804}
     },
-["pornmagazine2"] = {
+    ["pornmagazine2"] = {
         category = "prop",
         label = "Porn Magazine 2",
         animDict = "amb@world_human_clipboard@male@base",
@@ -3915,9 +4619,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_cs_magazine",
-        propPos = {0.08, -0.049, -0.05, 87.9369, -0.4292, -14.3925},
+        propPos = {0.08, -0.049, -0.05, 87.9369, -0.4292, -14.3925}
     },
-["pornmagazine3"] = {
+    ["pornmagazine3"] = {
         category = "prop",
         label = "Porn Magazine 3",
         animDict = "amb@world_human_clipboard@male@base",
@@ -3925,9 +4629,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_porn_mag_03",
-        propPos = {0.1, -0.07, -0.02, -90.0, -180.0, 22.7007},
+        propPos = {0.1, -0.07, -0.02, -90.0, -180.0, 22.7007}
     },
-["pornmagazine4"] = {
+    ["pornmagazine4"] = {
         category = "prop",
         label = "Porn Magazine 4",
         animDict = "amb@world_human_clipboard@male@base",
@@ -3935,9 +4639,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "v_res_tt_pornmag01",
-        propPos = {-0.02, -0.03, 0.0, 88.9862, 0.2032, -20.0016},
+        propPos = {-0.02, -0.03, 0.0, 88.9862, 0.2032, -20.0016}
     },
-["pornmagazine5"] = {
+    ["pornmagazine5"] = {
         category = "prop",
         label = "Porn Magazine 5",
         animDict = "amb@world_human_clipboard@male@base",
@@ -3945,9 +4649,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "v_res_tt_pornmag02",
-        propPos = {-0.02, -0.03, 0.0, 88.9862, 0.2032, -20.0016},
+        propPos = {-0.02, -0.03, 0.0, 88.9862, 0.2032, -20.0016}
     },
-["pornmagazine6"] = {
+    ["pornmagazine6"] = {
         category = "prop",
         label = "Porn Magazine 6",
         animDict = "amb@world_human_clipboard@male@base",
@@ -3955,9 +4659,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "v_res_tt_pornmag03",
-        propPos = {-0.02, -0.03, 0.0, 88.9862, 0.2032, -20.0016},
+        propPos = {-0.02, -0.03, 0.0, 88.9862, 0.2032, -20.0016}
     },
-["pornmagazine7"] = {
+    ["pornmagazine7"] = {
         category = "prop",
         label = "Porn Magazine 7",
         animDict = "amb@world_human_clipboard@male@base",
@@ -3965,9 +4669,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "v_res_tt_pornmag04",
-        propPos = {-0.02, -0.03, 0.0, 88.9862, 0.2032, -20.0016},
+        propPos = {-0.02, -0.03, 0.0, 88.9862, 0.2032, -20.0016}
     },
-["makeitrain"] = {
+    ["makeitrain"] = {
         category = "prop",
         label = "Make It Rain",
         animDict = "anim@mp_player_intupperraining_cash",
@@ -3975,9 +4679,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_anim_cash_pile_01",
-        propPos = {0.0, 0.0, 0.0, 180.0, 0.0, 70.0},
+        propPos = {0.0, 0.0, 0.0, 180.0, 0.0, 70.0}
     },
-["camera"] = {
+    ["camera"] = {
         category = "prop",
         label = "Camera",
         animDict = "stand_camera_1@dad",
@@ -3985,9 +4689,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_pap_camera_01",
-        propPos = {0.104, -0.006, -0.06, -2.728, 33.0998, 4.1917},
+        propPos = {0.104, -0.006, -0.06, -2.728, 33.0998, 4.1917}
     },
-["camera2"] = {
+    ["camera2"] = {
         category = "prop",
         label = "Camera 2",
         animDict = "amb@world_human_paparazzi@male@base",
@@ -3995,9 +4699,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_pap_camera_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["camera3"] = {
+    ["camera3"] = {
         category = "prop",
         label = "Camera 3",
         animDict = "cellphone@female",
@@ -4005,9 +4709,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_ing_camera_01",
-        propPos = {0.01, -0.03, 0.052, -172.0487, -163.9389, -29.0221},
+        propPos = {0.01, -0.03, 0.052, -172.0487, -163.9389, -29.0221}
     },
-["camera4"] = {
+    ["camera4"] = {
         category = "prop",
         label = "Camera 4",
         animDict = "chocoholic@single110a",
@@ -4015,9 +4719,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_ing_camera_01",
-        propPos = {0.071, 0.015, -0.042, -68.322, 99.6144, 2.9027},
+        propPos = {0.071, 0.015, -0.042, -68.322, 99.6144, 2.9027}
     },
-["camera5"] = {
+    ["camera5"] = {
         category = "prop",
         label = "Camera 5",
         animDict = "chocoholic@single110b",
@@ -4025,9 +4729,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_ing_camera_01",
-        propPos = {0.098, 0.056, 0.133, -15.8221, 107.0825, -16.0159},
+        propPos = {0.098, 0.056, 0.133, -15.8221, 107.0825, -16.0159}
     },
-["camera6-carrynewscamera"] = {
+    ["camera6-carrynewscamera"] = {
         category = "prop",
         label = "Camera 6 - Carry News Camera",
         animDict = "move_weapon@jerrycan@generic",
@@ -4035,9 +4739,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_v_cam_01",
-        propPos = {0.21, 0.03, -0.01, 90.0, 176.0, 79.9999},
+        propPos = {0.21, 0.03, -0.01, 90.0, 176.0, 79.9999}
     },
-["champagnespray"] = {
+    ["champagnespray"] = {
         category = "prop",
         label = "Champagne Spray",
         animDict = "anim@mp_player_intupperspray_champagne",
@@ -4045,9 +4749,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "ba_prop_battle_champ_open",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["joint"] = {
+    ["joint"] = {
         category = "prop",
         label = "Joint",
         animDict = "amb@world_human_smoking@male@male_a@enter",
@@ -4055,19 +4759,19 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 47419,
         prop = "p_cs_joint_01",
-        propPos = {0.015, -0.009, 0.003, 55.0, 0.0, 110.0},
+        propPos = {0.015, -0.009, 0.003, 55.0, 0.0, 110.0}
     },
-["cig"] = {
+    ["cig"] = {
         category = "prop",
-        label = "Cig",
+        label = "Cigarette",
         animDict = "amb@world_human_smoking@male@male_a@enter",
         animName = "enter",
         animFlag = 1,
         bone = 47419,
         prop = "ng_proc_cigarette01a",
-        propPos = {0.015, -0.009, 0.003, 55.0, 0.0, 110.0},
+        propPos = {0.015, -0.009, 0.003, 55.0, 0.0, 110.0}
     },
-["briefcase"] = {
+    ["briefcase"] = {
         category = "prop",
         label = "Briefcase",
         animDict = "move_weapon@jerrycan@generic",
@@ -4075,9 +4779,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_ld_case_01",
-        propPos = {0.12, 0.0, 0.0, 0.0, 255.0, 80.0},
+        propPos = {0.12, 0.0, 0.0, 0.0, 255.0, 80.0}
     },
-["briefcase2"] = {
+    ["briefcase2"] = {
         category = "prop",
         label = "Briefcase 2",
         animDict = "missheistdocksprep1hold_cellphone",
@@ -4085,9 +4789,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_ld_case_01",
-        propPos = {0.1, 0.0, 0.0, 0.0, 280.0, 53.0},
+        propPos = {0.1, 0.0, 0.0, 0.0, 280.0, 53.0}
     },
-["brushteeth"] = {
+    ["brushteeth"] = {
         category = "prop",
         label = "Brush Teeth",
         animDict = "mp_player_inteat@pnq",
@@ -4095,9 +4799,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_toothbrush_01",
-        propPos = {0.14, 0.04, -0.02, -93.0, -159.0, 26.0},
+        propPos = {0.14, 0.04, -0.02, -93.0, -159.0, 26.0}
     },
-["guncase"] = {
+    ["guncase"] = {
         category = "prop",
         label = "Guncase",
         animDict = "move_weapon@jerrycan@generic",
@@ -4105,9 +4809,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_gun_case_01",
-        propPos = {0.1, 0.02, -0.02, 40.0, 145.0, 115.0},
+        propPos = {0.1, 0.02, -0.02, 40.0, 145.0, 115.0}
     },
-["tablet"] = {
+    ["tablet"] = {
         category = "prop",
         label = "Tablet",
         animDict = "amb@world_human_tourist_map@male@base",
@@ -4115,9 +4819,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_tablet",
-        propPos = {0.0, -0.03, 0.0, 20.0, -90.0, 0.0},
+        propPos = {0.0, -0.03, 0.0, 20.0, -90.0, 0.0}
     },
-["tablet2"] = {
+    ["tablet2"] = {
         category = "prop",
         label = "Tablet 2",
         animDict = "amb@code_human_in_bus_passenger_idles@female@tablet@idle_a",
@@ -4125,9 +4829,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_tablet",
-        propPos = {-0.05, 0.0, 0.0, 0.0, -90.0, 0.0},
+        propPos = {-0.05, 0.0, 0.0, 0.0, -90.0, 0.0}
     },
-["phonecall"] = {
+    ["phonecall"] = {
         category = "prop",
         label = "Phone Call",
         animDict = "cellphone@",
@@ -4135,9 +4839,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_phone_ing",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["phonecall2"] = {
+    ["phonecall2"] = {
         category = "prop",
         label = "Phone Call 2",
         animDict = "random@kidnap_girl",
@@ -4145,9 +4849,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_phone_ing",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["walkietalkie"] = {
+    ["walkietalkie"] = {
         category = "prop",
         label = "Radio - 1",
         animDict = "cellphone@",
@@ -4155,9 +4859,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_walkie_talkie",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["walkietalkie2"] = {
+    ["walkietalkie2"] = {
         category = "prop",
         label = "Radio - 2",
         animDict = "anim@radio_pose_3",
@@ -4165,9 +4869,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_cs_walkie_talkie",
-        propPos = {0.075, 0.047, 0.011, -97.9442, 3.7058, -23.2367},
+        propPos = {0.075, 0.047, 0.011, -97.9442, 3.7058, -23.2367}
     },
-["walkietalkie3left"] = {
+    ["walkietalkie3left"] = {
         category = "prop",
         label = "Radio - 3 (Left)",
         animDict = "anim@radio_left",
@@ -4175,9 +4879,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_cs_walkie_talkie",
-        propPos = {0.075, 0.047, 0.011, -97.9442, 3.7058, -23.2367},
+        propPos = {0.075, 0.047, 0.011, -97.9442, 3.7058, -23.2367}
     },
-["walkietalkie4"] = {
+    ["walkietalkie4"] = {
         category = "prop",
         label = "Radio - 4",
         animDict = "anim@male@holding_radio",
@@ -4185,9 +4889,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_walkie_talkie",
-        propPos = {0.075, 0.023, -0.023, -90.0, 0.0, -59.9999},
+        propPos = {0.075, 0.023, -0.023, -90.0, 0.0, -59.9999}
     },
-["walkietalkie5"] = {
+    ["walkietalkie5"] = {
         category = "prop",
         label = "Radio - 5",
         animDict = "missfbi3_steve_phone",
@@ -4195,9 +4899,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_cs_walkie_talkie",
-        propPos = {0.13, 0.05, 0.01, -113.0, 0.0, -60.0},
+        propPos = {0.13, 0.05, 0.01, -113.0, 0.0, -60.0}
     },
-["clean"] = {
+    ["clean"] = {
         category = "prop",
         label = "Clean",
         animDict = "timetable@floyd@clean_kitchen@base",
@@ -4205,9 +4909,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_sponge_01",
-        propPos = {0.0, 0.0, -0.01, 90.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, -0.01, 90.0, 0.0, 0.0}
     },
-["clean2"] = {
+    ["clean2"] = {
         category = "prop",
         label = "Clean 2",
         animDict = "amb@world_human_maid_clean@",
@@ -4215,9 +4919,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_sponge_01",
-        propPos = {0.0, 0.0, -0.01, 90.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, -0.01, 90.0, 0.0, 0.0}
     },
-["protest"] = {
+    ["protest"] = {
         category = "prop",
         label = "Protest",
         animDict = "rcmnigel1d",
@@ -4225,9 +4929,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_cs_protest_sign_01",
-        propPos = {0.182, 0.24, 0.06, -69.3774235, 5.9142048, -13.9572354},
+        propPos = {0.182, 0.24, 0.06, -69.3774235, 5.9142048, -13.9572354}
     },
-["protest2-pride"] = {
+    ["protest2-pride"] = {
         category = "prop",
         label = "Protest 2 - Pride",
         animDict = "rcmnigel1d",
@@ -4235,9 +4939,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "pride_sign_01",
-        propPos = {0.182, 0.24, 0.06, -69.3774235, 5.9142048, -13.9572354},
+        propPos = {0.182, 0.24, 0.06, -69.3774235, 5.9142048, -13.9572354}
     },
-["protest3-blm"] = {
+    ["protest3-blm"] = {
         category = "prop",
         label = "Protest 3 - BLM",
         animDict = "rcmnigel1d",
@@ -4245,9 +4949,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "scully_blm",
-        propPos = {0.182, 0.24, 0.06, -69.3774235, 5.914205, -13.957235},
+        propPos = {0.182, 0.24, 0.06, -69.3774235, 5.914205, -13.957235}
     },
-["binoculars"] = {
+    ["binoculars"] = {
         category = "prop",
         label = "Binoculars",
         animDict = "amb@world_human_binoculars@male@idle_b",
@@ -4255,9 +4959,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_binoc_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["binoculars2"] = {
+    ["binoculars2"] = {
         category = "prop",
         label = "Binoculars 2",
         animDict = "amb@world_human_binoculars@male@idle_a",
@@ -4265,9 +4969,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_binoc_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["weights"] = {
+    ["weights"] = {
         category = "prop",
         label = "Weights",
         animDict = "amb@world_human_muscle_free_weights@male@barbell@base",
@@ -4275,9 +4979,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_curl_bar_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["weights2"] = {
+    ["weights2"] = {
         category = "prop",
         label = "Weights 2",
         animDict = "amb@world_human_muscle_free_weights@male@barbell@idle_a",
@@ -4285,9 +4989,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_curl_bar_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["weights3-pose"] = {
+    ["weights3-pose"] = {
         category = "prop",
         label = "Weights 3 - Pose",
         animDict = "frabi@malepose@solo@firstsport",
@@ -4295,9 +4999,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_barbell_01",
-        propPos = {0.066, 0.01, -0.03, 90.0, 90.0, -79.9999},
+        propPos = {0.066, 0.01, -0.03, 90.0, 90.0, -79.9999}
     },
-["weights7-femalepose3"] = {
+    ["weights7-femalepose3"] = {
         category = "prop",
         label = "Weights 7 - Female Pose 3",
         animDict = "frabi@femalepose@solo@firstsport",
@@ -4305,9 +5009,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_freeweight_01",
-        propPos = {0.05, 0.01, -0.02, 88.6283, -51.8805, 54.3903},
+        propPos = {0.05, 0.01, -0.02, 88.6283, -51.8805, 54.3903}
     },
-["weights-barbell10kg"] = {
+    ["weights-barbell10kg"] = {
         category = "prop",
         label = "Weights - Barbell 10KG",
         animDict = "amb@prop_human_seat_muscle_bench_press@idle_a",
@@ -4315,9 +5019,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_barbell_10kg",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["weights-barbell20kg"] = {
+    ["weights-barbell20kg"] = {
         category = "prop",
         label = "Weights - Barbell 20KG",
         animDict = "amb@prop_human_seat_muscle_bench_press@idle_a",
@@ -4325,9 +5029,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_barbell_20kg",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["weights-barbell30kg"] = {
+    ["weights-barbell30kg"] = {
         category = "prop",
         label = "Weights - Barbell 30KG",
         animDict = "amb@prop_human_seat_muscle_bench_press@idle_a",
@@ -4335,9 +5039,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_barbell_30kg",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["weights-barbell40kg"] = {
+    ["weights-barbell40kg"] = {
         category = "prop",
         label = "Weights - Barbell 40KG",
         animDict = "amb@prop_human_seat_muscle_bench_press@idle_a",
@@ -4345,9 +5049,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_barbell_40kg",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["weights-barbell50kg"] = {
+    ["weights-barbell50kg"] = {
         category = "prop",
         label = "Weights - Barbell 50KG",
         animDict = "amb@prop_human_seat_muscle_bench_press@idle_a",
@@ -4355,9 +5059,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_barbell_50kg",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["weights-barbell60kg"] = {
+    ["weights-barbell60kg"] = {
         category = "prop",
         label = "Weights - Barbell 60KG",
         animDict = "amb@prop_human_seat_muscle_bench_press@idle_a",
@@ -4365,9 +5069,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_barbell_60kg",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["weights-barbell80kg"] = {
+    ["weights-barbell80kg"] = {
         category = "prop",
         label = "Weights - Barbell 80KG",
         animDict = "amb@prop_human_seat_muscle_bench_press@idle_a",
@@ -4375,9 +5079,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_barbell_80kg",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["weights-barbell100kg"] = {
+    ["weights-barbell100kg"] = {
         category = "prop",
         label = "Weights - Barbell 100KG",
         animDict = "amb@prop_human_seat_muscle_bench_press@idle_a",
@@ -4385,9 +5089,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_barbell_100kg",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["fuel"] = {
+    ["fuel"] = {
         category = "prop",
         label = "Fuel",
         animDict = "weapons@misc@jerrycan@",
@@ -4395,9 +5099,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "w_am_jerrycan",
-        propPos = {0.18, 0.13, -0.24, -165.8693883, -11.2122753, -32.9453021},
+        propPos = {0.18, 0.13, -0.24, -165.8693883, -11.2122753, -32.9453021}
     },
-["fuel2(carry)"] = {
+    ["fuel2(carry)"] = {
         category = "prop",
         label = "Fuel 2 (Carry)",
         animDict = "weapons@misc@jerrycan@franklin",
@@ -4405,9 +5109,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "w_am_jerrycan",
-        propPos = {0.26, 0.05, 0.03, 80.0, 180.0, 79.99},
+        propPos = {0.26, 0.05, 0.03, 80.0, 180.0, 79.99}
     },
-["stealstopsign"] = {
+    ["stealstopsign"] = {
         category = "prop",
         label = "Steal Stop Sign",
         animDict = "rcmnigel1d",
@@ -4415,9 +5119,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_sign_road_01a",
-        propPos = {-0.139, -0.987, 0.43, -67.3315314, 145.0627869, -4.4318885},
+        propPos = {-0.139, -0.987, 0.43, -67.3315314, 145.0627869, -4.4318885}
     },
-["stealyieldsign"] = {
+    ["stealyieldsign"] = {
         category = "prop",
         label = "Steal Yield Sign",
         animDict = "rcmnigel1d",
@@ -4425,9 +5129,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_sign_road_02a",
-        propPos = {-0.139, -0.987, 0.43, -67.3315314, 145.0627869, -4.4318885},
+        propPos = {-0.139, -0.987, 0.43, -67.3315314, 145.0627869, -4.4318885}
     },
-["stealhospitalsign"] = {
+    ["stealhospitalsign"] = {
         category = "prop",
         label = "Steal Hospital Sign",
         animDict = "rcmnigel1d",
@@ -4435,9 +5139,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_sign_road_03d",
-        propPos = {-0.139, -0.987, 0.43, -67.3315314, 145.0627869, -4.4318885},
+        propPos = {-0.139, -0.987, 0.43, -67.3315314, 145.0627869, -4.4318885}
     },
-["stealparkingsign"] = {
+    ["stealparkingsign"] = {
         category = "prop",
         label = "Steal Parking Sign",
         animDict = "rcmnigel1d",
@@ -4445,9 +5149,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_sign_road_04a",
-        propPos = {-0.139, -0.987, 0.43, -67.3315314, 145.0627869, -4.4318885},
+        propPos = {-0.139, -0.987, 0.43, -67.3315314, 145.0627869, -4.4318885}
     },
-["stealparkingsign2"] = {
+    ["stealparkingsign2"] = {
         category = "prop",
         label = "Steal Parking Sign 2",
         animDict = "rcmnigel1d",
@@ -4455,9 +5159,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_sign_road_04w",
-        propPos = {-0.139, -0.987, 0.43, -67.3315314, 145.0627869, -4.4318885},
+        propPos = {-0.139, -0.987, 0.43, -67.3315314, 145.0627869, -4.4318885}
     },
-["stealpedestriansign"] = {
+    ["stealpedestriansign"] = {
         category = "prop",
         label = "Steal Pedestrian Sign",
         animDict = "rcmnigel1d",
@@ -4465,9 +5169,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_sign_road_05a",
-        propPos = {-0.139, -0.987, 0.43, -67.3315314, 145.0627869, -4.4318885},
+        propPos = {-0.139, -0.987, 0.43, -67.3315314, 145.0627869, -4.4318885}
     },
-["stealstreetsign"] = {
+    ["stealstreetsign"] = {
         category = "prop",
         label = "Steal Street Sign",
         animDict = "rcmnigel1d",
@@ -4475,9 +5179,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_sign_road_05t",
-        propPos = {-0.139, -0.987, 0.43, -67.3315314, 145.0627869, -4.4318885},
+        propPos = {-0.139, -0.987, 0.43, -67.3315314, 145.0627869, -4.4318885}
     },
-["stealfreewaysign"] = {
+    ["stealfreewaysign"] = {
         category = "prop",
         label = "Steal Freeway Sign",
         animDict = "rcmnigel1d",
@@ -4485,9 +5189,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_sign_freewayentrance",
-        propPos = {-0.139, -0.987, 0.43, -67.3315314, 145.0627869, -4.4318885},
+        propPos = {-0.139, -0.987, 0.43, -67.3315314, 145.0627869, -4.4318885}
     },
-["stealstopsignsnow"] = {
+    ["stealstopsignsnow"] = {
         category = "prop",
         label = "Steal Stop Sign Snow",
         animDict = "rcmnigel1d",
@@ -4495,9 +5199,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_snow_sign_road_01a",
-        propPos = {-0.139, -0.987, 0.43, -67.3315314, 145.0627869, -4.4318885},
+        propPos = {-0.139, -0.987, 0.43, -67.3315314, 145.0627869, -4.4318885}
     },
-["stealtire1"] = {
+    ["stealtire1"] = {
         category = "prop",
         label = "Steal Tire 1",
         animDict = "anim@heists@box_carry@",
@@ -4505,9 +5209,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_wheel_01",
-        propPos = {0.02, 0.2, 0.31, 130.0, -80.0, 0.0},
+        propPos = {0.02, 0.2, 0.31, 130.0, -80.0, 0.0}
     },
-["stealtire2"] = {
+    ["stealtire2"] = {
         category = "prop",
         label = "Steal Tire 2",
         animDict = "anim@heists@box_carry@",
@@ -4515,9 +5219,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_wheel_02",
-        propPos = {0.02, 0.2, 0.31, 130.0, -80.0, 0.0},
+        propPos = {0.02, 0.2, 0.31, 130.0, -80.0, 0.0}
     },
-["conehead"] = {
+    ["conehead"] = {
         category = "prop",
         label = "Cone Head",
         animDict = "move_m@drunk@verydrunk_idles@",
@@ -4525,9 +5229,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 31086,
         prop = "prop_roadcone02b",
-        propPos = {0.05, 0.02, -0.0, 30.0000004, 90.0, 0.0},
+        propPos = {0.05, 0.02, -0.0, 30.0000004, 90.0, 0.0}
     },
-["foodtray"] = {
+    ["foodtray"] = {
         category = "prop",
         label = "Food Tray",
         animDict = "anim@heists@box_carry@",
@@ -4535,9 +5239,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_food_bs_tray_03",
-        propPos = {0.01, -0.04, -0.139, 20.0000007, 0.0, 0.0},
+        propPos = {0.01, -0.04, -0.139, 20.0000007, 0.0, 0.0}
     },
-["foodtrayb"] = {
+    ["foodtrayb"] = {
         category = "prop",
         label = "Food Tray B",
         animDict = "anim@heists@box_carry@",
@@ -4545,9 +5249,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_food_bs_tray_02",
-        propPos = {0.01, -0.04, -0.139, 20.0000007, 0.0, 0.0},
+        propPos = {0.01, -0.04, -0.139, 20.0000007, 0.0, 0.0}
     },
-["foodtrayc"] = {
+    ["foodtrayc"] = {
         category = "prop",
         label = "Food Tray C",
         animDict = "anim@heists@box_carry@",
@@ -4555,9 +5259,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_food_cb_tray_02",
-        propPos = {0.01, -0.04, -0.139, 20.0000007, 0.0, 0.0},
+        propPos = {0.01, -0.04, -0.139, 20.0000007, 0.0, 0.0}
     },
-["foodtrayd"] = {
+    ["foodtrayd"] = {
         category = "prop",
         label = "Food Tray D",
         animDict = "anim@heists@box_carry@",
@@ -4565,9 +5269,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_food_tray_02",
-        propPos = {0.01, -0.04, -0.139, 20.0000007, 0.0, 0.0},
+        propPos = {0.01, -0.04, -0.139, 20.0000007, 0.0, 0.0}
     },
-["foodtraye"] = {
+    ["foodtraye"] = {
         category = "prop",
         label = "Food Tray E",
         animDict = "anim@heists@box_carry@",
@@ -4575,9 +5279,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_food_tray_03",
-        propPos = {0.01, -0.04, -0.139, 20.0000007, 0.0, 0.0},
+        propPos = {0.01, -0.04, -0.139, 20.0000007, 0.0, 0.0}
     },
-["foodtrayj"] = {
+    ["foodtrayj"] = {
         category = "prop",
         label = "Food Tray J",
         animDict = "anim@move_f@waitress",
@@ -4585,9 +5289,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_food_bs_tray_02",
-        propPos = {0.0, 0.0, 0.02, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.02, 0.0, 0.0, 0.0}
     },
-["foodtrayk"] = {
+    ["foodtrayk"] = {
         category = "prop",
         label = "Food Tray K",
         animDict = "anim@move_f@waitress",
@@ -4595,9 +5299,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_food_bs_tray_02",
-        propPos = {0.0, 0.0, 0.02, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.02, 0.0, 0.0, 0.0}
     },
-["foodtrayl"] = {
+    ["foodtrayl"] = {
         category = "prop",
         label = "Food Tray L",
         animDict = "anim@move_f@waitress",
@@ -4605,9 +5309,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_food_bs_tray_03",
-        propPos = {0.0, 0.0, 0.02, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.02, 0.0, 0.0, 0.0}
     },
-["foodtraym"] = {
+    ["foodtraym"] = {
         category = "prop",
         label = "Food Tray M",
         animDict = "anim@move_f@waitress",
@@ -4615,9 +5319,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_food_cb_tray_02",
-        propPos = {0.0, 0.0, 0.02, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.02, 0.0, 0.0, 0.0}
     },
-["foodtrayn"] = {
+    ["foodtrayn"] = {
         category = "prop",
         label = "Food Tray N",
         animDict = "anim@move_f@waitress",
@@ -4625,9 +5329,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_food_tray_02",
-        propPos = {0.0, 0.0, 0.02, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.02, 0.0, 0.0, 0.0}
     },
-["foodtrayo"] = {
+    ["foodtrayo"] = {
         category = "prop",
         label = "Food Tray O",
         animDict = "anim@move_f@waitress",
@@ -4635,9 +5339,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_food_tray_02",
-        propPos = {0.0, 0.0, 0.02, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.02, 0.0, 0.0, 0.0}
     },
-["carrypizzabox"] = {
+    ["carrypizzabox"] = {
         category = "prop",
         label = "Carry Pizza Box",
         animDict = "anim@heists@box_carry@",
@@ -4645,9 +5349,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_pizza_box_02",
-        propPos = {0.01, -0.1, -0.159, 20.0000007, 0.0, 0.0},
+        propPos = {0.01, -0.1, -0.159, 20.0000007, 0.0, 0.0}
     },
-["carryfoodbag"] = {
+    ["carryfoodbag"] = {
         category = "prop",
         label = "Carry Food Bag",
         animDict = "move_weapon@jerrycan@generic",
@@ -4655,9 +5359,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_food_bs_bag_01",
-        propPos = {0.33, 0.0, -0.03, 0.0017365, -79.9999997, 110.0651988},
+        propPos = {0.33, 0.0, -0.03, 0.0017365, -79.9999997, 110.0651988}
     },
-["carryfoodbag2"] = {
+    ["carryfoodbag2"] = {
         category = "prop",
         label = "Carry Food Bag 2",
         animDict = "move_weapon@jerrycan@generic",
@@ -4665,9 +5369,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_food_cb_bag_01",
-        propPos = {0.38, 0.0, -0.03, 0.0017365, -79.9999997, 110.0651988},
+        propPos = {0.38, 0.0, -0.03, 0.0017365, -79.9999997, 110.0651988}
     },
-["carryfoodbag3"] = {
+    ["carryfoodbag3"] = {
         category = "prop",
         label = "Carry Food Bag 3",
         animDict = "move_weapon@jerrycan@generic",
@@ -4675,9 +5379,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_food_bag1",
-        propPos = {0.38, 0.0, -0.03, 0.0017365, -79.9999997, 110.0651988},
+        propPos = {0.38, 0.0, -0.03, 0.0017365, -79.9999997, 110.0651988}
     },
-["taggingshakecanmale"] = {
+    ["taggingshakecanmale"] = {
         category = "prop",
         label = "Tagging Shake Can Male",
         animDict = "anim@scripted@freemode@postertag@graffiti_spray@male@",
@@ -4685,9 +5389,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_spray_can",
-        propPos = {0.0, 0.0, 0.07, 0.0017365, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.07, 0.0017365, 0.0, 0.0}
     },
-["taggingshakecanfemale"] = {
+    ["taggingshakecanfemale"] = {
         category = "prop",
         label = "Tagging Shake Can Female",
         animDict = "anim@scripted@freemode@postertag@graffiti_spray@heeled@",
@@ -4695,9 +5399,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_spray_can",
-        propPos = {0.0, 0.0, 0.07, 0.0017365, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.07, 0.0017365, 0.0, 0.0}
     },
-["taggingmale1"] = {
+    ["taggingmale1"] = {
         category = "prop",
         label = "Tagging Male 1",
         animDict = "anim@scripted@freemode@postertag@graffiti_spray@male@",
@@ -4705,9 +5409,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_spray_can",
-        propPos = {0.0, 0.0, 0.07, 0.0017365, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.07, 0.0017365, 0.0, 0.0}
     },
-["taggingmale2"] = {
+    ["taggingmale2"] = {
         category = "prop",
         label = "Tagging Male 2",
         animDict = "anim@scripted@freemode@postertag@graffiti_spray@male@",
@@ -4715,9 +5419,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_spray_can",
-        propPos = {0.0, 0.0, 0.07, 0.0017365, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.07, 0.0017365, 0.0, 0.0}
     },
-["taggingfemale1"] = {
+    ["taggingfemale1"] = {
         category = "prop",
         label = "Tagging Female 1",
         animDict = "anim@scripted@freemode@postertag@graffiti_spray@heeled@",
@@ -4725,9 +5429,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_spray_can",
-        propPos = {0.0, 0.0, 0.07, 0.0017365, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.07, 0.0017365, 0.0, 0.0}
     },
-["taggingfemale2"] = {
+    ["taggingfemale2"] = {
         category = "prop",
         label = "Tagging Female 2",
         animDict = "anim@scripted@freemode@postertag@graffiti_spray@heeled@",
@@ -4735,9 +5439,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_spray_can",
-        propPos = {0.0, 0.0, 0.07, 0.0017365, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.07, 0.0017365, 0.0, 0.0}
     },
-["tagging7"] = {
+    ["tagging7"] = {
         category = "prop",
         label = "Tagging 7",
         animDict = "anim@scripted@freemode@tagcoll_ig_postertag@heeled@",
@@ -4745,9 +5449,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "m24_1_prop_m41_spraycan_01a",
-        propPos = {0.0, 0.0, 0.07, 0.0017365, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.07, 0.0017365, 0.0, 0.0}
     },
-["newscamera"] = {
+    ["newscamera"] = {
         category = "prop",
         label = "News Camera",
         animDict = "missfinale_c2mcs_1",
@@ -4755,9 +5459,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_v_cam_01",
-        propPos = {0.0, 0.03, 0.01, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.03, 0.01, 0.0, 0.0, 0.0}
     },
-["newsmicrophone"] = {
+    ["newsmicrophone"] = {
         category = "prop",
         label = "News Microphone",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -4765,9 +5469,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 4154,
         prop = "p_ing_microphonel_01",
-        propPos = {-0.0, -0.02, 0.11, 0.0, 0.0, 60.0},
+        propPos = {-0.0, -0.02, 0.11, 0.0, 0.0, 60.0}
     },
-["newsboommicrophone"] = {
+    ["newsboommicrophone"] = {
         category = "prop",
         label = "News Boom Microphone",
         animDict = "missfra1",
@@ -4775,9 +5479,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_v_bmike_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["microphonerock"] = {
+    ["microphonerock"] = {
         category = "prop",
         label = "Microphone Rock",
         animDict = "lunyx@mic@p1",
@@ -4785,9 +5489,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "sf_prop_sf_mic_01a",
-        propPos = {0.03, 0.02, -0.03, 162.9608, -91.1712, -3.8249},
+        propPos = {0.03, 0.02, -0.03, 162.9608, -91.1712, -3.8249}
     },
-["microphonerock2"] = {
+    ["microphonerock2"] = {
         category = "prop",
         label = "Microphone Rock 2",
         animDict = "lunyx@mic@p2",
@@ -4795,9 +5499,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "sf_prop_sf_mic_01a",
-        propPos = {0.035, 0.018, 0.029, -180.0, -13.0, 0.0},
+        propPos = {0.035, 0.018, 0.029, -180.0, -13.0, 0.0}
     },
-["microphonerock3"] = {
+    ["microphonerock3"] = {
         category = "prop",
         label = "Microphone Rock 3",
         animDict = "lunyx@mic@p3",
@@ -4805,9 +5509,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "sf_prop_sf_mic_01a",
-        propPos = {0.03, 0.02, -0.03, 162.9608, -91.1712, -3.8249},
+        propPos = {0.03, 0.02, -0.03, 162.9608, -91.1712, -3.8249}
     },
-["microphonerock4"] = {
+    ["microphonerock4"] = {
         category = "prop",
         label = "Microphone Rock 4",
         animDict = "lunyx@mic@p4",
@@ -4815,9 +5519,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "sf_prop_sf_mic_01a",
-        propPos = {0.03, 0.02, -0.03, 162.9608, -91.1712, -3.8249},
+        propPos = {0.03, 0.02, -0.03, 162.9608, -91.1712, -3.8249}
     },
-["microphonerock5"] = {
+    ["microphonerock5"] = {
         category = "prop",
         label = "Microphone Rock 5",
         animDict = "lunyx@mic@p5",
@@ -4825,9 +5529,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "sf_prop_sf_mic_01a",
-        propPos = {0.037, 0.013, 0.015, -173.6259, -93.5253, 4.645},
+        propPos = {0.037, 0.013, 0.015, -173.6259, -93.5253, 4.645}
     },
-["microphonerock6"] = {
+    ["microphonerock6"] = {
         category = "prop",
         label = "Microphone Rock 6",
         animDict = "lunyx@mic@p6",
@@ -4835,9 +5539,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "v_ilev_fos_mic",
-        propPos = {-0.441, -1.06, -0.48, -57.7266, 51.8164, 3.0976},
+        propPos = {-0.441, -1.06, -0.48, -57.7266, 51.8164, 3.0976}
     },
-["microphonerock7"] = {
+    ["microphonerock7"] = {
         category = "prop",
         label = "Microphone Rock 7",
         animDict = "lunyx@mic@p7",
@@ -4845,9 +5549,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "v_ilev_fos_mic",
-        propPos = {-0.821, -0.09, -1.19, -2.5478, 36.3684, -11.7503},
+        propPos = {-0.821, -0.09, -1.19, -2.5478, 36.3684, -11.7503}
     },
-["microphonerock8"] = {
+    ["microphonerock8"] = {
         category = "prop",
         label = "Microphone Rock 8",
         animDict = "lunyx@mic@p8",
@@ -4855,9 +5559,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "sf_prop_sf_mic_01a",
-        propPos = {0.037, 0.013, 0.015, -173.6259, -93.5253, 4.645},
+        propPos = {0.037, 0.013, 0.015, -173.6259, -93.5253, 4.645}
     },
-["microphonerock9"] = {
+    ["microphonerock9"] = {
         category = "prop",
         label = "Microphone Rock 9",
         animDict = "lunyx@mic@p9",
@@ -4865,9 +5569,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "sf_prop_sf_mic_01a",
-        propPos = {0.03, 0.02, -0.03, 162.9608, -91.1712, -3.8249},
+        propPos = {0.03, 0.02, -0.03, 162.9608, -91.1712, -3.8249}
     },
-["microphonerock10"] = {
+    ["microphonerock10"] = {
         category = "prop",
         label = "Microphone Rock 10",
         animDict = "lunyx@mic@p10",
@@ -4875,9 +5579,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "sf_prop_sf_mic_01a",
-        propPos = {0.03, 0.02, -0.03, 162.9608, -91.1712, -3.8249},
+        propPos = {0.03, 0.02, -0.03, 162.9608, -91.1712, -3.8249}
     },
-["leafblower"] = {
+    ["leafblower"] = {
         category = "prop",
         label = "Leaf Blower",
         animDict = "amb@world_human_gardener_leaf_blower@base",
@@ -4885,9 +5589,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_leaf_blower_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["bbq(female)"] = {
+    ["bbq(female)"] = {
         category = "prop",
         label = "BBQ (Female)",
         animDict = "amb@prop_human_bbq@male@idle_a",
@@ -4895,9 +5599,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_fish_slice_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["pumpkin"] = {
+    ["pumpkin"] = {
         category = "prop",
         label = "Pumpkin",
         animDict = "missfbi4prepp1",
@@ -4905,9 +5609,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_veg_crop_03_pump",
-        propPos = {0.02, 0.06, -0.12, 0.0, 0.0, 0.0},
+        propPos = {0.02, 0.06, -0.12, 0.0, 0.0, 0.0}
     },
-["pumpkin2"] = {
+    ["pumpkin2"] = {
         category = "prop",
         label = "Pumpkin 2",
         animDict = "anim@heists@box_carry@",
@@ -4915,9 +5619,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_veg_crop_03_pump",
-        propPos = {0.01, -0.16, -0.21, 0.0, 0.0, 0.0},
+        propPos = {0.01, -0.16, -0.21, 0.0, 0.0, 0.0}
     },
-["pumpkin3"] = {
+    ["pumpkin3"] = {
         category = "prop",
         label = "Pumpkin 3",
         animDict = "missfbi4prepp1",
@@ -4925,9 +5629,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "reh_prop_reh_lantern_pk_01a",
-        propPos = {0.001, 0.066, -0.012, 171.9169, 179.8707, -39.986},
+        propPos = {0.001, 0.066, -0.012, 171.9169, 179.8707, -39.986}
     },
-["pumpkin4"] = {
+    ["pumpkin4"] = {
         category = "prop",
         label = "Pumpkin 4",
         animDict = "missfbi4prepp1",
@@ -4935,9 +5639,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "reh_prop_reh_lantern_pk_01b",
-        propPos = {0.001, 0.066, -0.012, 171.9169, 179.8707, -39.986},
+        propPos = {0.001, 0.066, -0.012, 171.9169, 179.8707, -39.986}
     },
-["pumpkin5"] = {
+    ["pumpkin5"] = {
         category = "prop",
         label = "Pumpkin 5",
         animDict = "missfbi4prepp1",
@@ -4945,9 +5649,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "reh_prop_reh_lantern_pk_01c",
-        propPos = {0.001, 0.066, -0.012, 171.9169, 179.8707, -39.986},
+        propPos = {0.001, 0.066, -0.012, 171.9169, 179.8707, -39.986}
     },
-["mop"] = {
+    ["mop"] = {
         category = "prop",
         label = "Mop",
         animDict = "missfbi4prepp1",
@@ -4955,9 +5659,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_mop_s",
-        propPos = {-0.02, -0.06, -0.2, -13.377, 10.3568, 17.9681},
+        propPos = {-0.02, -0.06, -0.2, -13.377, 10.3568, 17.9681}
     },
-["mop2"] = {
+    ["mop2"] = {
         category = "prop",
         label = "Mop 2",
         animDict = "move_mop",
@@ -4965,9 +5669,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_mop_s",
-        propPos = {0.0, 0.0, 0.12, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.12, 0.0, 0.0, 0.0}
     },
-["jerkoff!female"] = {
+    ["jerkoff!female"] = {
         category = "prop",
         label = "JerkOff! Female",
         animDict = "switch@trevor@jerking_off",
@@ -4975,9 +5679,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_dildo_01",
-        propPos = {0.09, 0.05, -0.03, 90.0, 80.0, 30.0},
+        propPos = {0.09, 0.05, -0.03, 90.0, 80.0, 30.0}
     },
-["hoe"] = {
+    ["hoe"] = {
         category = "prop",
         label = "Hoe",
         animDict = "anim@amb@drug_field_workers@rake@male_a@base",
@@ -4985,9 +5689,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_tool_shovel5",
-        propPos = {0.0, 0.0, -0.5, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, -0.5, 0.0, 0.0, 0.0}
     },
-["hoe2"] = {
+    ["hoe2"] = {
         category = "prop",
         label = "Hoe 2",
         animDict = "anim@amb@drug_field_workers@rake@male_a@idles",
@@ -4995,9 +5699,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_tool_shovel5",
-        propPos = {0.0, 0.0, -0.5, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, -0.5, 0.0, 0.0, 0.0}
     },
-["hoe3"] = {
+    ["hoe3"] = {
         category = "prop",
         label = "Hoe 3",
         animDict = "anim@amb@drug_field_workers@rake@male_b@base",
@@ -5005,9 +5709,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_tool_shovel5",
-        propPos = {0.0, 0.0, -0.5, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, -0.5, 0.0, 0.0, 0.0}
     },
-["hoe4"] = {
+    ["hoe4"] = {
         category = "prop",
         label = "Hoe 4",
         animDict = "anim@amb@drug_field_workers@rake@male_b@idles",
@@ -5015,9 +5719,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_tool_shovel5",
-        propPos = {0.0, 0.0, -0.5, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, -0.5, 0.0, 0.0, 0.0}
     },
-["rake"] = {
+    ["rake"] = {
         category = "prop",
         label = "Rake",
         animDict = "anim@amb@drug_field_workers@rake@male_a@base",
@@ -5025,9 +5729,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_tool_rake",
-        propPos = {0.0, 0.0, -0.03, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, -0.03, 0.0, 0.0, 0.0}
     },
-["rake2"] = {
+    ["rake2"] = {
         category = "prop",
         label = "Rake 2",
         animDict = "anim@amb@drug_field_workers@rake@male_a@idles",
@@ -5035,9 +5739,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_tool_rake",
-        propPos = {0.0, 0.0, -0.03, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, -0.03, 0.0, 0.0, 0.0}
     },
-["rake3"] = {
+    ["rake3"] = {
         category = "prop",
         label = "Rake 3",
         animDict = "anim@amb@drug_field_workers@rake@male_b@base",
@@ -5045,9 +5749,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_tool_rake",
-        propPos = {0.0, 0.0, -0.5, -20.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, -0.5, -20.0, 0.0, 0.0}
     },
-["rake4"] = {
+    ["rake4"] = {
         category = "prop",
         label = "Rake 4",
         animDict = "anim@amb@drug_field_workers@rake@male_b@idles",
@@ -5055,9 +5759,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_tool_rake",
-        propPos = {0.0, 0.0, -0.03, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, -0.03, 0.0, 0.0, 0.0}
     },
-["broom"] = {
+    ["broom"] = {
         category = "prop",
         label = "Broom",
         animDict = "anim@amb@drug_field_workers@rake@male_a@base",
@@ -5065,9 +5769,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_tool_broom",
-        propPos = {-0.01, 0.04, -0.03, 0.0, 0.0, 0.0},
+        propPos = {-0.01, 0.04, -0.03, 0.0, 0.0, 0.0}
     },
-["broom2"] = {
+    ["broom2"] = {
         category = "prop",
         label = "Broom 2",
         animDict = "anim@amb@drug_field_workers@rake@male_a@idles",
@@ -5075,9 +5779,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_tool_broom",
-        propPos = {-0.01, 0.04, -0.03, 0.0, 0.0, 0.0},
+        propPos = {-0.01, 0.04, -0.03, 0.0, 0.0, 0.0}
     },
-["broom3"] = {
+    ["broom3"] = {
         category = "prop",
         label = "Broom 3",
         animDict = "anim@amb@drug_field_workers@rake@male_b@base",
@@ -5085,9 +5789,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_tool_broom",
-        propPos = {-0.01, 0.04, -0.03, 0.0, 0.0, 0.0},
+        propPos = {-0.01, 0.04, -0.03, 0.0, 0.0, 0.0}
     },
-["broom4"] = {
+    ["broom4"] = {
         category = "prop",
         label = "Broom 4",
         animDict = "anim@amb@drug_field_workers@rake@male_b@idles",
@@ -5095,9 +5799,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_tool_broom",
-        propPos = {-0.01, 0.04, -0.03, 0.0, 0.0, 0.0},
+        propPos = {-0.01, 0.04, -0.03, 0.0, 0.0, 0.0}
     },
-["champagnewaiter2"] = {
+    ["champagnewaiter2"] = {
         category = "prop",
         label = "Champagne Waiter 2",
         animDict = "anim@move_f@waitress",
@@ -5105,9 +5809,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "h4_prop_h4_champ_tray_01b",
-        propPos = {0.0, 0.0, 0.01, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.01, 0.0, 0.0, 0.0}
     },
-["champagnewaiter3"] = {
+    ["champagnewaiter3"] = {
         category = "prop",
         label = "Champagne Waiter 3",
         animDict = "anim@move_f@waitress",
@@ -5115,9 +5819,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "h4_prop_h4_champ_tray_01c",
-        propPos = {0.0, 0.0, 0.01, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.01, 0.0, 0.0, 0.0}
     },
-["shit"] = {
+    ["shit"] = {
         category = "prop",
         label = "Shit",
         animDict = "missfbi3ig_0",
@@ -5125,9 +5829,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_toilet_roll_01",
-        propPos = {0.07, -0.02, -0.21, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.07, -0.02, -0.21, 0.0, 0.0, 0.0, 0.0}
     },
-["shitwhilewalking"] = {
+    ["shitwhilewalking"] = {
         category = "prop",
         label = "Shit While Walking",
         animDict = "missfbi3ig_0",
@@ -5135,45 +5839,45 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_toilet_roll_01",
-        propPos = {0.07, -0.02, -0.21, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.07, -0.02, -0.21, 0.0, 0.0, 0.0, 0.0}
     },
-["puke"] = {
+    ["puke"] = {
         category = "prop",
         label = "Puke",
         animDict = "cross_arms@dark",
         animName = "cross_arms_clip",
         animFlag = 1,
         bone = 28422,
-        prop = "",
+        prop = ""
     },
-["puke2"] = {
+    ["puke2"] = {
         category = "prop",
         label = "Puke 2",
         animDict = "missheistpaletoscore1leadinout",
         animName = "trv_puking_leadout",
         animFlag = 1,
         bone = 28422,
-        prop = "",
+        prop = ""
     },
-["puke3"] = {
+    ["puke3"] = {
         category = "prop",
         label = "Puke 3",
         animDict = "anim@scripted@ulp_missions@injured_agent@",
         animName = "idle",
         animFlag = 1,
         bone = 28422,
-        prop = "",
+        prop = ""
     },
-["puke4"] = {
+    ["puke4"] = {
         category = "prop",
         label = "Puke 4",
         animDict = "anim@scripted@freemode@throw_up_toilet@male@",
         animName = "vomit",
         animFlag = 1,
         bone = 28422,
-        prop = "",
+        prop = ""
     },
-["selfie"] = {
+    ["selfie"] = {
         category = "prop",
         label = "Selfie",
         animDict = "anim@mp_player_intuppertake_selfie",
@@ -5181,9 +5885,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_phone_ing",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["selfie2"] = {
+    ["selfie2"] = {
         category = "prop",
         label = "Selfie 2",
         animDict = "cellphone@self@franklin@",
@@ -5191,9 +5895,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_phone_ing",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["selfie3-westside"] = {
+    ["selfie3-westside"] = {
         category = "prop",
         label = "Selfie 3 - West Side",
         animDict = "cellphone@self@franklin@",
@@ -5201,9 +5905,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_phone_ing",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["selfie4-finger"] = {
+    ["selfie4-finger"] = {
         category = "prop",
         label = "Selfie 4 - Finger",
         animDict = "cellphone@self@trevor@",
@@ -5211,9 +5915,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_phone_ing",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["selfie5-finger2"] = {
+    ["selfie5-finger2"] = {
         category = "prop",
         label = "Selfie 5 - Finger 2",
         animDict = "cellphone@self@trevor@",
@@ -5221,9 +5925,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_phone_ing",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["selfie6-throatslit"] = {
+    ["selfie6-throatslit"] = {
         category = "prop",
         label = "Selfie 6 - Throat Slit",
         animDict = "cellphone@self@trevor@",
@@ -5231,9 +5935,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_phone_ing",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["selfie7-chestbump"] = {
+    ["selfie7-chestbump"] = {
         category = "prop",
         label = "Selfie 7 - Chest Bump",
         animDict = "cellphone@self@franklin@",
@@ -5241,9 +5945,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_phone_ing",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["selfie8-bumperpics"] = {
+    ["selfie8-bumperpics"] = {
         category = "prop",
         label = "Selfie 8 - Bumper Pics",
         animDict = "anim@amb@carmeet@take_photos@",
@@ -5251,9 +5955,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_phone_ing",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["selfie9-selfiececk"] = {
+    ["selfie9-selfiececk"] = {
         category = "prop",
         label = "Selfie 9 - Selfie Ceck",
         animDict = "anim@amb@carmeet@take_photos@",
@@ -5261,9 +5965,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_phone_ing",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["selfiehigh"] = {
+    ["selfiehigh"] = {
         category = "prop",
         label = "Selfie High",
         animDict = "girl_groupe_b@darksj",
@@ -5271,9 +5975,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 26611,
         prop = "prop_phone_ing",
-        propPos = {0.062, -0.04, 0.008, -17.1672, 9.8904, -18.1951},
+        propPos = {0.062, -0.04, 0.008, -17.1672, 9.8904, -18.1951}
     },
-["selfiepeace"] = {
+    ["selfiepeace"] = {
         category = "prop",
         label = "Selfie Peace",
         animDict = "mirror_selfie@peace_sign",
@@ -5281,9 +5985,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_phone_ing",
-        propPos = {0.17, 0.0299, -0.0159, -126.2687, -139.9058, 35.6203},
+        propPos = {0.17, 0.0299, -0.0159, -126.2687, -139.9058, 35.6203}
     },
-["selfiecrouching"] = {
+    ["selfiecrouching"] = {
         category = "prop",
         label = "Selfie Crouching",
         animDict = "crouching@taking_selfie",
@@ -5291,9 +5995,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_phone_ing",
-        propPos = {0.158, 0.018, 0.03, -150.4798, -67.824, -46.0417},
+        propPos = {0.158, 0.018, 0.03, -150.4798, -67.824, -46.0417}
     },
-["selfiecrouching2"] = {
+    ["selfiecrouching2"] = {
         category = "prop",
         label = "Selfie Crouching 2",
         animDict = "eagle@girlphonepose13",
@@ -5301,9 +6005,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_phone_ing",
-        propPos = {0.067, 0.03, 0.03, -90.0, 0.0, -25.9},
+        propPos = {0.067, 0.03, 0.03, -90.0, 0.0, -25.9}
     },
-["selfiecrouching3"] = {
+    ["selfiecrouching3"] = {
         category = "prop",
         label = "Selfie Crouching 3",
         animDict = "anim@male_insta_selfie",
@@ -5311,9 +6015,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_phone_ing",
-        propPos = {0.07, 0.01, 0.069, 0.0, 0.0, -150.0},
+        propPos = {0.07, 0.01, 0.069, 0.0, 0.0, -150.0}
     },
-["selfiecrouching4"] = {
+    ["selfiecrouching4"] = {
         category = "prop",
         label = "Selfie Crouching 4",
         animDict = "anim@female_selfie_risque",
@@ -5321,9 +6025,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_phone_ing",
-        propPos = {0.158, 0.018, 0.03, -150.4798, -67.824, -46.0417},
+        propPos = {0.158, 0.018, 0.03, -150.4798, -67.824, -46.0417}
     },
-["selfieegirl"] = {
+    ["selfieegirl"] = {
         category = "prop",
         label = "Selfie E Girl",
         animDict = "anim@female_egirl_cute_selfie",
@@ -5331,9 +6035,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 26613,
         prop = "prop_phone_ing",
-        propPos = {0.076, -0.022, 0.035, -22.0968, 30.4351, -7.9339},
+        propPos = {0.076, -0.022, 0.035, -22.0968, 30.4351, -7.9339}
     },
-["selfieslutpose"] = {
+    ["selfieslutpose"] = {
         category = "prop",
         label = "Selfie Slut Pose",
         animDict = "anim@female_floor_slutarch_selfie",
@@ -5341,9 +6045,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 58868,
         prop = "prop_phone_ing",
-        propPos = {0.035, 0.014, 0.029, 167.9999, 180.0, -8.8999},
+        propPos = {0.035, 0.014, 0.029, 167.9999, 180.0, -8.8999}
     },
-["selfiesitting2"] = {
+    ["selfiesitting2"] = {
         category = "prop",
         label = "Selfie Sitting 2",
         animDict = "eagle@boypose05",
@@ -5351,9 +6055,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 4090,
         prop = "prop_phone_ing",
-        propPos = {0.013, 0.012, -0.007, -103.6673, -11.0026, 18.2605},
+        propPos = {0.013, 0.012, -0.007, -103.6673, -11.0026, 18.2605}
     },
-["selfiesitting3"] = {
+    ["selfiesitting3"] = {
         category = "prop",
         label = "Selfie Sitting 3",
         animDict = "chocoholic@single77",
@@ -5361,9 +6065,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 4185,
         prop = "prop_phone_ing",
-        propPos = {0.013, -0.019, 0.032, 0.0, 0.0, 0.0},
+        propPos = {0.013, -0.019, 0.032, 0.0, 0.0, 0.0}
     },
-["selfiesitting4"] = {
+    ["selfiesitting4"] = {
         category = "prop",
         label = "Selfie Sitting 4",
         animDict = "chocoholic@single89",
@@ -5371,9 +6075,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 4169,
         prop = "prop_phone_ing",
-        propPos = {0.01, -0.033, 0.0, -19.7197, 9.408, -3.4048},
+        propPos = {0.01, -0.033, 0.0, -19.7197, 9.408, -3.4048}
     },
-["selfiesitting5"] = {
+    ["selfiesitting5"] = {
         category = "prop",
         label = "Selfie Sitting 5",
         animDict = "chocoholic@single83",
@@ -5381,9 +6085,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64016,
         prop = "prop_phone_ing",
-        propPos = {0.108, -0.016, 0.03, -171.4163, -117.2863, 17.0148},
+        propPos = {0.108, -0.016, 0.03, -171.4163, -117.2863, 17.0148}
     },
-["selfiethotinstagram"] = {
+    ["selfiethotinstagram"] = {
         category = "prop",
         label = "Selfie Thot Instagram",
         animDict = "anim@sitting_thot",
@@ -5391,9 +6095,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_phone_ing",
-        propPos = {0.103, 0.044, -0.027, -160.2802, -99.408, -3.4048},
+        propPos = {0.103, 0.044, -0.027, -160.2802, -99.408, -3.4048}
     },
-["selfiefloorinstagram"] = {
+    ["selfiefloorinstagram"] = {
         category = "prop",
         label = "Selfie Floor Instagram",
         animDict = "anim@selfie_floor_cute",
@@ -5401,9 +6105,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_phone_ing",
-        propPos = {0.093, 0.023, 0.026, -158.8271, -82.904, -18.7472},
+        propPos = {0.093, 0.023, 0.026, -158.8271, -82.904, -18.7472}
     },
-["selfiefloor2"] = {
+    ["selfiefloor2"] = {
         category = "prop",
         label = "Selfie Floor 2",
         animDict = "anim@female_selfie_04",
@@ -5411,9 +6115,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 4185,
         prop = "prop_phone_ing",
-        propPos = {0.017, -0.01, 0.02, -27.358, 54.9374, -6.1611},
+        propPos = {0.017, -0.01, 0.02, -27.358, 54.9374, -6.1611}
     },
-["selfie&wine"] = {
+    ["selfie&wine"] = {
         category = "prop",
         label = "Selfie & Wine",
         animDict = "chocoholic@single90",
@@ -5421,9 +6125,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "p_wine_glass_s",
-        propPos = {0.08, 0.017, 0.081, -174.2748, -11.5083, 29.4987},
+        propPos = {0.08, 0.017, 0.081, -174.2748, -11.5083, 29.4987}
     },
-["selfiesexy"] = {
+    ["selfiesexy"] = {
         category = "prop",
         label = "Selfie Sexy",
         animDict = "littlespoon@selfie001",
@@ -5431,9 +6135,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 58870,
         prop = "prop_phone_ing",
-        propPos = {0.015, 0.023, 0.07, 0.0, 0.0, 170.0},
+        propPos = {0.015, 0.023, 0.07, 0.0, 0.0, 170.0}
     },
-["selfiesexy2"] = {
+    ["selfiesexy2"] = {
         category = "prop",
         label = "Selfie Sexy 2",
         animDict = "littlespoon@selfie002",
@@ -5441,9 +6145,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64064,
         prop = "prop_phone_ing",
-        propPos = {0.029, 0.014, 0.049, 174.9616, -149.6187, 8.6491},
+        propPos = {0.029, 0.014, 0.049, 174.9616, -149.6187, 8.6491}
     },
-["selfiesexy3-squat"] = {
+    ["selfiesexy3-squat"] = {
         category = "prop",
         label = "Selfie Sexy 3 - Squat",
         animDict = "littlespoon@selfie003",
@@ -5451,9 +6155,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64064,
         prop = "prop_phone_ing",
-        propPos = {0.029, 0.014, 0.049, 174.9616, -149.6187, 8.6491},
+        propPos = {0.029, 0.014, 0.049, 174.9616, -149.6187, 8.6491}
     },
-["selfiesexy4"] = {
+    ["selfiesexy4"] = {
         category = "prop",
         label = "Selfie Sexy 4",
         animDict = "littlespoon@selfie004",
@@ -5461,9 +6165,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64064,
         prop = "prop_phone_ing",
-        propPos = {0.029, 0.014, 0.049, 174.9616, -149.6187, 8.6491},
+        propPos = {0.029, 0.014, 0.049, 174.9616, -149.6187, 8.6491}
     },
-["selfiesexy5"] = {
+    ["selfiesexy5"] = {
         category = "prop",
         label = "Selfie Sexy 5",
         animDict = "littlespoon@selfie005",
@@ -5471,9 +6175,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64064,
         prop = "prop_phone_ing",
-        propPos = {0.029, 0.014, 0.049, 174.9616, -149.6187, 8.6491},
+        propPos = {0.029, 0.014, 0.049, 174.9616, -149.6187, 8.6491}
     },
-["selfiecute"] = {
+    ["selfiecute"] = {
         category = "prop",
         label = "Selfie Cute",
         animDict = "pupppy@freeselfie01",
@@ -5481,9 +6185,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 26613,
         prop = "prop_phone_ing",
-        propPos = {0.038, -0.031, 0.059, 0.0, 0.0, 10.0},
+        propPos = {0.038, -0.031, 0.059, 0.0, 0.0, 10.0}
     },
-["selfiecute2"] = {
+    ["selfiecute2"] = {
         category = "prop",
         label = "Selfie Cute 2",
         animDict = "pupppy@freeselfie02",
@@ -5491,9 +6195,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_phone_ing",
-        propPos = {0.096, 0.016, 0.042, -155.3515, -84.4828, 4.7551},
+        propPos = {0.096, 0.016, 0.042, -155.3515, -84.4828, 4.7551}
     },
-["selfiecute3"] = {
+    ["selfiecute3"] = {
         category = "prop",
         label = "Selfie Cute 3",
         animDict = "pupppy@freeselfie03",
@@ -5501,9 +6205,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 26614,
         prop = "prop_phone_ing",
-        propPos = {0.031, -0.043, 0.072, 0.0, 3.9999, 0.0},
+        propPos = {0.031, -0.043, 0.072, 0.0, 3.9999, 0.0}
     },
-["selfiecute4"] = {
+    ["selfiecute4"] = {
         category = "prop",
         label = "Selfie Cute 4",
         animDict = "anim@egirl_1foot_selfie",
@@ -5511,9 +6215,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 4185,
         prop = "prop_phone_ing",
-        propPos = {0.029, -0.023, 0.019, -14.786, 67.803, 6.1827},
+        propPos = {0.029, -0.023, 0.019, -14.786, 67.803, 6.1827}
     },
-["selfiecute5"] = {
+    ["selfiecute5"] = {
         category = "prop",
         label = "Selfie Cute 5",
         animDict = "eagle@girlphonepose21",
@@ -5521,9 +6225,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 4185,
         prop = "prop_phone_ing",
-        propPos = {0.021, -0.015, 0.011, -45.8936, 41.8372, -26.6415},
+        propPos = {0.021, -0.015, 0.011, -45.8936, 41.8372, -26.6415}
     },
-["selfiebeachbum"] = {
+    ["selfiebeachbum"] = {
         category = "prop",
         label = "Selfie Beach Bum",
         animDict = "anim@female_beach_booty_selfie",
@@ -5531,9 +6235,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 26613,
         prop = "prop_phone_ing",
-        propPos = {0.068, -0.025, 0.034, -13.4299, 47.2288, -14.9588},
+        propPos = {0.068, -0.025, 0.034, -13.4299, 47.2288, -14.9588}
     },
-["selfiehearthands"] = {
+    ["selfiehearthands"] = {
         category = "prop",
         label = "Selfie Heart Hands",
         animDict = "heartselfiemirror@queensisters",
@@ -5541,9 +6245,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64096,
         prop = "prop_phone_ing",
-        propPos = {0.039, 0.02, 0.033, 90.0, 180.0, 13.0},
+        propPos = {0.039, 0.02, 0.033, 90.0, 180.0, 13.0}
     },
-["selfiemiddlefinger2"] = {
+    ["selfiemiddlefinger2"] = {
         category = "prop",
         label = "Selfie Middle Finger 2",
         animDict = "fuckyouselfie@queensisters",
@@ -5551,9 +6255,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64097,
         prop = "prop_phone_ing",
-        propPos = {-0.021, 0.03, -0.003, -180.0, -180.0, 0.0},
+        propPos = {-0.021, 0.03, -0.003, -180.0, -180.0, 0.0}
     },
-["selfiemiddlefingerthotpose"] = {
+    ["selfiemiddlefingerthotpose"] = {
         category = "prop",
         label = "Selfie Middle Finger Thot Pose",
         animDict = "selfiekilye@queensisters",
@@ -5561,9 +6265,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_dildo_01",
-        propPos = {0.045, 0.005, -0.015, 92.081, 1.3049, -2.8863},
+        propPos = {0.045, 0.005, -0.015, 92.081, 1.3049, -2.8863}
     },
-["selfiemalepose"] = {
+    ["selfiemalepose"] = {
         category = "prop",
         label = "Selfie Male Pose",
         animDict = "eagle@boypose04",
@@ -5571,9 +6275,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_phone_ing",
-        propPos = {0.073, 0.022, 0.046, -142.1374, -92.4142, 33.1691},
+        propPos = {0.073, 0.022, 0.046, -142.1374, -92.4142, 33.1691}
     },
-["selfiemeh"] = {
+    ["selfiemeh"] = {
         category = "prop",
         label = "Selfie Meh",
         animDict = "chocoholic@single81",
@@ -5581,9 +6285,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 58868,
         prop = "prop_phone_ing",
-        propPos = {0.045, 0.031, 0.028, 165.3005, -174.8342, -8.477},
+        propPos = {0.045, 0.031, 0.028, 165.3005, -174.8342, -8.477}
     },
-["femalemirrorselfie"] = {
+    ["femalemirrorselfie"] = {
         category = "prop",
         label = "Female Mirror Selfie",
         animDict = "mirror_selfie_1@janina234",
@@ -5591,9 +6295,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 4089,
         prop = "prop_phone_ing",
-        propPos = {0.089, -0.035, 0.02, -161.7778308, -54.5014945, -12.0985177},
+        propPos = {0.089, -0.035, 0.02, -161.7778308, -54.5014945, -12.0985177}
     },
-["femalemirrorselfie1"] = {
+    ["femalemirrorselfie1"] = {
         category = "prop",
         label = "Female Mirror Selfie 1",
         animDict = "mirror_selfie_8@daj",
@@ -5601,9 +6305,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 4153,
         prop = "prop_phone_ing",
-        propPos = {0.04, 0.0, 0.05, -37.4803963, 33.2648588, 18.6732448},
+        propPos = {0.04, 0.0, 0.05, -37.4803963, 33.2648588, 18.6732448}
     },
-["cameraphotography"] = {
+    ["cameraphotography"] = {
         category = "prop",
         label = "Camera Photography",
         animDict = "mrwitt@photographic_journey_f",
@@ -5611,9 +6315,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 26613,
         prop = "prop_pap_camera_01",
-        propPos = {0.028, -0.135, 0.112, -86.9428843, 157.9882355, 80.8053557},
+        propPos = {0.028, -0.135, 0.112, -86.9428843, 157.9882355, 80.8053557}
     },
-["malemirrorselfie"] = {
+    ["malemirrorselfie"] = {
         category = "prop",
         label = "Male Mirror Selfie",
         animDict = "anim@male_model_08",
@@ -5621,9 +6325,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 4169,
         prop = "prop_phone_ing",
-        propPos = {0.03, -0.02, 0.02, -64.2080926, 3.367247, 0.0711684},
+        propPos = {0.03, -0.02, 0.02, -64.2080926, 3.367247, 0.0711684}
     },
-["malemirrorselfie1"] = {
+    ["malemirrorselfie1"] = {
         category = "prop",
         label = "Male Mirror Selfie 1",
         animDict = "anim@male_selfie_08",
@@ -5631,9 +6335,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 4169,
         prop = "prop_phone_ing",
-        propPos = {0.01, -0.04, 0.0, -32.8072134, 11.7427793, 32.5772863},
+        propPos = {0.01, -0.04, 0.0, -32.8072134, 11.7427793, 32.5772863}
     },
-["malemirrorselfie2"] = {
+    ["malemirrorselfie2"] = {
         category = "prop",
         label = "Male Mirror Selfie 2",
         animDict = "anim@male_selfie_06",
@@ -5641,9 +6345,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 4169,
         prop = "prop_phone_ing",
-        propPos = {0.02, -0.02, 0.01, -69.7707963, 3.10072, -8.4531301},
+        propPos = {0.02, -0.02, 0.01, -69.7707963, 3.10072, -8.4531301}
     },
-["malemirrorselfie4"] = {
+    ["malemirrorselfie4"] = {
         category = "prop",
         label = "Male Mirror Selfie 4",
         animDict = "anim@male_model_03",
@@ -5651,9 +6355,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 4169,
         prop = "prop_phone_ing",
-        propPos = {0.01, -0.06, -0.01, -23.7215768, 66.9464998, -62.7303262},
+        propPos = {0.01, -0.06, -0.01, -23.7215768, 66.9464998, -62.7303262}
     },
-["malemirrorselfie3"] = {
+    ["malemirrorselfie3"] = {
         category = "prop",
         label = "Male Mirror Selfie 3",
         animDict = "anim@male_selfie_09",
@@ -5661,9 +6365,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 4169,
         prop = "prop_phone_ing",
-        propPos = {0.04, -0.03, 0.0, -46.0563529, -0.6965831, -4.2803096},
+        propPos = {0.04, -0.03, 0.0, -46.0563529, -0.6965831, -4.2803096}
     },
-["sittv"] = {
+    ["sittv"] = {
         category = "prop",
         label = "Sit TV",
         animDict = "anim@heists@heist_safehouse_intro@variations@male@tv",
@@ -5671,9 +6375,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "v_res_tre_remote",
-        propPos = {0.099, 0.017, -0.03, -64.76, -109.544, 18.717},
+        propPos = {0.099, 0.017, -0.03, -64.76, -109.544, 18.717}
     },
-["sitchair-armchair"] = {
+    ["sitchair-armchair"] = {
         category = "prop",
         label = "Sit Chair - Armchair",
         animDict = "mouse@femalearmchair",
@@ -5681,9 +6385,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 11816,
         prop = "p_armchair_01_s",
-        propPos = {0.532, -0.331, 0.2, -90.0, -180.0, -40.9999},
+        propPos = {0.532, -0.331, 0.2, -90.0, -180.0, -40.9999}
     },
-["sitchair-armsfolded"] = {
+    ["sitchair-armsfolded"] = {
         category = "prop",
         label = "Sit Chair - Arms Folded",
         animDict = "mouse@female_sitting_folded",
@@ -5691,9 +6395,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 0,
         prop = "ba_prop_battle_club_chair_03",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, -170.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, -170.0}
     },
-["sitchair-leaningforward"] = {
+    ["sitchair-leaningforward"] = {
         category = "prop",
         label = "Sit Chair - Leaning Forward",
         animDict = "mouse@female_sitting_forward",
@@ -5701,9 +6405,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 0,
         prop = "ba_prop_battle_club_chair_03",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, -170.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, -170.0}
     },
-["sitchair-smart"] = {
+    ["sitchair-smart"] = {
         category = "prop",
         label = "Sit Chair - Smart",
         animDict = "mouse@female_smart_sitting",
@@ -5711,9 +6415,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 0,
         prop = "ba_prop_battle_club_chair_03",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, -170.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, -170.0}
     },
-["sitchair-legscrossed"] = {
+    ["sitchair-legscrossed"] = {
         category = "prop",
         label = "Sit Chair - Legs Crossed",
         animDict = "mouse@female_smart_sitting_crossed",
@@ -5721,9 +6425,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 0,
         prop = "ba_prop_battle_club_chair_03",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, -170.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, -170.0}
     },
-["axe-groundimpact"] = {
+    ["axe-groundimpact"] = {
         category = "prop",
         label = "Axe - Ground Impact",
         animDict = "melee@large_wpn@streamed_core",
@@ -5731,9 +6435,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_tool_fireaxe",
-        propPos = {0.016, -0.314, -0.086, -97.1455, 165.0749, 13.9114},
+        propPos = {0.016, -0.314, -0.086, -97.1455, 165.0749, 13.9114}
     },
-["axe-pickaxegroundimpact"] = {
+    ["axe-pickaxegroundimpact"] = {
         category = "prop",
         label = "Axe - Pickaxe Ground Impact",
         animDict = "melee@large_wpn@streamed_core",
@@ -5741,9 +6445,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_tool_pickaxe",
-        propPos = {0.08, -0.1, -0.04, 78.0, -20.0, 175.0},
+        propPos = {0.08, -0.1, -0.04, 78.0, -20.0, 175.0}
     },
-["bongodrums"] = {
+    ["bongodrums"] = {
         category = "prop",
         label = "Bongo Drums",
         animDict = "amb@world_human_musician@bongos@male@base",
@@ -5751,9 +6455,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_bongos_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["medicbag"] = {
+    ["medicbag"] = {
         category = "prop",
         label = "Medic Bag",
         animDict = "move_weapon@jerrycan@generic",
@@ -5761,9 +6465,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "xm_prop_x17_bag_med_01a",
-        propPos = {0.39, -0.06, -0.06, -100.0, -180.0, -78.0},
+        propPos = {0.39, -0.06, -0.06, -100.0, -180.0, -78.0}
     },
-["medicbag2"] = {
+    ["medicbag2"] = {
         category = "prop",
         label = "Medic Bag 2",
         animDict = "move_weapon@jerrycan@generic",
@@ -5771,9 +6475,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "v_ret_ta_firstaid",
-        propPos = {0.21, 0.0, -0.03, -100.0, -180.0, -78.0},
+        propPos = {0.21, 0.0, -0.03, -100.0, -180.0, -78.0}
     },
-["medicbox"] = {
+    ["medicbox"] = {
         category = "prop",
         label = "Medic Box",
         animDict = "move_weapon@jerrycan@generic",
@@ -5781,9 +6485,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "xm_prop_smug_crate_s_medical",
-        propPos = {0.25, 0.02, -0.01, 90.0, 0.0, -81.9999},
+        propPos = {0.25, 0.02, -0.01, 90.0, 0.0, -81.9999}
     },
-["beachbag"] = {
+    ["beachbag"] = {
         category = "prop",
         label = "Beach Bag",
         animDict = "move_weapon@jerrycan@generic",
@@ -5791,9 +6495,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_beachbag_05",
-        propPos = {0.4, 0.03, 0.01, 0.0, -90.0, 100.0},
+        propPos = {0.4, 0.03, 0.01, 0.0, -90.0, 100.0}
     },
-["beachbag2"] = {
+    ["beachbag2"] = {
         category = "prop",
         label = "Beach Bag 2",
         animDict = "move_weapon@jerrycan@generic",
@@ -5801,9 +6505,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_beachbag_06",
-        propPos = {0.4, 0.03, 0.01, 0.0, -90.0, 100.0},
+        propPos = {0.4, 0.03, 0.01, 0.0, -90.0, 100.0}
     },
-["beachbag3"] = {
+    ["beachbag3"] = {
         category = "prop",
         label = "Beach Bag 3",
         animDict = "move_weapon@jerrycan@generic",
@@ -5811,9 +6515,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_beachbag_01",
-        propPos = {0.4, 0.03, 0.01, 0.0, -90.0, 100.0},
+        propPos = {0.4, 0.03, 0.01, 0.0, -90.0, 100.0}
     },
-["duffelbag"] = {
+    ["duffelbag"] = {
         category = "prop",
         label = "Duffel Bag",
         animDict = "move_weapon@jerrycan@generic",
@@ -5821,9 +6525,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_big_bag_01",
-        propPos = {0.26, 0.04, 0.0, 90.0, 0.0, -78.99},
+        propPos = {0.26, 0.04, 0.0, 90.0, 0.0, -78.99}
     },
-["duffelbag2"] = {
+    ["duffelbag2"] = {
         category = "prop",
         label = "Duffel Bag 2",
         animDict = "move_weapon@jerrycan@generic",
@@ -5831,9 +6535,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "v_ret_gc_bag02",
-        propPos = {0.26, 0.04, 0.0, 90.0, 0.0, -78.99},
+        propPos = {0.26, 0.04, 0.0, 90.0, 0.0, -78.99}
     },
-["duffelbag3"] = {
+    ["duffelbag3"] = {
         category = "prop",
         label = "Duffel Bag 3",
         animDict = "move_weapon@jerrycan@generic",
@@ -5841,9 +6545,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "bkr_prop_duffel_bag_01a",
-        propPos = {0.26, 0.04, 0.0, 90.0, 0.0, -78.99},
+        propPos = {0.26, 0.04, 0.0, 90.0, 0.0, -78.99}
     },
-["shoppingbag"] = {
+    ["shoppingbag"] = {
         category = "prop",
         label = "Shopping Bag",
         animDict = "move_weapon@jerrycan@generic",
@@ -5851,9 +6555,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "vw_prop_casino_shopping_bag_01a",
-        propPos = {0.24, 0.03, -0.04, 0.0, -90.0, 10.0},
+        propPos = {0.24, 0.03, -0.04, 0.0, -90.0, 10.0}
     },
-["shoppingbag2"] = {
+    ["shoppingbag2"] = {
         category = "prop",
         label = "Shopping Bag 2",
         animDict = "move_weapon@jerrycan@generic",
@@ -5861,9 +6565,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_shopping_bags02",
-        propPos = {0.05, 0.02, 0.0, 178.8, 91.19, 9.97},
+        propPos = {0.05, 0.02, 0.0, 178.8, 91.19, 9.97}
     },
-["shoppingbag3"] = {
+    ["shoppingbag3"] = {
         category = "prop",
         label = "Shopping Bag 3",
         animDict = "move_weapon@jerrycan@generic",
@@ -5871,9 +6575,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_shopping_bag",
-        propPos = {0.24, 0.03, -0.04, 0.0, -90.0, 10.0},
+        propPos = {0.24, 0.03, -0.04, 0.0, -90.0, 10.0}
     },
-["summon"] = {
+    ["summon"] = {
         category = "prop",
         label = "Summon",
         animDict = "anim@scripted@surv@ig3_plague_summon@male@",
@@ -5881,9 +6585,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "m24_1_prop_m41_zombiestaff_01a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["summon2"] = {
+    ["summon2"] = {
         category = "prop",
         label = "Summon2",
         animDict = "anim@scripted@surv@ig3_plague_summon@male@",
@@ -5891,9 +6595,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "m24_1_prop_m41_zombiestaff_01a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["handbag"] = {
+    ["handbag"] = {
         category = "prop",
         label = "Hand Bag",
         animDict = "move_weapon@jerrycan@generic",
@@ -5901,9 +6605,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_amb_handbag_01",
-        propPos = {0.2, 0.03, -0.02, 90.4294, -177.4267, 83.0011},
+        propPos = {0.2, 0.03, -0.02, 90.4294, -177.4267, 83.0011}
     },
-["handbag2"] = {
+    ["handbag2"] = {
         category = "prop",
         label = "Hand Bag 2",
         animDict = "move_weapon@jerrycan@generic",
@@ -5911,9 +6615,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "v_ret_ps_bag_02",
-        propPos = {0.52, 0.03, 0.0, 0.0, -90.0, 100.0},
+        propPos = {0.52, 0.03, 0.0, 0.0, -90.0, 100.0}
     },
-["idcard1"] = {
+    ["idcard1"] = {
         category = "prop",
         label = "ID Card 1",
         animDict = "cop_badge_1@dad",
@@ -5921,9 +6625,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_franklin_dl",
-        propPos = {0.084, 0.02, -0.026, -173.8514, -88.0171, 63.0612},
+        propPos = {0.084, 0.02, -0.026, -173.8514, -88.0171, 63.0612}
     },
-["idcard2-fib"] = {
+    ["idcard2-fib"] = {
         category = "prop",
         label = "ID Card 2 - FIB",
         animDict = "paper_1_rcm_alt1-8",
@@ -5931,9 +6635,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_fib_badge",
-        propPos = {0.06, 0.021, -0.04, -90.0, -180.0, 78.999},
+        propPos = {0.06, 0.021, -0.04, -90.0, -180.0, 78.999}
     },
-["idcard3"] = {
+    ["idcard3"] = {
         category = "prop",
         label = "ID Card 3",
         animDict = "cop_badge_1@dad",
@@ -5941,9 +6645,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_michael_sec_id",
-        propPos = {0.084, 0.02, -0.026, -173.8514, -88.0171, 63.0612},
+        propPos = {0.084, 0.02, -0.026, -173.8514, -88.0171, 63.0612}
     },
-["idcard4"] = {
+    ["idcard4"] = {
         category = "prop",
         label = "ID Card 4",
         animDict = "cop_badge_1@dad",
@@ -5951,9 +6655,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_trev_sec_id",
-        propPos = {0.084, 0.02, -0.026, -173.8514, -88.0171, 63.0612},
+        propPos = {0.084, 0.02, -0.026, -173.8514, -88.0171, 63.0612}
     },
-["idcard5"] = {
+    ["idcard5"] = {
         category = "prop",
         label = "ID Card 5",
         animDict = "cop_badge_1@dad",
@@ -5961,9 +6665,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_casey_sec_id",
-        propPos = {0.084, 0.02, -0.026, -173.8514, -88.0171, 63.0612},
+        propPos = {0.084, 0.02, -0.026, -173.8514, -88.0171, 63.0612}
     },
-["idcard6"] = {
+    ["idcard6"] = {
         category = "prop",
         label = "ID Card 6",
         animDict = "cop_badge_1@dad",
@@ -5971,9 +6675,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_r_business_card",
-        propPos = {0.084, 0.02, -0.026, -173.8514, -88.0171, 63.0612},
+        propPos = {0.084, 0.02, -0.026, -173.8514, -88.0171, 63.0612}
     },
-["idcard7"] = {
+    ["idcard7"] = {
         category = "prop",
         label = "ID Card 7",
         animDict = "cop_badge_1@dad",
@@ -5981,9 +6685,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "p_ld_id_card_002",
-        propPos = {0.084, 0.02, -0.026, -173.8514, -88.0171, 63.0612},
+        propPos = {0.084, 0.02, -0.026, -173.8514, -88.0171, 63.0612}
     },
-["idcard8-copbadge"] = {
+    ["idcard8-copbadge"] = {
         category = "prop",
         label = "ID Card 8 - Cop Badge",
         animDict = "cop_badge_1@dad",
@@ -5991,9 +6695,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cop_badge",
-        propPos = {0.039, -0.01, -0.059, -103.1785, -176.6694, 74.9},
+        propPos = {0.039, -0.01, -0.059, -103.1785, -176.6694, 74.9}
     },
-["idcard9-driverslicense"] = {
+    ["idcard9-driverslicense"] = {
         category = "prop",
         label = "ID Card 9 - Drivers License",
         animDict = "paper_1_rcm_alt1-8",
@@ -6001,9 +6705,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "bkr_prop_fakeid_singledriverl",
-        propPos = {0.07, 0.026, -0.032, -10.8683, -177.8499, 23.6377},
+        propPos = {0.07, 0.026, -0.032, -10.8683, -177.8499, 23.6377}
     },
-["phone"] = {
+    ["phone"] = {
         category = "prop",
         label = "Phone",
         animDict = "cellphone@",
@@ -6011,9 +6715,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_phone_ing",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["sms"] = {
+    ["sms"] = {
         category = "prop",
         label = "SMS",
         animDict = "cellphone@",
@@ -6021,9 +6725,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_phone_ing",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["sms2"] = {
+    ["sms2"] = {
         category = "prop",
         label = "SMS 2",
         animDict = "cellphone@female",
@@ -6031,9 +6735,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_phone_ing",
-        propPos = {0.0, 0.0, 0.0301, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0301, 0.0, 0.0, 0.0}
     },
-["sms3"] = {
+    ["sms3"] = {
         category = "prop",
         label = "SMS 3",
         animDict = "cellphone@female",
@@ -6041,9 +6745,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_phone_ing",
-        propPos = {-0.019, -0.024, 0.03, 18.99, -72.07, 6.39},
+        propPos = {-0.019, -0.024, 0.03, 18.99, -72.07, 6.39}
     },
-["sms4"] = {
+    ["sms4"] = {
         category = "prop",
         label = "SMS 4",
         animDict = "cellphone@female",
@@ -6051,9 +6755,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_phone_ing",
-        propPos = {-0.019, -0.025, 0.04, 19.17, -78.5, 14.97},
+        propPos = {-0.019, -0.025, 0.04, 19.17, -78.5, 14.97}
     },
-["sms5"] = {
+    ["sms5"] = {
         category = "prop",
         label = "SMS 5",
         animDict = "amb@code_human_wander_texting_fat@male@base",
@@ -6061,9 +6765,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_phone_ing",
-        propPos = {-0.02, -0.01, 0.0, 2.309, 88.845, 29.979},
+        propPos = {-0.02, -0.01, 0.0, 2.309, 88.845, 29.979}
     },
-["smssit"] = {
+    ["smssit"] = {
         category = "prop",
         label = "SMS Sit",
         animDict = "mrwitt@phone_time_on_floor",
@@ -6071,9 +6775,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 26611,
         prop = "prop_phone_ing",
-        propPos = {0.056, -0.027, 0.017, -19.9298, -4.6998, 1.7081},
+        propPos = {0.056, -0.027, 0.017, -19.9298, -4.6998, 1.7081}
     },
-["tire"] = {
+    ["tire"] = {
         category = "prop",
         label = "Tire",
         animDict = "anim@heists@box_carry@",
@@ -6081,9 +6785,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_wheel_tyre",
-        propPos = {-0.05, 0.16, 0.32, -130.0, -55.0, 150.0},
+        propPos = {-0.05, 0.16, 0.32, -130.0, -55.0, 150.0}
     },
-["golfswing"] = {
+    ["golfswing"] = {
         category = "prop",
         label = "Golf Swing",
         animDict = "rcmnigel1d",
@@ -6091,9 +6795,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_golf_wood_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["register"] = {
+    ["register"] = {
         category = "prop",
         label = "Register",
         animDict = "anim@heists@box_carry@",
@@ -6101,9 +6805,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "v_ret_gc_cashreg",
-        propPos = {0.138, 0.2, 0.2, -50.0, 290.0, 0.0},
+        propPos = {0.138, 0.2, 0.2, -50.0, 290.0, 0.0}
     },
-["weedbrick"] = {
+    ["weedbrick"] = {
         category = "prop",
         label = "Weed Brick",
         animDict = "impexp_int-0",
@@ -6111,9 +6815,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_weed_block_01",
-        propPos = {0.1, 0.1, 0.05, 0.0, -90.0, 90.0},
+        propPos = {0.1, 0.1, 0.05, 0.0, -90.0, 90.0}
     },
-["weedbrickbig"] = {
+    ["weedbrickbig"] = {
         category = "prop",
         label = "Weed Brick BIG",
         animDict = "anim@heists@box_carry@",
@@ -6121,9 +6825,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "bkr_prop_weed_bigbag_01a",
-        propPos = {0.158, -0.05, 0.23, -50.0, 290.0, 0.0},
+        propPos = {0.158, -0.05, 0.23, -50.0, 290.0, 0.0}
     },
-["potplant(small)"] = {
+    ["potplant(small)"] = {
         category = "prop",
         label = "Pot Plant (Small)",
         animDict = "anim@heists@box_carry@",
@@ -6131,9 +6835,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "bkr_prop_weed_01_small_01c",
-        propPos = {0.138, -0.05, 0.23, -50.0, 290.0, 0.0},
+        propPos = {0.138, -0.05, 0.23, -50.0, 290.0, 0.0}
     },
-["potplant(medium)"] = {
+    ["potplant(medium)"] = {
         category = "prop",
         label = "Pot Plant (Medium)",
         animDict = "anim@heists@box_carry@",
@@ -6141,9 +6845,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "bkr_prop_weed_01_small_01b",
-        propPos = {0.138, -0.05, 0.23, -50.0, 290.0, 0.0},
+        propPos = {0.138, -0.05, 0.23, -50.0, 290.0, 0.0}
     },
-["potplant(large)"] = {
+    ["potplant(large)"] = {
         category = "prop",
         label = "Pot Plant (Large)",
         animDict = "anim@heists@box_carry@",
@@ -6151,9 +6855,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "bkr_prop_weed_lrg_01b",
-        propPos = {0.138, -0.05, 0.23, -50.0, 290.0, 0.0},
+        propPos = {0.138, -0.05, 0.23, -50.0, 290.0, 0.0}
     },
-["weedbucket"] = {
+    ["weedbucket"] = {
         category = "prop",
         label = "Weed Bucket",
         animDict = "anim@heists@box_carry@",
@@ -6161,9 +6865,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "bkr_prop_weed_bucket_open_01a",
-        propPos = {0.0, -0.1, -0.18, 0.0, 0.0, 0.0},
+        propPos = {0.0, -0.1, -0.18, 0.0, 0.0, 0.0}
     },
-["lawnchair"] = {
+    ["lawnchair"] = {
         category = "prop",
         label = "Lawnchair",
         animDict = "timetable@ron@ig_5_p3",
@@ -6171,9 +6875,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 0,
         prop = "prop_skid_chair_02",
-        propPos = {0.025, -0.2, -0.1, 45.0, -5.0, 180.0},
+        propPos = {0.025, -0.2, -0.1, 45.0, -5.0, 180.0}
     },
-["lawnchair2"] = {
+    ["lawnchair2"] = {
         category = "prop",
         label = "Lawnchair 2",
         animDict = "timetable@reunited@ig_10",
@@ -6181,9 +6885,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 0,
         prop = "prop_skid_chair_02",
-        propPos = {0.025, -0.15, -0.1, 45.0, 5.0, 180.0},
+        propPos = {0.025, -0.15, -0.1, 45.0, 5.0, 180.0}
     },
-["lawnchair3"] = {
+    ["lawnchair3"] = {
         category = "prop",
         label = "Lawnchair 3",
         animDict = "timetable@ron@ig_3_couch",
@@ -6191,9 +6895,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 0,
         prop = "prop_skid_chair_02",
-        propPos = {-0.05, 0.0, -0.2, 5.0, 0.0, 180.0},
+        propPos = {-0.05, 0.0, -0.2, 5.0, 0.0, 180.0}
     },
-["rose2(male)"] = {
+    ["rose2(male)"] = {
         category = "prop",
         label = "Rose 2 (Male)",
         animDict = "missheistdocksprep1hold_cellphone",
@@ -6201,9 +6905,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 31086,
         prop = "prop_single_rose",
-        propPos = {-0.014, 0.103, 0.062, -2.932, 4.564, 39.91},
+        propPos = {-0.014, 0.103, 0.062, -2.932, 4.564, 39.91}
     },
-["rose3(female)"] = {
+    ["rose3(female)"] = {
         category = "prop",
         label = "Rose 3 (Female)",
         animDict = "missheistdocksprep1hold_cellphone",
@@ -6211,9 +6915,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 31086,
         prop = "prop_single_rose",
-        propPos = {-0.014, 0.107, 0.072, 0.0, 0.0, 2.99},
+        propPos = {-0.014, 0.107, 0.072, 0.0, 0.0, 2.99}
     },
-["carrybeerbox"] = {
+    ["carrybeerbox"] = {
         category = "prop",
         label = "Carry Beer Box",
         animDict = "anim@heists@box_carry@",
@@ -6221,9 +6925,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "v_ret_ml_beerben1",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["carrybeerbox2"] = {
+    ["carrybeerbox2"] = {
         category = "prop",
         label = "Carry Beer Box 2",
         animDict = "anim@heists@box_carry@",
@@ -6231,9 +6935,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "v_ret_ml_beerbla1",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["carrybeerbox3"] = {
+    ["carrybeerbox3"] = {
         category = "prop",
         label = "Carry Beer Box 3",
         animDict = "anim@heists@box_carry@",
@@ -6241,9 +6945,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "v_ret_ml_beerjak1",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["carrybeerbox4"] = {
+    ["carrybeerbox4"] = {
         category = "prop",
         label = "Carry Beer Box 4",
         animDict = "anim@heists@box_carry@",
@@ -6251,9 +6955,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "v_ret_ml_beerlog1",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["carrybeerbox5"] = {
+    ["carrybeerbox5"] = {
         category = "prop",
         label = "Carry Beer Box 5",
         animDict = "anim@heists@box_carry@",
@@ -6261,9 +6965,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "v_ret_ml_beerpis1",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["carrybeerbox6"] = {
+    ["carrybeerbox6"] = {
         category = "prop",
         label = "Carry Beer Box 6",
         animDict = "anim@heists@box_carry@",
@@ -6271,9 +6975,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_beer_box_01",
-        propPos = {0.02, -0.06, -0.12, -180.0, -180.0, 1.99},
+        propPos = {0.02, -0.06, -0.12, -180.0, -180.0, 1.99}
     },
-["garbagebin"] = {
+    ["garbagebin"] = {
         category = "prop",
         label = "Garbage Bin",
         animDict = "anim@heists@box_carry@",
@@ -6281,9 +6985,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_bin_08open",
-        propPos = {0.0, -0.42, -1.29, 0.0, 0.0, 0.0},
+        propPos = {0.0, -0.42, -1.29, 0.0, 0.0, 0.0}
     },
-["garbagebin2"] = {
+    ["garbagebin2"] = {
         category = "prop",
         label = "Garbage Bin 2",
         animDict = "anim@heists@box_carry@",
@@ -6291,9 +6995,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_bin_01",
-        propPos = {0.0, -0.42, -1.29, 0.0, 0.0, 0.0},
+        propPos = {0.0, -0.42, -1.29, 0.0, 0.0, 0.0}
     },
-["garbagebin3"] = {
+    ["garbagebin3"] = {
         category = "prop",
         label = "Garbage Bin 3",
         animDict = "anim@heists@box_carry@",
@@ -6301,9 +7005,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_bin_03",
-        propPos = {0.0, -0.42, -1.29, 0.0, 0.0, 0.0},
+        propPos = {0.0, -0.42, -1.29, 0.0, 0.0, 0.0}
     },
-["garbagebin4"] = {
+    ["garbagebin4"] = {
         category = "prop",
         label = "Garbage Bin 4",
         animDict = "anim@heists@box_carry@",
@@ -6311,9 +7015,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_bin_08a",
-        propPos = {0.0, -0.42, -1.29, 0.0, 0.0, 0.0},
+        propPos = {0.0, -0.42, -1.29, 0.0, 0.0, 0.0}
     },
-["garbagebin5"] = {
+    ["garbagebin5"] = {
         category = "prop",
         label = "Garbage Bin 5",
         animDict = "anim@heists@box_carry@",
@@ -6321,9 +7025,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_bin_07d",
-        propPos = {-0.01, -0.22, -0.86, 0.0, 0.0, 0.0},
+        propPos = {-0.01, -0.22, -0.86, 0.0, 0.0, 0.0}
     },
-["partylighter"] = {
+    ["partylighter"] = {
         category = "prop",
         label = "Party lighter",
         animDict = "samnick@lighter@wave",
@@ -6331,9 +7035,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "samnick_prop_lighter01",
-        propPos = {0.11, 0.01, 0.02, -85.0, 188.0, 10.0},
+        propPos = {0.11, 0.01, 0.02, -85.0, 188.0, 10.0}
     },
-["cop4"] = {
+    ["cop4"] = {
         category = "prop",
         label = "Cop 4",
         animDict = "amb@world_human_car_park_attendant@male@base",
@@ -6341,9 +7045,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_parking_wand_01",
-        propPos = {0.12, 0.05, 0.0, 80.0, -20.0, 180.0},
+        propPos = {0.12, 0.05, 0.0, 80.0, -20.0, 180.0}
     },
-["copbeacon"] = {
+    ["copbeacon"] = {
         category = "prop",
         label = "Cop Beacon",
         animDict = "amb@world_human_car_park_attendant@male@base",
@@ -6351,9 +7055,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_parking_wand_01",
-        propPos = {0.12, 0.05, 0.0, 80.0, -20.0, 180.0},
+        propPos = {0.12, 0.05, 0.0, 80.0, -20.0, 180.0}
     },
-["leaningwithphone"] = {
+    ["leaningwithphone"] = {
         category = "prop",
         label = "Leaning With Phone",
         animDict = "amb@world_human_leaning@male@wall@back@mobile@base",
@@ -6361,9 +7065,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_phone_ing",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["hump(bear)"] = {
+    ["hump(bear)"] = {
         category = "prop",
         label = "Hump (Bear)",
         animDict = "timetable@trevor@skull_loving_bear",
@@ -6371,9 +7075,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_mr_raspberry_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
-["drink"] = {
+    ["drink"] = {
         category = "prop",
         label = "Drink",
         animDict = "mp_player_intdrink",
@@ -6381,9 +7085,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_ld_flow_bottle",
-        propPos = {0.12, 0.008, 0.03, 240.0, -60.0, 0.0},
+        propPos = {0.12, 0.008, 0.03, 240.0, -60.0, 0.0}
     },
-["surfboard"] = {
+    ["surfboard"] = {
         category = "prop",
         label = "Surf Board",
         animDict = "beachanims@molly",
@@ -6391,9 +7095,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28252,
         prop = "prop_surf_board_ldn_02",
-        propPos = {0.102, -0.146, -0.116, -85.5416, 176.1446, -2.15},
+        propPos = {0.102, -0.146, -0.116, -85.5416, 176.1446, -2.15}
     },
-["stealtv"] = {
+    ["stealtv"] = {
         category = "prop",
         label = "Steal TV",
         animDict = "beachanims@molly",
@@ -6401,9 +7105,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28252,
         prop = "xs_prop_arena_screen_tv_01",
-        propPos = {0.26, 0.11, -0.14, 96.162, 168.9069, 84.2402},
+        propPos = {0.26, 0.11, -0.14, 96.162, 168.9069, 84.2402}
     },
-["beachfloatiethingy"] = {
+    ["beachfloatiethingy"] = {
         category = "prop",
         label = "Beach Floatie Thingy",
         animDict = "beachanims@free",
@@ -6411,9 +7115,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 0,
         prop = "prop_beach_ring_01",
-        propPos = {0.0, 0.0, 0.01, -12.0, 0.0, -2.0},
+        propPos = {0.0, 0.0, 0.01, -12.0, 0.0, -2.0}
     },
-["cashbriefcase"] = {
+    ["cashbriefcase"] = {
         category = "prop",
         label = "Cash Briefcase",
         animDict = "move_weapon@jerrycan@generic",
@@ -6421,9 +7125,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "bkr_prop_biker_case_shut",
-        propPos = {0.1, 0.01, 0.004, 0.0, 0.0, -90.0},
+        propPos = {0.1, 0.01, 0.004, 0.0, 0.0, -90.0}
     },
-["cashbriefcase2"] = {
+    ["cashbriefcase2"] = {
         category = "prop",
         label = "Cash Briefcase 2",
         animDict = "anim@heists@box_carry@",
@@ -6431,9 +7135,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cash_case_01",
-        propPos = {-0.005, -0.187, -0.14, 0.0, 0.0, 0.0},
+        propPos = {-0.005, -0.187, -0.14, 0.0, 0.0, 0.0}
     },
-["cashbriefcase3"] = {
+    ["cashbriefcase3"] = {
         category = "prop",
         label = "Cash Briefcase 3",
         animDict = "anim@heists@box_carry@",
@@ -6441,9 +7145,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cash_case_02",
-        propPos = {0.005, -0.117, -0.14, 14.0, 0.0, 0.0},
+        propPos = {0.005, -0.117, -0.14, 14.0, 0.0, 0.0}
     },
-["cashbriefcase4-diamonds"] = {
+    ["cashbriefcase4-diamonds"] = {
         category = "prop",
         label = "Cash Briefcase 4 - Diamonds",
         animDict = "anim@heists@box_carry@",
@@ -6451,9 +7155,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "ch_prop_ch_security_case_01a",
-        propPos = {0.0, -0.09, -0.18, 14.4, 0.0, 0.0},
+        propPos = {0.0, -0.09, -0.18, 14.4, 0.0, 0.0}
     },
-["airportbag"] = {
+    ["airportbag"] = {
         category = "prop",
         label = "Airport Bag",
         animDict = "anim@heists@narcotics@trash",
@@ -6461,9 +7165,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_suitcase_01c",
-        propPos = {0.11, -0.21, -0.43, -11.8999, 0.0, 30.0},
+        propPos = {0.11, -0.21, -0.43, -11.8999, 0.0, 30.0}
     },
-["airportbag3-pose"] = {
+    ["airportbag3-pose"] = {
         category = "prop",
         label = "Airport Bag 3 - Pose",
         animDict = "chocoholic@single63",
@@ -6471,9 +7175,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 58869,
         prop = "prop_suitcase_03",
-        propPos = {0.21, 0.41, -0.36, 56.9074, -6.1917, -24.3334},
+        propPos = {0.21, 0.41, -0.36, 56.9074, -6.1917, -24.3334}
     },
-["megaphone"] = {
+    ["megaphone"] = {
         category = "prop",
         label = "Megaphone",
         animDict = "molly@megaphone",
@@ -6481,9 +7185,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_megaphone_01",
-        propPos = {0.05, 0.054, -0.006, -71.8855, -13.0889, -16.0242},
+        propPos = {0.05, 0.054, -0.006, -71.8855, -13.0889, -16.0242}
     },
-["megaphone2"] = {
+    ["megaphone2"] = {
         category = "prop",
         label = "Megaphone 2",
         animDict = "molly@megaphone2",
@@ -6491,9 +7195,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_megaphone_01",
-        propPos = {0.05, 0.054, -0.006, -71.8855, -13.0889, -16.0242},
+        propPos = {0.05, 0.054, -0.006, -71.8855, -13.0889, -16.0242}
     },
-["megaphone3"] = {
+    ["megaphone3"] = {
         category = "prop",
         label = "Megaphone 3",
         animDict = "anim@rifle_megaphone",
@@ -6501,9 +7205,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_megaphone_01",
-        propPos = {0.048, 0.019, 0.016, -94.8944, -2.3093, -10.903},
+        propPos = {0.048, 0.019, 0.016, -94.8944, -2.3093, -10.903}
     },
-["easterbunny"] = {
+    ["easterbunny"] = {
         category = "prop",
         label = "Easter Bunny",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -6511,9 +7215,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "bzzz_event_easter_bunny_a",
-        propPos = {-0.027, -0.02, 0.01, 62.9161, 0.4622, 10.8906},
+        propPos = {-0.027, -0.02, 0.01, 62.9161, 0.4622, 10.8906}
     },
-["basketballhold"] = {
+    ["basketballhold"] = {
         category = "prop",
         label = "Basketball Hold",
         animDict = "anim@male_bskball_hold",
@@ -6521,9 +7225,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_bskball_01",
-        propPos = {0.06, 0.04, -0.12, 0.0, 0.0, 40.0},
+        propPos = {0.06, 0.04, -0.12, 0.0, 0.0, 40.0}
     },
-["basketballpose"] = {
+    ["basketballpose"] = {
         category = "prop",
         label = "Basketball Pose",
         animDict = "anim@male_bskball_photo_pose",
@@ -6531,9 +7235,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_bskball_01",
-        propPos = {-0.01, 0.02, 0.13, 0.0, 0.0, 0.0},
+        propPos = {-0.01, 0.02, 0.13, 0.0, 0.0, 0.0}
     },
-["basketballhold2"] = {
+    ["basketballhold2"] = {
         category = "prop",
         label = "Basketball Hold 2",
         animDict = "anim@male_basketball_03",
@@ -6541,9 +7245,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_bskball_01",
-        propPos = {0.04, 0.02, -0.14, 90.0, -99.9999, 79.9999},
+        propPos = {0.04, 0.02, -0.14, 90.0, -99.9999, 79.9999}
     },
-["basketballhold3"] = {
+    ["basketballhold3"] = {
         category = "prop",
         label = "Basketball Hold 3",
         animDict = "mx@pose2",
@@ -6551,9 +7255,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_bskball_01",
-        propPos = {0.04, 0.02, -0.14, 90.0, -99.9999, 79.9999},
+        propPos = {0.04, 0.02, -0.14, 90.0, -99.9999, 79.9999}
     },
-["basketballdrivepose"] = {
+    ["basketballdrivepose"] = {
         category = "prop",
         label = "Basketball Drive Pose",
         animDict = "cover@weapon@grenade",
@@ -6561,9 +7265,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_bskball_01",
-        propPos = {0.04, 0.02, -0.14, 90.0, -99.9999, 79.9999},
+        propPos = {0.04, 0.02, -0.14, 90.0, -99.9999, 79.9999}
     },
-["firetorch"] = {
+    ["firetorch"] = {
         category = "prop",
         label = "Fire Torch",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -6571,9 +7275,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "bzzz_prop_torch_fire001",
-        propPos = {0.14, 0.21, -0.08, -110.0, -1.0, -10.0},
+        propPos = {0.14, 0.21, -0.08, -110.0, -1.0, -10.0}
     },
-["watchstripper2"] = {
+    ["watchstripper2"] = {
         category = "prop",
         label = "Watch Stripper 2",
         animDict = "amb@world_human_strip_watch_stand@male_c@base",
@@ -6581,9 +7285,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_beer_am",
-        propPos = {0.088, -0.136, 0.145, -102.9624, 81.7098, -39.2734},
+        propPos = {0.088, -0.136, 0.145, -102.9624, 81.7098, -39.2734}
     },
-["candyapple"] = {
+    ["candyapple"] = {
         category = "prop",
         label = "Candy Apple",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -6591,9 +7295,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "apple_1",
-        propPos = {0.12, 0.15, 0.0, -100.0, 0.0, -12.0},
+        propPos = {0.12, 0.15, 0.0, -100.0, 0.0, -12.0}
     },
-["gamer"] = {
+    ["gamer"] = {
         category = "prop",
         label = "Gamer",
         animDict = "playing@with_controller",
@@ -6601,9 +7305,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_controller_01",
-        propPos = {0.145, 0.059, 0.085, -164.4546, -62.957, 17.5872},
+        propPos = {0.145, 0.059, 0.085, -164.4546, -62.957, 17.5872}
     },
-["gamerlayingonstomach"] = {
+    ["gamerlayingonstomach"] = {
         category = "prop",
         label = "Gamer Laying On Stomach",
         animDict = "lay_controller@dark",
@@ -6611,9 +7315,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_controller_01",
-        propPos = {0.135, 0.036, 0.095, -180.0, -72.9699, 0.0},
+        propPos = {0.135, 0.036, 0.095, -180.0, -72.9699, 0.0}
     },
-["study"] = {
+    ["study"] = {
         category = "prop",
         label = "Study",
         animDict = "study_pc_finally_fixed@dark",
@@ -6621,9 +7325,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "xm_prop_x17_laptop_lester_01",
-        propPos = {0.165, 0.101, -0.147, -159.2533, -145.7418, -79.576},
+        propPos = {0.165, 0.101, -0.147, -159.2533, -145.7418, -79.576}
     },
-["propose"] = {
+    ["propose"] = {
         category = "prop",
         label = "Propose",
         animDict = "ultra@propose",
@@ -6631,9 +7335,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "ultra_ringcase",
-        propPos = {0.098, 0.02, -0.054, -138.6571, 4.4141, -79.3552},
+        propPos = {0.098, 0.02, -0.054, -138.6571, 4.4141, -79.3552}
     },
-["propose2-valentinesday"] = {
+    ["propose2-valentinesday"] = {
         category = "prop",
         label = "Propose 2 - Valentines Day",
         animDict = "ultra@propose",
@@ -6641,9 +7345,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64064,
         prop = "pata_freevalentinesday",
-        propPos = {0.019, 0.048, 0.011, -9.035, 88.4373, -9.8783},
+        propPos = {0.019, 0.048, 0.011, -9.035, 88.4373, -9.8783}
     },
-["propose3"] = {
+    ["propose3"] = {
         category = "prop",
         label = "Propose 3",
         animDict = "ultra@propose",
@@ -6651,9 +7355,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64064,
         prop = "pata_freevalentinesday2",
-        propPos = {0.019, 0.048, 0.011, -9.035, 88.4373, -9.8783},
+        propPos = {0.019, 0.048, 0.011, -9.035, 88.4373, -9.8783}
     },
-["holdfirework"] = {
+    ["holdfirework"] = {
         category = "prop",
         label = "Hold Firework",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -6661,9 +7365,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "ind_prop_firework_01",
-        propPos = {0.11, 0.32, -0.24, -130.0688, -2.5736, -3.0631},
+        propPos = {0.11, 0.32, -0.24, -130.0688, -2.5736, -3.0631}
     },
-["chilltequila"] = {
+    ["chilltequila"] = {
         category = "prop",
         label = "Chill Tequila",
         animDict = "amnilka@photopose@female@homepack001",
@@ -6671,9 +7375,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_tequila",
-        propPos = {0.081, -0.046, 0.043, -110.1784, 2.9283, -12.5092},
+        propPos = {0.081, -0.046, 0.043, -110.1784, 2.9283, -12.5092}
     },
-["patrol-onfoot"] = {
+    ["patrol-onfoot"] = {
         category = "prop",
         label = "Torch - 2",
         animDict = "amb@world_human_security_shine_torch@male@base",
@@ -6681,9 +7385,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_cs_police_torch_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 80.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 80.0}
     },
-["patrol-onfoot2"] = {
+    ["patrol-onfoot2"] = {
         category = "prop",
         label = "Torch - 3",
         animDict = "amb@world_human_security_shine_torch@male@idle_b",
@@ -6691,9 +7395,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_cs_police_torch_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 80.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 80.0}
     },
-["patrol-onfoot3"] = {
+    ["patrol-onfoot3"] = {
         category = "prop",
         label = "Torch - 4",
         animDict = "amb@world_human_security_shine_torch@male@idle_a",
@@ -6701,9 +7405,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_cs_police_torch_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 80.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 80.0}
     },
-["patrolcar-front"] = {
+    ["patrolcar-front"] = {
         category = "prop",
         label = "Torch - Car Front",
         animDict = "amb@incar@male@patrol@torch@base",
@@ -6711,9 +7415,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_police_torch_02",
-        propPos = {0.0, -0.01, -0.01, 0.0, 0.0, 100.0},
+        propPos = {0.0, -0.01, -0.01, 0.0, 0.0, 100.0}
     },
-["pineapple"] = {
+    ["pineapple"] = {
         category = "prop",
         label = "Pineapple",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -6721,9 +7425,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "xm3_prop_xm3_pineapple_01a",
-        propPos = {0.1, -0.11, 0.05, -100.0, 0.0, 0.0},
+        propPos = {0.1, -0.11, 0.05, -100.0, 0.0, 0.0}
     },
-["present"] = {
+    ["present"] = {
         category = "prop",
         label = "Present",
         animDict = "anim@heists@box_carry@",
@@ -6731,9 +7435,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "xm3_prop_xm3_present_01a",
-        propPos = {0.0, -0.18, -0.16, 0.0, 0.0, 0.0},
+        propPos = {0.0, -0.18, -0.16, 0.0, 0.0, 0.0}
     },
-["patrolcar-left"] = {
+    ["patrolcar-left"] = {
         category = "prop",
         label = "Torch - Car Left",
         animDict = "amb@incar@male@patrol@torch@idle_b",
@@ -6741,9 +7445,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_police_torch_02",
-        propPos = {0.0, -0.01, -0.01, 0.0, 0.0, 100.0},
+        propPos = {0.0, -0.01, -0.01, 0.0, 0.0, 100.0}
     },
-["patrolcar-right"] = {
+    ["patrolcar-right"] = {
         category = "prop",
         label = "Torch - Car Right",
         animDict = "amb@incar@male@patrol@torch@idle_a",
@@ -6751,9 +7455,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_police_torch_02",
-        propPos = {0.0, -0.01, -0.01, 0.0, 0.0, 100.0},
+        propPos = {0.0, -0.01, -0.01, 0.0, 0.0, 100.0}
     },
-["papers"] = {
+    ["papers"] = {
         category = "prop",
         label = "Papers",
         animDict = "missheistdocksprep1hold_cellphone",
@@ -6761,9 +7465,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "xm3_prop_xm3_papers_01a",
-        propPos = {0.13, 0.0, 0.04, -110.0, 0.0, 0.0},
+        propPos = {0.13, 0.0, 0.04, -110.0, 0.0, 0.0}
     },
-["vlog"] = {
+    ["vlog"] = {
         category = "prop",
         label = "Vlog",
         animDict = "amb@world_human_mobile_film_shocking@male@base",
@@ -6771,9 +7475,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_ing_camera_01",
-        propPos = {-0.07, -0.01, 0.0, 0.0, 0.0, 0.0},
+        propPos = {-0.07, -0.01, 0.0, 0.0, 0.0, 0.0}
     },
-["vlog2"] = {
+    ["vlog2"] = {
         category = "prop",
         label = "Vlog 2",
         animDict = "anim@heists@humane_labs@finale@keycards",
@@ -6781,9 +7485,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_ing_camera_01",
-        propPos = {0.15, 0.03, 0.1, 280.0, 110.0, -11.0},
+        propPos = {0.15, 0.03, 0.1, 280.0, 110.0, -11.0}
     },
-["skateboard-sit"] = {
+    ["skateboard-sit"] = {
         category = "prop",
         label = "Skateboard - Sit",
         animDict = "skateboardposecmganimation",
@@ -6791,9 +7495,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 0,
         prop = "rpemotesreborn_skateboard01",
-        propPos = {0.0, 0.04, -0.23, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.04, -0.23, 0.0, 0.0, 0.0}
     },
-["skateboard-sit2"] = {
+    ["skateboard-sit2"] = {
         category = "prop",
         label = "Skateboard - Sit 2",
         animDict = "chocoholic@skate2",
@@ -6801,9 +7505,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 0,
         prop = "rpemotesreborn_skateboard02",
-        propPos = {0.0, -0.02, -0.29, 0.0, 0.0, 0.0},
+        propPos = {0.0, -0.02, -0.29, 0.0, 0.0, 0.0}
     },
-["skateboardkneeling-male"] = {
+    ["skateboardkneeling-male"] = {
         category = "prop",
         label = "Skateboard Kneeling - Male",
         animDict = "drx@skateboard3",
@@ -6811,9 +7515,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64064,
         prop = "rpemotesreborn_skateboard02",
-        propPos = {0.2, -0.06, 0.0, -61.01, 4.4024, -16.913},
+        propPos = {0.2, -0.06, 0.0, -61.01, 4.4024, -16.913}
     },
-["skateboardkneeling2-female"] = {
+    ["skateboardkneeling2-female"] = {
         category = "prop",
         label = "Skateboard Kneeling 2 - Female",
         animDict = "drx@skateboard3",
@@ -6821,9 +7525,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64064,
         prop = "rpemotesreborn_skateboard01",
-        propPos = {0.2, -0.06, 0.0, -61.01, 4.4024, -16.913},
+        propPos = {0.2, -0.06, 0.0, -61.01, 4.4024, -16.913}
     },
-["skateboard-holdfemale2"] = {
+    ["skateboard-holdfemale2"] = {
         category = "prop",
         label = "Skateboard - Hold Female 2",
         animDict = "beachanims@molly",
@@ -6831,9 +7535,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "rpemotesreborn_skateboard01",
-        propPos = {-0.102, 0.224, 0.084, 5.6655, 175.3526, 49.7964},
+        propPos = {-0.102, 0.224, 0.084, 5.6655, 175.3526, 49.7964}
     },
-["skateboard-holdfemale3"] = {
+    ["skateboard-holdfemale3"] = {
         category = "prop",
         label = "Skateboard - Hold Female 3",
         animDict = "chocoholic@skate4",
@@ -6841,9 +7545,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "rpemotesreborn_skateboard01",
-        propPos = {0.278, -0.02, -0.07, -180.0, 28.0, 0.0},
+        propPos = {0.278, -0.02, -0.07, -180.0, 28.0, 0.0}
     },
-["skateboard-holdmale2"] = {
+    ["skateboard-holdmale2"] = {
         category = "prop",
         label = "Skateboard - Hold Male 2",
         animDict = "beachanims@molly",
@@ -6851,9 +7555,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "rpemotesreborn_skateboard02",
-        propPos = {-0.102, 0.224, 0.084, 5.6655, 175.3526, 49.7964},
+        propPos = {-0.102, 0.224, 0.084, 5.6655, 175.3526, 49.7964}
     },
-["skateboard-holdmale3"] = {
+    ["skateboard-holdmale3"] = {
         category = "prop",
         label = "Skateboard - Hold Male 3",
         animDict = "chocoholic@skate4",
@@ -6861,9 +7565,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "rpemotesreborn_skateboard02",
-        propPos = {0.278, -0.02, -0.07, -180.0, 28.0, 0.0},
+        propPos = {0.278, -0.02, -0.07, -180.0, 28.0, 0.0}
     },
-["skateboard-holdmaledrx"] = {
+    ["skateboard-holdmaledrx"] = {
         category = "prop",
         label = "Skateboard - Hold Male DRX",
         animDict = "drx@skateboard2",
@@ -6871,9 +7575,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64080,
         prop = "rpemotesreborn_skateboard02",
-        propPos = {0.267, -0.006, 0.056, -0.2472, -13.1506, -33.6511},
+        propPos = {0.267, -0.006, 0.056, -0.2472, -13.1506, -33.6511}
     },
-["skateboard-holdfemaledrx"] = {
+    ["skateboard-holdfemaledrx"] = {
         category = "prop",
         label = "Skateboard - Hold Female DRX",
         animDict = "drx@skateboard2",
@@ -6881,9 +7585,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64080,
         prop = "rpemotesreborn_skateboard01",
-        propPos = {0.267, -0.006, 0.056, -0.2472, -13.1506, -33.6511},
+        propPos = {0.267, -0.006, 0.056, -0.2472, -13.1506, -33.6511}
     },
-["shield"] = {
+    ["shield"] = {
         category = "prop",
         label = "Shield",
         animDict = "beachanims@molly",
@@ -6891,9 +7595,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_riot_shield",
-        propPos = {-0.04, -0.06, 0.0, 4.04, 108.17, -17.48},
+        propPos = {-0.04, -0.06, 0.0, 4.04, 108.17, -17.48}
     },
-["shield2"] = {
+    ["shield2"] = {
         category = "prop",
         label = "Shield 2",
         animDict = "beachanims@molly",
@@ -6901,9 +7605,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_ballistic_shield",
-        propPos = {0.01, -0.1, -0.07, 1.83, 105.38, -10.14},
+        propPos = {0.01, -0.1, -0.07, 1.83, 105.38, -10.14}
     },
-["holster6-flashlight"] = {
+    ["holster6-flashlight"] = {
         category = "prop",
         label = "Holster 6 - Flash Light",
         animDict = "anim@hlstr_7360_torch",
@@ -6911,9 +7615,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_cs_police_torch_02",
-        propPos = {0.055, -0.02, 0.037, -29.6216, -8.6822, 4.9809},
+        propPos = {0.055, -0.02, 0.037, -29.6216, -8.6822, 4.9809}
     },
-["holster8flashlight2"] = {
+    ["holster8flashlight2"] = {
         category = "prop",
         label = "Holster 8 Flashlight 2",
         animDict = "anim@holster_walk_torch",
@@ -6921,9 +7625,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_cs_police_torch_02",
-        propPos = {0.06, -0.01, 0.02, -20.0, 0.0, 3.9999},
+        propPos = {0.06, -0.01, 0.02, -20.0, 0.0, 3.9999}
     },
-["heartprop"] = {
+    ["heartprop"] = {
         category = "prop",
         label = "Heart Prop",
         animDict = "anim@heists@box_carry@",
@@ -6931,9 +7635,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "brum_heart",
-        propPos = {-0.56, 0.024, -0.369, -10.0, 0.0, -0.0},
+        propPos = {-0.56, 0.024, -0.369, -10.0, 0.0, -0.0}
     },
-["popcorn"] = {
+    ["popcorn"] = {
         category = "prop",
         label = "Popcorn",
         animDict = "amb@code_human_wander_drinking@female@base",
@@ -6941,9 +7645,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "xs_prop_trinket_cup_01a",
-        propPos = {-0.02, -0.01, -0.07, -179.3626, 176.9331, 11.9833},
+        propPos = {-0.02, -0.01, -0.07, -179.3626, 176.9331, 11.9833}
     },
-["saxophone1"] = {
+    ["saxophone1"] = {
         category = "prop",
         label = "Saxophone 1",
         animDict = "play_saxophone@dark",
@@ -6951,9 +7655,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "p_ld_sax",
-        propPos = {0.07, 0.04, 0.03, -71.2242, 29.3364, 5.9514},
+        propPos = {0.07, 0.04, 0.03, -71.2242, 29.3364, 5.9514}
     },
-["playpool"] = {
+    ["playpool"] = {
         category = "prop",
         label = "Play Pool",
         animDict = "pool_pack_1@dark",
@@ -6961,9 +7665,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_pool_cue",
-        propPos = {0.09, 0.2, 0.08, -61.4338, -7.2194, 3.1642},
+        propPos = {0.09, 0.2, 0.08, -61.4338, -7.2194, 3.1642}
     },
-["playpool2(pose)"] = {
+    ["playpool2(pose)"] = {
         category = "prop",
         label = "Play Pool 2 (Pose)",
         animDict = "pool_pack_2@dark",
@@ -6971,9 +7675,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_pool_cue",
-        propPos = {0.12, -0.52, -0.12, -78.04, -1.4526, 1.8479},
+        propPos = {0.12, -0.52, -0.12, -78.04, -1.4526, 1.8479}
     },
-["playpool3(pose)"] = {
+    ["playpool3(pose)"] = {
         category = "prop",
         label = "Play Pool 3 (Pose)",
         animDict = "pool_pack_3@dark",
@@ -6981,9 +7685,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_pool_cue",
-        propPos = {0.12, -0.35, -0.02, -90.0, 0.0, 0.0},
+        propPos = {0.12, -0.35, -0.02, -90.0, 0.0, 0.0}
     },
-["playpool4(pose)"] = {
+    ["playpool4(pose)"] = {
         category = "prop",
         label = "Play Pool 4 (Pose)",
         animDict = "pool_pack_4@dark",
@@ -6991,9 +7695,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 61163,
         prop = "prop_pool_cue",
-        propPos = {0.26, -0.16, -0.31, -31.8144, 14.4214, -13.2854},
+        propPos = {0.26, -0.16, -0.31, -31.8144, 14.4214, -13.2854}
     },
-["playpool5"] = {
+    ["playpool5"] = {
         category = "prop",
         label = "Play Pool 5",
         animDict = "pool_pack_5@dark",
@@ -7001,9 +7705,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_pool_cue",
-        propPos = {0.07, 0.55, 0.1, -76.6157, -9.5838, 2.9748},
+        propPos = {0.07, 0.55, 0.1, -76.6157, -9.5838, 2.9748}
     },
-["basket"] = {
+    ["basket"] = {
         category = "prop",
         label = "Basket",
         animDict = "missfbi4prepp1",
@@ -7011,9 +7715,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "bzzz_prop_shop_basket_a",
-        propPos = {0.34, -0.25, -0.24, -146.0, 115.0, 19.0},
+        propPos = {0.34, -0.25, -0.24, -146.0, 115.0, 19.0}
     },
-["basket2"] = {
+    ["basket2"] = {
         category = "prop",
         label = "Basket 2",
         animDict = "missfbi4prepp1",
@@ -7021,9 +7725,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "bzzz_prop_shop_basket_b",
-        propPos = {0.34, -0.25, -0.24, -146.0, 115.0, 19.0},
+        propPos = {0.34, -0.25, -0.24, -146.0, 115.0, 19.0}
     },
-["powerhouse"] = {
+    ["powerhouse"] = {
         category = "prop",
         label = "Power House",
         animDict = "move_weapon@jerrycan@generic",
@@ -7031,9 +7735,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_bzzz_elektro_powerhouse001",
-        propPos = {0.11, 0.06, 0.0, 98.0, 12.0, -99.0},
+        propPos = {0.11, 0.06, 0.0, 98.0, 12.0, -99.0}
     },
-["weedlight"] = {
+    ["weedlight"] = {
         category = "prop",
         label = "Weed Light",
         animDict = "missfbi4prepp1",
@@ -7041,9 +7745,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_bzzz_drugs_light001",
-        propPos = {0.08, 0.18, -0.02, -130.0, 0.0, -90.0},
+        propPos = {0.08, 0.18, -0.02, -130.0, 0.0, -90.0}
     },
-["businessbag"] = {
+    ["businessbag"] = {
         category = "prop",
         label = "Business Bag",
         animDict = "mrwitt@dark_appearance_with_bag_male",
@@ -7051,9 +7755,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_med_bag_01b",
-        propPos = {0.305, 0.02, 0.079, 43.8282, -54.1834, -88.4424},
+        propPos = {0.305, 0.02, 0.079, 43.8282, -54.1834, -88.4424}
     },
-["businessbag-pose"] = {
+    ["businessbag-pose"] = {
         category = "prop",
         label = "Business Bag - Pose",
         animDict = "mrwitt@dark_appearance_with_bag_male",
@@ -7061,9 +7765,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_med_bag_01b",
-        propPos = {0.305, 0.02, 0.079, 43.8282, -54.1834, -88.4424},
+        propPos = {0.305, 0.02, 0.079, 43.8282, -54.1834, -88.4424}
     },
-["squatcash-pose"] = {
+    ["squatcash-pose"] = {
         category = "prop",
         label = "Squat Cash - Pose",
         animDict = "mrwitt@checked_shirt_squat_male",
@@ -7071,9 +7775,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cash_pile_02",
-        propPos = {0.088, 0.044, 0.003, 149.6422, -164.7312, 25.2203},
+        propPos = {0.088, 0.044, 0.003, 149.6422, -164.7312, 25.2203}
     },
-["squatmaskred-pose"] = {
+    ["squatmaskred-pose"] = {
         category = "prop",
         label = "Squat Mask Red - Pose",
         animDict = "mrwitt@selfie02_male",
@@ -7081,9 +7785,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64065,
         prop = "scarymask1",
-        propPos = {0.02, 0.17, -0.021, 0.0, 0.0, 0.0},
+        propPos = {0.02, 0.17, -0.021, 0.0, 0.0, 0.0}
     },
-["squatmaskwhite-pose"] = {
+    ["squatmaskwhite-pose"] = {
         category = "prop",
         label = "Squat Mask White - Pose",
         animDict = "mrwitt@selfie02_male",
@@ -7091,9 +7795,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64065,
         prop = "scarymask2",
-        propPos = {0.02, 0.17, -0.021, 0.0, 0.0, 0.0},
+        propPos = {0.02, 0.17, -0.021, 0.0, 0.0, 0.0}
     },
-["squatmaskblack-pose"] = {
+    ["squatmaskblack-pose"] = {
         category = "prop",
         label = "Squat Mask Black - Pose",
         animDict = "mrwitt@selfie02_male",
@@ -7101,9 +7805,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64065,
         prop = "scarymask3",
-        propPos = {0.02, 0.17, -0.021, 0.0, 0.0, 0.0},
+        propPos = {0.02, 0.17, -0.021, 0.0, 0.0, 0.0}
     },
-["femalescarymaskred-pose"] = {
+    ["femalescarymaskred-pose"] = {
         category = "prop",
         label = "Female Scary Mask Red - Pose",
         animDict = "mrwitt@helloween4_f",
@@ -7111,9 +7815,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64064,
         prop = "scarymask1",
-        propPos = {-0.046, 0.117, 0.085, 21.9542799, -81.9467213, 9.0687101},
+        propPos = {-0.046, 0.117, 0.085, 21.9542799, -81.9467213, 9.0687101}
     },
-["femalescarymaskblack-pose"] = {
+    ["femalescarymaskblack-pose"] = {
         category = "prop",
         label = "Female Scary Mask Black - Pose",
         animDict = "mrwitt@helloween4_f",
@@ -7121,9 +7825,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64064,
         prop = "scarymask2",
-        propPos = {-0.046, 0.117, 0.085, 21.9542799, -81.9467213, 9.0687101},
+        propPos = {-0.046, 0.117, 0.085, 21.9542799, -81.9467213, 9.0687101}
     },
-["femalescarymaskwhite-pose"] = {
+    ["femalescarymaskwhite-pose"] = {
         category = "prop",
         label = "Female Scary Mask White - Pose",
         animDict = "mrwitt@helloween4_f",
@@ -7131,9 +7835,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64064,
         prop = "scarymask3",
-        propPos = {-0.046, 0.117, 0.085, 21.9542799, -81.9467213, 9.0687101},
+        propPos = {-0.046, 0.117, 0.085, 21.9542799, -81.9467213, 9.0687101}
     },
-["raiseyourglass"] = {
+    ["raiseyourglass"] = {
         category = "prop",
         label = "Raise Your Glass",
         animDict = "chocoholic@duo32",
@@ -7141,9 +7845,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64065,
         prop = "p_champ_flute_s",
-        propPos = {0.014, 0.031, -0.099, 0.0, 0.0, 0.0},
+        propPos = {0.014, 0.031, -0.099, 0.0, 0.0, 0.0}
     },
-["raiseyourglass2"] = {
+    ["raiseyourglass2"] = {
         category = "prop",
         label = "Raise Your Glass 2",
         animDict = "chocoholic@duo34",
@@ -7151,9 +7855,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 64065,
         prop = "p_champ_flute_s",
-        propPos = {0.026, 0.019, -0.128, -14.9999, 0.0, -2.9999},
+        propPos = {0.026, 0.019, -0.128, -14.9999, 0.0, -2.9999}
     },
-["squatgunpose2-right"] = {
+    ["squatgunpose2-right"] = {
         category = "prop",
         label = "Squat Gun Pose 2 - Right",
         animDict = "ganggirls_pose2@darks37",
@@ -7161,9 +7865,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 26614,
         prop = "w_pi_pistolsmg_m31",
-        propPos = {0.026, -0.028, 0.098, -4.8222, -6.9836, 23.6186},
+        propPos = {0.026, -0.028, 0.098, -4.8222, -6.9836, 23.6186}
     },
-["rap/sing2-microphone"] = {
+    ["rap/sing2-microphone"] = {
         category = "prop",
         label = "Rap / Sing 2 - Microphone",
         animDict = "mic_pose_1@darksj",
@@ -7171,9 +7875,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "sf_prop_sf_mic_01a",
-        propPos = {0.068, 0.019, -0.022, 0.0, 0.0, 170.0},
+        propPos = {0.068, 0.019, -0.022, 0.0, 0.0, 170.0}
     },
-["rap/sing3-microphonerockhandsign"] = {
+    ["rap/sing3-microphonerockhandsign"] = {
         category = "prop",
         label = "Rap / Sing 3 - Microphone Rock Hand Sign",
         animDict = "mic_pose_2@darksj",
@@ -7181,9 +7885,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "sf_prop_sf_mic_01a",
-        propPos = {0.068, 0.019, -0.022, 0.0, 0.0, 170.0},
+        propPos = {0.068, 0.019, -0.022, 0.0, 0.0, 170.0}
     },
-["rap/sing4-microphonebendback"] = {
+    ["rap/sing4-microphonebendback"] = {
         category = "prop",
         label = "Rap / Sing 4 - Microphone Bend Back",
         animDict = "mic_pose_3@darksj",
@@ -7191,9 +7895,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "sf_prop_sf_mic_01a",
-        propPos = {0.068, 0.019, -0.022, 0.0, 0.0, 170.0},
+        propPos = {0.068, 0.019, -0.022, 0.0, 0.0, 170.0}
     },
-["rap/sing5-microphonekneel"] = {
+    ["rap/sing5-microphonekneel"] = {
         category = "prop",
         label = "Rap / Sing 5 - Microphone Kneel",
         animDict = "mic_pose_4@darksj",
@@ -7201,9 +7905,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "sf_prop_sf_mic_01a",
-        propPos = {0.068, 0.019, -0.022, 0.0, 0.0, 170.0},
+        propPos = {0.068, 0.019, -0.022, 0.0, 0.0, 170.0}
     },
-["rap/sing6-microphone"] = {
+    ["rap/sing6-microphone"] = {
         category = "prop",
         label = "Rap / Sing 6 - Microphone",
         animDict = "mic_pose_5_a@darksj",
@@ -7211,9 +7915,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "sf_prop_sf_mic_01a",
-        propPos = {0.068, 0.019, -0.022, 0.0, 0.0, 170.0},
+        propPos = {0.068, 0.019, -0.022, 0.0, 0.0, 170.0}
     },
-["baseballbatpose"] = {
+    ["baseballbatpose"] = {
         category = "prop",
         label = "Baseball Bat Pose",
         animDict = "bat@sel",
@@ -7221,9 +7925,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "p_cs_bbbat_01",
-        propPos = {0.06, 0.07, 0.01, -73.8317, 0.8479, -12.8826},
+        propPos = {0.06, 0.07, 0.01, -73.8317, 0.8479, -12.8826}
     },
-["stopsign"] = {
+    ["stopsign"] = {
         category = "prop",
         label = "Stop Sign",
         animDict = "amb@world_human_janitor@male@base",
@@ -7231,9 +7935,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_flagger_sign_01",
-        propPos = {0.0, 0.0, -0.68, 0.0, 0.0, -50.0},
+        propPos = {0.0, 0.0, -0.68, 0.0, 0.0, -50.0}
     },
-["stopsign2-slowdown"] = {
+    ["stopsign2-slowdown"] = {
         category = "prop",
         label = "Stop Sign 2 - Slow Down",
         animDict = "amb@world_human_janitor@male@base",
@@ -7241,9 +7945,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_flagger_sign_01",
-        propPos = {0.0, 0.0, -0.68, 0.0, 0.0, 120.0},
+        propPos = {0.0, 0.0, -0.68, 0.0, 0.0, 120.0}
     },
-["stopsign3-stop"] = {
+    ["stopsign3-stop"] = {
         category = "prop",
         label = "Stop Sign 3 - Stop",
         animDict = "special_ped@griff@base",
@@ -7251,9 +7955,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_flagger_sign_02",
-        propPos = {0.02, 0.02, -0.26, 169.9999, -180.0, 59.9999},
+        propPos = {0.02, 0.02, -0.26, 169.9999, -180.0, 59.9999}
     },
-["stopsign4-slowdown"] = {
+    ["stopsign4-slowdown"] = {
         category = "prop",
         label = "Stop Sign 4 - Slow Down",
         animDict = "special_ped@griff@base",
@@ -7261,9 +7965,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_flagger_sign_02",
-        propPos = {0.02, 0.02, -0.26, 10.0, 0.0, -59.9999},
+        propPos = {0.02, 0.02, -0.26, 10.0, 0.0, -59.9999}
     },
-["stonerbabepose"] = {
+    ["stonerbabepose"] = {
         category = "prop",
         label = "Stoner Babe Pose",
         animDict = "stonerbabe@animation",
@@ -7271,9 +7975,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "p_cs_joint_01",
-        propPos = {0.15, 0.03, -0.04, -1.0, 170.0, 0.0},
+        propPos = {0.15, 0.03, -0.04, -1.0, 170.0, 0.0}
     },
-["baddiegyatselfie"] = {
+    ["baddiegyatselfie"] = {
         category = "prop",
         label = "Baddie Gyat Selfie",
         animDict = "baddiegyat",
@@ -7281,9 +7985,9 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 4169,
         prop = "prop_phone_ing",
-        propPos = {0.03, -0.02, 0.02, -5.0, 3.367247, 0.0711684},
+        propPos = {0.03, -0.02, 0.02, -5.0, 3.367247, 0.0711684}
     },
-["dance"] = {
+    ["dance"] = {
         label = "Dance",
         category = "party",
         animDict = "anim@amb@nightclub@dancers@podium_dancers@",
@@ -7291,7 +7995,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dance2"] = {
+    ["dance2"] = {
         label = "Dance 2",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@male@var_b@",
@@ -7299,7 +8003,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dance3"] = {
+    ["dance3"] = {
         label = "Dance 3",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@male@var_a@",
@@ -7307,7 +8011,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dance4"] = {
+    ["dance4"] = {
         label = "Dance 4",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@male@var_b@",
@@ -7315,7 +8019,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dance5"] = {
+    ["dance5"] = {
         label = "Dance 5",
         category = "party",
         animDict = "anim@amb@casino@mini@dance@dance_solo@female@var_a@",
@@ -7323,7 +8027,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dance6"] = {
+    ["dance6"] = {
         label = "Dance 6",
         category = "party",
         animDict = "misschinese2_crystalmazemcs1_cs",
@@ -7331,7 +8035,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dance7"] = {
+    ["dance7"] = {
         label = "Dance 7",
         category = "party",
         animDict = "misschinese2_crystalmazemcs1_ig",
@@ -7339,7 +8043,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dance8"] = {
+    ["dance8"] = {
         label = "Dance 8",
         category = "party",
         animDict = "missfbi3_sniping",
@@ -7347,7 +8051,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dance9"] = {
+    ["dance9"] = {
         label = "Dance 9",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@",
@@ -7355,7 +8059,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancef"] = {
+    ["dancef"] = {
         label = "Dance F",
         category = "party",
         animDict = "anim@amb@nightclub@dancers@solomun_entourage@",
@@ -7363,7 +8067,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancef2"] = {
+    ["dancef2"] = {
         label = "Dance F2",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@",
@@ -7371,7 +8075,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancef3"] = {
+    ["dancef3"] = {
         label = "Dance F3",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@",
@@ -7379,7 +8083,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancef4"] = {
+    ["dancef4"] = {
         label = "Dance F4",
         category = "party",
         animDict = "anim@amb@nightclub@dancers@crowddance_facedj@hi_intensity",
@@ -7387,7 +8091,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancef5"] = {
+    ["dancef5"] = {
         label = "Dance F5",
         category = "party",
         animDict = "anim@amb@nightclub@dancers@crowddance_facedj@hi_intensity",
@@ -7395,7 +8099,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancef6"] = {
+    ["dancef6"] = {
         label = "Dance F6",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@",
@@ -7403,7 +8107,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceclub"] = {
+    ["danceclub"] = {
         label = "Dance Club",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@beachdance@",
@@ -7411,7 +8115,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceclub2"] = {
+    ["danceclub2"] = {
         label = "Dance Club 2",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@beachdance@",
@@ -7419,7 +8123,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceclub3"] = {
+    ["danceclub3"] = {
         label = "Dance Club 3",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@beachdance@",
@@ -7427,7 +8131,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceclub4"] = {
+    ["danceclub4"] = {
         label = "Dance Club 4",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@beachdance@",
@@ -7435,7 +8139,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceclub5"] = {
+    ["danceclub5"] = {
         label = "Dance Club 5",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@club@",
@@ -7443,7 +8147,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceclub6"] = {
+    ["danceclub6"] = {
         label = "Dance Club 6",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@club@",
@@ -7451,7 +8155,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceclub7"] = {
+    ["danceclub7"] = {
         label = "Dance Club 7",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@club@",
@@ -7459,7 +8163,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceclub8"] = {
+    ["danceclub8"] = {
         label = "Dance Club 8",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@crowddance_facedj@",
@@ -7467,7 +8171,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceclub9"] = {
+    ["danceclub9"] = {
         label = "Dance Club 9",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@crowddance_single_props@",
@@ -7475,7 +8179,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceclub10"] = {
+    ["danceclub10"] = {
         label = "Dance Club 10",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@crowddance_groups@groupd@",
@@ -7483,7 +8187,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceclub11"] = {
+    ["danceclub11"] = {
         label = "Dance Club 11",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@crowddance_facedj@",
@@ -7491,7 +8195,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceclub12"] = {
+    ["danceclub12"] = {
         label = "Dance Club 12",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@",
@@ -7499,7 +8203,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceclub13"] = {
+    ["danceclub13"] = {
         label = "Dance Club 13",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@crowddance_facedj@",
@@ -7507,7 +8211,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceclub14"] = {
+    ["danceclub14"] = {
         label = "Dance Club 14",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@crowddance_facedj@",
@@ -7515,7 +8219,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceclub15"] = {
+    ["danceclub15"] = {
         label = "Dance Club 15",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@shuffle@",
@@ -7523,7 +8227,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceclub16"] = {
+    ["danceclub16"] = {
         label = "Dance Club 16",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@shuffle@",
@@ -7531,7 +8235,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceclub17"] = {
+    ["danceclub17"] = {
         label = "Dance Club 17",
         category = "party",
         animDict = "fix_stu_ext-25",
@@ -7539,7 +8243,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancedrink(beer)"] = {
+    ["dancedrink(beer)"] = {
         label = "Dance Drink (Beer)",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@beachdanceprop@",
@@ -7547,7 +8251,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancedrink2(wine)"] = {
+    ["dancedrink2(wine)"] = {
         label = "Dance Drink 2 (Wine)",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@beachdanceprop@",
@@ -7555,7 +8259,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancedrink3(whiskey)"] = {
+    ["dancedrink3(whiskey)"] = {
         label = "Dance Drink 3 (Whiskey)",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@beachdanceprop@",
@@ -7563,7 +8267,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancedrink4(whiskey)"] = {
+    ["dancedrink4(whiskey)"] = {
         label = "Dance Drink 4 (Whiskey)",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@beachdanceprops@male@",
@@ -7571,7 +8275,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancedrink5(wine)"] = {
+    ["dancedrink5(wine)"] = {
         label = "Dance Drink 5 (Wine)",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@crowddance_single_props@",
@@ -7579,7 +8283,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancedrink6(beer)"] = {
+    ["dancedrink6(beer)"] = {
         label = "Dance Drink 6 (Beer)",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@crowddance_single_props@",
@@ -7587,7 +8291,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancedrink7(wine)"] = {
+    ["dancedrink7(wine)"] = {
         label = "Dance Drink 7 (Wine)",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@crowddance_single_props@",
@@ -7595,7 +8299,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancedrink8(wine)"] = {
+    ["dancedrink8(wine)"] = {
         label = "Dance Drink 8 (Wine)",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@crowddance_single_props@",
@@ -7603,7 +8307,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancedrink9(beer)"] = {
+    ["dancedrink9(beer)"] = {
         label = "Dance Drink 9 (Beer)",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@techno_karate@",
@@ -7611,7 +8315,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceslow2"] = {
+    ["danceslow2"] = {
         label = "Dance Slow 2",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@",
@@ -7619,7 +8323,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceslow3"] = {
+    ["danceslow3"] = {
         label = "Dance Slow 3",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@",
@@ -7627,7 +8331,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceslow4"] = {
+    ["danceslow4"] = {
         label = "Dance Slow 4",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@female@var_b@",
@@ -7635,7 +8339,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceupper"] = {
+    ["danceupper"] = {
         label = "Dance Upper",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@female@var_b@",
@@ -7643,7 +8347,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceupper2"] = {
+    ["danceupper2"] = {
         label = "Dance Upper 2",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@female@var_b@",
@@ -7651,7 +8355,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceshy"] = {
+    ["danceshy"] = {
         label = "Dance Shy",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@male@var_a@",
@@ -7659,7 +8363,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceshy2"] = {
+    ["danceshy2"] = {
         label = "Dance Shy 2",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@female@var_b@",
@@ -7667,7 +8371,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceslow"] = {
+    ["danceslow"] = {
         label = "Dance Slow",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@male@var_b@",
@@ -7675,7 +8379,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancesilly1"] = {
+    ["dancesilly1"] = {
         label = "Dance Silly 1",
         category = "party",
         animDict = "rcmnigel1bnmt_1b",
@@ -7683,7 +8387,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancesilly"] = {
+    ["dancesilly"] = {
         label = "Dance Silly",
         category = "party",
         animDict = "special_ped@mountain_dancer@monologue_3@monologue_3a",
@@ -7691,7 +8395,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancesilly2"] = {
+    ["dancesilly2"] = {
         label = "Dance Silly 2",
         category = "party",
         animDict = "move_clown@p_m_zero_idles@",
@@ -7699,7 +8403,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancesilly3"] = {
+    ["dancesilly3"] = {
         label = "Dance Silly 3",
         category = "party",
         animDict = "move_clown@p_m_two_idles@",
@@ -7707,7 +8411,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancesilly4"] = {
+    ["dancesilly4"] = {
         label = "Dance Silly 4",
         category = "party",
         animDict = "anim@amb@nightclub@lazlow@hi_podium@",
@@ -7715,7 +8419,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancesilly5"] = {
+    ["dancesilly5"] = {
         label = "Dance Silly 5",
         category = "party",
         animDict = "timetable@tracy@ig_5@idle_a",
@@ -7723,7 +8427,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancesilly6"] = {
+    ["dancesilly6"] = {
         label = "Dance Silly 6",
         category = "party",
         animDict = "timetable@tracy@ig_8@idle_b",
@@ -7731,7 +8435,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancesilly7"] = {
+    ["dancesilly7"] = {
         label = "Dance Silly 7",
         category = "party",
         animDict = "anim@amb@casino@mini@dance@dance_solo@female@var_b@",
@@ -7739,7 +8443,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancesilly8"] = {
+    ["dancesilly8"] = {
         label = "Dance Silly 8",
         category = "party",
         animDict = "anim@amb@casino@mini@dance@dance_solo@female@var_b@",
@@ -7747,7 +8451,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancesilly9"] = {
+    ["dancesilly9"] = {
         label = "Dance Silly 9",
         category = "party",
         animDict = "anim@mp_player_intcelebrationfemale@the_woogie",
@@ -7755,7 +8459,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancesilly10"] = {
+    ["dancesilly10"] = {
         label = "Dance Silly 10",
         category = "party",
         animDict = "anim@amb@nightclub@lazlow@hi_podium@",
@@ -7763,7 +8467,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancesilly11"] = {
+    ["dancesilly11"] = {
         label = "Dance Silly 11",
         category = "party",
         animDict = "anim@amb@nightclub@lazlow@hi_podium@",
@@ -7771,7 +8475,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["danceold"] = {
+    ["danceold"] = {
         label = "Dance Old",
         category = "party",
         animDict = "anim@mp_player_intupperuncle_disco",
@@ -7779,7 +8483,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancehorse"] = {
+    ["dancehorse"] = {
         label = "Dance Horse",
         category = "party",
         animDict = "anim@amb@nightclub@lazlow@hi_dancefloor@",
@@ -7787,7 +8491,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancehorse2"] = {
+    ["dancehorse2"] = {
         label = "Dance Horse 2",
         category = "party",
         animDict = "anim@amb@nightclub@lazlow@hi_dancefloor@",
@@ -7795,7 +8499,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancehorse3"] = {
+    ["dancehorse3"] = {
         label = "Dance Horse 3",
         category = "party",
         animDict = "anim@amb@nightclub@lazlow@hi_dancefloor@",
@@ -7803,7 +8507,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wavedance"] = {
+    ["wavedance"] = {
         label = "Wave Dance",
         category = "party",
         animDict = "dancing_wave_part_one@anim",
@@ -7811,7 +8515,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wavedance2"] = {
+    ["wavedance2"] = {
         label = "Wave Dance 2",
         category = "party",
         animDict = "dancing_wave_part_one@anim",
@@ -7819,7 +8523,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wavedance3"] = {
+    ["wavedance3"] = {
         label = "Wave Dance 3",
         category = "party",
         animDict = "dancing_wave_part_one@anim",
@@ -7827,7 +8531,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wavedance4"] = {
+    ["wavedance4"] = {
         label = "Wave Dance 4",
         category = "party",
         animDict = "dancing_wave_part_one@anim",
@@ -7835,7 +8539,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wavedance5-tutankhamen"] = {
+    ["wavedance5-tutankhamen"] = {
         label = "Wave Dance 5 - Tutankhamen",
         category = "party",
         animDict = "dancing_wave_part_one@anim",
@@ -7843,7 +8547,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wavedance6-tutankhamen2"] = {
+    ["wavedance6-tutankhamen2"] = {
         label = "Wave Dance 6 - Tutankhamen 2",
         category = "party",
         animDict = "dancing_wave_part_one@anim",
@@ -7851,7 +8555,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wavedance7-snakedance"] = {
+    ["wavedance7-snakedance"] = {
         label = "Wave Dance 7 - Snake Dance",
         category = "party",
         animDict = "dancing_wave_part_one@anim",
@@ -7859,7 +8563,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wavedance8-slidedance"] = {
+    ["wavedance8-slidedance"] = {
         label = "Wave Dance 8 - Slide Dance",
         category = "party",
         animDict = "dancing_wave_part_one@anim",
@@ -7867,7 +8571,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wavedance9-slidedance2"] = {
+    ["wavedance9-slidedance2"] = {
         label = "Wave Dance 9 - Slide Dance 2",
         category = "party",
         animDict = "dancing_wave_part_one@anim",
@@ -7875,7 +8579,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wavedance10-robotdance"] = {
+    ["wavedance10-robotdance"] = {
         label = "Wave Dance 10 - Robot Dance",
         category = "party",
         animDict = "dancing_wave_part_one@anim",
@@ -7883,7 +8587,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wavedance11-lockingdance"] = {
+    ["wavedance11-lockingdance"] = {
         label = "Wave Dance 11 - Locking Dance",
         category = "party",
         animDict = "dancing_wave_part_one@anim",
@@ -7891,7 +8595,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wavedance12-headspin"] = {
+    ["wavedance12-headspin"] = {
         label = "Wave Dance 12 - Headspin",
         category = "party",
         animDict = "dancing_wave_part_one@anim",
@@ -7899,7 +8603,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wavedance13-flairedance"] = {
+    ["wavedance13-flairedance"] = {
         label = "Wave Dance 13 - Flaire Dance",
         category = "party",
         animDict = "dancing_wave_part_one@anim",
@@ -7907,7 +8611,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wavedance14-femalecrowddance"] = {
+    ["wavedance14-femalecrowddance"] = {
         label = "Wave Dance 14 - Female Crowd Dance",
         category = "party",
         animDict = "dancing_wave_part_one@anim",
@@ -7915,7 +8619,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wavedance15-uprockdance"] = {
+    ["wavedance15-uprockdance"] = {
         label = "Wave Dance 15 - Uprock Dance",
         category = "party",
         animDict = "dancing_wave_part_one@anim",
@@ -7923,7 +8627,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dance-mjthriller"] = {
+    ["dance-mjthriller"] = {
         label = "Dance - MJ Thriller",
         category = "party",
         animDict = "mj_thriller",
@@ -7931,7 +8635,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dj"] = {
+    ["dj"] = {
         label = "DJ",
         category = "party",
         animDict = "anim@amb@nightclub@djs@dixon@",
@@ -7939,7 +8643,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dj2"] = {
+    ["dj2"] = {
         label = "DJ 2",
         category = "party",
         animDict = "anim@amb@nightclub@djs@solomun@",
@@ -7947,7 +8651,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dj3"] = {
+    ["dj3"] = {
         label = "DJ 3",
         category = "party",
         animDict = "anim@amb@nightclub@djs@solomun@",
@@ -7955,7 +8659,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dj4"] = {
+    ["dj4"] = {
         label = "DJ 4",
         category = "party",
         animDict = "anim@amb@nightclub@djs@black_madonna@",
@@ -7963,7 +8667,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dj1"] = {
+    ["dj1"] = {
         label = "DJ 1",
         category = "party",
         animDict = "anim@amb@nightclub@djs@dixon@",
@@ -7971,7 +8675,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dj5"] = {
+    ["dj5"] = {
         label = "DJ 5",
         category = "party",
         animDict = "anim@amb@nightclub@djs@dixon@",
@@ -7979,7 +8683,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dj6"] = {
+    ["dj6"] = {
         label = "DJ 6",
         category = "party",
         animDict = "anim@amb@nightclub@djs@dixon@",
@@ -7987,7 +8691,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dj7"] = {
+    ["dj7"] = {
         label = "DJ 7",
         category = "party",
         animDict = "anim@amb@nightclub@djs@dixon@",
@@ -7995,7 +8699,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dj8"] = {
+    ["dj8"] = {
         label = "DJ 8",
         category = "party",
         animDict = "anim@amb@nightclub@djs@dixon@",
@@ -8003,7 +8707,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dj9"] = {
+    ["dj9"] = {
         label = "DJ 9",
         category = "party",
         animDict = "anim@amb@nightclub@djs@dixon@",
@@ -8011,7 +8715,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["twerk"] = {
+    ["twerk"] = {
         label = "Twerk",
         category = "party",
         animDict = "switch@trevor@mocks_lapdance",
@@ -8019,7 +8723,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lapdance"] = {
+    ["lapdance"] = {
         label = "Lapdance",
         category = "party",
         animDict = "mp_safehouse",
@@ -8027,7 +8731,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lapdance2"] = {
+    ["lapdance2"] = {
         label = "Lapdance 2",
         category = "party",
         animDict = "mini@strip_club@private_dance@idle",
@@ -8035,7 +8739,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lapdance3"] = {
+    ["lapdance3"] = {
         label = "Lapdance 3",
         category = "party",
         animDict = "mini@strip_club@private_dance@part1",
@@ -8043,7 +8747,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lapdance4"] = {
+    ["lapdance4"] = {
         label = "Lapdance 4",
         category = "party",
         animDict = "mini@strip_club@private_dance@part2",
@@ -8051,7 +8755,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lapdance5"] = {
+    ["lapdance5"] = {
         label = "Lapdance 5",
         category = "party",
         animDict = "mini@strip_club@private_dance@part3",
@@ -8059,7 +8763,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lapdance6"] = {
+    ["lapdance6"] = {
         label = "Lapdance 6",
         category = "party",
         animDict = "oddjobs@assassinate@multi@yachttarget@lapdance",
@@ -8067,7 +8771,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lapdancewith"] = {
+    ["lapdancewith"] = {
         label = "Lapdance With",
         category = "party",
         animDict = "mini@strip_club@lap_dance_2g@ld_2g_p3",
@@ -8075,7 +8779,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lapdancewith2"] = {
+    ["lapdancewith2"] = {
         label = "Lapdance With2",
         category = "party",
         animDict = "mini@strip_club@lap_dance_2g@ld_2g_p2",
@@ -8083,7 +8787,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lapdancewith3"] = {
+    ["lapdancewith3"] = {
         label = "Lapdance With3",
         category = "party",
         animDict = "mini@strip_club@lap_dance_2g@ld_2g_p1",
@@ -8091,7 +8795,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lapchair"] = {
+    ["lapchair"] = {
         label = "Lap Chair",
         category = "party",
         animDict = "mini@strip_club@lap_dance@ld_girl_a_song_a_p1",
@@ -8099,7 +8803,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lapchair2"] = {
+    ["lapchair2"] = {
         label = "Lap Chair2",
         category = "party",
         animDict = "mini@strip_club@lap_dance@ld_girl_a_song_a_p2",
@@ -8107,7 +8811,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lapchair3"] = {
+    ["lapchair3"] = {
         label = "Lap Chair3",
         category = "party",
         animDict = "mini@strip_club@lap_dance@ld_girl_a_song_a_p3",
@@ -8115,7 +8819,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["salsoroll"] = {
+    ["salsoroll"] = {
         label = "Salso Roll",
         category = "party",
         animDict = "anim@mp_player_intuppersalsa_roll",
@@ -8123,7 +8827,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancecrankdat"] = {
+    ["dancecrankdat"] = {
         label = "Dance Crank Dat",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@shuffle@",
@@ -8131,7 +8835,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dancecrankdat2"] = {
+    ["dancecrankdat2"] = {
         label = "Dance Crank Dat 2",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@shuffle@",
@@ -8139,7 +8843,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["monkeydance"] = {
+    ["monkeydance"] = {
         label = "Monkey Dance",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@techno_monkey@",
@@ -8147,7 +8851,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["monkeydance2"] = {
+    ["monkeydance2"] = {
         label = "Monkey Dance 2",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@techno_monkey@",
@@ -8155,7 +8859,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["monkeydance3"] = {
+    ["monkeydance3"] = {
         label = "Monkey Dance 3",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@techno_monkey@",
@@ -8163,7 +8867,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["boxingdancesolo"] = {
+    ["boxingdancesolo"] = {
         label = "Boxing Dance Solo",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@beach_boxing@",
@@ -8171,7 +8875,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["hiphopdance"] = {
+    ["hiphopdance"] = {
         label = "Hip Hop Dance",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_paired@dance_d@",
@@ -8179,7 +8883,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["hiphopdance2"] = {
+    ["hiphopdance2"] = {
         label = "Hip Hop Dance 2",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_paired@dance_b@",
@@ -8187,7 +8891,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["hiphopdance3"] = {
+    ["hiphopdance3"] = {
         label = "Hip Hop Dance 3",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_paired@dance_a@",
@@ -8195,7 +8899,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["drilldance"] = {
+    ["drilldance"] = {
         label = "Drill Dance",
         category = "party",
         animDict = "sdrill@animation",
@@ -8203,7 +8907,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["technodance"] = {
+    ["technodance"] = {
         label = "Techno Dance",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@techno_karate@",
@@ -8211,7 +8915,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["technodance2"] = {
+    ["technodance2"] = {
         label = "Techno Dance 2",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@techno_karate@",
@@ -8219,7 +8923,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["technodance3"] = {
+    ["technodance3"] = {
         label = "Techno Dance 3",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@techno_karate@",
@@ -8227,7 +8931,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["technodance4"] = {
+    ["technodance4"] = {
         label = "Techno Dance 4",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@techno_karate@",
@@ -8235,63 +8939,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["atm"] = {
-        label = "atm",
-        category = "main",
-        animDict = "PROP_HUMAN_ATM",
-        animName = "ATM",
-        animFlag = 1,
-        can_shared = true
-    },
-["bbq"] = {
-        label = "bbq",
-        category = "stand",
-        animDict = "PROP_HUMAN_BBQ",
-        animName = "BBQ",
-        animFlag = 1,
-        can_shared = true
-    },
-["bumbin"] = {
-        label = "bumbin",
-        category = "party",
-        animDict = "PROP_HUMAN_BUM_BIN",
-        animName = "Bum Bin",
-        animFlag = 1,
-        can_shared = true
-    },
-["cheer"] = {
-        label = "cheer",
-        category = "help",
-        animDict = "WORLD_HUMAN_CHEERING",
-        animName = "Cheer",
-        animFlag = 1,
-        can_shared = true
-    },
-["chinup"] = {
-        label = "chinup",
-        category = "sport",
-        animDict = "PROP_HUMAN_MUSCLE_CHIN_UPS",
-        animName = "Chinup",
-        animFlag = 1,
-        can_shared = true
-    },
-["clipboard2"] = {
-        label = "clipboard2",
-        category = "other",
-        animDict = "WORLD_HUMAN_CLIPBOARD",
-        animName = "Clipboard 2",
-        animFlag = 1,
-        can_shared = true
-    },
-["cop"] = {
-        label = "cop",
-        category = "main",
-        animDict = "WORLD_HUMAN_COP_IDLES",
-        animName = "Cop",
-        animFlag = 1,
-        can_shared = true
-    },
-["drill"] = {
+    ["drill"] = {
         label = "drill",
         category = "stand",
         animDict = "WORLD_HUMAN_CONST_DRILL",
@@ -8299,7 +8947,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["filmshocking"] = {
+    ["filmshocking"] = {
         label = "filmshocking",
         category = "party",
         animDict = "WORLD_HUMAN_MOBILE_FILM_SHOCKING",
@@ -8307,7 +8955,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["flex"] = {
+    ["flex"] = {
         label = "flex",
         category = "help",
         animDict = "WORLD_HUMAN_MUSCLE_FLEX",
@@ -8315,7 +8963,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["guard"] = {
+    ["guard"] = {
         label = "guard",
         category = "sport",
         animDict = "WORLD_HUMAN_GUARD_STAND",
@@ -8323,7 +8971,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["garden"] = {
+    ["garden"] = {
         label = "garden",
         category = "other",
         animDict = "WORLD_HUMAN_GARDENER_PLANT",
@@ -8331,7 +8979,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["hammer"] = {
+    ["hammer"] = {
         label = "hammer",
         category = "main",
         animDict = "WORLD_HUMAN_HAMMERING",
@@ -8339,15 +8987,15 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["hangout"] = {
-        label = "hangout",
+    ["hangout"] = {
+        label = "Hangout 1",
         category = "stand",
         animDict = "WORLD_HUMAN_HANG_OUT_STREET",
         animName = "Hangout",
         animFlag = 1,
         can_shared = true
     },
-["impatient"] = {
+    ["impatient"] = {
         label = "impatient",
         category = "party",
         animDict = "WORLD_HUMAN_STAND_IMPATIENT",
@@ -8355,7 +9003,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["janitor"] = {
+    ["janitor"] = {
         label = "janitor",
         category = "help",
         animDict = "WORLD_HUMAN_JANITOR",
@@ -8363,7 +9011,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["jog"] = {
+    ["jog"] = {
         label = "jog",
         category = "sport",
         animDict = "WORLD_HUMAN_JOG_STANDING",
@@ -8371,7 +9019,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["kneel"] = {
+    ["kneel"] = {
         label = "kneel",
         category = "other",
         animDict = "CODE_HUMAN_MEDIC_KNEEL",
@@ -8379,7 +9027,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lean"] = {
+    ["lean"] = {
         label = "lean",
         category = "stand",
         animDict = "WORLD_HUMAN_LEANING",
@@ -8387,7 +9035,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["leanbar"] = {
+    ["leanbar"] = {
         label = "leanbar",
         category = "stand",
         animDict = "PROP_HUMAN_BUM_SHOPPING_CART",
@@ -8395,7 +9043,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lookout"] = {
+    ["lookout"] = {
         label = "lookout",
         category = "party",
         animDict = "CODE_HUMAN_CROSS_ROAD_WAIT",
@@ -8403,7 +9051,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["maid"] = {
+    ["maid"] = {
         label = "maid",
         category = "help",
         animDict = "WORLD_HUMAN_MAID_CLEAN",
@@ -8411,7 +9059,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["medic"] = {
+    ["medic"] = {
         label = "medic",
         category = "sport",
         animDict = "CODE_HUMAN_MEDIC_TEND_TO_DEAD",
@@ -8419,7 +9067,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["musician"] = {
+    ["musician"] = {
         label = "musician",
         category = "other",
         animDict = "WORLD_HUMAN_MUSICIAN",
@@ -8427,7 +9075,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["notepad2"] = {
+    ["notepad2"] = {
         label = "notepad2",
         category = "main",
         animDict = "CODE_HUMAN_MEDIC_TIME_OF_DEATH",
@@ -8435,7 +9083,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["parkingmeter"] = {
+    ["parkingmeter"] = {
         label = "parkingmeter",
         category = "stand",
         animDict = "PROP_HUMAN_PARKING_METER",
@@ -8443,7 +9091,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["party"] = {
+    ["party"] = {
         label = "party",
         category = "party",
         animDict = "WORLD_HUMAN_PARTYING",
@@ -8451,7 +9099,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["texting"] = {
+    ["texting"] = {
         label = "texting",
         category = "help",
         animDict = "WORLD_HUMAN_STAND_MOBILE",
@@ -8459,7 +9107,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["prosthigh"] = {
+    ["prosthigh"] = {
         label = "prosthigh",
         category = "sport",
         animDict = "WORLD_HUMAN_PROSTITUTE_HIGH_CLASS",
@@ -8467,7 +9115,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["prostlow"] = {
+    ["prostlow"] = {
         label = "prostlow",
         category = "other",
         animDict = "WORLD_HUMAN_PROSTITUTE_LOW_CLASS",
@@ -8475,7 +9123,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["puddle"] = {
+    ["puddle"] = {
         label = "puddle",
         category = "main",
         animDict = "WORLD_HUMAN_BUM_WASH",
@@ -8483,7 +9131,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["record"] = {
+    ["record"] = {
         label = "record",
         category = "stand",
         animDict = "WORLD_HUMAN_MOBILE_FILM_SHOCKING",
@@ -8491,7 +9139,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["smoke"] = {
+    ["smoke"] = {
         label = "smoke",
         category = "party",
         animDict = "WORLD_HUMAN_SMOKING",
@@ -8499,7 +9147,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["smokeweed"] = {
+    ["smokeweed"] = {
         label = "smokeweed",
         category = "help",
         animDict = "WORLD_HUMAN_DRUG_DEALER",
@@ -8507,7 +9155,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["smokeweed2"] = {
+    ["smokeweed2"] = {
         label = "smokeweed2",
         category = "sport",
         animDict = "WORLD_HUMAN_SMOKING_POT",
@@ -8515,7 +9163,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["statue"] = {
+    ["statue"] = {
         label = "statue",
         category = "other",
         animDict = "WORLD_HUMAN_HUMAN_STATUE",
@@ -8523,7 +9171,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["weld"] = {
+    ["weld"] = {
         label = "weld",
         category = "main",
         animDict = "WORLD_HUMAN_WELDING",
@@ -8531,7 +9179,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["windowshop"] = {
+    ["windowshop"] = {
         label = "windowshop",
         category = "stand",
         animDict = "WORLD_HUMAN_WINDOW_SHOP_BROWSE",
@@ -8539,7 +9187,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["yoga"] = {
+    ["yoga"] = {
         label = "yoga",
         category = "sport",
         animDict = "WORLD_HUMAN_YOGA",
@@ -8547,7 +9195,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["annoyed"] = {
+    ["annoyed"] = {
         label = "Annoyed",
         category = "help",
         animDict = "missdocksshowoffcar@idle_a",
@@ -8555,7 +9203,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dispenser"] = {
+    ["dispenser"] = {
         label = "Dispenser",
         category = "sport",
         animDict = "mini@sprunk",
@@ -8563,7 +9211,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["handcuffed-front"] = {
+    ["handcuffed-front"] = {
         label = "Handcuffed - Front",
         category = "other",
         animDict = "anim@move_m@prisoner_cuffed",
@@ -8571,7 +9219,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["handcuffed-back"] = {
+    ["handcuffed-back"] = {
         label = "Handcuffed - Back",
         category = "main",
         animDict = "mp_arresting",
@@ -8579,7 +9227,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dazzlemepose1"] = {
+    ["dazzlemepose1"] = {
         label = "Dazzle Me Pose 1",
         category = "stand",
         animDict = "lunyx@dazzleme",
@@ -8587,7 +9235,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dazzlemepose2"] = {
+    ["dazzlemepose2"] = {
         label = "Dazzle Me Pose 2",
         category = "stand",
         animDict = "lunyx@dazzleme",
@@ -8595,7 +9243,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dazzlemepose3"] = {
+    ["dazzlemepose3"] = {
         label = "Dazzle Me Pose 3",
         category = "stand",
         animDict = "lunyx@dazzleme",
@@ -8603,7 +9251,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dazzlemepose4"] = {
+    ["dazzlemepose4"] = {
         label = "Dazzle Me Pose 4",
         category = "stand",
         animDict = "lunyx@dazzleme",
@@ -8611,7 +9259,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dazzlemepose5"] = {
+    ["dazzlemepose5"] = {
         label = "Dazzle Me Pose 5",
         category = "stand",
         animDict = "lunyx@dazzleme",
@@ -8619,7 +9267,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dazzlemepose6"] = {
+    ["dazzlemepose6"] = {
         label = "Dazzle Me Pose 6",
         category = "stand",
         animDict = "lunyx@dazzleme",
@@ -8627,7 +9275,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dazzlemepose7"] = {
+    ["dazzlemepose7"] = {
         label = "Dazzle Me Pose 7",
         category = "stand",
         animDict = "lunyx@dazzleme",
@@ -8635,7 +9283,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["playdeadact"] = {
+    ["playdeadact"] = {
         label = "Play Dead Act",
         category = "party",
         animDict = "anim@scripted@data_leak@fixf_fin_ig2_johnnyguns_wounded@",
@@ -8643,7 +9291,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femalestandcutepose"] = {
+    ["femalestandcutepose"] = {
         label = "Female Stand Cute Pose",
         category = "stand",
         animDict = "stand_cute_6@dark",
@@ -8651,7 +9299,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femalestandcutepose1"] = {
+    ["femalestandcutepose1"] = {
         label = "Female Stand Cute Pose 1",
         category = "stand",
         animDict = "stand_fem_1@darksj",
@@ -8659,7 +9307,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femalestandcutepose2"] = {
+    ["femalestandcutepose2"] = {
         label = "Female Stand Cute Pose 2",
         category = "stand",
         animDict = "feet_stand_w@darksj",
@@ -8667,7 +9315,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femalestandcutepose3"] = {
+    ["femalestandcutepose3"] = {
         label = "Female Stand Cute Pose 3",
         category = "stand",
         animDict = "anim@female_model_14",
@@ -8675,7 +9323,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femalestandcuteposefinger"] = {
+    ["femalestandcuteposefinger"] = {
         label = "Female Stand Cute Pose Finger",
         category = "stand",
         animDict = "anim@female_model_15",
@@ -8683,7 +9331,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femalestandcutepose4"] = {
+    ["femalestandcutepose4"] = {
         label = "Female Stand Cute Pose 4",
         category = "stand",
         animDict = "anim@female_model_17",
@@ -8691,7 +9339,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["malestandpose"] = {
+    ["malestandpose"] = {
         label = "Male Stand Pose",
         category = "stand",
         animDict = "anim@male_model_11",
@@ -8699,7 +9347,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femalesitcute"] = {
+    ["femalesitcute"] = {
         label = "Female Sit Cute",
         category = "stand",
         animDict = "sit_cute_1@dark",
@@ -8707,7 +9355,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femalesitcute1"] = {
+    ["femalesitcute1"] = {
         label = "Female Sit Cute 1",
         category = "stand",
         animDict = "mrwitt@chin_support_on_floor",
@@ -8715,7 +9363,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femalesitcute2"] = {
+    ["femalesitcute2"] = {
         label = "Female Sit Cute 2",
         category = "stand",
         animDict = "beach_1@janina234",
@@ -8723,7 +9371,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleonkneespose"] = {
+    ["femaleonkneespose"] = {
         label = "Female On Knees Pose",
         category = "stand",
         animDict = "beach_4@janina234",
@@ -8731,7 +9379,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleonkneespose1"] = {
+    ["femaleonkneespose1"] = {
         label = "Female On Knees Pose 1",
         category = "stand",
         animDict = "on_the_knees@darksj",
@@ -8739,7 +9387,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleonkneespose2"] = {
+    ["femaleonkneespose2"] = {
         label = "Female On Knees Pose 2",
         category = "stand",
         animDict = "anim@female_model_21",
@@ -8747,7 +9395,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fashionposepose1"] = {
+    ["fashionposepose1"] = {
         label = "Fashion Pose Pose 1",
         category = "stand",
         animDict = "lunyxco@dresstoimpress",
@@ -8755,7 +9403,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fashionposepose2"] = {
+    ["fashionposepose2"] = {
         label = "Fashion Pose Pose 2",
         category = "stand",
         animDict = "lunyxco@dresstoimpress",
@@ -8763,7 +9411,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fashionposepose3"] = {
+    ["fashionposepose3"] = {
         label = "Fashion Pose Pose 3",
         category = "stand",
         animDict = "lunyxco@dresstoimpress",
@@ -8771,7 +9419,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fashionposepose4"] = {
+    ["fashionposepose4"] = {
         label = "Fashion Pose Pose 4",
         category = "stand",
         animDict = "lunyxco@dresstoimpress",
@@ -8779,7 +9427,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fashionposepose5"] = {
+    ["fashionposepose5"] = {
         label = "Fashion Pose Pose 5",
         category = "stand",
         animDict = "lunyxco@dresstoimpress",
@@ -8787,7 +9435,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fashionposepose6"] = {
+    ["fashionposepose6"] = {
         label = "Fashion Pose Pose 6",
         category = "stand",
         animDict = "lunyxco@dresstoimpress",
@@ -8795,7 +9443,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fashionposepose7"] = {
+    ["fashionposepose7"] = {
         label = "Fashion Pose Pose 7",
         category = "stand",
         animDict = "lunyxco@dresstoimpress",
@@ -8803,7 +9451,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fashionposepose8"] = {
+    ["fashionposepose8"] = {
         label = "Fashion Pose Pose 8",
         category = "stand",
         animDict = "lunyxco@dresstoimpress",
@@ -8811,7 +9459,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fashionposepose9"] = {
+    ["fashionposepose9"] = {
         label = "Fashion Pose Pose 9",
         category = "stand",
         animDict = "lunyxco@dresstoimpress",
@@ -8819,7 +9467,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["beast"] = {
+    ["beast"] = {
         label = "Beast",
         category = "stand",
         animDict = "anim@mp_fm_event@intro",
@@ -8827,7 +9475,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["chill"] = {
+    ["chill"] = {
         label = "Chill",
         category = "party",
         animDict = "switch@trevor@scares_tramp",
@@ -8835,7 +9483,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cloudgaze"] = {
+    ["cloudgaze"] = {
         label = "Cloudgaze",
         category = "help",
         animDict = "switch@trevor@annoys_sunbathers",
@@ -8843,7 +9491,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cloudgaze2"] = {
+    ["cloudgaze2"] = {
         label = "Cloudgaze 2",
         category = "sport",
         animDict = "switch@trevor@annoys_sunbathers",
@@ -8851,7 +9499,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["crouch&reach"] = {
+    ["crouch&reach"] = {
         label = "Crouch & Reach",
         category = "other",
         animDict = "anim@veh@van@mule5@rds",
@@ -8859,7 +9507,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["crouch&reach2"] = {
+    ["crouch&reach2"] = {
         label = "Crouch & Reach 2",
         category = "main",
         animDict = "anim@scripted@npc@mission@pln_ig4_cargo@",
@@ -8867,7 +9515,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["daydreamintheclouds"] = {
+    ["daydreamintheclouds"] = {
         label = "Daydream In The Clouds",
         category = "stand",
         animDict = "girl_groupe_d@darksj",
@@ -8875,7 +9523,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["koreanhandhearts🇰🇷"] = {
+    ["koreanhandhearts🇰🇷"] = {
         label = "Korean Hand Hearts 🇰🇷",
         category = "party",
         animDict = "ebrwny_heart000",
@@ -8883,7 +9531,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["uwu2"] = {
+    ["uwu2"] = {
         label = "UwU 2",
         category = "help",
         animDict = "ebrwny_pack000",
@@ -8891,7 +9539,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["rawr"] = {
+    ["rawr"] = {
         label = "Rawr",
         category = "sport",
         animDict = "ebrwny_pack000",
@@ -8899,7 +9547,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["stop"] = {
+    ["stop"] = {
         label = "Stop",
         category = "other",
         animDict = "ebrwny_pack000",
@@ -8907,7 +9555,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sassy"] = {
+    ["sassy"] = {
         label = "Sassy",
         category = "main",
         animDict = "ebrwny_pack000",
@@ -8915,7 +9563,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sitsad3"] = {
+    ["sitsad3"] = {
         label = "Sit Sad 3",
         category = "stand",
         animDict = "ebrwny_pack000",
@@ -8923,7 +9571,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sitsad4"] = {
+    ["sitsad4"] = {
         label = "Sit Sad 4",
         category = "stand",
         animDict = "ebrwny_pack000",
@@ -8931,7 +9579,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["bendover"] = {
+    ["bendover"] = {
         label = "Bend over",
         category = "help",
         animDict = "ebrwny_pack000",
@@ -8939,7 +9587,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["prone"] = {
+    ["prone"] = {
         label = "Prone",
         category = "sport",
         animDict = "missfbi3_sniping",
@@ -8947,7 +9595,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["pullover"] = {
+    ["pullover"] = {
         label = "Pullover",
         category = "other",
         animDict = "misscarsteal3pullover",
@@ -8955,7 +9603,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idle"] = {
+    ["idle"] = {
         label = "Idle",
         category = "main",
         animDict = "anim@heists@heist_corona@team_idles@male_a",
@@ -8963,7 +9611,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idle8"] = {
+    ["idle8"] = {
         label = "Idle 8",
         category = "stand",
         animDict = "amb@world_human_hang_out_street@male_b@idle_a",
@@ -8971,7 +9619,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idle9"] = {
+    ["idle9"] = {
         label = "Idle 9",
         category = "party",
         animDict = "friends@fra@ig_1",
@@ -8979,7 +9627,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idle10"] = {
+    ["idle10"] = {
         label = "Idle 10",
         category = "help",
         animDict = "mp_move@prostitute@m@french",
@@ -8987,7 +9635,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idle11"] = {
+    ["idle11"] = {
         label = "Idle 11",
         category = "sport",
         animDict = "random@countrysiderobbery",
@@ -8995,7 +9643,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idle12"] = {
+    ["idle12"] = {
         label = "Idle 12",
         category = "other",
         animDict = "mp_corona_idles@female_b@base",
@@ -9003,7 +9651,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idle13"] = {
+    ["idle13"] = {
         label = "Idle 13",
         category = "main",
         animDict = "mp_corona_idles@female_c@base",
@@ -9011,7 +9659,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idle14"] = {
+    ["idle14"] = {
         label = "Idle 14",
         category = "stand",
         animDict = "random@countrysiderobbery",
@@ -9019,7 +9667,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idle15"] = {
+    ["idle15"] = {
         label = "Idle 15",
         category = "party",
         animDict = "anim_heist@arcade_combined@",
@@ -9027,7 +9675,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idle16"] = {
+    ["idle16"] = {
         label = "Idle 16",
         category = "help",
         animDict = "anim_heist@arcade_combined@",
@@ -9035,7 +9683,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idle17"] = {
+    ["idle17"] = {
         label = "Idle 17",
         category = "sport",
         animDict = "anim_heist@arcade_combined@",
@@ -9043,7 +9691,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idle18"] = {
+    ["idle18"] = {
         label = "Idle 18",
         category = "other",
         animDict = "mp_move@prostitute@m@hooker",
@@ -9051,7 +9699,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idle19"] = {
+    ["idle19"] = {
         label = "Idle 19",
         category = "main",
         animDict = "missdocksshowoffcar@base",
@@ -9059,7 +9707,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idle2"] = {
+    ["idle2"] = {
         label = "Idle 2",
         category = "stand",
         animDict = "anim@heists@heist_corona@team_idles@female_a",
@@ -9067,7 +9715,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idle3"] = {
+    ["idle3"] = {
         label = "Idle 3",
         category = "party",
         animDict = "anim@heists@humane_labs@finale@strip_club",
@@ -9075,7 +9723,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idle4"] = {
+    ["idle4"] = {
         label = "Idle 4",
         category = "help",
         animDict = "anim@mp_celebration@idles@female",
@@ -9083,7 +9731,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idle5"] = {
+    ["idle5"] = {
         label = "Idle 5",
         category = "sport",
         animDict = "anim@mp_corona_idles@female_b@idle_a",
@@ -9091,7 +9739,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idle6"] = {
+    ["idle6"] = {
         label = "Idle 6",
         category = "other",
         animDict = "anim@mp_corona_idles@male_c@idle_a",
@@ -9099,7 +9747,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idle7"] = {
+    ["idle7"] = {
         label = "Idle 7",
         category = "main",
         animDict = "anim@mp_corona_idles@male_d@idle_a",
@@ -9107,7 +9755,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idledrunk"] = {
+    ["idledrunk"] = {
         label = "Idle Drunk",
         category = "sport",
         animDict = "random@drunk_driver_1",
@@ -9115,7 +9763,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idledrunk2"] = {
+    ["idledrunk2"] = {
         label = "Idle Drunk 2",
         category = "sport",
         animDict = "random@drunk_driver_1",
@@ -9123,7 +9771,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["idledrunk3"] = {
+    ["idledrunk3"] = {
         label = "Idle Drunk 3",
         category = "sport",
         animDict = "missarmenian2",
@@ -9131,7 +9779,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["impatient2"] = {
+    ["impatient2"] = {
         label = "impatient 2",
         category = "sport",
         animDict = "oddjobs@taxi@gyn@cc@intro",
@@ -9139,7 +9787,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["airguitar"] = {
+    ["airguitar"] = {
         label = "Air Guitar",
         category = "other",
         animDict = "anim@mp_player_intcelebrationfemale@air_guitar",
@@ -9147,7 +9795,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["airsynth"] = {
+    ["airsynth"] = {
         label = "Air Synth",
         category = "main",
         animDict = "anim@mp_player_intcelebrationfemale@air_synth",
@@ -9155,7 +9803,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["argue"] = {
+    ["argue"] = {
         label = "Argue",
         category = "stand",
         animDict = "misscarsteal4@actor",
@@ -9163,7 +9811,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["argue2"] = {
+    ["argue2"] = {
         label = "Argue 2",
         category = "party",
         animDict = "oddjobs@assassinate@vice@hooker",
@@ -9171,7 +9819,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["argue3"] = {
+    ["argue3"] = {
         label = "Argue 3",
         category = "help",
         animDict = "missheistdockssetup1leadinoutig_1",
@@ -9179,7 +9827,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["argue4"] = {
+    ["argue4"] = {
         label = "Argue 4",
         category = "sport",
         animDict = "car_2_mcs_1-6",
@@ -9187,7 +9835,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["argueangry1"] = {
+    ["argueangry1"] = {
         label = "Argue Angry 1",
         category = "other",
         animDict = "anim@amb@casino@brawl@fights@argue@",
@@ -9195,7 +9843,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["argueangry2"] = {
+    ["argueangry2"] = {
         label = "Argue Angry 2",
         category = "main",
         animDict = "anim@amb@casino@brawl@fights@argue@",
@@ -9203,7 +9851,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["bartender"] = {
+    ["bartender"] = {
         label = "Bartender",
         category = "stand",
         animDict = "anim@amb@clubhouse@bar@drink@idle_a",
@@ -9211,7 +9859,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["blowkiss"] = {
+    ["blowkiss"] = {
         label = "Blow Kiss",
         category = "party",
         animDict = "anim@mp_player_intcelebrationfemale@blow_kiss",
@@ -9219,7 +9867,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["blowkiss2"] = {
+    ["blowkiss2"] = {
         label = "Blow Kiss 2",
         category = "help",
         animDict = "anim@mp_player_intselfieblow_kiss",
@@ -9227,7 +9875,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["curtsy"] = {
+    ["curtsy"] = {
         label = "Curtsy",
         category = "sport",
         animDict = "anim@mp_player_intcelebrationpaired@f_f_sarcastic",
@@ -9235,7 +9883,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["bringiton"] = {
+    ["bringiton"] = {
         label = "Bring It On",
         category = "other",
         animDict = "misscommon@response",
@@ -9243,7 +9891,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["comeatmebro"] = {
+    ["comeatmebro"] = {
         label = "Come at me bro",
         category = "main",
         animDict = "mini@triathlon",
@@ -9251,7 +9899,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cop2"] = {
+    ["cop2"] = {
         label = "Cop 2",
         category = "stand",
         animDict = "anim@amb@nightclub@peds@",
@@ -9259,7 +9907,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cop3"] = {
+    ["cop3"] = {
         label = "Cop 3",
         category = "party",
         animDict = "amb@code_human_police_investigate@idle_a",
@@ -9267,7 +9915,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["crossarms"] = {
+    ["crossarms"] = {
         label = "Crossarms",
         category = "help",
         animDict = "amb@world_human_hang_out_street@female_arms_crossed@idle_a",
@@ -9275,7 +9923,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["crossarms2"] = {
+    ["crossarms2"] = {
         label = "Crossarms 2",
         category = "sport",
         animDict = "amb@world_human_hang_out_street@male_c@idle_a",
@@ -9283,7 +9931,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["crossarms3"] = {
+    ["crossarms3"] = {
         label = "Crossarms 3",
         category = "other",
         animDict = "anim@heists@heist_corona@single_team",
@@ -9291,7 +9939,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["crossarms4"] = {
+    ["crossarms4"] = {
         label = "Crossarms 4",
         category = "main",
         animDict = "random@street_race",
@@ -9299,7 +9947,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["crossarms5"] = {
+    ["crossarms5"] = {
         label = "Crossarms 5",
         category = "stand",
         animDict = "anim@amb@nightclub@peds@",
@@ -9307,7 +9955,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["crossarms6"] = {
+    ["crossarms6"] = {
         label = "Crossarms 6",
         category = "party",
         animDict = "random@shop_gunstore",
@@ -9315,7 +9963,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["crossarms7"] = {
+    ["crossarms7"] = {
         label = "Crossarms 7",
         category = "help",
         animDict = "anim_heist@arcade_combined@",
@@ -9323,7 +9971,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["crossarms8"] = {
+    ["crossarms8"] = {
         label = "Crossarms 8",
         category = "sport",
         animDict = "anim_heist@arcade_combined@",
@@ -9331,7 +9979,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["crossarms9"] = {
+    ["crossarms9"] = {
         label = "Crossarms 9",
         category = "other",
         animDict = "fix_trip3_ext-4",
@@ -9339,7 +9987,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["foldarms"] = {
+    ["foldarms"] = {
         label = "Fold Arms",
         category = "main",
         animDict = "anim@amb@business@bgen@bgen_no_work@",
@@ -9347,7 +9995,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["foldarms2"] = {
+    ["foldarms2"] = {
         label = "Fold Arms 2",
         category = "stand",
         animDict = "anim@amb@nightclub@peds@",
@@ -9355,7 +10003,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["crossarmsside"] = {
+    ["crossarmsside"] = {
         label = "Crossarms Side",
         category = "party",
         animDict = "rcmnigel1a_band_groupies",
@@ -9363,7 +10011,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["crossarmsside2"] = {
+    ["crossarmsside2"] = {
         label = "Crossarms Side 2",
         category = "help",
         animDict = "amb@world_human_hang_out_street@female_hold_arm@base",
@@ -9371,7 +10019,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["damn"] = {
+    ["damn"] = {
         label = "Damn",
         category = "sport",
         animDict = "gestures@m@standing@casual",
@@ -9379,7 +10027,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["damn2"] = {
+    ["damn2"] = {
         label = "Damn 2",
         category = "other",
         animDict = "anim@am_hold_up@male",
@@ -9387,7 +10035,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["pointdown"] = {
+    ["pointdown"] = {
         label = "Point Down",
         category = "stand",
         animDict = "tun_meet_int-47",
@@ -9395,7 +10043,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["surrender"] = {
+    ["surrender"] = {
         label = "Surrender",
         category = "party",
         animDict = "random@arrests@busted",
@@ -9403,7 +10051,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["surrender2"] = {
+    ["surrender2"] = {
         label = "Surrender 2",
         category = "help",
         animDict = "mp_bank_heist_1",
@@ -9411,7 +10059,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["surrender3"] = {
+    ["surrender3"] = {
         label = "Surrender 3",
         category = "sport",
         animDict = "mp_bank_heist_1",
@@ -9419,7 +10067,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["surrender4"] = {
+    ["surrender4"] = {
         label = "Surrender 4",
         category = "other",
         animDict = "mp_bank_heist_1",
@@ -9427,7 +10075,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["surrender5"] = {
+    ["surrender5"] = {
         label = "Surrender 5",
         category = "main",
         animDict = "random@arrests",
@@ -9435,7 +10083,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["surrender6"] = {
+    ["surrender6"] = {
         label = "Surrender 6",
         category = "stand",
         animDict = "rcmbarry",
@@ -9443,7 +10091,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["surrender7"] = {
+    ["surrender7"] = {
         label = "Surrender 7",
         category = "party",
         animDict = "anim@scripted@bty4@ig2_bounty_kneel@male@",
@@ -9451,7 +10099,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["facepalm2"] = {
+    ["facepalm2"] = {
         label = "Facepalm 2",
         category = "help",
         animDict = "anim@mp_player_intcelebrationfemale@face_palm",
@@ -9459,7 +10107,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["facepalm"] = {
+    ["facepalm"] = {
         label = "Facepalm",
         category = "sport",
         animDict = "random@car_thief@agitated@idle_a",
@@ -9467,7 +10115,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["facepalm3"] = {
+    ["facepalm3"] = {
         label = "Facepalm 3",
         category = "other",
         animDict = "missminuteman_1ig_2",
@@ -9475,7 +10123,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["facepalm4"] = {
+    ["facepalm4"] = {
         label = "Facepalm 4",
         category = "main",
         animDict = "anim@mp_player_intupperface_palm",
@@ -9483,7 +10131,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fallover"] = {
+    ["fallover"] = {
         label = "Fall Over",
         category = "stand",
         animDict = "random@drunk_driver_1",
@@ -9491,7 +10139,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fallover2"] = {
+    ["fallover2"] = {
         label = "Fall Over 2",
         category = "party",
         animDict = "mp_suicide",
@@ -9499,7 +10147,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fallover3"] = {
+    ["fallover3"] = {
         label = "Fall Over 3",
         category = "help",
         animDict = "mp_suicide",
@@ -9507,7 +10155,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fallover4"] = {
+    ["fallover4"] = {
         label = "Fall Over 4",
         category = "sport",
         animDict = "friends@frf@ig_2",
@@ -9515,7 +10163,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fallover5"] = {
+    ["fallover5"] = {
         label = "Fall Over 5",
         category = "other",
         animDict = "anim@gangops@hostage@",
@@ -9523,7 +10171,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fallasleep"] = {
+    ["fallasleep"] = {
         label = "Fall Asleep",
         category = "main",
         animDict = "mp_sleep",
@@ -9531,7 +10179,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fallasleep2"] = {
+    ["fallasleep2"] = {
         label = "Fall Asleep 2",
         category = "stand",
         animDict = "mp_sleep",
@@ -9539,7 +10187,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fightme"] = {
+    ["fightme"] = {
         label = "Fight Me",
         category = "party",
         animDict = "anim@deathmatch_intros@unarmed",
@@ -9547,7 +10195,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fightme2"] = {
+    ["fightme2"] = {
         label = "Fight Me 2",
         category = "help",
         animDict = "anim@deathmatch_intros@unarmed",
@@ -9555,7 +10203,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["finger"] = {
+    ["finger"] = {
         label = "Finger",
         category = "sport",
         animDict = "anim@mp_player_intselfiethe_bird",
@@ -9563,7 +10211,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["finger2"] = {
+    ["finger2"] = {
         label = "Finger 2",
         category = "other",
         animDict = "anim@mp_player_intupperfinger",
@@ -9571,7 +10219,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wait"] = {
+    ["wait"] = {
         label = "Wait",
         category = "party",
         animDict = "random@shop_tattoo",
@@ -9579,7 +10227,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wait2"] = {
+    ["wait2"] = {
         label = "Wait 2",
         category = "help",
         animDict = "missbigscore2aig_3",
@@ -9587,7 +10235,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wait3"] = {
+    ["wait3"] = {
         label = "Wait 3",
         category = "sport",
         animDict = "amb@world_human_hang_out_street@female_hold_arm@idle_a",
@@ -9595,7 +10243,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wait4"] = {
+    ["wait4"] = {
         label = "Wait 4",
         category = "other",
         animDict = "amb@world_human_hang_out_street@Female_arm_side@idle_a",
@@ -9603,7 +10251,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wait5"] = {
+    ["wait5"] = {
         label = "Wait 5",
         category = "main",
         animDict = "missclothing",
@@ -9611,7 +10259,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wait6"] = {
+    ["wait6"] = {
         label = "Wait 6",
         category = "stand",
         animDict = "timetable@amanda@ig_2",
@@ -9619,7 +10267,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wait7"] = {
+    ["wait7"] = {
         label = "Wait 7",
         category = "party",
         animDict = "rcmnigel1cnmt_1c",
@@ -9627,7 +10275,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wait8"] = {
+    ["wait8"] = {
         label = "Wait 8",
         category = "help",
         animDict = "rcmjosh1",
@@ -9635,7 +10283,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wait9"] = {
+    ["wait9"] = {
         label = "Wait 9",
         category = "sport",
         animDict = "rcmjosh2",
@@ -9643,7 +10291,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wait10"] = {
+    ["wait10"] = {
         label = "Wait 10",
         category = "other",
         animDict = "timetable@amanda@ig_3",
@@ -9651,7 +10299,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wait11"] = {
+    ["wait11"] = {
         label = "Wait 11",
         category = "main",
         animDict = "misshair_shop@hair_dressers",
@@ -9659,7 +10307,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wait12"] = {
+    ["wait12"] = {
         label = "Wait 12",
         category = "stand",
         animDict = "rcmjosh1",
@@ -9667,7 +10315,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wait13"] = {
+    ["wait13"] = {
         label = "Wait 13",
         category = "party",
         animDict = "rcmnigel1a",
@@ -9675,7 +10323,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["hiking"] = {
+    ["hiking"] = {
         label = "Hiking",
         category = "help",
         animDict = "move_m@hiking",
@@ -9683,7 +10331,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["hugme"] = {
+    ["hugme"] = {
         label = "Hug Me",
         category = "sport",
         animDict = "mp_ped_interaction",
@@ -9691,7 +10339,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["hugme2"] = {
+    ["hugme2"] = {
         label = "Hug Me 2",
         category = "other",
         animDict = "mp_ped_interaction",
@@ -9699,7 +10347,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["inspect"] = {
+    ["inspect"] = {
         label = "Inspect",
         category = "main",
         animDict = "random@train_tracks",
@@ -9707,7 +10355,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["inspect2"] = {
+    ["inspect2"] = {
         label = "Inspect 2",
         category = "stand",
         animDict = "anim@amb@carmeet@checkout_engine@",
@@ -9715,7 +10363,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["inspect3"] = {
+    ["inspect3"] = {
         label = "Inspect 3",
         category = "party",
         animDict = "anim@amb@carmeet@checkout_car@",
@@ -9723,7 +10371,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["jazzhands"] = {
+    ["jazzhands"] = {
         label = "Jazzhands",
         category = "help",
         animDict = "anim@mp_player_intcelebrationfemale@jazz_hands",
@@ -9731,7 +10379,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["jog2"] = {
+    ["jog2"] = {
         label = "Jog 2",
         category = "sport",
         animDict = "amb@world_human_jog_standing@male@idle_a",
@@ -9739,7 +10387,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["jog3"] = {
+    ["jog3"] = {
         label = "Jog 3",
         category = "other",
         animDict = "amb@world_human_jog_standing@female@idle_a",
@@ -9747,7 +10395,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["jog4"] = {
+    ["jog4"] = {
         label = "Jog 4",
         category = "main",
         animDict = "amb@world_human_power_walker@female@idle_a",
@@ -9755,7 +10403,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["jog5"] = {
+    ["jog5"] = {
         label = "Jog 5",
         category = "stand",
         animDict = "move_m@joy@a",
@@ -9763,7 +10411,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["jumpingjacks"] = {
+    ["jumpingjacks"] = {
         label = "Jumping Jacks",
         category = "party",
         animDict = "timetable@reunited@ig_2",
@@ -9771,7 +10419,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["kneel2"] = {
+    ["kneel2"] = {
         label = "Kneel 2",
         category = "help",
         animDict = "rcmextreme3",
@@ -9779,7 +10427,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["kneel3"] = {
+    ["kneel3"] = {
         label = "Kneel 3",
         category = "sport",
         animDict = "amb@world_human_bum_wash@male@low@idle_a",
@@ -9787,7 +10435,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["kneel4"] = {
+    ["kneel4"] = {
         label = "Kneel 4",
         category = "other",
         animDict = "anim@scripted@cbr5@ig3_drill_box@pattern_03@lockbox_03@male@",
@@ -9795,7 +10443,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["kneel5"] = {
+    ["kneel5"] = {
         label = "Kneel 5",
         category = "main",
         animDict = "anim@scripted@cbr5@ig3_drill_box@pattern_01@lockbox_02@male@",
@@ -9803,7 +10451,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["kneelhide"] = {
+    ["kneelhide"] = {
         label = "Kneel Hide",
         category = "stand",
         animDict = "anim@scripted@bty2@ig1_hiding_target@male@",
@@ -9811,7 +10459,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["kneelthotinstagram"] = {
+    ["kneelthotinstagram"] = {
         label = "Kneel Thot Instagram",
         category = "party",
         animDict = "anim@model_kylie_insta",
@@ -9819,7 +10467,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["kneelboredpose"] = {
+    ["kneelboredpose"] = {
         label = "Kneel Bored Pose",
         category = "stand",
         animDict = "chocoholic@duo17",
@@ -9827,7 +10475,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["kneelpeacesignpose"] = {
+    ["kneelpeacesignpose"] = {
         label = "Kneel Peace Sign Pose",
         category = "stand",
         animDict = "chocoholic@duo18",
@@ -9835,7 +10483,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["shoekickpose"] = {
+    ["shoekickpose"] = {
         label = "Shoe Kick Pose",
         category = "stand",
         animDict = "male_duo_a@darksj",
@@ -9843,7 +10491,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["rap/sing"] = {
+    ["rap/sing"] = {
         label = "Rap / Sing",
         category = "main",
         animDict = "couple_singing_m@darks37",
@@ -9851,7 +10499,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["squatgunpose-left"] = {
+    ["squatgunpose-left"] = {
         label = "Squat Gun Pose - Left",
         category = "stand",
         animDict = "ganggirls_pose1@darks37",
@@ -9859,7 +10507,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["squatgunpose3"] = {
+    ["squatgunpose3"] = {
         label = "Squat Gun Pose 3",
         category = "stand",
         animDict = "gun_prime_2@darksj",
@@ -9867,7 +10515,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["knock"] = {
+    ["knock"] = {
         label = "Knock",
         category = "help",
         animDict = "timetable@jimmy@doorknock@",
@@ -9875,7 +10523,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["knock2"] = {
+    ["knock2"] = {
         label = "Knock 2",
         category = "sport",
         animDict = "missheistfbi3b_ig7",
@@ -9883,7 +10531,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["knucklecrunch"] = {
+    ["knucklecrunch"] = {
         label = "Knuckle Crunch",
         category = "sport",
         animDict = "anim@mp_player_intcelebrationfemale@knuckle_crunch",
@@ -9891,7 +10539,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lean2"] = {
+    ["lean2"] = {
         label = "Lean 2",
         category = "stand",
         animDict = "amb@world_human_leaning@female@wall@back@hand_up@idle_a",
@@ -9899,7 +10547,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lean3"] = {
+    ["lean3"] = {
         label = "Lean 3",
         category = "stand",
         animDict = "amb@world_human_leaning@female@wall@back@holding_elbow@idle_a",
@@ -9907,7 +10555,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lean4"] = {
+    ["lean4"] = {
         label = "Lean 4",
         category = "stand",
         animDict = "amb@world_human_leaning@male@wall@back@foot_up@idle_a",
@@ -9915,7 +10563,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lean5"] = {
+    ["lean5"] = {
         label = "Lean 5",
         category = "stand",
         animDict = "amb@world_human_leaning@male@wall@back@hands_together@idle_b",
@@ -9923,7 +10571,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lean6"] = {
+    ["lean6"] = {
         label = "Lean 6",
         category = "stand",
         animDict = "anim@scripted@freemode_npc@fix_agy_ig4_lamar@",
@@ -9931,7 +10579,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["leanflirt"] = {
+    ["leanflirt"] = {
         label = "Lean Flirt",
         category = "stand",
         animDict = "random@street_race",
@@ -9939,7 +10587,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["leanbar2"] = {
+    ["leanbar2"] = {
         label = "Lean Bar 2",
         category = "stand",
         animDict = "amb@prop_human_bum_shopping_cart@male@idle_a",
@@ -9947,7 +10595,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["leanbar3"] = {
+    ["leanbar3"] = {
         label = "Lean Bar 3",
         category = "stand",
         animDict = "anim@amb@nightclub@lazlow@ig1_vip@",
@@ -9955,7 +10603,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["leanbar4"] = {
+    ["leanbar4"] = {
         label = "Lean Bar 4",
         category = "stand",
         animDict = "anim@heists@prison_heist",
@@ -9963,7 +10611,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["leanhigh"] = {
+    ["leanhigh"] = {
         label = "Lean High",
         category = "stand",
         animDict = "anim@mp_ferris_wheel",
@@ -9971,7 +10619,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["leanhigh2"] = {
+    ["leanhigh2"] = {
         label = "Lean High 2",
         category = "stand",
         animDict = "anim@mp_ferris_wheel",
@@ -9979,7 +10627,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["leanside"] = {
+    ["leanside"] = {
         label = "Leanside",
         category = "stand",
         animDict = "timetable@mime@01_gc",
@@ -9987,7 +10635,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["leanside2"] = {
+    ["leanside2"] = {
         label = "Leanside 2",
         category = "stand",
         animDict = "misscarstealfinale",
@@ -9995,7 +10643,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["leanside3"] = {
+    ["leanside3"] = {
         label = "Leanside 3",
         category = "stand",
         animDict = "misscarstealfinalecar_5_ig_1",
@@ -10003,7 +10651,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["leanside4"] = {
+    ["leanside4"] = {
         label = "Leanside 4",
         category = "stand",
         animDict = "misscarstealfinalecar_5_ig_1",
@@ -10011,7 +10659,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["leanside5"] = {
+    ["leanside5"] = {
         label = "Leanside 5",
         category = "stand",
         animDict = "rcmjosh2",
@@ -10019,7 +10667,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["leanontable"] = {
+    ["leanontable"] = {
         label = "Lean On Table",
         category = "stand",
         animDict = "anim@amb@board_room@diagram_blueprints@",
@@ -10027,7 +10675,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["me"] = {
+    ["me"] = {
         label = "Me",
         category = "other",
         animDict = "gestures@f@standing@casual",
@@ -10035,7 +10683,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["mechanic"] = {
+    ["mechanic"] = {
         label = "Mechanic",
         category = "main",
         animDict = "mini@repair",
@@ -10043,7 +10691,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["mechanic2"] = {
+    ["mechanic2"] = {
         label = "Mechanic 2",
         category = "stand",
         animDict = "mini@repair",
@@ -10051,7 +10699,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["mechanic3"] = {
+    ["mechanic3"] = {
         label = "Mechanic 3",
         category = "party",
         animDict = "amb@world_human_vehicle_mechanic@male@base",
@@ -10059,7 +10707,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["mechanic4"] = {
+    ["mechanic4"] = {
         label = "Mechanic 4",
         category = "help",
         animDict = "anim@amb@clubhouse@tutorial@bkr_tut_ig3@",
@@ -10067,7 +10715,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["mechanic5"] = {
+    ["mechanic5"] = {
         label = "Mechanic 5",
         category = "sport",
         animDict = "amb@prop_human_movie_bulb@idle_a",
@@ -10075,7 +10723,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["medic2"] = {
+    ["medic2"] = {
         label = "Medic 2",
         category = "other",
         animDict = "amb@medic@standing@tendtodead@base",
@@ -10083,7 +10731,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["meditate"] = {
+    ["meditate"] = {
         label = "Meditate",
         category = "main",
         animDict = "rcmcollect_paperleadinout@",
@@ -10091,7 +10739,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["meditate2"] = {
+    ["meditate2"] = {
         label = "Meditate 2",
         category = "stand",
         animDict = "rcmepsilonism3",
@@ -10099,7 +10747,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["meditate3"] = {
+    ["meditate3"] = {
         label = "Meditate 3",
         category = "party",
         animDict = "rcmepsilonism3",
@@ -10107,7 +10755,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["metal"] = {
+    ["metal"] = {
         label = "Metal",
         category = "help",
         animDict = "anim@mp_player_intincarrockstd@ps@",
@@ -10115,7 +10763,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["no"] = {
+    ["no"] = {
         label = "No",
         category = "sport",
         animDict = "anim@heists@ornate_bank@chat_manager",
@@ -10123,7 +10771,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["no2"] = {
+    ["no2"] = {
         label = "No 2",
         category = "other",
         animDict = "mp_player_int_upper_nod",
@@ -10131,7 +10779,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["nosepick"] = {
+    ["nosepick"] = {
         label = "Nose Pick",
         category = "main",
         animDict = "anim@mp_player_intcelebrationfemale@nose_pick",
@@ -10139,7 +10787,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["noway"] = {
+    ["noway"] = {
         label = "No Way",
         category = "stand",
         animDict = "gestures@m@standing@casual",
@@ -10147,7 +10795,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["ok"] = {
+    ["ok"] = {
         label = "OK",
         category = "party",
         animDict = "anim@mp_player_intselfiedock",
@@ -10155,7 +10803,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dock"] = {
+    ["dock"] = {
         label = "Dock",
         category = "help",
         animDict = "anim@mp_player_intincardockstd@rds@",
@@ -10163,7 +10811,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["outofbreath"] = {
+    ["outofbreath"] = {
         label = "Out of Breath",
         category = "sport",
         animDict = "re@construction",
@@ -10171,7 +10819,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["pickup"] = {
+    ["pickup"] = {
         label = "Pickup",
         category = "other",
         animDict = "random@domestic",
@@ -10179,7 +10827,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["push"] = {
+    ["push"] = {
         label = "Push",
         category = "main",
         animDict = "missfinale_c2ig_11",
@@ -10187,7 +10835,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["push2"] = {
+    ["push2"] = {
         label = "Push 2",
         category = "stand",
         animDict = "missfinale_c2ig_11",
@@ -10195,7 +10843,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["point"] = {
+    ["point"] = {
         label = "Point",
         category = "party",
         animDict = "gestures@f@standing@casual",
@@ -10203,7 +10851,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["pushup"] = {
+    ["pushup"] = {
         label = "Pushup",
         category = "sport",
         animDict = "amb@world_human_push_ups@male@idle_a",
@@ -10211,7 +10859,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["countdown"] = {
+    ["countdown"] = {
         label = "Countdown",
         category = "sport",
         animDict = "random@street_race",
@@ -10219,7 +10867,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["pointright"] = {
+    ["pointright"] = {
         label = "Point Right",
         category = "other",
         animDict = "mp_gun_shop_tut",
@@ -10227,7 +10875,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["salute"] = {
+    ["salute"] = {
         label = "Salute",
         category = "main",
         animDict = "anim@mp_player_intincarsalutestd@ds@",
@@ -10235,7 +10883,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["salute2"] = {
+    ["salute2"] = {
         label = "Salute 2",
         category = "main",
         animDict = "anim@mp_player_intincarsalutestd@ps@",
@@ -10243,7 +10891,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["salute3"] = {
+    ["salute3"] = {
         label = "Salute 3",
         category = "main",
         animDict = "anim@mp_player_intuppersalute",
@@ -10251,7 +10899,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["scared"] = {
+    ["scared"] = {
         label = "Scared",
         category = "help",
         animDict = "random@domestic",
@@ -10259,7 +10907,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["scared2"] = {
+    ["scared2"] = {
         label = "Scared 2",
         category = "other",
         animDict = "xm3_drg2_cook_int-5",
@@ -10267,7 +10915,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["screwyou"] = {
+    ["screwyou"] = {
         label = "Screw You",
         category = "main",
         animDict = "misscommon@response",
@@ -10275,7 +10923,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["shakeoff"] = {
+    ["shakeoff"] = {
         label = "Shake Off",
         category = "stand",
         animDict = "move_m@_idles@shake_off",
@@ -10283,7 +10931,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["shot"] = {
+    ["shot"] = {
         label = "Shot",
         category = "party",
         animDict = "random@dealgonewrong",
@@ -10291,7 +10939,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sleep"] = {
+    ["sleep"] = {
         label = "Sleep",
         category = "help",
         animDict = "timetable@tracy@sleep@",
@@ -10299,7 +10947,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["bumsleep"] = {
+    ["bumsleep"] = {
         label = "Bum Sleep",
         category = "sport",
         animDict = "amb@world_human_bum_slumped@male@laying_on_left_side@idle_a",
@@ -10307,7 +10955,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["shrug"] = {
+    ["shrug"] = {
         label = "Shrug",
         category = "other",
         animDict = "gestures@f@standing@casual",
@@ -10315,7 +10963,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["shrug2"] = {
+    ["shrug2"] = {
         label = "Shrug 2",
         category = "main",
         animDict = "gestures@m@standing@casual",
@@ -10323,7 +10971,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sit"] = {
+    ["sit"] = {
         label = "Sit",
         category = "stand",
         animDict = "anim@amb@business@bgen@bgen_no_work@",
@@ -10331,7 +10979,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sit2"] = {
+    ["sit2"] = {
         label = "Sit 2",
         category = "stand",
         animDict = "rcm_barry3",
@@ -10339,7 +10987,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sit3"] = {
+    ["sit3"] = {
         label = "Sit 3",
         category = "stand",
         animDict = "amb@lo_res_idles@",
@@ -10347,7 +10995,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sit4"] = {
+    ["sit4"] = {
         label = "Sit 4",
         category = "stand",
         animDict = "amb@lo_res_idles@",
@@ -10355,7 +11003,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sit5"] = {
+    ["sit5"] = {
         label = "Sit 5",
         category = "stand",
         animDict = "anim@heists@fleeca_bank@ig_7_jetski_owner",
@@ -10363,7 +11011,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sit6"] = {
+    ["sit6"] = {
         label = "Sit 6",
         category = "stand",
         animDict = "timetable@jimmy@mics3_ig_15@",
@@ -10371,7 +11019,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sit7"] = {
+    ["sit7"] = {
         label = "Sit 7",
         category = "stand",
         animDict = "anim@amb@nightclub@lazlow@lo_alone@",
@@ -10379,7 +11027,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sit8"] = {
+    ["sit8"] = {
         label = "Sit 8",
         category = "stand",
         animDict = "timetable@jimmy@mics3_ig_15@",
@@ -10387,7 +11035,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sit9"] = {
+    ["sit9"] = {
         label = "Sit 9",
         category = "stand",
         animDict = "amb@world_human_stupor@male@idle_a",
@@ -10395,7 +11043,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sit10"] = {
+    ["sit10"] = {
         label = "Sit 10",
         category = "stand",
         animDict = "anim@scripted@bty2@ig1_hiding_target@male@",
@@ -10403,7 +11051,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sitmiddlefinger"] = {
+    ["sitmiddlefinger"] = {
         label = "Sit Middle Finger",
         category = "stand",
         animDict = "chocoholic@single80",
@@ -10411,7 +11059,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["welcomeback"] = {
+    ["welcomeback"] = {
         label = "Welcome Back",
         category = "main",
         animDict = "anim@scripted@island@special_peds@dave@hs4_dave_stage2_ig6",
@@ -10419,7 +11067,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wallpose"] = {
+    ["wallpose"] = {
         label = "Wall Pose",
         category = "stand",
         animDict = "shamrock@wallpose1",
@@ -10427,7 +11075,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wallpose2"] = {
+    ["wallpose2"] = {
         label = "Wall Pose 2",
         category = "stand",
         animDict = "shamrock@wallpose2",
@@ -10435,7 +11083,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wallpose3"] = {
+    ["wallpose3"] = {
         label = "Wall Pose 3",
         category = "stand",
         animDict = "shamrock@wallpose3",
@@ -10443,7 +11091,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wallpose4"] = {
+    ["wallpose4"] = {
         label = "Wall Pose 4",
         category = "stand",
         animDict = "shamrock@wallpose4",
@@ -10451,7 +11099,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wallpose5"] = {
+    ["wallpose5"] = {
         label = "Wall Pose 5",
         category = "stand",
         animDict = "shamrock@wallpose5",
@@ -10459,7 +11107,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["windowelbow"] = {
+    ["windowelbow"] = {
         label = "Window Elbow",
         category = "main",
         animDict = "anim@veh@lowrider@std@ds@arm@base",
@@ -10467,7 +11115,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["windowelbow2"] = {
+    ["windowelbow2"] = {
         label = "Window Elbow 2",
         category = "main",
         animDict = "chocoholic@single47",
@@ -10475,7 +11123,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sitlean"] = {
+    ["sitlean"] = {
         label = "Sit Lean",
         category = "stand",
         animDict = "timetable@tracy@ig_14@",
@@ -10483,7 +11131,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sitlean2"] = {
+    ["sitlean2"] = {
         label = "Sit Lean 2",
         category = "stand",
         animDict = "anim@scripted@player@fix_astu_ig8_weed_smoke_v1@male@",
@@ -10491,7 +11139,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sitlean3"] = {
+    ["sitlean3"] = {
         label = "Sit Lean 3",
         category = "stand",
         animDict = "anim@scripted@freemode@ig7_office_cell_floor@heeled@",
@@ -10499,7 +11147,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sitsad"] = {
+    ["sitsad"] = {
         label = "Sit Sad",
         category = "stand",
         animDict = "anim@amb@business@bgen@bgen_no_work@",
@@ -10507,7 +11155,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sitsad2"] = {
+    ["sitsad2"] = {
         label = "Sit Sad 2",
         category = "stand",
         animDict = "anim@female_sit_01",
@@ -10515,7 +11163,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sitscared"] = {
+    ["sitscared"] = {
         label = "Sit Scared",
         category = "stand",
         animDict = "anim@heists@ornate_bank@hostages@hit",
@@ -10523,7 +11171,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sitscared2"] = {
+    ["sitscared2"] = {
         label = "Sit Scared 2",
         category = "stand",
         animDict = "anim@heists@ornate_bank@hostages@ped_c@",
@@ -10531,7 +11179,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sitscared3"] = {
+    ["sitscared3"] = {
         label = "Sit Scared 3",
         category = "stand",
         animDict = "anim@heists@ornate_bank@hostages@ped_e@",
@@ -10539,7 +11187,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sitdrunk"] = {
+    ["sitdrunk"] = {
         label = "Sit Drunk",
         category = "stand",
         animDict = "timetable@amanda@drunk@base",
@@ -10547,7 +11195,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sitchair"] = {
+    ["sitchair"] = {
         label = "Sit Chair",
         category = "stand",
         animDict = "timetable@ron@ig_3_couch",
@@ -10555,7 +11203,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sitchair2"] = {
+    ["sitchair2"] = {
         label = "Sit Chair 2",
         category = "stand",
         animDict = "timetable@ron@ig_5_p3",
@@ -10563,7 +11211,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sitchair3(female)"] = {
+    ["sitchair3(female)"] = {
         label = "Sit Chair 3 (Female)",
         category = "stand",
         animDict = "timetable@reunited@ig_10",
@@ -10571,7 +11219,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sitchair4-side"] = {
+    ["sitchair4-side"] = {
         label = "Sit Chair 4 - Side",
         category = "stand",
         animDict = "timetable@ron@ron_ig_2_alt1",
@@ -10579,7 +11227,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sitchairlegscrossed"] = {
+    ["sitchairlegscrossed"] = {
         label = "Sit Chair Legs Crossed",
         category = "stand",
         animDict = "timetable@jimmy@mics3_ig_15@",
@@ -10587,7 +11235,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sitchairleanback"] = {
+    ["sitchairleanback"] = {
         label = "Sit Chair Lean Back",
         category = "stand",
         animDict = "timetable@maid@couch@",
@@ -10595,7 +11243,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sitchairattentive"] = {
+    ["sitchairattentive"] = {
         label = "Sit Chair Attentive",
         category = "stand",
         animDict = "anim@scripted@freemode_npc@fix_astu_ig3_pooh_jimmy@jimmy@",
@@ -10603,7 +11251,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sitchairlonely"] = {
+    ["sitchairlonely"] = {
         label = "Sit Chair Lonely",
         category = "stand",
         animDict = "anim@scripted@freemode_npc@fix_dre_studio_entourage@",
@@ -10611,7 +11259,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sittoilet"] = {
+    ["sittoilet"] = {
         label = "Sit toilet",
         category = "stand",
         animDict = "anim@scripted@freemode@ig5_office_cell_seat@heeled@",
@@ -10619,7 +11267,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sittoilet2"] = {
+    ["sittoilet2"] = {
         label = "Sit Toilet 2",
         category = "stand",
         animDict = "anim@scripted@cbr5@ig3_drill_box@pattern_01@lockbox_04@male@",
@@ -10627,7 +11275,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sitcute"] = {
+    ["sitcute"] = {
         label = "Sit Cute",
         category = "stand",
         animDict = "sitkylie@queensisters",
@@ -10635,7 +11283,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["situp"] = {
+    ["situp"] = {
         label = "Sit Up",
         category = "stand",
         animDict = "amb@world_human_sit_ups@male@idle_a",
@@ -10643,7 +11291,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sittingsmoke&gun"] = {
+    ["sittingsmoke&gun"] = {
         label = "Sitting Smoke & Gun",
         category = "stand",
         animDict = "smokingweapon@animation",
@@ -10651,7 +11299,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["clapangry"] = {
+    ["clapangry"] = {
         label = "Clap Angry",
         category = "party",
         animDict = "anim@arena@celeb@flat@solo@no_props@",
@@ -10659,7 +11307,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["slowclap3"] = {
+    ["slowclap3"] = {
         label = "Slow Clap 3",
         category = "party",
         animDict = "anim@mp_player_intupperslow_clap",
@@ -10667,7 +11315,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["clap"] = {
+    ["clap"] = {
         label = "Clap",
         category = "party",
         animDict = "amb@world_human_cheering@male_a",
@@ -10675,7 +11323,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["slowclap"] = {
+    ["slowclap"] = {
         label = "Slow Clap",
         category = "party",
         animDict = "anim@mp_player_intcelebrationfemale@slow_clap",
@@ -10683,7 +11331,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["slowclap2"] = {
+    ["slowclap2"] = {
         label = "Slow Clap 2",
         category = "party",
         animDict = "anim@mp_player_intcelebrationmale@slow_clap",
@@ -10691,7 +11339,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["smell"] = {
+    ["smell"] = {
         label = "Smell",
         category = "other",
         animDict = "move_p_m_two_idles@generic",
@@ -10699,7 +11347,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["stumble"] = {
+    ["stumble"] = {
         label = "Stumble",
         category = "stand",
         animDict = "misscarsteal4@actor",
@@ -10707,7 +11355,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["stunned"] = {
+    ["stunned"] = {
         label = "Stunned",
         category = "party",
         animDict = "stungun@standing",
@@ -10715,7 +11363,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sunbathe-handonhead"] = {
+    ["sunbathe-handonhead"] = {
         label = "Sunbathe - Hand On Head",
         category = "help",
         animDict = "amb@world_human_sunbathe@male@back@base",
@@ -10723,7 +11371,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sunbathe2-handoverface"] = {
+    ["sunbathe2-handoverface"] = {
         label = "Sunbathe 2 - Hand Over Face",
         category = "sport",
         animDict = "amb@world_human_sunbathe@female@back@base",
@@ -10731,7 +11379,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sunbathe3-layonstomach"] = {
+    ["sunbathe3-layonstomach"] = {
         label = "Sunbathe 3 - Lay On Stomach",
         category = "other",
         animDict = "amb@world_human_sunbathe@female@front@base",
@@ -10739,7 +11387,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sunbathe4"] = {
+    ["sunbathe4"] = {
         label = "Sunbathe 4",
         category = "main",
         animDict = "amb@world_human_sunbathe@male@back@idle_a",
@@ -10747,7 +11395,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sunbathe5"] = {
+    ["sunbathe5"] = {
         label = "Sunbathe 5",
         category = "stand",
         animDict = "amb@world_human_sunbathe@female@back@idle_a",
@@ -10755,7 +11403,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sunbathe6"] = {
+    ["sunbathe6"] = {
         label = "Sunbathe 6",
         category = "party",
         animDict = "amb@world_human_sunbathe@female@front@idle_a",
@@ -10763,7 +11411,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sunbathe7"] = {
+    ["sunbathe7"] = {
         label = "Sunbathe 7",
         category = "help",
         animDict = "amb@world_human_sunbathe@male@front@base",
@@ -10771,7 +11419,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["tpose"] = {
+    ["tpose"] = {
         label = "T Pose",
         category = "stand",
         animDict = "missfam5_yoga",
@@ -10779,7 +11427,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["tpose2"] = {
+    ["tpose2"] = {
         label = "T Pose 2",
         category = "stand",
         animDict = "mp_sleep",
@@ -10787,7 +11435,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["think5"] = {
+    ["think5"] = {
         label = "Think 5",
         category = "main",
         animDict = "mp_cp_welcome_tutthink",
@@ -10795,7 +11443,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["think"] = {
+    ["think"] = {
         label = "Think",
         category = "stand",
         animDict = "misscarsteal4@aliens",
@@ -10803,7 +11451,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["think3"] = {
+    ["think3"] = {
         label = "Think 3",
         category = "party",
         animDict = "timetable@tracy@ig_8@base",
@@ -10811,7 +11459,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["think2"] = {
+    ["think2"] = {
         label = "Think 2",
         category = "help",
         animDict = "missheist_jewelleadinout",
@@ -10819,7 +11467,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["thumbsup3"] = {
+    ["thumbsup3"] = {
         label = "Thumbs Up 3",
         category = "sport",
         animDict = "anim@mp_player_intincarthumbs_uplow@ds@",
@@ -10827,7 +11475,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["thumbsup2"] = {
+    ["thumbsup2"] = {
         label = "Thumbs Up 2",
         category = "other",
         animDict = "anim@mp_player_intselfiethumbs_up",
@@ -10835,7 +11483,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["thumbsup"] = {
+    ["thumbsup"] = {
         label = "Thumbs Up",
         category = "main",
         animDict = "anim@mp_player_intupperthumbs_up",
@@ -10843,7 +11491,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["type"] = {
+    ["type"] = {
         label = "Type",
         category = "stand",
         animDict = "anim@heists@prison_heiststation@cop_reactions",
@@ -10851,7 +11499,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["type2"] = {
+    ["type2"] = {
         label = "Type 2",
         category = "party",
         animDict = "anim@heists@prison_heistig1_p1_guard_checks_bus",
@@ -10859,7 +11507,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["type3"] = {
+    ["type3"] = {
         label = "Type 3",
         category = "help",
         animDict = "mp_prison_break",
@@ -10867,7 +11515,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["type4"] = {
+    ["type4"] = {
         label = "Type 4",
         category = "sport",
         animDict = "mp_fbi_heist",
@@ -10875,7 +11523,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["type5-stare"] = {
+    ["type5-stare"] = {
         label = "Type 5 - Stare",
         category = "other",
         animDict = "anim@scripted@freemode@ig12_use_computer@male@",
@@ -10883,7 +11531,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["warmth"] = {
+    ["warmth"] = {
         label = "Warmth",
         category = "main",
         animDict = "amb@world_human_stand_fire@male@idle_a",
@@ -10891,7 +11539,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wave4"] = {
+    ["wave4"] = {
         label = "Wave 4",
         category = "main",
         animDict = "random@mugging5",
@@ -10899,7 +11547,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wave2"] = {
+    ["wave2"] = {
         label = "Wave 2",
         category = "main",
         animDict = "anim@mp_player_intcelebrationfemale@wave",
@@ -10907,7 +11555,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wave3"] = {
+    ["wave3"] = {
         label = "Wave 3",
         category = "main",
         animDict = "friends@fra@ig_1",
@@ -10915,7 +11563,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wave"] = {
+    ["wave"] = {
         label = "Wave",
         category = "main",
         animDict = "friends@frj@ig_1",
@@ -10923,7 +11571,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wave5"] = {
+    ["wave5"] = {
         label = "Wave 5",
         category = "main",
         animDict = "friends@frj@ig_1",
@@ -10931,7 +11579,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wave6"] = {
+    ["wave6"] = {
         label = "Wave 6",
         category = "main",
         animDict = "friends@frj@ig_1",
@@ -10939,7 +11587,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wave7"] = {
+    ["wave7"] = {
         label = "Wave 7",
         category = "main",
         animDict = "friends@frj@ig_1",
@@ -10947,7 +11595,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wave8"] = {
+    ["wave8"] = {
         label = "Wave 8",
         category = "main",
         animDict = "friends@frj@ig_1",
@@ -10955,7 +11603,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wave9"] = {
+    ["wave9"] = {
         label = "Wave 9",
         category = "main",
         animDict = "gestures@m@standing@casual",
@@ -10963,7 +11611,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["whistle"] = {
+    ["whistle"] = {
         label = "Whistle",
         category = "sport",
         animDict = "taxi_hail",
@@ -10971,7 +11619,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["whistle2"] = {
+    ["whistle2"] = {
         label = "Whistle 2",
         category = "other",
         animDict = "rcmnigel1c",
@@ -10979,7 +11627,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["yeah"] = {
+    ["yeah"] = {
         label = "Yeah",
         category = "main",
         animDict = "anim@mp_player_intupperair_shagging",
@@ -10987,7 +11635,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["yeahyeah"] = {
+    ["yeahyeah"] = {
         label = "Yeah Yeah",
         category = "stand",
         animDict = "sum24_office_int-37",
@@ -10995,7 +11643,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["yoga2"] = {
+    ["yoga2"] = {
         label = "Yoga 2",
         category = "sport",
         animDict = "timetable@amanda@ig_4",
@@ -11003,7 +11651,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lift"] = {
+    ["lift"] = {
         label = "Lift",
         category = "sport",
         animDict = "random@hitch_lift",
@@ -11011,7 +11659,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lol"] = {
+    ["lol"] = {
         label = "LOL",
         category = "sport",
         animDict = "anim@arena@celeb@flat@paired@no_props@",
@@ -11019,7 +11667,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lol2"] = {
+    ["lol2"] = {
         label = "LOL 2",
         category = "other",
         animDict = "anim@arena@celeb@flat@solo@no_props@",
@@ -11027,7 +11675,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lost&confused"] = {
+    ["lost&confused"] = {
         label = "Lost & Confused",
         category = "main",
         animDict = "anim@scripted@island@special_peds@dave@hs4_dave_stage2_ig6",
@@ -11035,7 +11683,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["statue2"] = {
+    ["statue2"] = {
         label = "Statue 2",
         category = "stand",
         animDict = "fra_0_int-1",
@@ -11043,7 +11691,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["statue3"] = {
+    ["statue3"] = {
         label = "Statue 3",
         category = "party",
         animDict = "club_intro2-0",
@@ -11051,7 +11699,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["gangsign"] = {
+    ["gangsign"] = {
         label = "Gang Sign",
         category = "help",
         animDict = "mp_player_int_uppergang_sign_a",
@@ -11059,7 +11707,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["gangsign2"] = {
+    ["gangsign2"] = {
         label = "Gang Sign 2",
         category = "sport",
         animDict = "mp_player_int_uppergang_sign_b",
@@ -11067,7 +11715,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["gangsign3"] = {
+    ["gangsign3"] = {
         label = "Gang Sign 3",
         category = "other",
         animDict = "amb@code_human_in_car_mp_actions@gang_sign_b@low@ps@base",
@@ -11075,7 +11723,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["gangsign4"] = {
+    ["gangsign4"] = {
         label = "Gang Sign 4",
         category = "main",
         animDict = "amb@code_human_in_car_mp_actions@v_sign@std@rds@base",
@@ -11083,7 +11731,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["passout"] = {
+    ["passout"] = {
         label = "Passout",
         category = "stand",
         animDict = "missarmenian2",
@@ -11091,7 +11739,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["passout2"] = {
+    ["passout2"] = {
         label = "Passout 2",
         category = "party",
         animDict = "missarmenian2",
@@ -11099,7 +11747,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["passout3"] = {
+    ["passout3"] = {
         label = "Passout 3",
         category = "help",
         animDict = "anim@gangops@morgue@table@",
@@ -11107,7 +11755,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["passout4"] = {
+    ["passout4"] = {
         label = "Passout 4",
         category = "sport",
         animDict = "mini@cpr@char_b@cpr_def",
@@ -11115,7 +11763,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["passout5"] = {
+    ["passout5"] = {
         label = "Passout 5",
         category = "other",
         animDict = "random@mugging4",
@@ -11123,7 +11771,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["passout6"] = {
+    ["passout6"] = {
         label = "Passout 6",
         category = "main",
         animDict = "anim@scripted@data_leak@fix_bil_ig2_chopper_crawl@",
@@ -11131,7 +11779,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["passout7"] = {
+    ["passout7"] = {
         label = "Passout 7",
         category = "stand",
         animDict = "anim@scripted@data_leak@fix_bil_ig2_chopper_crawl@",
@@ -11139,7 +11787,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["passout8"] = {
+    ["passout8"] = {
         label = "Passout 8",
         category = "party",
         animDict = "anim@scripted@data_leak@fix_bil_ig2_chopper_crawl@",
@@ -11147,7 +11795,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["petting"] = {
+    ["petting"] = {
         label = "Petting",
         category = "help",
         animDict = "creatures@rottweiler@tricks@",
@@ -11155,7 +11803,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["crawl"] = {
+    ["crawl"] = {
         label = "Crawl",
         category = "sport",
         animDict = "move_injured_ground",
@@ -11163,7 +11811,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["flip2"] = {
+    ["flip2"] = {
         label = "Flip 2",
         category = "other",
         animDict = "anim@arena@celeb@flat@solo@no_props@",
@@ -11171,7 +11819,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["flip"] = {
+    ["flip"] = {
         label = "Flip",
         category = "main",
         animDict = "anim@arena@celeb@flat@solo@no_props@",
@@ -11179,7 +11827,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["slide"] = {
+    ["slide"] = {
         label = "Slide",
         category = "stand",
         animDict = "anim@arena@celeb@flat@solo@no_props@",
@@ -11187,7 +11835,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["slide2"] = {
+    ["slide2"] = {
         label = "Slide 2",
         category = "party",
         animDict = "anim@arena@celeb@flat@solo@no_props@",
@@ -11195,7 +11843,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["slide3"] = {
+    ["slide3"] = {
         label = "Slide 3",
         category = "help",
         animDict = "anim@arena@celeb@flat@solo@no_props@",
@@ -11203,7 +11851,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["slugger"] = {
+    ["slugger"] = {
         label = "Slugger",
         category = "sport",
         animDict = "anim@arena@celeb@flat@solo@no_props@",
@@ -11211,7 +11859,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["flipoff"] = {
+    ["flipoff"] = {
         label = "Flip Off",
         category = "other",
         animDict = "anim@arena@celeb@podium@no_prop@",
@@ -11219,7 +11867,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["flipoff2"] = {
+    ["flipoff2"] = {
         label = "Flip Off 2",
         category = "main",
         animDict = "anim@arena@celeb@podium@no_prop@",
@@ -11227,7 +11875,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["bow"] = {
+    ["bow"] = {
         label = "Bow",
         category = "main",
         animDict = "anim@arena@celeb@podium@no_prop@",
@@ -11235,7 +11883,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["bow2"] = {
+    ["bow2"] = {
         label = "Bow 2",
         category = "main",
         animDict = "anim@arena@celeb@podium@no_prop@",
@@ -11243,7 +11891,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["keyfob"] = {
+    ["keyfob"] = {
         label = "Key Fob",
         category = "help",
         animDict = "anim@mp_player_intmenu@key_fob@",
@@ -11251,7 +11899,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["holster"] = {
+    ["holster"] = {
         label = "Holster",
         category = "sport",
         animDict = "move_m@intimidation@cop@unarmed",
@@ -11259,7 +11907,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["holster2"] = {
+    ["holster2"] = {
         label = "Holster 2",
         category = "other",
         animDict = "mads@police_reaching_holster",
@@ -11267,7 +11915,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["holster3"] = {
+    ["holster3"] = {
         label = "Holster 3",
         category = "main",
         animDict = "anim@hlstr_7360_walk",
@@ -11275,7 +11923,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["holster4-stop"] = {
+    ["holster4-stop"] = {
         label = "Holster 4 - Stop",
         category = "stand",
         animDict = "anim@hlstr_7360_hold",
@@ -11283,7 +11931,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["holster5-stop2"] = {
+    ["holster5-stop2"] = {
         label = "Holster 5 - Stop 2",
         category = "party",
         animDict = "anim@holster_hold_there",
@@ -11291,7 +11939,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fishdance"] = {
+    ["fishdance"] = {
         label = "Fish Dance",
         category = "party",
         animDict = "anim@mp_player_intupperfind_the_fish",
@@ -11299,7 +11947,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["peace"] = {
+    ["peace"] = {
         label = "Peace",
         category = "main",
         animDict = "mp_player_int_upperpeace_sign",
@@ -11307,7 +11955,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["peace2"] = {
+    ["peace2"] = {
         label = "Peace 2",
         category = "stand",
         animDict = "anim@mp_player_intupperpeace",
@@ -11315,7 +11963,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["peace3"] = {
+    ["peace3"] = {
         label = "Peace 3",
         category = "party",
         animDict = "anim@mp_player_intupperpeace",
@@ -11323,7 +11971,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["peace4"] = {
+    ["peace4"] = {
         label = "Peace 4",
         category = "help",
         animDict = "anim@mp_player_intincarpeacestd@ds@",
@@ -11331,7 +11979,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["peace5"] = {
+    ["peace5"] = {
         label = "Peace 5",
         category = "sport",
         animDict = "anim@mp_player_intincarpeacestd@ds@",
@@ -11339,7 +11987,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["peace6"] = {
+    ["peace6"] = {
         label = "Peace 6",
         category = "other",
         animDict = "anim@mp_player_intincarpeacebodhi@ds@",
@@ -11347,7 +11995,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["peace7"] = {
+    ["peace7"] = {
         label = "Peace 7",
         category = "main",
         animDict = "anim@mp_player_intincarpeacebodhi@ds@",
@@ -11355,7 +12003,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["peacefemale"] = {
+    ["peacefemale"] = {
         label = "Peace Female",
         category = "stand",
         animDict = "anim@mp_player_intcelebrationfemale@peace",
@@ -11363,7 +12011,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cpr"] = {
+    ["cpr"] = {
         label = "CPR",
         category = "party",
         animDict = "mini@cpr@char_a@cpr_str",
@@ -11371,7 +12019,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cpr2"] = {
+    ["cpr2"] = {
         label = "CPR 2",
         category = "help",
         animDict = "mini@cpr@char_a@cpr_str",
@@ -11379,7 +12027,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["ledge"] = {
+    ["ledge"] = {
         label = "Ledge",
         category = "sport",
         animDict = "missfbi1",
@@ -11387,7 +12035,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["airplane"] = {
+    ["airplane"] = {
         label = "Air Plane",
         category = "other",
         animDict = "missfbi1",
@@ -11395,7 +12043,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["peek"] = {
+    ["peek"] = {
         label = "Peek",
         category = "main",
         animDict = "random@paparazzi@peek",
@@ -11403,7 +12051,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cough"] = {
+    ["cough"] = {
         label = "Cough",
         category = "stand",
         animDict = "timetable@gardener@smoking_joint",
@@ -11411,7 +12059,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["stretch"] = {
+    ["stretch"] = {
         label = "Stretch",
         category = "party",
         animDict = "mini@triathlon",
@@ -11419,7 +12067,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["stretch2"] = {
+    ["stretch2"] = {
         label = "Stretch 2",
         category = "help",
         animDict = "mini@triathlon",
@@ -11427,7 +12075,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["stretch3"] = {
+    ["stretch3"] = {
         label = "Stretch 3",
         category = "sport",
         animDict = "mini@triathlon",
@@ -11435,7 +12083,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["stretch4"] = {
+    ["stretch4"] = {
         label = "Stretch 4",
         category = "other",
         animDict = "rcmfanatic1maryann_stretchidle_b",
@@ -11443,7 +12091,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["celebrate"] = {
+    ["celebrate"] = {
         label = "Celebrate",
         category = "main",
         animDict = "rcmfanatic1celebrate",
@@ -11451,7 +12099,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["punching"] = {
+    ["punching"] = {
         label = "Punching",
         category = "stand",
         animDict = "rcmextreme2",
@@ -11459,7 +12107,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["punching2"] = {
+    ["punching2"] = {
         label = "Punching 2",
         category = "party",
         animDict = "anim@scripted@bty2@ig2_beat_target@male@",
@@ -11467,7 +12115,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["superhero"] = {
+    ["superhero"] = {
         label = "Superhero",
         category = "help",
         animDict = "rcmbarry",
@@ -11475,7 +12123,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["superhero2"] = {
+    ["superhero2"] = {
         label = "Superhero 2",
         category = "sport",
         animDict = "rcmbarry",
@@ -11483,7 +12131,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["mindcontrol"] = {
+    ["mindcontrol"] = {
         label = "Mind Control",
         category = "other",
         animDict = "rcmbarry",
@@ -11491,7 +12139,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["mindcontrol2"] = {
+    ["mindcontrol2"] = {
         label = "Mind Control 2",
         category = "main",
         animDict = "rcmbarry",
@@ -11499,7 +12147,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["clown"] = {
+    ["clown"] = {
         label = "Clown",
         category = "stand",
         animDict = "rcm_barry2",
@@ -11507,7 +12155,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["clown2"] = {
+    ["clown2"] = {
         label = "Clown 2",
         category = "party",
         animDict = "rcm_barry2",
@@ -11515,7 +12163,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["clown3"] = {
+    ["clown3"] = {
         label = "Clown 3",
         category = "help",
         animDict = "rcm_barry2",
@@ -11523,7 +12171,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["clown4"] = {
+    ["clown4"] = {
         label = "Clown 4",
         category = "sport",
         animDict = "rcm_barry2",
@@ -11531,7 +12179,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["clown5"] = {
+    ["clown5"] = {
         label = "Clown 5",
         category = "other",
         animDict = "rcm_barry2",
@@ -11539,7 +12187,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["tryclothes"] = {
+    ["tryclothes"] = {
         label = "Try Clothes",
         category = "main",
         animDict = "mp_clothing@female@trousers",
@@ -11547,7 +12195,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["tryclothes2"] = {
+    ["tryclothes2"] = {
         label = "Try Clothes 2",
         category = "stand",
         animDict = "mp_clothing@female@shirt",
@@ -11555,7 +12203,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["tryclothes3"] = {
+    ["tryclothes3"] = {
         label = "Try Clothes 3",
         category = "party",
         animDict = "mp_clothing@female@shoes",
@@ -11563,7 +12211,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["tryclothes4"] = {
+    ["tryclothes4"] = {
         label = "Try Clothes 4",
         category = "help",
         animDict = "anim@scripted@ulp_missions@change_clothes@female@",
@@ -11571,7 +12219,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["tryclothes5"] = {
+    ["tryclothes5"] = {
         label = "Try Clothes 5",
         category = "sport",
         animDict = "anim@scripted@ulp_missions@change_clothes@",
@@ -11579,7 +12227,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["nervous"] = {
+    ["nervous"] = {
         label = "Nervous",
         category = "other",
         animDict = "amb@world_human_bum_standing@twitchy@idle_a",
@@ -11587,7 +12235,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["nervous2"] = {
+    ["nervous2"] = {
         label = "Nervous 2",
         category = "main",
         animDict = "mp_missheist_countrybank@nervous",
@@ -11595,7 +12243,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["nervous3"] = {
+    ["nervous3"] = {
         label = "Nervous 3",
         category = "stand",
         animDict = "rcmme_tracey1",
@@ -11603,7 +12251,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["nervous4"] = {
+    ["nervous4"] = {
         label = "Nervous 4",
         category = "party",
         animDict = "fix_trip3_mcs1-9",
@@ -11611,7 +12259,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["namaste"] = {
+    ["namaste"] = {
         label = "Namaste",
         category = "help",
         animDict = "timetable@amanda@ig_4",
@@ -11619,7 +12267,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["threaten"] = {
+    ["threaten"] = {
         label = "Threaten",
         category = "sport",
         animDict = "random@atmrobberygen",
@@ -11627,7 +12275,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["radio"] = {
+    ["radio"] = {
         label = "Radio",
         category = "other",
         animDict = "random@arrests",
@@ -11635,7 +12283,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["pull"] = {
+    ["pull"] = {
         label = "Pull",
         category = "main",
         animDict = "random@mugging4",
@@ -11643,7 +12291,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["bird"] = {
+    ["bird"] = {
         label = "Bird",
         category = "stand",
         animDict = "random@peyote@bird",
@@ -11651,7 +12299,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["chicken"] = {
+    ["chicken"] = {
         label = "Chicken",
         category = "party",
         animDict = "random@peyote@chicken",
@@ -11659,7 +12307,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["bark"] = {
+    ["bark"] = {
         label = "Bark",
         category = "help",
         animDict = "random@peyote@dog",
@@ -11667,7 +12315,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["rabbit"] = {
+    ["rabbit"] = {
         label = "Rabbit",
         category = "sport",
         animDict = "random@peyote@rabbit",
@@ -11675,7 +12323,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["spider-man"] = {
+    ["spider-man"] = {
         label = "Spider-Man",
         category = "other",
         animDict = "missexile3",
@@ -11683,15 +12331,15 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["boi"] = {
-        label = "BOI",
+    ["boi"] = {
+        label = "Talk Pose 1",
         category = "main",
         animDict = "special_ped@jane@monologue_5@monologue_5c",
         animName = "brotheradrianhasshown_2",
         animFlag = 1,
         can_shared = true
     },
-["adjust"] = {
+    ["adjust"] = {
         label = "Adjust",
         category = "stand",
         animDict = "missmic4",
@@ -11699,7 +12347,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["addict"] = {
+    ["addict"] = {
         label = "Addict",
         category = "party",
         animDict = "anim@scripted@island@special_peds@dave@hs4_dave_stage3_ig7",
@@ -11707,7 +12355,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["handsup"] = {
+    ["handsup"] = {
         label = "Hands Up",
         category = "help",
         animDict = "missminuteman_1ig_2",
@@ -11715,7 +12363,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["handsup2"] = {
+    ["handsup2"] = {
         label = "Hands Up 2",
         category = "sport",
         animDict = "anim@mp_player_intuppersurrender",
@@ -11723,7 +12371,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["valet"] = {
+    ["valet"] = {
         label = "Valet",
         category = "other",
         animDict = "anim@amb@casino@valet_scenario@pose_a@",
@@ -11731,7 +12379,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["valet2"] = {
+    ["valet2"] = {
         label = "Valet 2",
         category = "main",
         animDict = "anim@amb@casino@valet_scenario@pose_b@",
@@ -11739,7 +12387,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["valet3"] = {
+    ["valet3"] = {
         label = "Valet 3",
         category = "stand",
         animDict = "anim@amb@casino@valet_scenario@pose_d@",
@@ -11747,7 +12395,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["tighten(yoga)"] = {
+    ["tighten(yoga)"] = {
         label = "Tighten (Yoga)",
         category = "sport",
         animDict = "timetable@denice@ig_1",
@@ -11755,7 +12403,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fsexpose"] = {
+    ["fsexpose"] = {
         label = "F Sex Pose",
         category = "stand",
         animDict = "missfam5_yoga",
@@ -11763,7 +12411,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fsexpose2"] = {
+    ["fsexpose2"] = {
         label = "F Sex Pose 2",
         category = "stand",
         animDict = "missfam5_yoga",
@@ -11771,7 +12419,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["fsexpose3"] = {
+    ["fsexpose3"] = {
         label = "F Sex Pose 3",
         category = "stand",
         animDict = "anim@amb@carmeet@checkout_car@",
@@ -11779,7 +12427,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["showerenterfemale"] = {
+    ["showerenterfemale"] = {
         label = "Shower Enter Female",
         category = "main",
         animDict = "mp_safehouseshower@female@",
@@ -11787,7 +12435,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["showerfemale"] = {
+    ["showerfemale"] = {
         label = "Shower Female",
         category = "stand",
         animDict = "mp_safehouseshower@female@",
@@ -11795,7 +12443,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["showerfemale2"] = {
+    ["showerfemale2"] = {
         label = "Shower Female 2",
         category = "party",
         animDict = "mp_safehouseshower@female@",
@@ -11803,7 +12451,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["showerentermale"] = {
+    ["showerentermale"] = {
         label = "Shower Enter Male",
         category = "help",
         animDict = "mp_safehouseshower@male@",
@@ -11811,7 +12459,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["showermale2"] = {
+    ["showermale2"] = {
         label = "Shower Male 2",
         category = "sport",
         animDict = "mp_safehouseshower@male@",
@@ -11819,7 +12467,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["showermale3"] = {
+    ["showermale3"] = {
         label = "Shower Male 3",
         category = "other",
         animDict = "mp_safehouseshower@male@",
@@ -11827,7 +12475,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["showermale4"] = {
+    ["showermale4"] = {
         label = "Shower Male 4",
         category = "main",
         animDict = "mp_safehouseshower@male@",
@@ -11835,7 +12483,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["picklock"] = {
+    ["picklock"] = {
         label = "Picklock",
         category = "stand",
         animDict = "missheistfbisetup1",
@@ -11843,7 +12491,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cleanthemfilthyhands"] = {
+    ["cleanthemfilthyhands"] = {
         label = "Clean Them Filthy Hands",
         category = "stand",
         animDict = "missheist_agency3aig_23",
@@ -11851,7 +12499,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cleanyourface"] = {
+    ["cleanyourface"] = {
         label = "Clean Your Face",
         category = "stand",
         animDict = "switch@michael@wash_face",
@@ -11859,7 +12507,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["buzzdoor"] = {
+    ["buzzdoor"] = {
         label = "Buzz Door",
         category = "sport",
         animDict = "anim@apt_trans@buzzer",
@@ -11867,7 +12515,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["grievethedead"] = {
+    ["grievethedead"] = {
         label = "Grieve The Dead",
         category = "other",
         animDict = "anim@miss@low@fin@vagos@",
@@ -11875,7 +12523,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["respectmale"] = {
+    ["respectmale"] = {
         label = "Respect Male",
         category = "main",
         animDict = "anim@mp_player_intcelebrationmale@respect",
@@ -11883,7 +12531,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["respectfemale"] = {
+    ["respectfemale"] = {
         label = "Respect Female",
         category = "stand",
         animDict = "anim@mp_player_intcelebrationfemale@respect",
@@ -11891,7 +12539,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["bangbang"] = {
+    ["bangbang"] = {
         label = "Bang Bang",
         category = "party",
         animDict = "anim@mp_player_intcelebrationfemale@bang_bang",
@@ -11899,7 +12547,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["checkout·female"] = {
+    ["checkout·female"] = {
         label = "Check Out · Female",
         category = "help",
         animDict = "anim@amb@carmeet@checkout_car@male_a@idles",
@@ -11907,7 +12555,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["checkout2·male"] = {
+    ["checkout2·male"] = {
         label = "Check Out 2 · Male",
         category = "sport",
         animDict = "anim@amb@carmeet@checkout_car@male_c@idles",
@@ -11915,7 +12563,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["showboobs"] = {
+    ["showboobs"] = {
         label = "Show Boobs",
         category = "other",
         animDict = "mini@strip_club@backroom@",
@@ -11923,7 +12571,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["showboobs2"] = {
+    ["showboobs2"] = {
         label = "Show Boobs 2",
         category = "main",
         animDict = "mini@strip_club@idles@stripper",
@@ -11931,7 +12579,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["watchstripper"] = {
+    ["watchstripper"] = {
         label = "Watch Stripper",
         category = "stand",
         animDict = "amb@world_human_strip_watch_stand@male_c@idle_a",
@@ -11939,7 +12587,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["hearthands"] = {
+    ["hearthands"] = {
         label = "Heart Hands",
         category = "party",
         animDict = "misssnowie@hearthands",
@@ -11947,7 +12595,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["handsinpockets(hoodie)"] = {
+    ["handsinpockets(hoodie)"] = {
         label = "Hands in pockets (Hoodie)",
         category = "help",
         animDict = "hoodie_hands@dad",
@@ -11955,7 +12603,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cuteposefemale"] = {
+    ["cuteposefemale"] = {
         label = "Cute Pose Female",
         category = "stand",
         animDict = "pupppy@freepose01",
@@ -11963,7 +12611,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cuteposefemale2"] = {
+    ["cuteposefemale2"] = {
         label = "Cute Pose Female 2",
         category = "stand",
         animDict = "pupppy@freepose03",
@@ -11971,7 +12619,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cuteposefemale3"] = {
+    ["cuteposefemale3"] = {
         label = "Cute Pose Female 3",
         category = "stand",
         animDict = "pupppy@freepose04",
@@ -11979,15 +12627,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cuteposefemale4"] = {
-        label = "Cute Pose Female 4",
-        category = "stand",
-        animDict = "handkylie@queensisters",
-        animName = "kylie_clip",
-        animFlag = 1,
-        can_shared = true
-    },
-["cuteposemale"] = {
+    ["cuteposemale"] = {
         label = "Cute Pose Male",
         category = "stand",
         animDict = "pupppy@freepose02",
@@ -11995,7 +12635,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["checkwatch"] = {
+    ["checkwatch"] = {
         label = "Check Watch",
         category = "help",
         animDict = "watch@looking_at",
@@ -12003,7 +12643,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["pee(male)"] = {
+    ["pee(male)"] = {
         label = "Pee (Male)",
         category = "sport",
         animDict = "misscarsteal2peeing",
@@ -12011,7 +12651,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["pee2(male)"] = {
+    ["pee2(male)"] = {
         label = "Pee 2 (Male)",
         category = "other",
         animDict = "missbigscore1switch_trevor_piss",
@@ -12019,7 +12659,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["pee3static(male)"] = {
+    ["pee3static(male)"] = {
         label = "Pee 3 Static (Male)",
         category = "main",
         animDict = "missbigscore1switch_trevor_piss",
@@ -12027,7 +12667,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["hump"] = {
+    ["hump"] = {
         label = "Hump",
         category = "stand",
         animDict = "timetable@trevor@skull_loving_bear",
@@ -12035,7 +12675,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wank"] = {
+    ["wank"] = {
         label = "Wank",
         category = "party",
         animDict = "anim@mp_player_intselfiewank",
@@ -12043,7 +12683,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wank2"] = {
+    ["wank2"] = {
         label = "Wank 2",
         category = "help",
         animDict = "anim@mp_player_intupperwank",
@@ -12051,7 +12691,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wank3"] = {
+    ["wank3"] = {
         label = "Wank 3",
         category = "sport",
         animDict = "mp_player_int_upperwank",
@@ -12059,7 +12699,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wank4"] = {
+    ["wank4"] = {
         label = "Wank 4",
         category = "other",
         animDict = "mp_player_int_upperwank",
@@ -12067,7 +12707,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["wank5"] = {
+    ["wank5"] = {
         label = "Wank 5",
         category = "main",
         animDict = "mp_player_intwank",
@@ -12075,7 +12715,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["calldog"] = {
+    ["calldog"] = {
         label = "Call Dog",
         category = "stand",
         animDict = "switch@franklin@plays_w_dog",
@@ -12083,7 +12723,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["calldog-right"] = {
+    ["calldog-right"] = {
         label = "Call Dog - Right",
         category = "party",
         animDict = "missfra0_chop_find",
@@ -12091,7 +12731,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["calldog-left"] = {
+    ["calldog-left"] = {
         label = "Call Dog - Left",
         category = "help",
         animDict = "missfra0_chop_find",
@@ -12099,7 +12739,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["blockface"] = {
+    ["blockface"] = {
         label = "Block Face",
         category = "sport",
         animDict = "missheist_agency3ashield_face",
@@ -12107,7 +12747,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["policecrowd"] = {
+    ["policecrowd"] = {
         label = "Police Crowd",
         category = "other",
         animDict = "amb@code_human_police_crowd_control@idle_a",
@@ -12115,7 +12755,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["policecrowd2"] = {
+    ["policecrowd2"] = {
         label = "Police Crowd 2",
         category = "main",
         animDict = "amb@code_human_police_crowd_control@idle_b",
@@ -12123,7 +12763,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["hugdog"] = {
+    ["hugdog"] = {
         label = "Hug Dog",
         category = "stand",
         animDict = "anim@k9_pose",
@@ -12131,15 +12771,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["blowsnot"] = {
-        label = "Blow Snot",
-        category = "party",
-        animDict = "move_p_m_two_idles@generic",
-        animName = "fidget_blow_snot",
-        animFlag = 1,
-        can_shared = true
-    },
-["scratchballs"] = {
+    ["scratchballs"] = {
         label = "Scratch Balls",
         category = "help",
         animDict = "move_p_m_two_idles@generic",
@@ -12147,7 +12779,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cartaunt"] = {
+    ["cartaunt"] = {
         label = "Car Taunt",
         category = "sport",
         animDict = "missarmenian1driving_taunts@lamar_1",
@@ -12155,7 +12787,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cartaunt2"] = {
+    ["cartaunt2"] = {
         label = "Car Taunt 2",
         category = "other",
         animDict = "missarmenian1driving_taunts@lamar_1",
@@ -12163,7 +12795,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cartaunt3"] = {
+    ["cartaunt3"] = {
         label = "Car Taunt 3",
         category = "main",
         animDict = "missarmenian1driving_taunts@lamar_1",
@@ -12171,7 +12803,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cartaunt4"] = {
+    ["cartaunt4"] = {
         label = "Car Taunt 4",
         category = "stand",
         animDict = "missarmenian1driving_taunts@lamar_1",
@@ -12179,7 +12811,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cartaunt5"] = {
+    ["cartaunt5"] = {
         label = "Car Taunt 5",
         category = "party",
         animDict = "missarmenian1driving_taunts@lamar_1",
@@ -12187,7 +12819,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cartaunt6"] = {
+    ["cartaunt6"] = {
         label = "Car Taunt 6",
         category = "help",
         animDict = "missarmenian1driving_taunts@lamar_1",
@@ -12195,7 +12827,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cartaunt7"] = {
+    ["cartaunt7"] = {
         label = "Car Taunt 7",
         category = "sport",
         animDict = "missarmenian1driving_taunts@lamar_1",
@@ -12203,7 +12835,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cartaunt8"] = {
+    ["cartaunt8"] = {
         label = "Car Taunt 8",
         category = "other",
         animDict = "missarmenian1driving_taunts@franklin",
@@ -12211,7 +12843,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cartaunt9"] = {
+    ["cartaunt9"] = {
         label = "Car Taunt 9",
         category = "main",
         animDict = "missarmenian1driving_taunts@franklin",
@@ -12219,7 +12851,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cartaunt10"] = {
+    ["cartaunt10"] = {
         label = "Car Taunt 10",
         category = "stand",
         animDict = "missarmenian1driving_taunts@franklin",
@@ -12227,7 +12859,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cartaunt11"] = {
+    ["cartaunt11"] = {
         label = "Car Taunt 11",
         category = "party",
         animDict = "missarmenian1driving_taunts@franklin",
@@ -12235,7 +12867,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cartaunt12"] = {
+    ["cartaunt12"] = {
         label = "Car Taunt 12",
         category = "help",
         animDict = "missarmenian1driving_taunts@franklin",
@@ -12243,7 +12875,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cartaunt13"] = {
+    ["cartaunt13"] = {
         label = "Car Taunt 13",
         category = "sport",
         animDict = "mp_intro_seq@mcs_7_race_taunt",
@@ -12251,7 +12883,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cartaunt14"] = {
+    ["cartaunt14"] = {
         label = "Car Taunt 14",
         category = "other",
         animDict = "mp_intro_seq@mcs_7_race_taunt",
@@ -12259,7 +12891,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["flex2"] = {
+    ["flex2"] = {
         label = "Flex 2",
         category = "main",
         animDict = "frabi@malepose@solo@firstsport",
@@ -12267,7 +12899,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["gym-squats"] = {
+    ["gym-squats"] = {
         label = "Gym - Squats",
         category = "stand",
         animDict = "mouse@air_squat",
@@ -12275,7 +12907,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["gym-crunches"] = {
+    ["gym-crunches"] = {
         label = "Gym - Crunches",
         category = "sport",
         animDict = "mouse@byc_crunch",
@@ -12283,7 +12915,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["gym-jumping"] = {
+    ["gym-jumping"] = {
         label = "Gym - Jumping",
         category = "help",
         animDict = "mouse@jump_exc",
@@ -12291,7 +12923,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["gym-jumpingjacks"] = {
+    ["gym-jumpingjacks"] = {
         label = "Gym - Jumping Jacks",
         category = "sport",
         animDict = "mouse@jump_jack",
@@ -12299,7 +12931,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["gym-situp"] = {
+    ["gym-situp"] = {
         label = "Gym - Sit Up",
         category = "stand",
         animDict = "mouse@situp",
@@ -12307,7 +12939,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["gympose"] = {
+    ["gympose"] = {
         label = "Gym Pose",
         category = "stand",
         animDict = "frabi@malepose@solo@firstsport",
@@ -12315,7 +12947,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["gympose2-onehandedpushup"] = {
+    ["gympose2-onehandedpushup"] = {
         label = "Gym Pose 2 - One Handed Push Up",
         category = "stand",
         animDict = "frabi@malepose@solo@firstsport",
@@ -12323,7 +12955,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["gympose3-plankingpose"] = {
+    ["gympose3-plankingpose"] = {
         label = "Gym Pose 3 - Planking Pose",
         category = "stand",
         animDict = "frabi@femalepose@solo@firstsport",
@@ -12331,7 +12963,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["gympose4-situpspose"] = {
+    ["gympose4-situpspose"] = {
         label = "Gym Pose 4 - Sit Ups Pose",
         category = "stand",
         animDict = "frabi@femalepose@solo@firstsport",
@@ -12339,7 +12971,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["karate"] = {
+    ["karate"] = {
         label = "Karate",
         category = "sport",
         animDict = "anim@mp_player_intcelebrationfemale@karate_chops",
@@ -12347,7 +12979,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["karate2"] = {
+    ["karate2"] = {
         label = "Karate 2",
         category = "other",
         animDict = "anim@mp_player_intcelebrationmale@karate_chops",
@@ -12355,7 +12987,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cutthroat"] = {
+    ["cutthroat"] = {
         label = "Cut Throat",
         category = "main",
         animDict = "anim@mp_player_intcelebrationmale@cut_throat",
@@ -12363,7 +12995,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["cutthroat2"] = {
+    ["cutthroat2"] = {
         label = "Cut Throat 2",
         category = "stand",
         animDict = "anim@mp_player_intcelebrationfemale@cut_throat",
@@ -12371,7 +13003,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["mindblown"] = {
+    ["mindblown"] = {
         label = "Mind Blown",
         category = "party",
         animDict = "anim@mp_player_intcelebrationmale@mind_blown",
@@ -12379,7 +13011,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["mindblown2"] = {
+    ["mindblown2"] = {
         label = "Mind Blown 2",
         category = "help",
         animDict = "anim@mp_player_intcelebrationfemale@mind_blown",
@@ -12387,7 +13019,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["boxing"] = {
+    ["boxing"] = {
         label = "Boxing",
         category = "sport",
         animDict = "anim@mp_player_intcelebrationmale@shadow_boxing",
@@ -12395,7 +13027,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["boxing2"] = {
+    ["boxing2"] = {
         label = "Boxing 2",
         category = "other",
         animDict = "anim@mp_player_intcelebrationfemale@shadow_boxing",
@@ -12403,7 +13035,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["boxing3"] = {
+    ["boxing3"] = {
         label = "Boxing 3",
         category = "main",
         animDict = "melee@unarmed@streamed_core_fps",
@@ -12411,7 +13043,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["capoeira"] = {
+    ["capoeira"] = {
         label = "Capoeira",
         category = "stand",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@techno_karate@",
@@ -12419,7 +13051,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["capoeira2"] = {
+    ["capoeira2"] = {
         label = "Capoeira 2",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@techno_karate@",
@@ -12427,7 +13059,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["stink"] = {
+    ["stink"] = {
         label = "Stink",
         category = "help",
         animDict = "anim@mp_player_intcelebrationfemale@stinker",
@@ -12435,7 +13067,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["taichi"] = {
+    ["taichi"] = {
         label = "Tai chi",
         category = "sport",
         animDict = "anim@veh@van@mule5@rps",
@@ -12443,7 +13075,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["taichi-awkward"] = {
+    ["taichi-awkward"] = {
         label = "Tai chi - Awkward",
         category = "other",
         animDict = "switch@trevor@rand_temple",
@@ -12451,7 +13083,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["think4"] = {
+    ["think4"] = {
         label = "Think 4",
         category = "main",
         animDict = "anim@amb@casino@hangout@ped_male@stand@02b@idles",
@@ -12459,7 +13091,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["adjusttie"] = {
+    ["adjusttie"] = {
         label = "Adjust Tie",
         category = "stand",
         animDict = "clothingtie",
@@ -12467,7 +13099,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["shaka'hangloose'"] = {
+    ["shaka'hangloose'"] = {
         label = "Shaka 'Hang Loose'",
         category = "party",
         animDict = "sign@hang_loose",
@@ -12475,7 +13107,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["shaka'hangloosecasual'"] = {
+    ["shaka'hangloosecasual'"] = {
         label = "Shaka 'Hang Loose Casual'",
         category = "help",
         animDict = "sign@hang_loose_casual",
@@ -12483,7 +13115,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["relax"] = {
+    ["relax"] = {
         label = "Relax",
         category = "sport",
         animDict = "lying@on_grass",
@@ -12491,7 +13123,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["relax2"] = {
+    ["relax2"] = {
         label = "Relax 2",
         category = "other",
         animDict = "lying@on_couch_legs_crossed",
@@ -12499,7 +13131,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["uwu"] = {
+    ["uwu"] = {
         label = "UwU",
         category = "main",
         animDict = "uwu@egirl",
@@ -12507,7 +13139,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["dab"] = {
+    ["dab"] = {
         label = "Dab",
         category = "stand",
         animDict = "stand_dab@dark",
@@ -12515,7 +13147,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sexypose"] = {
+    ["sexypose"] = {
         label = "Sexy Pose",
         category = "stand",
         animDict = "littlespoon@sexy003",
@@ -12523,7 +13155,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sexypose2"] = {
+    ["sexypose2"] = {
         label = "Sexy Pose 2",
         category = "stand",
         animDict = "littlespoon@sexy004",
@@ -12531,7 +13163,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sexypose3"] = {
+    ["sexypose3"] = {
         label = "Sexy Pose 3",
         category = "stand",
         animDict = "littlespoon@sexy005",
@@ -12539,7 +13171,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sexypose4"] = {
+    ["sexypose4"] = {
         label = "Sexy Pose 4",
         category = "stand",
         animDict = "littlespoon@sexy006",
@@ -12547,7 +13179,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sexypose5"] = {
+    ["sexypose5"] = {
         label = "Sexy Pose 5",
         category = "stand",
         animDict = "littlespoon@sexy009",
@@ -12555,7 +13187,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sexypose6"] = {
+    ["sexypose6"] = {
         label = "Sexy Pose 6",
         category = "stand",
         animDict = "littlespoon@sexy012",
@@ -12563,7 +13195,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["sexypose7"] = {
+    ["sexypose7"] = {
         label = "Sexy Pose 7",
         category = "stand",
         animDict = "bad_girls_pose3@darks37",
@@ -12571,7 +13203,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["layingdownsexy"] = {
+    ["layingdownsexy"] = {
         label = "Laying Down Sexy",
         category = "help",
         animDict = "anim@female_laying_sexy",
@@ -12579,7 +13211,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["modelposesexy"] = {
+    ["modelposesexy"] = {
         label = "Model Pose Sexy",
         category = "stand",
         animDict = "anim@female_model_showoff",
@@ -12587,7 +13219,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["modelpose2"] = {
+    ["modelpose2"] = {
         label = "Model Pose 2",
         category = "stand",
         animDict = "sitdownonknees@queensisters",
@@ -12595,7 +13227,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["modelpose3"] = {
+    ["modelpose3"] = {
         label = "Model Pose 3",
         category = "stand",
         animDict = "anim@female_model_photo_cute",
@@ -12603,7 +13235,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lay&cry"] = {
+    ["lay&cry"] = {
         label = "Lay & Cry",
         category = "help",
         animDict = "anim@amb@nightclub@lazlow@lo_sofa@",
@@ -12611,7 +13243,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lay&cry2"] = {
+    ["lay&cry2"] = {
         label = "Lay & Cry 2",
         category = "help",
         animDict = "anim@amb@nightclub@lazlow@lo_sofa@",
@@ -12619,7 +13251,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lay&cry3"] = {
+    ["lay&cry3"] = {
         label = "Lay & Cry 3",
         category = "help",
         animDict = "anim@amb@nightclub@lazlow@lo_sofa@",
@@ -12627,7 +13259,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lay&cry4"] = {
+    ["lay&cry4"] = {
         label = "Lay & Cry 4",
         category = "help",
         animDict = "anim@amb@nightclub@lazlow@lo_sofa@",
@@ -12635,7 +13267,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lay&cry5"] = {
+    ["lay&cry5"] = {
         label = "Lay & Cry 5",
         category = "help",
         animDict = "anim@amb@nightclub@lazlow@lo_sofa@",
@@ -12643,7 +13275,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lay&cry6"] = {
+    ["lay&cry6"] = {
         label = "Lay & Cry 6",
         category = "help",
         animDict = "misschinese2_crystalmaze",
@@ -12651,7 +13283,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lay&cry7"] = {
+    ["lay&cry7"] = {
         label = "Lay & Cry 7",
         category = "help",
         animDict = "anim@scripted@data_leak@fixf_fin_ig2_johnnyguns_wounded@",
@@ -12659,7 +13291,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["lay&cry8"] = {
+    ["lay&cry8"] = {
         label = "Lay & Cry 8",
         category = "help",
         animDict = "anim@scripted@data_leak@fix_golf_ig2_golfclub_intimidation@",
@@ -12667,7 +13299,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["army1"] = {
+    ["army1"] = {
         label = "Army 1",
         category = "help",
         animDict = "bzzz@animation@army1",
@@ -12675,7 +13307,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["army1left"] = {
+    ["army1left"] = {
         label = "Army 1 Left",
         category = "sport",
         animDict = "bzzz@animation@army1_left",
@@ -12683,7 +13315,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["army1right"] = {
+    ["army1right"] = {
         label = "Army 1 Right",
         category = "other",
         animDict = "bzzz@animation@army1_right",
@@ -12691,7 +13323,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["army2"] = {
+    ["army2"] = {
         label = "Army 2",
         category = "main",
         animDict = "bzzz@animation@army2",
@@ -12699,7 +13331,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["army2left"] = {
+    ["army2left"] = {
         label = "Army 2 Left",
         category = "stand",
         animDict = "bzzz@animation@army2_left",
@@ -12707,7 +13339,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["army2right"] = {
+    ["army2right"] = {
         label = "Army 2 Right",
         category = "party",
         animDict = "bzzz@animation@army2_right",
@@ -12715,7 +13347,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["airforce-atease"] = {
+    ["airforce-atease"] = {
         label = "Airforce - At Ease",
         category = "help",
         animDict = "airforce@at_ease",
@@ -12723,7 +13355,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["airforce-attention"] = {
+    ["airforce-attention"] = {
         label = "Airforce - Attention",
         category = "sport",
         animDict = "airforce@attention",
@@ -12731,7 +13363,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["airforce-paraderest"] = {
+    ["airforce-paraderest"] = {
         label = "Airforce - Parade Rest",
         category = "other",
         animDict = "airforce@parade_rest",
@@ -12739,7 +13371,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["airforce-salute"] = {
+    ["airforce-salute"] = {
         label = "Airforce - Salute",
         category = "main",
         animDict = "airforce@salute",
@@ -12747,7 +13379,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["zombiewalk"] = {
+    ["zombiewalk"] = {
         label = "Zombie Walk",
         category = "stand",
         animDict = "zombies_animations",
@@ -12755,7 +13387,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["zombiewalk2"] = {
+    ["zombiewalk2"] = {
         label = "Zombie Walk 2",
         category = "party",
         animDict = "zombies_animations",
@@ -12763,7 +13395,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["zombiewalk3"] = {
+    ["zombiewalk3"] = {
         label = "Zombie Walk 3",
         category = "help",
         animDict = "anim@ingame@move_m@zombie@core",
@@ -12771,7 +13403,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["zombierun-circle"] = {
+    ["zombierun-circle"] = {
         label = "Zombie Run - Circle",
         category = "sport",
         animDict = "anim@ingame@move_m@zombie@core",
@@ -12779,7 +13411,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["zombieagony"] = {
+    ["zombieagony"] = {
         label = "Zombie Agony",
         category = "other",
         animDict = "zombies_animations",
@@ -12787,7 +13419,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["zombiescream"] = {
+    ["zombiescream"] = {
         label = "Zombie Scream",
         category = "main",
         animDict = "zombies_animations",
@@ -12795,7 +13427,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["zombiecrawl"] = {
+    ["zombiecrawl"] = {
         label = "Zombie Crawl",
         category = "stand",
         animDict = "zombies_animations",
@@ -12803,7 +13435,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["zombieswipe"] = {
+    ["zombieswipe"] = {
         label = "Zombie Swipe",
         category = "party",
         animDict = "anim@ingame@melee@unarmed@streamed_core_zombie",
@@ -12811,7 +13443,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["zombieswipe2"] = {
+    ["zombieswipe2"] = {
         label = "Zombie Swipe 2",
         category = "help",
         animDict = "anim@ingame@melee@unarmed@streamed_variations_zombie",
@@ -12819,7 +13451,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["zombieswipe3"] = {
+    ["zombieswipe3"] = {
         label = "Zombie Swipe 3",
         category = "sport",
         animDict = "anim@ingame@melee@unarmed@streamed_core_zombie",
@@ -12827,7 +13459,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["laysexy"] = {
+    ["laysexy"] = {
         label = "Lay Sexy",
         category = "other",
         animDict = "amnilka@photopose@female@homepack001",
@@ -12835,7 +13467,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["riflepose"] = {
+    ["riflepose"] = {
         label = "Rifle Pose",
         category = "stand",
         animDict = "anim@female_gunbunny_rifle_photo",
@@ -12843,7 +13475,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["holdvest"] = {
+    ["holdvest"] = {
         label = "Hold Vest",
         category = "stand",
         animDict = "anim@male@holding_vest",
@@ -12851,7 +13483,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["holdvest2"] = {
+    ["holdvest2"] = {
         label = "Hold Vest 2",
         category = "party",
         animDict = "anim@holding_side_vest",
@@ -12859,7 +13491,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["holdvest3"] = {
+    ["holdvest3"] = {
         label = "Hold Vest 3",
         category = "help",
         animDict = "anim@holding_siege_vest_side",
@@ -12867,7 +13499,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["holdvest4"] = {
+    ["holdvest4"] = {
         label = "Hold Vest 4",
         category = "sport",
         animDict = "anim@male@holding_vest_2",
@@ -12875,7 +13507,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["holdvest5"] = {
+    ["holdvest5"] = {
         label = "Hold Vest 5",
         category = "other",
         animDict = "anim@male@holding_vest_siege",
@@ -12883,7 +13515,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["holdvest6"] = {
+    ["holdvest6"] = {
         label = "Hold Vest 6",
         category = "main",
         animDict = "anim@male@holding_vest_siege_2",
@@ -12891,7 +13523,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["coprest11"] = {
+    ["coprest11"] = {
         label = "Hand Rest Belt A",
         category = "main",
         animDict = "beltpocket@pose",
@@ -12899,7 +13531,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["coprest12"] = {
+    ["coprest12"] = {
         label = "Hand Rest Belt B",
         category = "main",
         animDict = "beltpose2@pose",
@@ -12907,7 +13539,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["coprest13"] = {
+    ["coprest13"] = {
         label = "Hand Rest Belt C",
         category = "main",
         animDict = "name@custom_anim",
@@ -12915,343 +13547,343 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["handholster"] = {
-    label = "Hand Rest",
-    category = "main",
-    animDict = "anim@hand_rest_holster",
-    animName = "hand_rest",
-    animFlag = 1,
-    can_shared = true
-},
-["coprest14"] = {
-    label = "Pullout From Holster",
-    category = "main",
-    animDict = "anim@cop_pose",
-    animName = "pullout_gun",
-    animFlag = 1,
-    can_shared = true
-},
-["radio11"] = {
-    label = "Chest Mic Pose 1",
-    category = "main",
-    animDict = "anim@cop_mic_pose_001",
-    animName = "chest_mic",
-    animFlag = 1,
-    can_shared = true
-},
-["radio12"] = {
-    label = "Chest Mic Pose 2",
-    category = "main",
-    animDict = "anim@cop_mic_pose_002",
-    animName = "chest_mic",
-    animFlag = 1,
-    can_shared = true
-},
-["radio13"] = {
-    label = "Chest Mic Pose 3",
-    category = "main",
-    animDict = "anim@cop_mic_pose_002_1",
-    animName = "chest_mic_pose",
-    animFlag = 1,
-    can_shared = true
-},
-["radio14"] = {
-    label = "Chest Mic Pose 4",
-    category = "main",
-    animDict = "anim@cop_mic_pose_002_2",
-    animName = "chest_mic_02",
-    animFlag = 1,
-    can_shared = true
-},
-["holsternew"] = {
-    label = "holster and pockets",
-    category = "main",
-    animDict = "holster@pose",
-    animName = "holster_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["radio10"] = {
-    label = "Chest Mic",
-    category = "main",
-    animDict = "chestmic1@pose",
-    animName = "chestmic1_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["coprest1"] = {
-    label = "CPD Pose D",
-    category = "main",
-    animDict = "cpdposed@pose",
-    animName = "cpdposed_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["coprest2"] = {
-    label = "CPD Pose C",
-    category = "main",
-    animDict = "cpdposec@pose",
-    animName = "cpdposec_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["coprest3"] = {
-    label = "CPD Pose A",
-    category = "main",
-    animDict = "cpd1@pose",
-    animName = "cpd1_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["coprest4"] = {
-    label = "CPD Pose B",
-    category = "main",
-    animDict = "cpdposeb@pose",
-    animName = "cpdposeb_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["handrest"] = {
-    label = "Hand Rest Belt",
-    category = "main",
-    animDict = "anim@hand_rest_belt",
-    animName = "cop_idle",
-    animFlag = 1,
-    can_shared = true
-},
-["beltpose3"] = {
-    label = "Hands on Belt A",
-    category = "main",
-    animDict = "beltpose@pose",
-    animName = "beltpose_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["det1"] = {
-    label = "Sit Detained",
-    category = "main",
-    animDict = "anim@arresteddown",
-    animName = "arresteddown_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["det2"] = {
-    label = "Sit Detained",
-    category = "main",
-    animDict = "anim@arrestedleft",
-    animName = "arrestedleft_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["det3"] = {
-    label = "Sit Detained",
-    category = "main",
-    animDict = "anim@arrestedright",
-    animName = "arrestedright_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["det4"] = {
-    label = "Sit Detained",
-    category = "main",
-    animDict = "anim@arrestedup",
-    animName = "arrestedup_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["det5"] = {
-    label = "Sit Detained",
-    category = "main",
-    animDict = "anim@arrestedstand",
-    animName = "arrestedstand_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["coprest5"] = {
-    label = "77 Beltcnb",
-    category = "main",
-    animDict = "beltcnb@cartoon",
-    animName = "beltcnb_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["coprest6"] = {
-    label = "77 Beltgncs",
-    category = "main",
-    animDict = "beltgncs@cartoon",
-    animName = "beltgncs_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["coprest7"] = {
-    label = "77 Belthnr",
-    category = "main",
-    animDict = "belthnr@cartoon",
-    animName = "belthnr_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["copres8"] = {
-    label = "77 Belt Idle 3",
-    category = "main",
-    animDict = "beltidle3@cartoon",
-    animName = "beltidle3_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["copres9"] = {
-    label = "77 Beltjsm",
-    category = "main",
-    animDict = "beltjsm@cartoon",
-    animName = "beltjsm_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["coprest10"] = {
-    label = "77 beltohb",
-    category = "main",
-    animDict = "beltohb@cartoon",
-    animName = "beltohb_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["checkdoor"] = {
-    label = "77 Check Door",
-    category = "main",
-    animDict = "checkdoor@cartoon",
-    animName = "checkdoor_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["fence"] = {
-    label = "77 Fence",
-    category = "main",
-    animDict = "fence@cartoon",
-    animName = "fence_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["gundownpart"] = {
-    label = "77 Gun Down Partner",
-    category = "main",
-    animDict = "gundownpartner@cartoon",
-    animName = "gundownpartner_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["gunuppart"] = {
-    label = "77 Gun Up Partner",
-    category = "main",
-    animDict = "gunuppartner@cartoon",
-    animName = "gunuppartner_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["leanpoint"] = {
-    label = "77 Lean Point",
-    category = "main",
-    animDict = "leanpoint@cartoon",
-    animName = "leanpoint_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["vehiclelow"] = {
-    label = "77 Vehicle Low",
-    category = "main",
-    animDict = "vehiclelow@cartoon",
-    animName = "vehiclelow_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["vehiclemed"] = {
-    label = "77 Vehicle Med",
-    category = "main",
-    animDict = "vehiclemed@cartoon",
-    animName = "vehiclemed_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["vehiclehigh"] = {
-    label = "77 Vehicle High",
-    category = "main",
-    animDict = "vehiclehigh@cartoon",
-    animName = "vehiclehigh_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["holdgunmid"] = {
-    label = "77 Hold Gun Mid",
-    category = "main",
-    animDict = "holdgunmid@cartoon",
-    animName = "holdgunmid_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["tssahp"] = {
-    label = "Sedan Traffic Stop Cop",
-    category = "main",
-    animDict = "chpts@terentevn",
-    animName = "chpts_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["bdcam1"] = {
-    label = "Active Bodycam 1",
-    category = "main",
-    animDict = "bodycamactivate@lapdnewton",
-    animName = "bodycamactivate_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["bdcam2"] = {
-    label = "Active Bodycam 2",
-    category = "main",
-    animDict = "bwc3@lapdnewton",
-    animName = "bwc3_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["c4an"] = {
-    label = "Code 4 Animation",
-    category = "main",
-    animDict = "code4@lapdnewton",
-    animName = "code4_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["handpock1"] = {
-    label = "Hands In Hoodie Slouch",
-    category = "main",
-    animDict = "handsinhoodieslouch@cartoon",
-    animName = "handsinhoodieslouch_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["handpock2"] = {
-    label = "Hands In Hoodie No Slouch",
-    category = "main",
-    animDict = "handsinpocketnoslouch@cartoon",
-    animName = "handsinpocketnoslouch_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["handpock3"] = {
-    label = "Hands In Pockets No Slouch",
-    category = "main",
-    animDict = "handsinpocketsnoslouch@cartoon",
-    animName = "handsinpocketsnoslouch_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["handpock4"] = {
-    label = "Hands In Hoodie Slouch",
-    category = "main",
-    animDict = "handsinpantspocket@cartoon",
-    animName = "handsinpantspocket_clip",
-    animFlag = 1,
-    can_shared = true
-},
-["kick"] = {
+    ["handholster"] = {
+        label = "Hand Rest",
+        category = "main",
+        animDict = "anim@hand_rest_holster",
+        animName = "hand_rest",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["coprest14"] = {
+        label = "Pullout From Holster",
+        category = "main",
+        animDict = "anim@cop_pose",
+        animName = "pullout_gun",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["radio11"] = {
+        label = "Chest Mic Pose 1",
+        category = "main",
+        animDict = "anim@cop_mic_pose_001",
+        animName = "chest_mic",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["radio12"] = {
+        label = "Chest Mic Pose 2",
+        category = "main",
+        animDict = "anim@cop_mic_pose_002",
+        animName = "chest_mic",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["radio13"] = {
+        label = "Chest Mic Pose 3",
+        category = "main",
+        animDict = "anim@cop_mic_pose_002_1",
+        animName = "chest_mic_pose",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["radio14"] = {
+        label = "Chest Mic Pose 4",
+        category = "main",
+        animDict = "anim@cop_mic_pose_002_2",
+        animName = "chest_mic_02",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["holsternew"] = {
+        label = "holster and pockets",
+        category = "main",
+        animDict = "holster@pose",
+        animName = "holster_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["radio10"] = {
+        label = "Chest Mic",
+        category = "main",
+        animDict = "chestmic1@pose",
+        animName = "chestmic1_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["coprest1"] = {
+        label = "CPD Pose D",
+        category = "main",
+        animDict = "cpdposed@pose",
+        animName = "cpdposed_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["coprest2"] = {
+        label = "CPD Pose C",
+        category = "main",
+        animDict = "cpdposec@pose",
+        animName = "cpdposec_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["coprest3"] = {
+        label = "CPD Pose A",
+        category = "main",
+        animDict = "cpd1@pose",
+        animName = "cpd1_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["coprest4"] = {
+        label = "CPD Pose B",
+        category = "main",
+        animDict = "cpdposeb@pose",
+        animName = "cpdposeb_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["handrest"] = {
+        label = "Hand Rest Belt",
+        category = "main",
+        animDict = "anim@hand_rest_belt",
+        animName = "cop_idle",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["beltpose3"] = {
+        label = "Hands on Belt A",
+        category = "main",
+        animDict = "beltpose@pose",
+        animName = "beltpose_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["det1"] = {
+        label = "Sit Detained 1",
+        category = "main",
+        animDict = "anim@arresteddown",
+        animName = "arresteddown_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["det2"] = {
+        label = "Sit Detained 2",
+        category = "main",
+        animDict = "anim@arrestedleft",
+        animName = "arrestedleft_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["det3"] = {
+        label = "Sit Detained 3",
+        category = "main",
+        animDict = "anim@arrestedright",
+        animName = "arrestedright_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["det4"] = {
+        label = "Sit Detained 4",
+        category = "main",
+        animDict = "anim@arrestedup",
+        animName = "arrestedup_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["det5"] = {
+        label = "Sit Detained 5",
+        category = "main",
+        animDict = "anim@arrestedstand",
+        animName = "arrestedstand_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["coprest5"] = {
+        label = "Belt Hold 1",
+        category = "main",
+        animDict = "beltcnb@cartoon",
+        animName = "beltcnb_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["coprest6"] = {
+        label = "Belt Hold 2",
+        category = "main",
+        animDict = "beltgncs@cartoon",
+        animName = "beltgncs_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["coprest7"] = {
+        label = "Belt Hold 3",
+        category = "main",
+        animDict = "belthnr@cartoon",
+        animName = "belthnr_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["copres8"] = {
+        label = "Belt Hold 4",
+        category = "main",
+        animDict = "beltidle3@cartoon",
+        animName = "beltidle3_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["copres9"] = {
+        label = "Belt Hold 5",
+        category = "main",
+        animDict = "beltjsm@cartoon",
+        animName = "beltjsm_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["coprest10"] = {
+        label = "Belt Hold 6",
+        category = "main",
+        animDict = "beltohb@cartoon",
+        animName = "beltohb_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["checkdoor"] = {
+        label = "Check Door",
+        category = "main",
+        animDict = "checkdoor@cartoon",
+        animName = "checkdoor_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["fence"] = {
+        label = "Fence",
+        category = "main",
+        animDict = "fence@cartoon",
+        animName = "fence_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["gundownpart"] = {
+        label = "Gun Down Partner",
+        category = "main",
+        animDict = "gundownpartner@cartoon",
+        animName = "gundownpartner_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["gunuppart"] = {
+        label = "Gun Up Partner",
+        category = "main",
+        animDict = "gunuppartner@cartoon",
+        animName = "gunuppartner_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["leanpoint"] = {
+        label = "Lean Point",
+        category = "main",
+        animDict = "leanpoint@cartoon",
+        animName = "leanpoint_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["vehiclelow"] = {
+        label = "Vehicle Low",
+        category = "main",
+        animDict = "vehiclelow@cartoon",
+        animName = "vehiclelow_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["vehiclemed"] = {
+        label = "Vehicle Medium",
+        category = "main",
+        animDict = "vehiclemed@cartoon",
+        animName = "vehiclemed_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["vehiclehigh"] = {
+        label = "Vehicle High",
+        category = "main",
+        animDict = "vehiclehigh@cartoon",
+        animName = "vehiclehigh_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["holdgunmid"] = {
+        label = "Hold Gun Mid",
+        category = "main",
+        animDict = "holdgunmid@cartoon",
+        animName = "holdgunmid_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["tssahp"] = {
+        label = "Sedan Traffic Stop Cop",
+        category = "main",
+        animDict = "chpts@terentevn",
+        animName = "chpts_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["bdcam1"] = {
+        label = "Active Bodycam 1",
+        category = "main",
+        animDict = "bodycamactivate@lapdnewton",
+        animName = "bodycamactivate_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["bdcam2"] = {
+        label = "Active Bodycam 2",
+        category = "main",
+        animDict = "bwc3@lapdnewton",
+        animName = "bwc3_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["c4an"] = {
+        label = "Code 4 Animation",
+        category = "main",
+        animDict = "code4@lapdnewton",
+        animName = "code4_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["handpock1"] = {
+        label = "Hands In Hoodie Slouch",
+        category = "main",
+        animDict = "handsinhoodieslouch@cartoon",
+        animName = "handsinhoodieslouch_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["handpock2"] = {
+        label = "Hands In Hoodie No Slouch",
+        category = "main",
+        animDict = "handsinpocketnoslouch@cartoon",
+        animName = "handsinpocketnoslouch_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["handpock3"] = {
+        label = "Hands In Pockets No Slouch",
+        category = "main",
+        animDict = "handsinpocketsnoslouch@cartoon",
+        animName = "handsinpocketsnoslouch_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["handpock4"] = {
+        label = "Hands In Hoodie Slouch",
+        category = "main",
+        animDict = "handsinpantspocket@cartoon",
+        animName = "handsinpantspocket_clip",
+        animFlag = 1,
+        can_shared = true
+    },
+    ["kick"] = {
         label = "Kick",
         category = "stand",
         animDict = "missheistdockssetup1ig_13@kick_idle",
@@ -13259,7 +13891,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["kick2"] = {
+    ["kick2"] = {
         label = "Kick 2",
         category = "party",
         animDict = "missheistdockssetup1ig_13@kick_idle",
@@ -13267,7 +13899,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["kick3"] = {
+    ["kick3"] = {
         label = "Kick 3",
         category = "help",
         animDict = "melee@unarmed@streamed_core",
@@ -13275,7 +13907,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["crosshands"] = {
+    ["crosshands"] = {
         label = "Cross hands",
         category = "sport",
         animDict = "anim@amb@carmeet@checkout_car@",
@@ -13283,7 +13915,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["aslyes🇺🇸"] = {
+    ["aslyes🇺🇸"] = {
         label = "ASL Yes 🇺🇸",
         category = "other",
         animDict = "ebrwny_sign",
@@ -13291,7 +13923,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["aslno🇺🇸"] = {
+    ["aslno🇺🇸"] = {
         label = "ASL No 🇺🇸",
         category = "main",
         animDict = "ebrwny_sign",
@@ -13299,7 +13931,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["asliamgood🇺🇸"] = {
+    ["asliamgood🇺🇸"] = {
         label = "ASL I Am Good 🇺🇸",
         category = "stand",
         animDict = "ebrwny_sign",
@@ -13307,7 +13939,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["aslseeya🇺🇸"] = {
+    ["aslseeya🇺🇸"] = {
         label = "ASL See Ya 🇺🇸",
         category = "party",
         animDict = "ebrwny_sign",
@@ -13315,7 +13947,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["aslwhat🇺🇸"] = {
+    ["aslwhat🇺🇸"] = {
         label = "ASL What 🇺🇸",
         category = "help",
         animDict = "ebrwny_sign",
@@ -13323,7 +13955,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["hideagun"] = {
+    ["hideagun"] = {
         label = "Hide a gun",
         category = "sport",
         animDict = "pistol_b_b@dark",
@@ -13331,7 +13963,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposea"] = {
+    ["femaleposea"] = {
         label = "Female Pose A",
         category = "stand",
         animDict = "mrwitt@femalepose_10",
@@ -13339,7 +13971,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleadorable1"] = {
+    ["femaleadorable1"] = {
         label = "Female Adorable 1",
         category = "main",
         animDict = "mrwitt@adorable_style",
@@ -13347,7 +13979,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleadorable2"] = {
+    ["femaleadorable2"] = {
         label = "Female Adorable 2",
         category = "stand",
         animDict = "mrwitt@adorable",
@@ -13355,7 +13987,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposeb"] = {
+    ["femaleposeb"] = {
         label = "Female Pose B",
         category = "stand",
         animDict = "mrwitt@characterful_poses",
@@ -13363,7 +13995,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposec"] = {
+    ["femaleposec"] = {
         label = "Female Pose C",
         category = "stand",
         animDict = "mrwitt@elegant_floor_hock",
@@ -13371,7 +14003,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposed"] = {
+    ["femaleposed"] = {
         label = "Female Pose D",
         category = "stand",
         animDict = "mrwitt@femalepose_03",
@@ -13379,7 +14011,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposee"] = {
+    ["femaleposee"] = {
         label = "Female Pose E",
         category = "stand",
         animDict = "mrwitt@femalepose_04",
@@ -13387,7 +14019,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposef"] = {
+    ["femaleposef"] = {
         label = "Female Pose F",
         category = "stand",
         animDict = "mrwitt@femalepose_05",
@@ -13395,7 +14027,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposeg"] = {
+    ["femaleposeg"] = {
         label = "Female Pose G",
         category = "stand",
         animDict = "mrwitt@femalepose_06",
@@ -13403,7 +14035,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposeh"] = {
+    ["femaleposeh"] = {
         label = "Female Pose H",
         category = "stand",
         animDict = "mrwitt@femalepose_07",
@@ -13411,7 +14043,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposei"] = {
+    ["femaleposei"] = {
         label = "Female Pose I",
         category = "stand",
         animDict = "mrwitt@femalepose_09",
@@ -13419,7 +14051,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposej"] = {
+    ["femaleposej"] = {
         label = "Female Pose J",
         category = "stand",
         animDict = "mrwitt@femalepose_10",
@@ -13427,7 +14059,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposek"] = {
+    ["femaleposek"] = {
         label = "Female Pose K",
         category = "stand",
         animDict = "mrwitt@femalepose_11",
@@ -13435,7 +14067,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposel"] = {
+    ["femaleposel"] = {
         label = "Female Pose L",
         category = "stand",
         animDict = "mrwitt@finger_gun_pose",
@@ -13443,7 +14075,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposem"] = {
+    ["femaleposem"] = {
         label = "Female Pose M",
         category = "stand",
         animDict = "mrwitt@models_in_action",
@@ -13451,7 +14083,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposen"] = {
+    ["femaleposen"] = {
         label = "Female Pose N",
         category = "stand",
         animDict = "mrwitt@photo_session_posing",
@@ -13459,7 +14091,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposeo"] = {
+    ["femaleposeo"] = {
         label = "Female Pose O",
         category = "stand",
         animDict = "mrwitt@school_uniform_expression",
@@ -13467,7 +14099,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposep"] = {
+    ["femaleposep"] = {
         label = "Female Pose P",
         category = "stand",
         animDict = "mrwitt@urban_posing",
@@ -13475,7 +14107,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposer"] = {
+    ["femaleposer"] = {
         label = "Female Pose R",
         category = "stand",
         animDict = "drx@femalestand14",
@@ -13483,7 +14115,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposes"] = {
+    ["femaleposes"] = {
         label = "Female Pose S",
         category = "stand",
         animDict = "drx@femalestand15",
@@ -13491,7 +14123,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposet"] = {
+    ["femaleposet"] = {
         label = "Female Pose T",
         category = "stand",
         animDict = "drx@femalestand16",
@@ -13499,7 +14131,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposeu"] = {
+    ["femaleposeu"] = {
         label = "Female Pose U",
         category = "stand",
         animDict = "drx@f_sitcool",
@@ -13507,7 +14139,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposev"] = {
+    ["femaleposev"] = {
         label = "Female Pose V",
         category = "stand",
         animDict = "drx@f_standcasual1",
@@ -13515,7 +14147,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposew"] = {
+    ["femaleposew"] = {
         label = "Female Pose W",
         category = "stand",
         animDict = "drx@f_standcasual2",
@@ -13523,7 +14155,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposex"] = {
+    ["femaleposex"] = {
         label = "Female Pose X",
         category = "stand",
         animDict = "drx@femalestand7",
@@ -13531,7 +14163,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposey"] = {
+    ["femaleposey"] = {
         label = "Female Pose Y",
         category = "stand",
         animDict = "drx@femalestand8",
@@ -13539,7 +14171,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["femaleposez"] = {
+    ["femaleposez"] = {
         label = "Female Pose Z",
         category = "stand",
         animDict = "drx@femalestand9",
@@ -13547,7 +14179,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["maleposea"] = {
+    ["maleposea"] = {
         label = "Male Pose A",
         category = "stand",
         animDict = "drx@singlemale1",
@@ -13555,7 +14187,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["maleposeb"] = {
+    ["maleposeb"] = {
         label = "Male Pose B",
         category = "stand",
         animDict = "drx@singlemale2",
@@ -13563,7 +14195,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["maleposec"] = {
+    ["maleposec"] = {
         label = "Male Pose C",
         category = "stand",
         animDict = "drx@singlemalestand1",
@@ -13571,7 +14203,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["maleposed"] = {
+    ["maleposed"] = {
         label = "Male Pose D",
         category = "stand",
         animDict = "drx@singlemalestand2",
@@ -13579,7 +14211,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["maleposee"] = {
+    ["maleposee"] = {
         label = "Male Pose E",
         category = "stand",
         animDict = "drx@m_doublehands",
@@ -13587,7 +14219,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["maleposef"] = {
+    ["maleposef"] = {
         label = "Male Pose F",
         category = "stand",
         animDict = "drx@m_standhide",
@@ -13595,7 +14227,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["maleposee1"] = {
+    ["maleposee1"] = {
         label = "Male Pose E1",
         category = "stand",
         animDict = "drx@malestand2",
@@ -13603,7 +14235,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["maleposef1"] = {
+    ["maleposef1"] = {
         label = "Male Pose F1",
         category = "stand",
         animDict = "drx@malestand3c",
@@ -13611,7 +14243,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["maleposeg"] = {
+    ["maleposeg"] = {
         label = "Male Pose G",
         category = "stand",
         animDict = "drx@pose_male",
@@ -13619,7 +14251,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["maleposeh"] = {
+    ["maleposeh"] = {
         label = "Male Pose H",
         category = "stand",
         animDict = "mrwitt@gentleman_style_male",
@@ -13627,7 +14259,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["maleposei"] = {
+    ["maleposei"] = {
         label = "Male Pose I",
         category = "stand",
         animDict = "mrwitt@thoughtful_man_m",
@@ -13635,7 +14267,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["maleposetie"] = {
+    ["maleposetie"] = {
         label = "Male Pose Tie",
         category = "stand",
         animDict = "mrwitt@tie_perfection_in_suit_male",
@@ -13643,7 +14275,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["malecrossarms"] = {
+    ["malecrossarms"] = {
         label = "Male Cross Arms",
         category = "party",
         animDict = "cross_arms@dark",
@@ -13651,7 +14283,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["malemiddlefinger"] = {
+    ["malemiddlefinger"] = {
         label = "Male Middle Finger",
         category = "help",
         animDict = "stand_middlefinger@dark",
@@ -13659,7 +14291,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["malefistface"] = {
+    ["malefistface"] = {
         label = "Male Fist Face",
         category = "sport",
         animDict = "fist_face@darksj",
@@ -13667,7 +14299,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["malepose4"] = {
+    ["malepose4"] = {
         label = "Male Pose 4",
         category = "stand",
         animDict = "fuckm@nxsty",
@@ -13675,7 +14307,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["malegunpose1"] = {
+    ["malegunpose1"] = {
         label = "Male Gun Pose 1",
         category = "stand",
         animDict = "gun_ink@darksj",
@@ -13683,7 +14315,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["malepose5"] = {
+    ["malepose5"] = {
         label = "Male Pose 5",
         category = "stand",
         animDict = "koko_male@darksj",
@@ -13691,7 +14323,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["malepose3"] = {
+    ["malepose3"] = {
         label = "Male Pose 3",
         category = "stand",
         animDict = "male_solo_1@darksj",
@@ -13699,7 +14331,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["malepose2"] = {
+    ["malepose2"] = {
         label = "Male Pose 2",
         category = "stand",
         animDict = "male_solo_3@darksj",
@@ -13707,7 +14339,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["malepose1"] = {
+    ["malepose1"] = {
         label = "Male Pose 1",
         category = "stand",
         animDict = "male_solo_4@darksj",
@@ -13715,7 +14347,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["maleshoecheckpose"] = {
+    ["maleshoecheckpose"] = {
         label = "Male Shoe Check Pose",
         category = "stand",
         animDict = "side_shoe_check@darksj",
@@ -13723,7 +14355,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["malegangpose"] = {
+    ["malegangpose"] = {
         label = "Male Gang Pose",
         category = "stand",
         animDict = "westside_cap@darksj",
@@ -13731,7 +14363,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["illuminatihandsign"] = {
+    ["illuminatihandsign"] = {
         label = "Illuminati Hand Sign",
         category = "stand",
         animDict = "ebrwny_illum",
@@ -13739,7 +14371,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["illuminatihandsign2"] = {
+    ["illuminatihandsign2"] = {
         label = "Illuminati Hand Sign 2",
         category = "party",
         animDict = "ebrwny_illum",
@@ -13747,7 +14379,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["illuminatihandsign3"] = {
+    ["illuminatihandsign3"] = {
         label = "Illuminati Hand Sign 3",
         category = "help",
         animDict = "ebrwny_illum",
@@ -13755,7 +14387,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["gunpoint-robbery"] = {
+    ["gunpoint-robbery"] = {
         label = "Gun Point - Robbery",
         category = "sport",
         animDict = "male_gun@vanessssi",
@@ -13763,7 +14395,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["baddiepeacepose"] = {
+    ["baddiepeacepose"] = {
         label = "Baddie Peace Pose",
         category = "stand",
         animDict = "41animpeacebaddie@animation",
@@ -13771,7 +14403,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["baddiebendovapose"] = {
+    ["baddiebendovapose"] = {
         label = "Baddie Bendova Pose",
         category = "stand",
         animDict = "bendova@animation",
@@ -13779,7 +14411,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["baddienailpose"] = {
+    ["baddienailpose"] = {
         label = "Baddie Nail Pose",
         category = "stand",
         animDict = "nailpose@animation",
@@ -13787,7 +14419,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["aphroditepose"] = {
+    ["aphroditepose"] = {
         label = "Aphrodite Pose",
         category = "stand",
         animDict = "aphrodite1@corbs",
@@ -13795,7 +14427,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["aphroditepose2"] = {
+    ["aphroditepose2"] = {
         label = "Aphrodite Pose 2",
         category = "stand",
         animDict = "aphrodite2@corbs",
@@ -13803,7 +14435,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["aphroditepose3"] = {
+    ["aphroditepose3"] = {
         label = "Aphrodite Pose 3",
         category = "stand",
         animDict = "aphrodite3@corbs",
@@ -13811,7 +14443,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["footballbackmiddle"] = {
+    ["footballbackmiddle"] = {
         label = "Football Back Middle",
         category = "other",
         animDict = "pazeee@football1@animations",
@@ -13819,7 +14451,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["footballbackright"] = {
+    ["footballbackright"] = {
         label = "Football Back Right",
         category = "main",
         animDict = "pazeee@football2@animations",
@@ -13827,7 +14459,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["footballfrontright"] = {
+    ["footballfrontright"] = {
         label = "Football Front Right",
         category = "stand",
         animDict = "pazeee@football3@animations",
@@ -13835,7 +14467,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["footballfrontmiddle"] = {
+    ["footballfrontmiddle"] = {
         label = "Football Front Middle",
         category = "party",
         animDict = "pazeee@football4@animations",
@@ -13843,7 +14475,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["footballfrontleft"] = {
+    ["footballfrontleft"] = {
         label = "Football Front Left",
         category = "help",
         animDict = "pazeee@football5@animations",
@@ -13851,7 +14483,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         can_shared = true
     },
-["footballbackleft"] = {
+    ["footballbackleft"] = {
         label = "Football Back Left",
         category = "sport",
         animDict = "pazeee@football6@animations",
@@ -13864,49 +14496,49 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         category = "other",
         animDict = "creatures@rottweiler@tricks@",
         animName = "beg_loop",
-        animFlag = 1,
+        animFlag = 1
     },
     ["9bark"] = {
         label = "K9 Bark",
         category = "other",
         animDict = "creatures@rottweiler@amb@world_dog_barking@idle_a",
         animName = "idle_a",
-        animFlag = 1,
+        animFlag = 1
     },
     ["9bark2"] = {
         label = "K9 Bark2",
         category = "other",
         animDict = "creatures@rottweiler@indication@",
         animName = "indicate_high",
-        animFlag = 1,
+        animFlag = 1
     },
     ["9itch"] = {
         label = "K9 Itch",
         category = "other",
         animDict = "creatures@rottweiler@amb@world_dog_sitting@idle_a",
         animName = "idle_a",
-        animFlag = 1,
+        animFlag = 1
     },
     ["9lay"] = {
         label = "K9 Lay",
         category = "other",
         animDict = "creatures@rottweiler@amb@sleep_in_kennel@",
         animName = "sleep_in_kennel",
-        animFlag = 1,
+        animFlag = 1
     },
     ["9paw"] = {
         label = "K9 Paw",
         category = "other",
         animDict = "creatures@rottweiler@tricks@",
         animName = "paw_right_loop",
-        animFlag = 1,
+        animFlag = 1
     },
     ["9sit"] = {
         label = "K9 Sit",
         category = "other",
         animDict = "creatures@rottweiler@amb@world_dog_sitting@base",
         animName = "base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["aid"] = {
         label = "Medic Bag",
@@ -13916,35 +14548,28 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_ld_health_pack",
-        propPos = {0.18, 0.0, 0.0, 0.00, -90.00, 90.00},
+        propPos = {0.18, 0.0, 0.0, 0.00, -90.00, 90.00}
     },
     ["aim"] = {
         label = "Aim2",
         category = "other",
         animDict = "random@arrests",
         animName = "cop_gunaimed_door_open_idle",
-        animFlag = 1,
+        animFlag = 1
     },
     ["aim2"] = {
         label = "Aim3",
         category = "other",
         animDict = "move_weapon@pistol@copc",
         animName = "idle",
-        animFlag = 1,
+        animFlag = 1
     },
     ["aim3"] = {
         label = "Aim4",
         category = "other",
         animDict = "move_weapon@pistol@cope",
         animName = "idle",
-        animFlag = 1,
-    },
-    ["aim4"] = {
-        label = "your name for the animation",
-        category = "other",
-        animDict = "anim@tactical_handgun_02",
-        animName = "t_handgun_02_clip",
-        animFlag = 1,
+        animFlag = 1
     },
     ["badge"] = {
         label = "BadgePD",
@@ -13954,14 +14579,14 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_cop_badge",
-        propPos = {0.07, 0.02, 0.04, 0.0, 90.0, 270.0},
+        propPos = {0.07, 0.02, 0.04, 0.0, 90.0, 270.0}
     },
     ["bang"] = {
         label = "Bang Bang ",
         category = "other",
         animDict = "anim@mp_player_intcelebrationfemale@bang_bang",
         animName = "bang_bang",
-        animFlag = 1,
+        animFlag = 1
     },
     ["bbq2"] = {
         label = "BBQ (Female)",
@@ -13971,7 +14596,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_fish_slice_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["bc"] = {
         label = "Business Card",
@@ -13981,7 +14606,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_cs_r_business_card",
-        propPos = {0.08, -0.01, 0.03, -70.0, 40.0, -90.0},
+        propPos = {0.08, -0.01, 0.03, -70.0, 40.0, -90.0}
     },
     ["bc2"] = {
         label = "Business Card 2",
@@ -13991,84 +14616,77 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_cs_r_business_card",
-        propPos = {0.15, 0.05, 0.0, -100.0, 10.0, 30.0},
+        propPos = {0.15, 0.05, 0.0, -100.0, 10.0, 30.0}
     },
     ["bdogbark"] = {
         label = "Bark (big dog)",
         category = "other",
         animDict = "creatures@rottweiler@amb@world_dog_barking@idle_a",
         animName = "idle_a",
-        animFlag = 1,
+        animFlag = 1
     },
     ["bdogbeg"] = {
         label = "Beg (big dog)",
         category = "other",
         animDict = "creatures@rottweiler@tricks@",
         animName = "beg_loop",
-        animFlag = 1,
+        animFlag = 1
     },
     ["bdogbeg2"] = {
         label = "Beg 2 (big dog)",
         category = "other",
         animDict = "creatures@rottweiler@tricks@",
         animName = "paw_right_loop",
-        animFlag = 1,
+        animFlag = 1
     },
     ["bdogdump"] = {
         label = "Dump (big dog)",
         category = "other",
         animDict = "creatures@rottweiler@move",
         animName = "dump_loop",
-        animFlag = 1,
-    },
-    ["bdogglow"] = {
-        label = "Glow Stick (big dog)",
-        category = "other",
-        animDict = "creatures@rottweiler@amb@world_dog_sitting@base",
-        animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["bdogglow2"] = {
         label = "Glow Stick Sitting (big dog)",
         category = "other",
         animDict = "creatures@rottweiler@amb@world_dog_sitting@base",
         animName = "base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["bdogitch"] = {
         label = "Itch (big dog)",
         category = "other",
         animDict = "creatures@rottweiler@amb@world_dog_sitting@idle_a",
         animName = "idle_a",
-        animFlag = 1,
+        animFlag = 1
     },
     ["bdogpee"] = {
         label = "Pee (big dog)",
         category = "other",
         animDict = "creatures@rottweiler@move",
         animName = "pee_left_idle",
-        animFlag = 1,
+        animFlag = 1
     },
     ["bdogpee2"] = {
         label = "Pee 2 (big dog)",
         category = "other",
         animDict = "creatures@rottweiler@move",
         animName = "pee_right_idle",
-        animFlag = 1,
+        animFlag = 1
     },
     ["bdogsit"] = {
         label = "Sit (big dog)",
         category = "other",
         animDict = "creatures@rottweiler@amb@world_dog_sitting@base",
         animName = "base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["bdogsleep"] = {
         label = "Sleep (big dog)",
         category = "other",
         animDict = "creatures@rottweiler@amb@sleep_in_kennel@",
         animName = "sleep_in_kennel",
-        animFlag = 1,
+        animFlag = 1
     },
     ["beer4"] = {
         label = "Beer Female",
@@ -14078,17 +14696,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_amb_beer_bottle",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
-    },
-    ["beerbox"] = {
-        label = "Beer Box 1",
-        category = "prop",
-        animDict = "move_weapon@jerrycan@generic",
-        animName = "idle",
-        animFlag = 1,
-        bone = 57005,
-        prop = "v_ret_ml_beerdus",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["bongos"] = {
         label = "Bongo Drums",
@@ -14098,14 +14706,14 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_bongos_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["boxdance"] = {
         label = "Boxing Dance Solo  ",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@beach_boxing@",
         animName = "med_right_down",
-        animFlag = 1,
+        animFlag = 1
     },
     ["brief"] = {
         label = "Briefcase",
@@ -14115,21 +14723,21 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_ld_case_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["brief2"] = {
         label = "Briefcase 2",
         category = "prop",
         animDict = "missheistdocksprep1hold_cellphone",
         animName = "static",
-        animFlag = 1,
+        animFlag = 1
     },
     ["buzz"] = {
         label = "Buzz Door",
         category = "other",
         animDict = "anim@apt_trans@buzzer",
         animName = "buzz_reg",
-        animFlag = 1,
+        animFlag = 1
     },
     ["cane"] = {
         label = "Walking Stick",
@@ -14139,7 +14747,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_cs_walking_stick",
-        propPos = {0.15, 0.05, -0.03, 0.0, 266.0, 180.0},
+        propPos = {0.15, 0.05, -0.03, 0.0, 266.0, 180.0}
     },
     ["carry3"] = {
         label = "Carry 2",
@@ -14147,7 +14755,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animDict = "anim@heists@box_carry@",
         animName = "idle",
         animFlag = 1,
-        can_shared = true,
+        can_shared = true
     },
     ["carry4"] = {
         label = "Be carried 2",
@@ -14155,7 +14763,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animDict = "amb@code_human_in_car_idles@generic@ps@base",
         animName = "base",
         animFlag = 1,
-        can_shared = true,
+        can_shared = true
     },
     ["carry5"] = {
         label = "Drag injured",
@@ -14163,7 +14771,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animDict = "anim@arena@celeb@flat@paired@no_props@",
         animName = "piggyback_c_player_a",
         animFlag = 1,
-        can_shared = true,
+        can_shared = true
     },
     ["carry6"] = {
         label = "Be injured",
@@ -14171,7 +14779,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animDict = "combat@drag_ped@",
         animName = "injured_drag_ped",
         animFlag = 1,
-        can_shared = true,
+        can_shared = true
     },
     ["carrypizza"] = {
         label = "Carry Pizza Box",
@@ -14181,17 +14789,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_pizza_box_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
-    },
-    ["cashcase"] = {
-        label = "Cash Briefcase",
-        category = "prop",
-        animDict = "move_weapon@jerrycan@generic",
-        animName = "idle",
-        animFlag = 1,
-        bone = 28422,
-        prop = "bkr_prop_biker_case_shut",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["cashcase2"] = {
         label = "Cash Briefcase 2",
@@ -14201,7 +14799,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cash_case_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["cashcase3"] = {
         label = "Cash Briefcase 3",
@@ -14211,7 +14809,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cash_case_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["cashcase4"] = {
         label = "Cash Briefcase 4 - Diamonds",
@@ -14221,7 +14819,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "ch_prop_ch_security_case_01a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["cbbox"] = {
         label = "Carry Beer Box",
@@ -14231,7 +14829,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "v_ret_ml_beerben1",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["cbbox2"] = {
         label = "Carry Beer Box 2",
@@ -14241,7 +14839,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "v_ret_ml_beerbla1",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["cbbox3"] = {
         label = "Carry Beer Box 3",
@@ -14251,7 +14849,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "v_ret_ml_beerjak1",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["cbbox4"] = {
         label = "Carry Beer Box 4",
@@ -14261,7 +14859,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "v_ret_ml_beerlog1",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["cbbox5"] = {
         label = "Carry Beer Box 5",
@@ -14271,7 +14869,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "v_ret_ml_beerpis1",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["cbbox6"] = {
         label = "Carry Beer Box 6",
@@ -14281,66 +14879,66 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_beer_box_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["checkcar"] = {
         label = "Check Out · Female ",
         category = "other",
         animDict = "anim@amb@carmeet@checkout_car@male_a@idles",
         animName = "idle_b",
-        animFlag = 1,
+        animFlag = 1
     },
     ["checkcar2"] = {
         label = "Check Out 2 · Male ",
         category = "other",
         animDict = "anim@amb@carmeet@checkout_car@male_c@idles",
         animName = "idle_a",
-        animFlag = 1,
+        animFlag = 1
     },
     ["checkout"] = {
         label = "Check Out · Female",
         category = "other",
         animDict = "anim@amb@carmeet@checkout_car@male_a@idles",
         animName = "idle_b",
-        animFlag = 1,
+        animFlag = 1
     },
     ["checkout2"] = {
         label = "Check Out 2 · Male",
         category = "other",
         animDict = "anim@amb@carmeet@checkout_car@male_c@idles",
         animName = "idle_a",
-        animFlag = 1,
+        animFlag = 1
     },
     ["checkout3"] = {
         label = "Check Out 3 · Female",
         category = "other",
         animDict = "anim@amb@carmeet@checkout_car@female_d@base",
         animName = "base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["cleanface"] = {
         label = "Clean Your Face",
         category = "other",
         animDict = "switch@michael@wash_face",
         animName = "loop_michael",
-        animFlag = 1,
+        animFlag = 1
     },
     ["cleanhands"] = {
         label = "Clean Them Filthy Hands",
         category = "other",
         animDict = "missheist_agency3aig_23",
         animName = "urinal_sink_loop",
-        animFlag = 1,
+        animFlag = 1
     },
     ["clipboard3"] = {
-        label = "Clipboard3",
+        label = "Clipboard 3",
         category = "prop",
         animDict = "missfam4",
         animName = "base",
         animFlag = 1,
         bone = 36029,
         prop = "p_cs_clipboard",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["cones"] = {
         label = "Cone",
@@ -14350,7 +14948,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 24818,
         prop = "prop_mp_cone_02",
-        propPos = {-0.25, 0.40, 0.0, 0.0, 90.0, 0.0},
+        propPos = {-0.25, 0.40, 0.0, 0.0, 90.0, 0.0}
     },
     ["consaw"] = {
         label = "Consaw",
@@ -14360,17 +14958,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_tool_consaw",
-        propPos = {-0.20, 0.20, 0.20, 30.0, 180.0, 20.0},
-    },
-    ["copbeacon2"] = {
-        label = "Cop 4",
-        category = "prop",
-        animDict = "amb@world_human_car_park_attendant@male@base",
-        animName = "base",
-        animFlag = 1,
-        bone = 57005,
-        prop = "prop_parking_wand_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {-0.20, 0.20, 0.20, 30.0, 180.0, 20.0}
     },
     ["coupleanim"] = {
         label = "Couple Drinking (Wine Glasses)",
@@ -14380,7 +14968,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "p_wine_glass_s",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["coupleanim2"] = {
         label = "Couple Drinking F (Wine Glasses)",
@@ -14390,7 +14978,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "p_wine_glass_s",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["cprs"] = {
         label = "Give CPR",
@@ -14398,7 +14986,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animDict = "mini@cpr@char_a@cpr_str",
         animName = "cpr_pumpchest",
         animFlag = 1,
-        can_shared = true,
+        can_shared = true
     },
     ["cprs2"] = {
         label = "Get CPR",
@@ -14406,7 +14994,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animDict = "mini@cpr@char_b@cpr_str",
         animName = "cpr_pumpchest",
         animFlag = 1,
-        can_shared = true,
+        can_shared = true
     },
     ["cprs3"] = {
         label = "Give CPR 2",
@@ -14414,7 +15002,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animDict = "missheistfbi3b_ig8_2",
         animName = "cpr_loop_paramedic",
         animFlag = 1,
-        can_shared = true,
+        can_shared = true
     },
     ["cprs4"] = {
         label = "Get CPR 2",
@@ -14422,7 +15010,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animDict = "missheistfbi3b_ig8_2",
         animName = "cpr_loop_victim",
         animFlag = 1,
-        can_shared = true,
+        can_shared = true
     },
     ["cuff"] = {
         label = "Cuff",
@@ -14430,7 +15018,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animDict = "mp_arresting",
         animName = "a_arrest_on_floor",
         animFlag = 1,
-        can_shared = true,
+        can_shared = true
     },
     ["cuff2"] = {
         label = "Be cuffed",
@@ -14438,7 +15026,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animDict = "mp_arresting",
         animName = "b_arrest_on_floor",
         animFlag = 1,
-        can_shared = true,
+        can_shared = true
     },
     ["cuff3"] = {
         label = "Cuff 2",
@@ -14446,7 +15034,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animDict = "mp_arresting",
         animName = "a_uncuff",
         animFlag = 1,
-        can_shared = true,
+        can_shared = true
     },
     ["cuff4"] = {
         label = "Be cuffed 2",
@@ -14454,7 +15042,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animDict = "mp_arresting",
         animName = "idle",
         animFlag = 1,
-        can_shared = true,
+        can_shared = true
     },
     ["cup2"] = {
         label = "Cup",
@@ -14464,7 +15052,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "v_res_tt_mug01",
-        propPos = {0.18, 0.02, 0.05, -70.0, 150.0, -10.0},
+        propPos = {0.18, 0.02, 0.05, -70.0, 150.0, -10.0}
     },
     ["cup3"] = {
         label = "Cup",
@@ -14474,7 +15062,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_mug_03",
-        propPos = {0.15, 0.05, 0.1, -70.0, 100.0, -20.0},
+        propPos = {0.15, 0.05, 0.1, -70.0, 100.0, -20.0}
     },
     ["cup4"] = {
         label = "Cup",
@@ -14484,147 +15072,147 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "v_ret_gc_mug02",
-        propPos = {0.18, 0.02, 0.05, -100.0, -50.0, 10.0},
+        propPos = {0.18, 0.02, 0.05, -100.0, -50.0, 10.0}
     },
     ["damn3"] = {
         label = "Damn",
         category = "other",
         animDict = "misscommon@response",
         animName = "damn",
-        animFlag = 1,
+        animFlag = 1
     },
     ["dancedrill"] = {
         label = "Drill · Solo 1 -",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@shuffle@",
         animName = "high_right_up",
-        animFlag = 1,
+        animFlag = 1
     },
     ["dancedrill2"] = {
         label = "Drill · Solo 3 -",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@shuffle@",
         animName = "high_right_down",
-        animFlag = 1,
+        animFlag = 1
     },
     ["dancedrill3"] = {
         label = "Drill · Solo 5 -",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@shuffle@",
         animName = "high_left_down",
-        animFlag = 1,
+        animFlag = 1
     },
     ["dancedrink"] = {
         label = "Dance Drink (Beer)",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@beachdanceprop@",
         animName = "mi_idle_c_m01",
-        animFlag = 1,
+        animFlag = 1
     },
     ["dancedrink2"] = {
         label = "Dance Drink 2 (Wine)",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@beachdanceprop@",
         animName = "mi_loop_f1",
-        animFlag = 1,
+        animFlag = 1
     },
     ["dancedrink3"] = {
         label = "Dance Drink 3 (Whiskey)",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@beachdanceprop@",
         animName = "mi_loop_m04",
-        animFlag = 1,
+        animFlag = 1
     },
     ["dancedrink4"] = {
         label = "Dance Drink 4 (Whiskey)",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@beachdanceprops@male@",
         animName = "mi_idle_b_m04",
-        animFlag = 1,
+        animFlag = 1
     },
     ["dancedrink5"] = {
         label = "Dance Drink 5 (Wine)",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@crowddance_single_props@",
         animName = "hi_dance_prop_09_v1_female^3",
-        animFlag = 1,
+        animFlag = 1
     },
     ["dancedrink6"] = {
         label = "Dance Drink 6 (Beer)",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@crowddance_single_props@",
         animName = "hi_dance_prop_09_v1_male^3",
-        animFlag = 1,
+        animFlag = 1
     },
     ["dancedrink7"] = {
         label = "Dance Drink 7 (Wine)",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@crowddance_single_props@",
         animName = "hi_dance_prop_11_v1_female^3",
-        animFlag = 1,
+        animFlag = 1
     },
     ["dancedrink8"] = {
         label = "Dance Drink 8 (Wine)",
         category = "party",
         animDict = "anim@amb@nightclub_island@dancers@crowddance_single_props@",
         animName = "hi_dance_prop_11_v1_female^1",
-        animFlag = 1,
+        animFlag = 1
     },
     ["dancehiphop"] = {
         label = "Hip Hop Dance",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_paired@dance_d@",
         animName = "ped_a_dance_idle",
-        animFlag = 1,
+        animFlag = 1
     },
     ["dancehiphop2"] = {
         label = "Hip Hop Dance 2 ",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_paired@dance_b@",
         animName = "ped_a_dance_idle",
-        animFlag = 1,
+        animFlag = 1
     },
     ["dancehiphop3"] = {
         label = "Hip Hop Dance 3 ",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_paired@dance_a@",
         animName = "ped_a_dance_idle",
-        animFlag = 1,
+        animFlag = 1
     },
     ["dancemonkey"] = {
         label = "Monkey Dance ",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@techno_monkey@",
         animName = "high_center",
-        animFlag = 1,
+        animFlag = 1
     },
     ["dancemonkey2"] = {
         label = "Monkey Dance 3 ",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@techno_monkey@",
         animName = "med_center_down",
-        animFlag = 1,
+        animFlag = 1
     },
     ["dancemonkey3"] = {
         label = "Monkey Dance 3  ",
         category = "party",
         animDict = "anim@amb@nightclub@mini@dance@dance_solo@techno_monkey@",
         animName = "med_center_down",
-        animFlag = 1,
+        animFlag = 1
     },
     ["danceold2"] = {
         label = "Dance Old",
         category = "party",
         animDict = "anim@mp_player_intupperuncle_disco",
         animName = "idle_a",
-        animFlag = 1,
+        animFlag = 1
     },
     ["dealer"] = {
         label = "Drug Dealer · Male",
         category = "other",
         animDict = "amb@world_human_drug_dealer_hard@male@base",
         animName = "base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["dl"] = {
         label = "DL",
@@ -14634,7 +15222,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_franklin_dl",
-        propPos = {0.08, -0.01, 0.03, -70.0, 40.0, -90.0},
+        propPos = {0.08, -0.01, 0.03, -70.0, 40.0, -90.0}
     },
     ["dl2"] = {
         label = "DL 2",
@@ -14644,7 +15232,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_franklin_dl",
-        propPos = {0.15, 0.05, 0.0, -100.0, 10.0, 30.0},
+        propPos = {0.15, 0.05, 0.0, -100.0, 10.0, 30.0}
     },
     ["donut2"] = {
         label = "Donut 2",
@@ -14654,7 +15242,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "bzzz_foodpack_donut002",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["donut3"] = {
         label = "Donut 3",
@@ -14664,28 +15252,28 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "bzzz_foodpack_donut001",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["drunkarg"] = {
         label = "Drunk Arguments",
         category = "other",
         animDict = "random@drunk_driver_1",
         animName = "drunk_argument_dd1",
-        animFlag = 1,
+        animFlag = 1
     },
     ["drunkarg2"] = {
         label = "Drunk Arguments 2",
         category = "other",
         animDict = "random@drunk_driver_1",
         animName = "drunk_argument_dd2",
-        animFlag = 1,
+        animFlag = 1
     },
     ["drunkcar"] = {
         label = "Drunk in car",
         category = "other",
         animDict = "random@drunk_driver_1",
         animName = "drunk_idle",
-        animFlag = 1,
+        animFlag = 1
     },
     ["dufbag"] = {
         label = "Duffel Bag",
@@ -14695,7 +15283,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "bkr_prop_duffel_bag_01a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["fishing"] = {
         label = "Fishing 1",
@@ -14705,7 +15293,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_fishing_rod_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["flagger"] = {
         label = "Flagger",
@@ -14715,7 +15303,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_flagger_sign_02",
-        propPos = {0.10, 0.0, 0.0, -100.0, -50.0, -5.0},
+        propPos = {0.10, 0.0, 0.0, -100.0, -50.0, -5.0}
     },
     ["folder"] = {
         label = "Clipboard",
@@ -14725,7 +15313,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 36029,
         prop = "prop_cs_documents_01",
-        propPos = {0.16, 0.08, 0.1, -40.0, -50.0, 0.0},
+        propPos = {0.16, 0.08, 0.1, -40.0, -50.0, 0.0}
     },
     ["foodtray10"] = {
         label = "Food Tray 10",
@@ -14735,7 +15323,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_food_bs_tray_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["foodtray11"] = {
         label = "Food Tray 11",
@@ -14745,7 +15333,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_food_bs_tray_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["foodtray12"] = {
         label = "Food Tray 12",
@@ -14755,7 +15343,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_food_bs_tray_03",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["foodtray13"] = {
         label = "Food Tray 13",
@@ -14765,7 +15353,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_food_cb_tray_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["foodtray14"] = {
         label = "Food Tray 14",
@@ -14775,7 +15363,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_food_tray_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["foodtray15"] = {
         label = "Food Tray 15",
@@ -14785,7 +15373,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_food_tray_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["foodtray2"] = {
         label = "Food Tray 2",
@@ -14795,7 +15383,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_food_bs_tray_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["foodtray3"] = {
         label = "Food Tray 3",
@@ -14805,7 +15393,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_food_cb_tray_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["foodtray4"] = {
         label = "Food Tray 4",
@@ -14815,7 +15403,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_food_tray_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["foodtray5"] = {
         label = "Food Tray 5",
@@ -14825,7 +15413,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_food_tray_03",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["foodtray6"] = {
         label = "Food Tray 6",
@@ -14835,7 +15423,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_food_bs_tray_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["foodtray7"] = {
         label = "Food Tray 7",
@@ -14845,7 +15433,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_food_cb_tray_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["foodtray8"] = {
         label = "Food Tray 8",
@@ -14855,7 +15443,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_food_tray_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["foodtray9"] = {
         label = "Food Tray 9",
@@ -14865,49 +15453,49 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "prop_food_tray_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["fspose"] = {
         label = "F Sex Pose",
         category = "other",
         animDict = "missfam5_yoga",
         animName = "c2_pose",
-        animFlag = 1,
+        animFlag = 1
     },
     ["fspose2"] = {
         label = "F Sex Pose 2",
         category = "other",
         animDict = "missfam5_yoga",
         animName = "c6_pose",
-        animFlag = 1,
+        animFlag = 1
     },
     ["fspose3"] = {
         label = "F Sex Pose 4",
         category = "other",
         animDict = "anim@amb@carmeet@checkout_car@",
         animName = "female_c_idle_d",
-        animFlag = 1,
+        animFlag = 1
     },
     ["fuck"] = {
         label = "Fuck",
         category = "other",
         animDict = "anim@mp_player_intselfiethe_bird",
         animName = "idle_a",
-        animFlag = 1,
+        animFlag = 1
     },
     ["fuck2"] = {
         label = "Fuck 2",
         category = "other",
         animDict = "anim@mp_player_intupperfinger",
         animName = "idle_a_fp",
-        animFlag = 1,
+        animFlag = 1
     },
     ["fuck3"] = {
         label = "Reaction Screw You",
         category = "other",
         animDict = "random@shop_robbery_reactions@",
         animName = "screw_you",
-        animFlag = 1,
+        animFlag = 1
     },
     ["fuel2"] = {
         label = "Fuel 2 (Carry)",
@@ -14917,7 +15505,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "w_am_jerrycan",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["gbag"] = {
         label = "Garbage Bag",
@@ -14927,7 +15515,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_street_binbag_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["gbin"] = {
         label = "Garbage Bin",
@@ -14937,7 +15525,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_bin_08open",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["gbin2"] = {
         label = "Garbage Bin 2",
@@ -14947,7 +15535,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_bin_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["gbin3"] = {
         label = "Garbage Bin 3",
@@ -14957,7 +15545,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_bin_03",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["gbin4"] = {
         label = "Garbage Bin 4",
@@ -14967,7 +15555,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_bin_08a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["gbin5"] = {
         label = "Garbage Bin 5",
@@ -14977,91 +15565,91 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_bin_07d",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["grieve"] = {
         label = "Grieve The Dead",
         category = "other",
         animDict = "anim@miss@low@fin@vagos@",
         animName = "idle_ped05",
-        animFlag = 1,
+        animFlag = 1
     },
     ["gympose2"] = {
         label = "Gym Pose 2 - One Handed Push Up",
         category = "other",
         animDict = "frabi@malepose@solo@firstsport",
         animName = "pose_sport_005",
-        animFlag = 1,
+        animFlag = 1
     },
     ["handb"] = {
         label = "Hands Behind Back",
         category = "other",
         animDict = "anim@miss@low@fin@vagos@",
         animName = "idle_ped06",
-        animFlag = 1,
+        animFlag = 1
     },
     ["hangout2"] = {
-        label = "Hangout",
+        label = "Hangout 2",
         category = "other",
         animDict = "amb@world_human_hang_out_street@male_a@idle_a",
         animName = "idle_c",
-        animFlag = 1,
+        animFlag = 1
     },
     ["hangout3"] = {
-        label = "Hangout",
+        label = "Hangout 3",
         category = "other",
         animDict = "amb@world_human_hang_out_street@male_a@idle_a",
         animName = "idle_a",
-        animFlag = 1,
+        animFlag = 1
     },
     ["hangout4"] = {
-        label = "Hangout",
+        label = "Hangout 4",
         category = "other",
         animDict = "amb@world_human_hang_out_street@male_a@idle_a",
         animName = "idle_b",
-        animFlag = 1,
+        animFlag = 1
     },
     ["hangout5"] = {
-        label = "Hangout",
+        label = "Hangout 5",
         category = "other",
         animDict = "amb@world_human_hang_out_street@male_a@idle_a",
         animName = "idle_d",
-        animFlag = 1,
+        animFlag = 1
     },
     ["hangout6"] = {
-        label = "Hangout",
+        label = "Hangout 6",
         category = "other",
         animDict = "amb@world_human_hang_out_street@male_a@idle_a",
         animName = "idle_e",
-        animFlag = 1,
+        animFlag = 1
     },
     ["hangout7"] = {
-        label = "BOI",
+        label = "Talk Pose 2",
         category = "other",
         animDict = "special_ped@jane@monologue_5@monologue_5c",
         animName = "brotheradrianhasshown_2",
-        animFlag = 1,
+        animFlag = 1
     },
     ["hangout8"] = {
-        label = "BOI",
+        label = "Thanks Gesture",
         category = "other",
         animDict = "random@arrests",
         animName = "thanks_male_05",
-        animFlag = 1,
+        animFlag = 1
     },
     ["hangout9"] = {
         label = "Khaby · Special",
         category = "other",
         animDict = "missarmenian3@simeon_tauntsidle_b",
         animName = "areyounotman",
-        animFlag = 1,
+        animFlag = 1
     },
     ["hhands"] = {
         label = "Heart Hands",
         category = "other",
         animDict = "misssnowie@hearthands",
         animName = "base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["hostage"] = {
         label = "Take hostage",
@@ -15069,7 +15657,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animDict = "anim@gangops@hostage@",
         animName = "perp_idle",
         animFlag = 1,
-        can_shared = true,
+        can_shared = true
     },
     ["hostage2"] = {
         label = "Be hostage",
@@ -15077,49 +15665,49 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animDict = "anim@gangops@hostage@",
         animName = "victim_idle",
         animFlag = 1,
-        can_shared = true,
+        can_shared = true
     },
     ["hu"] = {
         label = "Hands Up",
         category = "other",
         animDict = "random@mugging3",
         animName = "handsup_standing_base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["hu2"] = {
         label = "Hands Up 2",
         category = "other",
         animDict = "export@hu2",
         animName = "hu2",
-        animFlag = 1,
+        animFlag = 1
     },
     ["hud"] = {
         label = "Handsupdown",
         category = "other",
         animDict = "export@hud",
         animName = "hud",
-        animFlag = 1,
+        animFlag = 1
     },
     ["hug3"] = {
         label = "Hug 3",
         category = "other",
         animDict = "mp_ped_interaction",
         animName = "hugs_guy_a",
-        animFlag = 1,
+        animFlag = 1
     },
     ["huk"] = {
         label = "Hands Up Kneel",
         category = "other",
         animDict = "random@arrests",
         animName = "kneeling_arrest_idle",
-        animFlag = 1,
+        animFlag = 1
     },
     ["huk2"] = {
         label = "Dont Kill Me",
         category = "other",
         animDict = "missheist_jewel",
         animName = "manageress_kneel_loop",
-        animFlag = 1,
+        animFlag = 1
     },
     ["hump2"] = {
         label = "Hump (Bear)",
@@ -15129,7 +15717,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_mr_raspberry_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["id"] = {
         label = "ID",
@@ -15139,7 +15727,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_michael_sec_id",
-        propPos = {0.08, -0.01, 0.03, -70.0, 40.0, -90.0},
+        propPos = {0.08, -0.01, 0.03, -70.0, 40.0, -90.0}
     },
     ["id2"] = {
         label = "ID 2",
@@ -15149,7 +15737,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_michael_sec_id",
-        propPos = {0.15, 0.05, 0.0, -100.0, 10.0, 30.0},
+        propPos = {0.15, 0.05, 0.0, -100.0, 10.0, 30.0}
     },
     ["jerkf"] = {
         label = "JerkOff! Female",
@@ -15159,14 +15747,14 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_dildo_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["kneelthot"] = {
         label = "Kneel Thot Instagram",
         category = "other",
         animDict = "anim@model_kylie_insta",
         animName = "kylie_insta_clip",
-        animFlag = 1,
+        animFlag = 1
     },
     ["ladder"] = {
         label = "Surf Board",
@@ -15176,14 +15764,14 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28252,
         prop = "prop_byard_ladder01",
-        propPos = {0.0, 0.6, -0.1, -85.5416, 176.1446, -15.1500},
+        propPos = {0.0, 0.6, -0.1, -85.5416, 176.1446, -15.1500}
     },
     ["leancar"] = {
         label = "Lean Car",
         category = "other",
         animDict = "anim@scripted@carmeet@tun_meet_ig2_race@",
         animName = "base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["leanphone"] = {
         label = "Leaning With Phone",
@@ -15193,28 +15781,28 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_phone_ing",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["lie"] = {
         label = "Lie",
         category = "other",
         animDict = "missheistpaletoscore2mcs_2_pt1",
         animName = "end_loop_m4",
-        animFlag = 1,
+        animFlag = 1
     },
     ["like"] = {
         label = "Great",
         category = "other",
         animDict = "mp_cp_welcome_tutgreet",
         animName = "greet",
-        animFlag = 1,
+        animFlag = 1
     },
     ["lookplan"] = {
         label = "Look Plan",
         category = "other",
         animDict = "missheist_agency2aig_4",
         animName = "look_plan_c_worker2",
-        animFlag = 1,
+        animFlag = 1
     },
     ["medbag"] = {
         label = "Medic Bag",
@@ -15224,7 +15812,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "xm_prop_x17_bag_med_01a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["newsbmic"] = {
         label = "News Boom Microphone",
@@ -15234,7 +15822,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_v_bmike_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["newscam"] = {
         label = "News Camera",
@@ -15244,7 +15832,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_v_cam_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["newsmic"] = {
         label = "News Microphone",
@@ -15254,21 +15842,21 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 4154,
         prop = "p_ing_microphonel_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["no3"] = {
         label = "Reaction Damn",
         category = "other",
         animDict = "missheist_jewel",
         animName = "damn",
-        animFlag = 1,
+        animFlag = 1
     },
     ["noway2"] = {
         label = "Reaction No Way",
         category = "other",
         animDict = "gestures@m@car@std@casual@ds",
         animName = "gesture_no_way",
-        animFlag = 1,
+        animFlag = 1
     },
     ["pback"] = {
         label = "Offer Piggy Back",
@@ -15276,7 +15864,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animDict = "anim@arena@celeb@flat@paired@no_props@",
         animName = "piggyback_c_player_a",
         animFlag = 1,
-        can_shared = true,
+        can_shared = true
     },
     ["pback2"] = {
         label = "Be Piggy Backed",
@@ -15284,28 +15872,28 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animDict = "anim@arena@celeb@flat@paired@no_props@",
         animName = "piggyback_c_player_b",
         animFlag = 1,
-        can_shared = true,
+        can_shared = true
     },
     ["peacef"] = {
         label = "Peace Female",
         category = "other",
         animDict = "anim@mp_player_intcelebrationfemale@peace",
         animName = "peace",
-        animFlag = 1,
+        animFlag = 1
     },
     ["pee"] = {
         label = "Pee",
         category = "other",
         animDict = "misscarsteal2peeing",
         animName = "peeing_loop",
-        animFlag = 1,
+        animFlag = 1
     },
     ["pee2"] = {
         label = "Pee 2",
         category = "other",
         animDict = "missbigscore1switch_trevor_piss",
         animName = "piss_loop",
-        animFlag = 1,
+        animFlag = 1
     },
     ["phone2"] = {
         label = "Read Messages · Male",
@@ -15315,7 +15903,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_npc_phone_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["phone3"] = {
         label = "Read Messages 2 · Female",
@@ -15325,7 +15913,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_npc_phone_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["phonecall3"] = {
         label = "Mobile Leaning · Male",
@@ -15335,7 +15923,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_npc_phone_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["pornmag"] = {
         label = "Porn Magazine",
@@ -15345,7 +15933,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_porn_mag_02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["pornmag2"] = {
         label = "Porn Magazine 2",
@@ -15355,7 +15943,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_cs_magazine",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["pornmag3"] = {
         label = "Porn Magazine 3",
@@ -15365,7 +15953,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_porn_mag_03",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["pornmag4"] = {
         label = "Porn Magazine 4",
@@ -15375,7 +15963,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "v_res_tt_pornmag01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["pornmag5"] = {
         label = "Porn Magazine 5",
@@ -15385,7 +15973,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "v_res_tt_pornmag02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["pornmag6"] = {
         label = "Porn Magazine 6",
@@ -15395,7 +15983,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "v_res_tt_pornmag03",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["pornmag7"] = {
         label = "Porn Magazine 7",
@@ -15405,7 +15993,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "v_res_tt_pornmag04",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["potplant"] = {
         label = "Pot Plant (Small)",
@@ -15415,7 +16003,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "bkr_prop_weed_01_small_01c",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["potplant2"] = {
         label = "Pot Plant (Medium)",
@@ -15425,7 +16013,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "bkr_prop_weed_01_small_01b",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["potplant3"] = {
         label = "Pot Plant (Large)",
@@ -15435,14 +16023,14 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "bkr_prop_weed_lrg_01b",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["prone2"] = {
         label = "Prone",
         category = "other",
         animDict = "missfbi3_sniping",
         animName = "prone_dave",
-        animFlag = 1,
+        animFlag = 1
     },
     ["protest2"] = {
         label = "Protest 2 - Pride ",
@@ -15452,7 +16040,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "pride_sign_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["ps"] = {
         label = "Read Messages 2 · Female",
@@ -15462,7 +16050,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "p_pepper_01",
-        propPos = {0.060, -0.050, -0.050, -90.0, 90.0, 20.0},
+        propPos = {0.060, -0.050, -0.050, -90.0, 90.0, 20.0}
     },
     ["pump"] = {
         label = "Pumpkin",
@@ -15472,7 +16060,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_veg_crop_03_pump",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["pump2"] = {
         label = "Pumpkin 2",
@@ -15482,44 +16070,44 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_veg_crop_03_pump",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["radio2"] = {
-        label = "Radio2",
+        label = "Radio Read",
         category = "prop",
         animDict = "cellphone@",
         animName = "cellphone_text_read_base",
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_walkie_talkie",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["radio3"] = {
-        label = "Radio3",
+        label = "Radio Listen",
         category = "prop",
         animDict = "cellphone@",
         animName = "cellphone_call_listen_base",
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_walkie_talkie",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["radio4"] = {
-        label = "Radio3",
+        label = "Radio Idle",
         category = "prop",
         animDict = "random@arrests",
         animName = "idle_c",
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_walkie_talkie",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["radio5"] = {
         label = "Radio 5",
         category = "prop",
         animDict = "export@radio5",
         animName = "radio5",
-        animFlag = 1,
+        animFlag = 1
     },
     ["radio6"] = {
         label = "Lowrider Mexican Style · Car ",
@@ -15529,7 +16117,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "prop_cs_walkie_talkie",
-        propPos = {0.13, 0.04, 0.03, -90.0, 0.0, -30.0},
+        propPos = {0.13, 0.04, 0.03, -90.0, 0.0, -30.0}
     },
     ["radio7"] = {
         label = "Lowrider Mexican Style · Car ",
@@ -15539,56 +16127,56 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_walkie_talkie",
-        propPos = {0.05, -0.03, -0.02, -100.0, 0.0, 150.0},
+        propPos = {0.05, -0.03, -0.02, -100.0, 0.0, 150.0}
     },
     ["reach"] = {
         label = "Reach",
         category = "other",
         animDict = "export@reach",
         animName = "reach",
-        animFlag = 1,
+        animFlag = 1
     },
     ["reach2"] = {
         label = "Reach 2",
         category = "other",
         animDict = "reaction@intimidation@1h",
         animName = "intro",
-        animFlag = 1,
+        animFlag = 1
     },
     ["reachsit"] = {
         label = "Reach Sit",
         category = "other",
         animDict = "tigerle@custom@cop@kneel@holster1",
         animName = "tigerle_coppose_kneel_holster1",
-        animFlag = 1,
+        animFlag = 1
     },
     ["rescue"] = {
         label = "Rescue",
         category = "other",
         animDict = "random@rescue_hostage",
         animName = "bystander_helping_girl_loop",
-        animFlag = 1,
+        animFlag = 1
     },
     ["rescue2"] = {
         label = "Rescue 2",
         category = "other",
         animDict = "random@rescue_hostage",
         animName = "girl_helping_girl_loop",
-        animFlag = 1,
+        animFlag = 1
     },
     ["respect"] = {
         label = "Respect Male",
         category = "other",
         animDict = "anim@mp_player_intcelebrationmale@respect",
         animName = "respect",
-        animFlag = 1,
+        animFlag = 1
     },
     ["respect2"] = {
         label = "Respect Female",
         category = "other",
         animDict = "anim@mp_player_intcelebrationfemale@respect",
         animName = "respect",
-        animFlag = 1,
+        animFlag = 1
     },
     ["rose2"] = {
         label = "Rose 2 (Male)",
@@ -15598,7 +16186,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 31086,
         prop = "prop_single_rose",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["rose3"] = {
         label = "Rose 3 (Female)",
@@ -15608,252 +16196,252 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 31086,
         prop = "prop_single_rose",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["salsa"] = {
         label = "Salso Roll",
         category = "party",
         animDict = "anim@mp_player_intuppersalsa_roll",
         animName = "idle_a",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogbark"] = {
         label = "Bark (small dog)",
         category = "other",
         animDict = "creatures@pug@amb@world_dog_barking@idle_a",
         animName = "idle_a",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogbb"] = {
         label = "Baseball (small dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogburger"] = {
         label = "Burger (small dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogcontroller"] = {
         label = "Controller (small dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogdance"] = {
         label = "Dance (small dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "idle_turn_0",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogdolla"] = {
         label = "Dollar Bill (small dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogdolla2"] = {
         label = "Dollar Bill Scrunched  (small dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogdolla3"] = {
         label = "Money Stack  (small dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogdolla4"] = {
         label = "Money Bag  (small dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdoggl"] = {
         label = "Aviators (small dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdoggl2"] = {
         label = "Aviators Sitting (small dog)",
         category = "other",
         animDict = "creatures@pug@amb@world_dog_sitting@idle_a",
         animName = "idle_b",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdoggl3"] = {
         label = "Sunglasses (small dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdoggl4"] = {
         label = "Sunglasses Sitting (small dog)",
         category = "other",
         animDict = "creatures@pug@amb@world_dog_sitting@idle_a",
         animName = "idle_b",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdoggun"] = {
         label = "Gun Gold (small dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdoggun2"] = {
         label = "Gun Gold Sit (small dog)",
         category = "other",
         animDict = "creatures@pug@amb@world_dog_sitting@idle_a",
         animName = "idle_b",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdoghd"] = {
         label = "Hot Dog (small dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdoghd2"] = {
         label = "Hot Dog Sitting (small dog)",
         category = "other",
         animDict = "creatures@pug@amb@world_dog_sitting@idle_a",
         animName = "idle_b",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdoghlmt"] = {
         label = "Helmet 1 (small dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdoghlmt2"] = {
         label = "Helmet 2 (small dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogitch"] = {
         label = "Itch (small dog)",
         category = "other",
         animDict = "creatures@pug@amb@world_dog_sitting@idle_a",
         animName = "idle_a",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogld"] = {
         label = "Lay Down (small dog)",
         category = "other",
         animDict = "misssnowie@little_doggy_lying_down",
         animName = "base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogmic"] = {
         label = "Microphone (small dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogpee"] = {
         label = "Pee (Small Dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogrose"] = {
         label = "Rose (small dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogrose2"] = {
         label = "Rose Sit (small dog)",
         category = "other",
         animDict = "creatures@pug@amb@world_dog_sitting@idle_a",
         animName = "idle_b",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogshake"] = {
         label = "Shake (small dog)",
         category = "other",
         animDict = "creatures@pug@amb@world_dog_barking@idle_a",
         animName = "idle_c",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogsit"] = {
         label = "Sit (small dog)",
         category = "other",
         animDict = "creatures@pug@amb@world_dog_sitting@idle_a",
         animName = "idle_b",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogsteak"] = {
         label = "Steak (small dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogsteak2"] = {
         label = "Steak 2 Lay Down (small dog)",
         category = "other",
         animDict = "creatures@pug@amb@world_dog_sitting@idle_a",
         animName = "idle_c",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogstun"] = {
         label = "Stun Gun (small dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogteddy"] = {
         label = "Teddy (small dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogteddy2"] = {
         label = "Teddy 2 (small dog)",
         category = "other",
         animDict = "creatures@pug@amb@world_dog_sitting@idle_a",
         animName = "idle_b",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogtennis"] = {
         label = "Tennis Ball (small dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sdogtennis2"] = {
         label = "Tennis Racket (small dog)",
         category = "other",
         animDict = "creatures@pug@move",
         animName = "nill",
-        animFlag = 1,
+        animFlag = 1
     },
     ["search2"] = {
         label = "Be searched",
@@ -15861,21 +16449,21 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animDict = "missfam5_yoga",
         animName = "a2_pose",
         animFlag = 1,
-        can_shared = true,
+        can_shared = true
     },
     ["shaka"] = {
         label = "Shaka 'Hang Loose'",
         category = "other",
         animDict = "sign@hang_loose",
         animName = "base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["shaka2"] = {
         label = "Shaka 'Hang Loose Casual'",
         category = "other",
         animDict = "sign@hang_loose_casual",
         animName = "base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["shopbag"] = {
         label = "Shopping Bag",
@@ -15885,7 +16473,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "vw_prop_casino_shopping_bag_01a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["shopbag2"] = {
         label = "Shopping Bag 2",
@@ -15895,7 +16483,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_shopping_bags02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["shopbag3"] = {
         label = "Shopping Bag 3",
@@ -15905,7 +16493,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_shopping_bag",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["shopbag4"] = {
         label = "Shopping Bag 3",
@@ -15915,210 +16503,210 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_carrier_bag_01",
-        propPos = {0.24, 0.03, -0.04, 0.00, -90.00, 10.00},
+        propPos = {0.24, 0.03, -0.04, 0.00, -90.00, 10.00}
     },
     ["shot2"] = {
         label = "Shot 2",
         category = "other",
         animDict = "combat@damage@rb_writhe",
         animName = "rb_writhe_loop",
-        animFlag = 1,
+        animFlag = 1
     },
     ["shot3"] = {
         label = "Shot 3",
         category = "other",
         animDict = "combat@damage@writheidle_a",
         animName = "writhe_idle_a",
-        animFlag = 1,
+        animFlag = 1
     },
     ["shot4"] = {
         label = "Shot 4",
         category = "other",
         animDict = "combat@damage@writheidle_b",
         animName = "writhe_idle_e",
-        animFlag = 1,
+        animFlag = 1
     },
     ["shot5"] = {
         label = "Shot 5",
         category = "other",
         animDict = "combat@damage@writheidle_c",
         animName = "writhe_idle_g",
-        animFlag = 1,
+        animFlag = 1
     },
     ["shotcar"] = {
         label = "Rescue in car",
         category = "other",
         animDict = "random@crash_rescue@car_death@std_car",
         animName = "loop",
-        animFlag = 1,
+        animFlag = 1
     },
     ["shower"] = {
         label = "Shower Enter Male",
         category = "other",
         animDict = "mp_safehouseshower@male@",
         animName = "male_shower_idle_a",
-        animFlag = 1,
+        animFlag = 1
     },
     ["shower2"] = {
         label = "Shower Male 2",
         category = "other",
         animDict = "mp_safehouseshower@male@",
         animName = "male_shower_idle_b",
-        animFlag = 1,
+        animFlag = 1
     },
     ["shower3"] = {
         label = "Shower Male 3",
         category = "other",
         animDict = "mp_safehouseshower@male@",
         animName = "male_shower_idle_c",
-        animFlag = 1,
+        animFlag = 1
     },
     ["shower4"] = {
         label = "Shower Male 4",
         category = "other",
         animDict = "mp_safehouseshower@male@",
         animName = "male_shower_idle_d",
-        animFlag = 1,
+        animFlag = 1
     },
     ["showerf"] = {
         label = "Shower Enter Female",
         category = "other",
         animDict = "mp_safehouseshower@female@",
         animName = "shower_enter_into_idle",
-        animFlag = 1,
+        animFlag = 1
     },
     ["showerf2"] = {
         label = "Shower Female",
         category = "other",
         animDict = "mp_safehouseshower@female@",
         animName = "shower_idle_a",
-        animFlag = 1,
+        animFlag = 1
     },
     ["showerf3"] = {
         label = "Shower Female 2",
         category = "other",
         animDict = "mp_safehouseshower@female@",
         animName = "shower_idle_b",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sitchair10"] = {
         label = "Sit Chair 10",
         category = "other",
         animDict = "timetable@tracy@ig_7@base",
         animName = "base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sitchair3"] = {
         label = "Sit Chair 3 (Female)",
         category = "other",
         animDict = "timetable@reunited@ig_10",
         animName = "base_amanda",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sitchair4"] = {
         label = "Sit Chair 4",
         category = "other",
         animDict = "timetable@ron@ig_3_couch",
         animName = "base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sitchair5"] = {
         label = "Sit Chair Legs Crossed",
         category = "other",
         animDict = "timetable@jimmy@mics3_ig_15@",
         animName = "mics3_15_base_tracy",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sitchair6"] = {
         label = "Sit Chair Lean Back",
         category = "other",
         animDict = "timetable@maid@couch@",
         animName = "base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sitchair7"] = {
         label = "Sit Chair 7",
         category = "other",
         animDict = "timetable@reunited@ig_10",
         animName = "isthisthebest_jimmy",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sitchair8"] = {
         label = "Sit Chair 8",
         category = "other",
         animDict = "timetable@michael@on_sofabase",
         animName = "sit_sofa_base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sitchair9"] = {
         label = "Sit Chair 9",
         category = "other",
         animDict = "timetable@trevor@smoking_meth@base",
         animName = "base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sitchairside"] = {
         label = "Sit Chair Side",
         category = "other",
         animDict = "timetable@ron@ron_ig_2_alt1",
         animName = "ig_2_alt1_base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sitgun"] = {
         label = "Sit Gun",
         category = "other",
         animDict = "move_aim_strafe_crouch_2h",
         animName = "idle",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sitlow"] = {
         label = "Sit Lowrider",
         category = "other",
         animDict = "anim@veh@lowrider@std@ds@arm@base",
         animName = "sit_low_lowdoor",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sitnervous"] = {
         label = "Nervous in car",
         category = "other",
         animDict = "missarmenian2",
         animName = "in_car_nervous",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sitw"] = {
         label = "Sit W",
         category = "other",
         animDict = "anim@veh@lowrider@low@front_ds@arm@base",
         animName = "sit",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sitw2"] = {
         label = "Sit W2",
         category = "other",
         animDict = "missarmenian2",
         animName = "car_react_gang_ps",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sitw3"] = {
         label = "Listen Music In Car",
         category = "other",
         animDict = "anim@veh@lowrider@std@ds@arm@music@hiphopidle_a",
         animName = "idle",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sleepcar"] = {
         label = "Sleep in car",
         category = "other",
         animDict = "random@car_sleeping",
         animName = "sleeping_idle",
-        animFlag = 1,
+        animFlag = 1
     },
     ["smokepot"] = {
         label = "Smoke Weed (Female)",
         category = "other",
         animDict = "Scenario",
         animName = "WORLD_HUMAN_SMOKING_POT",
-        animFlag = 1,
+        animFlag = 1
     },
     ["soda"] = {
         label = "Soda",
@@ -16128,14 +16716,14 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_ecola_can",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["spiderman"] = {
         label = "Spider-Man",
         category = "other",
         animDict = "missexile3",
         animName = "ex03_train_roof_idle",
-        animFlag = 1,
+        animFlag = 1
     },
     ["ssign"] = {
         label = "Steal Stop Sign ",
@@ -16145,7 +16733,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_sign_road_01a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["ssign2"] = {
         label = "Steal Yield Sign ",
@@ -16155,7 +16743,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_sign_road_02a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["ssign3"] = {
         label = "Steal Hospital Sign ",
@@ -16165,7 +16753,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_sign_road_03d",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["ssign4"] = {
         label = "Steal Parking Sign ",
@@ -16175,7 +16763,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_sign_road_04a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["ssign5"] = {
         label = "Steal Parking Sign 2 ",
@@ -16185,7 +16773,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_sign_road_04w",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["ssign6"] = {
         label = "Steal Pedestrian Sign ",
@@ -16195,7 +16783,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_sign_road_05a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["ssign7"] = {
         label = "Steal Street Sign ",
@@ -16205,7 +16793,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_sign_road_05t",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["ssign8"] = {
         label = "Steal Freeway Sign ",
@@ -16215,7 +16803,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_sign_freewayentrance",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["ssign9"] = {
         label = "Steal Stop Sign Snow ",
@@ -16225,287 +16813,196 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "prop_snow_sign_road_01a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["stickup2"] = {
         label = "Stick Up",
         category = "other",
         animDict = "random@rescue_hostage",
         animName = "villian_struggle_loop",
-        animFlag = 1,
+        animFlag = 1
     },
     ["stickup3"] = {
         label = "Stick Up3",
         category = "other",
         animDict = "tigerle@custom@cop@kneel@aimpistol1",
         animName = "tigerle_coppose_kneel_aimpistol1",
-        animFlag = 1,
+        animFlag = 1
     },
     ["stickup4"] = {
         label = "Get Off The Car",
         category = "other",
         animDict = "random@getawaydriver@thugs",
         animName = "base_a",
-        animFlag = 1,
+        animFlag = 1
     },
     ["streetrace"] = {
         label = "Start streetrace",
         category = "other",
         animDict = "random@street_race",
         animName = "grid_girl_race_start",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sunbathe"] = {
         label = "Sunbathe",
         category = "other",
         animDict = "amb@world_human_sunbathe@male@back@base",
         animName = "base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sunbathe2"] = {
         label = "Sunbathe 2",
         category = "other",
         animDict = "amb@world_human_sunbathe@female@back@base",
         animName = "base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sunbathe3"] = {
         label = "Sunbathe 3",
         category = "other",
         animDict = "Scenario",
         animName = "WORLD_HUMAN_SUNBATHE",
-        animFlag = 1,
+        animFlag = 1
     },
     ["sunbatheback"] = {
         label = "Sunbathe Back",
         category = "other",
         animDict = "Scenario",
         animName = "WORLD_HUMAN_SUNBATHE_BACK",
-        animFlag = 1,
+        animFlag = 1
     },
     ["swat"] = {
         label = "SWAT",
         category = "other",
         animDict = "anim@fog_rifle_relaxed",
         animName = "rifle_relaxed_clip",
-        animFlag = 1,
+        animFlag = 1
     },
     ["swat2"] = {
         label = "SWAT 2",
         category = "other",
         animDict = "anim@male@holding_weapon_2",
         animName = "holding_weapon_2_clip",
-        animFlag = 1,
+        animFlag = 1
     },
     ["swat3"] = {
         label = "SWAT 3",
         category = "other",
         animDict = "anim@male@hug_weapon",
         animName = "hug_weapon_clip",
-        animFlag = 1,
+        animFlag = 1
     },
     ["swat4"] = {
         label = "SWAT 4",
         category = "other",
         animDict = "anim@male@hug_weapon_2",
         animName = "hug_weapon_2_clip",
-        animFlag = 1,
+        animFlag = 1
     },
     ["swat5"] = {
         label = "SWAT 5",
         category = "other",
         animDict = "anim@male@pose_weapon",
         animName = "pose_weapon_clip",
-        animFlag = 1,
-    },
-    ["swat6"] = {
-        label = "your name for the animation",
-        category = "other",
-        animDict = "anim@male_tactical_collapsed_lowready",
-        animName = "collapsed_lowready_clip",
-        animFlag = 1,
-    },
-    ["swat7"] = {
-        label = "your name for the animation",
-        category = "other",
-        animDict = "anim@male_tactical_highready_relaxed",
-        animName = "highready_relaxed_clip",
-        animFlag = 1,
-    },
-    ["swat8"] = {
-        label = "your name for the animation",
-        category = "other",
-        animDict = "anim@tactical_rifle_02",
-        animName = "t_rifle_02_clip",
-        animFlag = 1,
-    },
-    ["swat9"] = {
-        label = "your name for the animation",
-        category = "other",
-        animDict = "anim@tactical_photo_01",
-        animName = "t_photo_01_clip",
-        animFlag = 1,
-    },
-    ["swatc"] = {
-        label = "your name for the animation",
-        category = "other",
-        animDict = "anim@male@aim_weapon",
-        animName = "aim_weapon_clip",
-        animFlag = 1,
-    },
-    ["swatc2"] = {
-        label = "your name for the animation",
-        category = "other",
-        animDict = "anim@tactical_kneel_aiming",
-        animName = "kneel_aiming_clip",
-        animFlag = 1,
+        animFlag = 1
     },
     ["swatidle"] = {
         label = "SWAT Idle",
         category = "other",
         animDict = "anim@stack_pointman",
         animName = "pointman_clip",
-        animFlag = 1,
+        animFlag = 1
     },
     ["swatidle2"] = {
         label = "SWAT Idle 2",
         category = "other",
         animDict = "anim@stack_pointman",
         animName = "pointman_clip",
-        animFlag = 1,
+        animFlag = 1
     },
     ["swatidle3"] = {
         label = "SWAT Idle 3",
         category = "other",
         animDict = "anim@male@holding_weapon_4",
         animName = "holding_weapon_4_clip",
-        animFlag = 1,
+        animFlag = 1
     },
     ["swatidle4"] = {
         label = "SWAT Idle 4",
         category = "other",
         animDict = "anim@male@holding_weapon_4",
         animName = "holding_weapon_4_clip",
-        animFlag = 1,
-    },
-    ["swatidle5"] = {
-        label = "your name for the animation",
-        category = "other",
-        animDict = "anim@male@preaim_weapon",
-        animName = "preaim_weapon_clip",
-        animFlag = 1,
-    },
-    ["swatl"] = {
-        label = "your name for the animation",
-        category = "other",
-        animDict = "anim@tactical_highlow_high_leftlean",
-        animName = "high_leftlean_clip",
-        animFlag = 1,
-    },
-    ["swatl2"] = {
-        label = "your name for the animation",
-        category = "other",
-        animDict = "anim@tactical_highlow_high_leftlean",
-        animName = "high_leftlean_clip",
-        animFlag = 1,
-    },
-    ["swatls"] = {
-        label = "your name for the animation",
-        category = "other",
-        animDict = "anim@tactical_highlow_low_leftlean",
-        animName = "low_leftlean_clip",
-        animFlag = 1,
-    },
-    ["swatok"] = {
-        label = "your name for the animation",
-        category = "other",
-        animDict = "anim@male@pose_weapon_3",
-        animName = "pose_weapon_3_clip",
-        animFlag = 1,
+        animFlag = 1
     },
     ["swatr"] = {
         label = "SWAT Right",
         category = "other",
         animDict = "anim@highlow_low_lean",
         animName = "low_lean_clip",
-        animFlag = 1,
+        animFlag = 1
     },
     ["swatr2"] = {
         label = "SWAT Right 2",
         category = "other",
         animDict = "anim@highlow_high_lean",
         animName = "high_lean_clip",
-        animFlag = 1,
+        animFlag = 1
     },
     ["swatrs"] = {
         label = "SWAT Right Sit",
         category = "other",
         animDict = "anim@highlow_low_lean",
         animName = "low_lean_clip",
-        animFlag = 1,
+        animFlag = 1
     },
     ["swatsitpistol"] = {
         label = "SWAT Sit Pistol",
         category = "other",
         animDict = "tigerle@custom@cop@kneel@holdpistol1",
         animName = "tigerle_coppose_kneel_holdpistol1",
-        animFlag = 1,
+        animFlag = 1
     },
     ["swatsitpistol2"] = {
         label = "SWAT Sit Pistol 2",
         category = "other",
         animDict = "tigerle@custom@cop@kneel@aimpistol1",
         animName = "tigerle_coppose_kneel_aimpistol1",
-        animFlag = 1,
-    },
-    ["swatsitradio"] = {
-        label = "your name for the animation",
-        category = "other",
-        animDict = "anim@tactical_kneel_walkie",
-        animName = "kneel_walkie_clip",
-        animFlag = 1,
+        animFlag = 1
     },
     ["swatsitrifle"] = {
         label = "SWAT Sit Rifle",
         category = "other",
         animDict = "tigerle@custom@cop@kneel@holdrifle1",
         animName = "tigerle_coppose_kneel_holdrifle1",
-        animFlag = 1,
+        animFlag = 1
     },
     ["swatsitrifle2"] = {
         label = "SWAT Sit Rifle 2",
         category = "other",
         animDict = "anim@male@holding_weapon_kneel",
         animName = "anim@male@holding_weapon_kneel_clip",
-        animFlag = 1,
-    },
-    ["swatsitrifle3"] = {
-        label = "your name for the animation",
-        category = "other",
-        animDict = "anim@male@tactical_kneel",
-        animName = "tactical_kneel_clip",
-        animFlag = 1,
+        animFlag = 1
     },
     ["swear"] = {
         label = "Weeding · Male",
         category = "other",
         animDict = "anim@amb@drug_field_workers@weeding@male_a@base",
         animName = "base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["t"] = {
         label = "T",
         category = "other",
         animDict = "missfam5_yoga",
         animName = "a2_pose",
-        animFlag = 1,
+        animFlag = 1
     },
     ["t2"] = {
         label = "T 2",
         category = "other",
         animDict = "mp_sleep",
         animName = "bind_pose_180",
-        animFlag = 1,
+        animFlag = 1
     },
     ["tag"] = {
         label = "Tagging Shake Can Male",
@@ -16515,7 +17012,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_spray_can",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["tag2"] = {
         label = "Tagging Shake Can Female",
@@ -16525,7 +17022,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_spray_can",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["tag3"] = {
         label = "Tagging Male 1",
@@ -16535,7 +17032,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_spray_can",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["tag4"] = {
         label = "Tagging Male 2",
@@ -16545,7 +17042,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_spray_can",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["tag5"] = {
         label = "Tagging Female 1",
@@ -16555,7 +17052,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_spray_can",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["tag6"] = {
         label = "Tagging Female 2",
@@ -16565,7 +17062,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_spray_can",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["tape"] = {
         label = "Briefcase 2",
@@ -16575,58 +17072,58 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "p_tape_roll_01",
-        propPos = {0.18, 0.04, 0.0, -30.0, -10.0, -50.0},
+        propPos = {0.18, 0.04, 0.0, -30.0, -10.0, -50.0}
     },
     ["tighten"] = {
         label = "Tigten (Yoga)",
         category = "other",
         animDict = "timetable@denice@ig_1",
         animName = "idle_b",
-        animFlag = 1,
+        animFlag = 1
     },
     ["toilet"] = {
         label = "Have A Shit 2",
         category = "other",
         animDict = "timetable@trevor@on_the_toilet",
         animName = "trevonlav_struggleloop",
-        animFlag = 1,
+        animFlag = 1
     },
     ["torch"] = {
-        label = "Torch",
+        label = "Torch 1",
         category = "prop",
         animDict = "export@torching",
         animName = "torching",
         animFlag = 1,
         bone = 28422,
         prop = "prop_cs_police_torch_02",
-        propPos = {0.05, 0.0, -0.03, 10.0, 0.0, 0.0},
+        propPos = {0.05, 0.0, -0.03, 10.0, 0.0, 0.0}
     },
     ["torch2"] = {
-        label = "Torch",
+        label = "Torch 2",
         category = "prop",
         animDict = "amb@world_human_security_shine_torch@male@base",
         animName = "base",
         animFlag = 1,
         bone = 18905,
         prop = "prop_cs_police_torch_02",
-        propPos = {0.10, 0.0, 0.03, 10.0, 0.0, 110.0},
+        propPos = {0.10, 0.0, 0.03, 10.0, 0.0, 110.0}
     },
     ["torch3"] = {
-        label = "Torch",
+        label = "Torch 3",
         category = "prop",
         animDict = "amb@world_human_security_shine_torch@male@idle_a",
         animName = "idle_a",
         animFlag = 1,
         bone = 18905,
         prop = "prop_cs_police_torch_02",
-        propPos = {0.10, 0.0, 0.03, 10.0, 0.0, 110.0},
+        propPos = {0.10, 0.0, 0.03, 10.0, 0.0, 110.0}
     },
     ["type5"] = {
         label = "Type 5",
         category = "other",
         animDict = "anim@heists@prison_heistig1_p1_guard_checks_bus",
         animName = "loop",
-        animFlag = 1,
+        animFlag = 1
     },
     ["umbrella"] = {
         label = "Umbrella",
@@ -16636,14 +17133,14 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 57005,
         prop = "p_amb_brolly_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["uncuff"] = {
         label = "Uncuff",
         category = "other",
         animDict = "mp_arresting",
         animName = "a_uncuff",
-        animFlag = 1,
+        animFlag = 1
     },
     ["usflagger"] = {
         label = "USA Flagger",
@@ -16653,56 +17150,49 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "ind_prop_dlc_flag_01",
-        propPos = {0.10, 0.0, 0.0, -100.0, -50.0, -5.0},
-    },
-    ["vest"] = {
-        label = "your name for the animation",
-        category = "other",
-        animDict = "anim@male@holding_vest",
-        animName = "holding_vest_clip",
-        animFlag = 1,
+        propPos = {0.10, 0.0, 0.0, -100.0, -50.0, -5.0}
     },
     ["vest2"] = {
-        label = "Lowrider Mexican Style · Car ",
+        label = "Vest Hold Side",
         category = "prop",
         animDict = "anim@holding_side_vest",
         animName = "holding_side_vest_clip",
-        animFlag = 1,
+        animFlag = 1
     },
     ["vest3"] = {
-        label = "Lowrider Mexican Style · Car ",
+        label = "Vest Hold Front",
         category = "prop",
         animDict = "anim@male@holding_vest_siege",
         animName = "holding_vest_siege_clip",
-        animFlag = 1,
+        animFlag = 1
     },
     ["vest4"] = {
-        label = "Lowrider Mexican Style · Car ",
+        label = "Vest Hold Front 2",
         category = "prop",
         animDict = "anim@male@holding_vest_siege_2",
         animName = "holding_vest_siege_2_clip",
-        animFlag = 1,
+        animFlag = 1
     },
     ["wait14"] = {
         label = "Lean Car",
         category = "other",
         animDict = "anim@scripted@carmeet@tun_meet_ig2_race@",
         animName = "base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["wait15"] = {
         label = "Standing Twitchy",
         category = "other",
         animDict = "amb@world_human_bum_standing@twitchy@base",
         animName = "base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["wait16"] = {
         label = "Standing · Male",
         category = "other",
         animDict = "anim@amb@casino@hangout@ped_male@stand@03b@base",
         animName = "base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["warrant"] = {
         label = "Warrant",
@@ -16712,7 +17202,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 18905,
         prop = "p_amb_clipboard_02",
-        propPos = {0.06, 0.0, 0.04, 5.0, 90.0, 270.0},
+        propPos = {0.06, 0.0, 0.04, 5.0, 90.0, 270.0}
     },
     ["water"] = {
         label = "Water",
@@ -16722,7 +17212,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "ba_prop_club_water_bottle",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["weedbrick2"] = {
         label = "Weed Brick BIG",
@@ -16732,7 +17222,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 60309,
         prop = "bkr_prop_weed_bigbag_01a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["weights3"] = {
         label = "Weights 3 - Pose",
@@ -16742,7 +17232,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_barbell_01",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["wheelchair"] = {
         label = "Drag injured",
@@ -16750,14 +17240,14 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animDict = "combat@drag_ped@",
         animName = "injured_drag_plyr",
         animFlag = 1,
-        can_shared = true,
+        can_shared = true
     },
     ["wheelchair2"] = {
         label = "Be injured",
         category = "party",
         animDict = "amb@prop_human_seat_chair@female@proper@base",
         animName = "base",
-        animFlag = 1,
+        animFlag = 1
     },
     ["whiskey2"] = {
         label = "Whiskey Bottle",
@@ -16767,7 +17257,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "ba_prop_battle_whiskey_bottle_2_s",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["whiskey3"] = {
         label = "Whiskey Bottle 2",
@@ -16777,7 +17267,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "ba_prop_battle_whiskey_bottle_2_s",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["whiskey4"] = {
         label = "Whiskey Bottle 3",
@@ -16787,7 +17277,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "ba_prop_battle_whiskey_bottle_2_s",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["wine2"] = {
         label = "Wine 2 - Bottle",
@@ -16797,7 +17287,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_wine_rose",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["wine3"] = {
         label = "Wine 3 - Bottle",
@@ -16807,14 +17297,14 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 1,
         bone = 28422,
         prop = "prop_wine_rose",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["radio_shoulder"] = {
         label = "Radio - Shoulder",
         category = "other",
         animDict = "random@arrests",
         animName = "generic_radio_enter",
-        animFlag = 50,
+        animFlag = 50
     },
     ["radio_handheld"] = {
         label = "Radio - Handheld",
@@ -16824,14 +17314,14 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 50,
         bone = 28422,
         prop = "prop_cs_walkie_talkie",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["radio_earpiece"] = {
         label = "Radio - Earpiece",
         category = "other",
         animDict = "cellphone@",
         animName = "cellphone_call_listen_base",
-        animFlag = 50,
+        animFlag = 50
     },
     ["radio_close_ear"] = {
         label = "Radio - Close Ear",
@@ -16841,7 +17331,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 50,
         bone = 28422,
         prop = "prop_cs_walkie_talkie",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["radio_left_hand"] = {
         label = "Radio - Left Hand",
@@ -16851,7 +17341,7 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 50,
         bone = 18905,
         prop = "prop_cs_walkie_talkie",
-        propPos = {0.13, 0.04, 0.03, -90.0, 0.0, -30.0},
+        propPos = {0.13, 0.04, 0.03, -90.0, 0.0, -30.0}
     },
     ["radio_close"] = {
         label = "Radio - Close",
@@ -16861,15 +17351,15 @@ Animations.List = {["style_standard"] = {anim_male = "move_m@generic", anim_fema
         animFlag = 50,
         bone = 28422,
         prop = "prop_cs_walkie_talkie",
-        propPos = {0.05, -0.03, -0.02, -100.0, 0.0, 150.0},
+        propPos = {0.05, -0.03, -0.02, -100.0, 0.0, 150.0}
     },
     ["radio_chest"] = {
         label = "Radio - Chest",
         category = "other",
         animDict = "export@radio5",
         animName = "radio5",
-        animFlag = 50,
-    },
+        animFlag = 50
+    }
 }
 
 Animations.SyncedSettings = {
@@ -16879,9 +17369,9 @@ Animations.SyncedSettings = {
         "Handshake",
         "handshake",
         AnimationOptions = {
-                EmoteMoving = true,
-                EmoteDuration = 3000,
-                SyncOffsetFront = 0.9,
+            EmoteMoving = true,
+            EmoteDuration = 3000,
+            SyncOffsetFront = 0.9
         }
     },
     ["handshake2"] = {
@@ -16890,8 +17380,8 @@ Animations.SyncedSettings = {
         "Handshake 2",
         "handshake2",
         AnimationOptions = {
-                EmoteMoving = true,
-                EmoteDuration = 3000,
+            EmoteMoving = true,
+            EmoteDuration = 3000
         }
     },
     ["hug"] = {
@@ -16900,8 +17390,8 @@ Animations.SyncedSettings = {
         "Hug",
         "hug",
         AnimationOptions = {
-                EmoteDuration = 5000,
-                SyncOffsetFront = 1.05,
+            EmoteDuration = 5000,
+            SyncOffsetFront = 1.05
         }
     },
     ["hug2"] = {
@@ -16910,8 +17400,8 @@ Animations.SyncedSettings = {
         "Hug 2",
         "hug2",
         AnimationOptions = {
-                EmoteDuration = 5000,
-                SyncOffsetFront = 1.18,
+            EmoteDuration = 5000,
+            SyncOffsetFront = 1.18
         }
     },
     ["hugromantic1"] = {
@@ -16920,8 +17410,8 @@ Animations.SyncedSettings = {
         "Hug Romantic 1",
         "hugromantic1",
         AnimationOptions = {
-                EmoteMoving = false,
-                SyncOffsetFront = 0.52,
+            EmoteMoving = false,
+            SyncOffsetFront = 0.52
         }
     },
     ["hugromantic2"] = {
@@ -16930,8 +17420,8 @@ Animations.SyncedSettings = {
         "Hug Romantic 2",
         "hugromantic2",
         AnimationOptions = {
-                EmoteMoving = false,
-                SyncOffsetFront = 0.52,
+            EmoteMoving = false,
+            SyncOffsetFront = 0.52
         }
     },
     ["bro"] = {
@@ -16940,7 +17430,7 @@ Animations.SyncedSettings = {
         "Bro",
         "bro",
         AnimationOptions = {
-                SyncOffsetFront = 1.14,
+            SyncOffsetFront = 1.14
         }
     },
     ["bro2"] = {
@@ -16949,7 +17439,7 @@ Animations.SyncedSettings = {
         "Bro 2",
         "bro2",
         AnimationOptions = {
-                SyncOffsetFront = 1.14,
+            SyncOffsetFront = 1.14
         }
     },
     ["give"] = {
@@ -16958,8 +17448,8 @@ Animations.SyncedSettings = {
         "Give",
         "give",
         AnimationOptions = {
-                EmoteMoving = true,
-                EmoteDuration = 2000,
+            EmoteMoving = true,
+            EmoteDuration = 2000
         }
     },
     ["give2"] = {
@@ -16968,21 +17458,9 @@ Animations.SyncedSettings = {
         "Give 2",
         "give2",
         AnimationOptions = {
-                EmoteMoving = true,
-                EmoteDuration = 2000,
+            EmoteMoving = true,
+            EmoteDuration = 2000
         }
-    },
-    ["baseball"] = {
-        "anim@arena@celeb@flat@paired@no_props@",
-        "baseball_a_player_a",
-        "Baseball",
-        "baseball",
-    },
-    ["baseballthrow"] = {
-        "anim@arena@celeb@flat@paired@no_props@",
-        "baseball_a_player_b",
-        "Baseball Throw",
-        "baseballthrow",
     },
     ["stickup"] = {
         "random@countryside_gang_fight",
@@ -16990,7 +17468,7 @@ Animations.SyncedSettings = {
         "Stick Up",
         "stickup",
         AnimationOptions = {
-                EmoteMoving = true,
+            EmoteMoving = true
         }
     },
     ["stickupscared"] = {
@@ -16999,41 +17477,21 @@ Animations.SyncedSettings = {
         "Stickup Scared",
         "stickupscared",
         AnimationOptions = {
-                EmoteMoving = true,
+            EmoteMoving = true
         }
     },
-    ["punch"] = {
-        "melee@unarmed@streamed_variations",
-        "plyr_takedown_rear_lefthook",
-        "Punch",
-        "punch",
-    },
-    ["punched"] = {
-        "melee@unarmed@streamed_variations",
-        "victim_takedown_front_cross_r",
-        "Punched",
-        "punched",
-    },
-    ["headbutt"] = {
-        "melee@unarmed@streamed_variations",
-        "plyr_takedown_front_headbutt",
-        "Headbutt",
-        "headbutt",
-    },
-    ["headbutted"] = {
-        "melee@unarmed@streamed_variations",
-        "victim_takedown_front_headbutt",
-        "Headbutted",
-        "headbutted",
-    },
+    ["punch"] = {"melee@unarmed@streamed_variations", "plyr_takedown_rear_lefthook", "Punch", "punch"},
+    ["punched"] = {"melee@unarmed@streamed_variations", "victim_takedown_front_cross_r", "Punched", "punched"},
+    ["headbutt"] = {"melee@unarmed@streamed_variations", "plyr_takedown_front_headbutt", "Headbutt", "headbutt"},
+    ["headbutted"] = {"melee@unarmed@streamed_variations", "victim_takedown_front_headbutt", "Headbutted", "headbutted"},
     ["slap2"] = {
         "melee@unarmed@streamed_variations",
         "plyr_takedown_front_backslap",
         "Slap 2",
         "slap2",
         AnimationOptions = {
-                EmoteMoving = true,
-                EmoteDuration = 2000,
+            EmoteMoving = true,
+            EmoteDuration = 2000
         }
     },
     ["slap"] = {
@@ -17042,29 +17500,19 @@ Animations.SyncedSettings = {
         "Slap",
         "slap",
         AnimationOptions = {
-                EmoteMoving = true,
-                EmoteDuration = 2000,
+            EmoteMoving = true,
+            EmoteDuration = 2000
         }
     },
-    ["slapped"] = {
-        "melee@unarmed@streamed_variations",
-        "victim_takedown_front_slap",
-        "Slapped",
-        "slapped",
-    },
-    ["slapped2"] = {
-        "melee@unarmed@streamed_variations",
-        "victim_takedown_front_backslap",
-        "Slapped 2",
-        "slapped2",
-    },
+    ["slapped"] = {"melee@unarmed@streamed_variations", "victim_takedown_front_slap", "Slapped", "slapped"},
+    ["slapped2"] = {"melee@unarmed@streamed_variations", "victim_takedown_front_backslap", "Slapped 2", "slapped2"},
     ["carry"] = {
         "missfinale_c2mcs_1",
         "fin_c2_mcs_1_camman",
         "Carry",
         "carry",
         AnimationOptions = {
-                EmoteMoving = true,
+            EmoteMoving = true
         }
     },
     ["becarried"] = {
@@ -17073,7 +17521,7 @@ Animations.SyncedSettings = {
         "Be carried",
         "becarried",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["carry2"] = {
@@ -17082,7 +17530,7 @@ Animations.SyncedSettings = {
         "Carry 2",
         "carry2",
         AnimationOptions = {
-                EmoteMoving = true,
+            EmoteMoving = true
         }
     },
     ["becarried2"] = {
@@ -17091,7 +17539,7 @@ Animations.SyncedSettings = {
         "Be carried 2",
         "becarried2",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["carrymecute"] = {
@@ -17100,7 +17548,7 @@ Animations.SyncedSettings = {
         "Carry Me Cute",
         "carrymecute",
         AnimationOptions = {
-                EmoteMoving = true,
+            EmoteMoving = true
         }
     },
     ["carrymecute2"] = {
@@ -17109,7 +17557,7 @@ Animations.SyncedSettings = {
         "Carry Me Cute 2",
         "carrymecute2",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["carrymecute3"] = {
@@ -17118,7 +17566,7 @@ Animations.SyncedSettings = {
         "Carry Me Cute 3",
         "carrymecute3",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["carrymecute4"] = {
@@ -17127,7 +17575,7 @@ Animations.SyncedSettings = {
         "Carry Me Cute 4",
         "carrymecute4",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["bestfriends1"] = {
@@ -17136,7 +17584,7 @@ Animations.SyncedSettings = {
         "Best Friends 1",
         "bestfriends1",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["bestfriends2"] = {
@@ -17145,7 +17593,7 @@ Animations.SyncedSettings = {
         "Best Friends 2",
         "bestfriends2",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["bffpose"] = {
@@ -17154,7 +17602,7 @@ Animations.SyncedSettings = {
         "BFF Pose",
         "bffpose",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["bffpose2"] = {
@@ -17163,7 +17611,7 @@ Animations.SyncedSettings = {
         "BFF Pose 2",
         "bffpose2",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["sitwithme"] = {
@@ -17172,7 +17620,7 @@ Animations.SyncedSettings = {
         "Sit With Me",
         "sitwithme",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["sitwithmeplease?"] = {
@@ -17181,7 +17629,7 @@ Animations.SyncedSettings = {
         "Sit With Me Please?",
         "sitwithmeplease?",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["hugpose"] = {
@@ -17190,7 +17638,7 @@ Animations.SyncedSettings = {
         "Hug Pose",
         "hugpose",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["hugposewithme?"] = {
@@ -17199,7 +17647,7 @@ Animations.SyncedSettings = {
         "Hug Pose With Me?",
         "hugposewithme?",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["hugposetippytoes"] = {
@@ -17208,7 +17656,7 @@ Animations.SyncedSettings = {
         "Hug Pose Tippy Toes",
         "hugposetippytoes",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["hugposetippytoes2"] = {
@@ -17217,7 +17665,7 @@ Animations.SyncedSettings = {
         "Hug Pose Tippy Toes 2",
         "hugposetippytoes2",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["cutepicpose"] = {
@@ -17226,7 +17674,7 @@ Animations.SyncedSettings = {
         "Cute Pic Pose",
         "cutepicpose",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["cutepicpose2"] = {
@@ -17235,7 +17683,7 @@ Animations.SyncedSettings = {
         "Cute Pic Pose 2",
         "cutepicpose2",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["couplehearthands"] = {
@@ -17244,7 +17692,7 @@ Animations.SyncedSettings = {
         "Couple Heart Hands",
         "couplehearthands",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["couplehearthands2"] = {
@@ -17253,7 +17701,7 @@ Animations.SyncedSettings = {
         "Couple Heart Hands 2",
         "couplehearthands2",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["coupleweddingpose1a"] = {
@@ -17262,7 +17710,7 @@ Animations.SyncedSettings = {
         "Couple Wedding Pose 1A",
         "coupleweddingpose1a",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["coupleweddingpose1b"] = {
@@ -17271,7 +17719,7 @@ Animations.SyncedSettings = {
         "Couple Wedding Pose 1B",
         "coupleweddingpose1b",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["coupleweddingpose2a"] = {
@@ -17280,7 +17728,7 @@ Animations.SyncedSettings = {
         "Couple Wedding Pose 2A",
         "coupleweddingpose2a",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["coupleweddingpose2b"] = {
@@ -17289,7 +17737,7 @@ Animations.SyncedSettings = {
         "Couple Wedding Pose 2B",
         "coupleweddingpose2b",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["liftme"] = {
@@ -17298,7 +17746,7 @@ Animations.SyncedSettings = {
         "Lift Me",
         "liftme",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["liftme2"] = {
@@ -17307,7 +17755,7 @@ Animations.SyncedSettings = {
         "Lift Me 2",
         "liftme2",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["liftme3"] = {
@@ -17316,7 +17764,7 @@ Animations.SyncedSettings = {
         "Lift Me 3",
         "liftme3",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["liftme4"] = {
@@ -17325,7 +17773,7 @@ Animations.SyncedSettings = {
         "Lift Me 4",
         "liftme4",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["liftme5"] = {
@@ -17334,7 +17782,7 @@ Animations.SyncedSettings = {
         "Lift Me 5",
         "liftme5",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["liftme6"] = {
@@ -17343,7 +17791,7 @@ Animations.SyncedSettings = {
         "Lift Me 6",
         "liftme6",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["carrysmalldog"] = {
@@ -17352,7 +17800,7 @@ Animations.SyncedSettings = {
         "Carry Small Dog",
         "carrysmalldog",
         AnimationOptions = {
-                EmoteMoving = true,
+            EmoteMoving = true
         }
     },
     ["smalldogcarried"] = {
@@ -17361,7 +17809,7 @@ Animations.SyncedSettings = {
         "Small Dog Carried",
         "smalldogcarried",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["carrysmalldog2"] = {
@@ -17370,7 +17818,7 @@ Animations.SyncedSettings = {
         "Carry Small Dog 2",
         "carrysmalldog2",
         AnimationOptions = {
-                EmoteMoving = true,
+            EmoteMoving = true
         }
     },
     ["smalldogcarried2"] = {
@@ -17379,7 +17827,7 @@ Animations.SyncedSettings = {
         "Small Dog Carried 2",
         "smalldogcarried2",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["carrybigdog"] = {
@@ -17388,7 +17836,7 @@ Animations.SyncedSettings = {
         "Carry Big Dog",
         "carrybigdog",
         AnimationOptions = {
-                EmoteMoving = true,
+            EmoteMoving = true
         }
     },
     ["bigdogcarried"] = {
@@ -17397,7 +17845,7 @@ Animations.SyncedSettings = {
         "Big Dog Carried",
         "bigdogcarried",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["offerpiggyback"] = {
@@ -17406,7 +17854,7 @@ Animations.SyncedSettings = {
         "Offer Piggy Back",
         "offerpiggyback",
         AnimationOptions = {
-                EmoteMoving = true,
+            EmoteMoving = true
         }
     },
     ["bepiggybacked"] = {
@@ -17415,7 +17863,7 @@ Animations.SyncedSettings = {
         "Be Piggy Backed",
         "bepiggybacked",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["givecpr"] = {
@@ -17424,7 +17872,7 @@ Animations.SyncedSettings = {
         "Give CPR",
         "givecpr",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["getcpr"] = {
@@ -17433,7 +17881,7 @@ Animations.SyncedSettings = {
         "Get CPR",
         "getcpr",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["givecpr2"] = {
@@ -17442,7 +17890,7 @@ Animations.SyncedSettings = {
         "Give CPR 2",
         "givecpr2",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["getcpr2"] = {
@@ -17451,7 +17899,7 @@ Animations.SyncedSettings = {
         "Get CPR 2",
         "getcpr2",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["takehostage"] = {
@@ -17460,7 +17908,7 @@ Animations.SyncedSettings = {
         "Take hostage",
         "takehostage",
         AnimationOptions = {
-                EmoteMoving = true,
+            EmoteMoving = true
         }
     },
     ["behostage"] = {
@@ -17469,7 +17917,7 @@ Animations.SyncedSettings = {
         "Be hostage",
         "behostage",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["search"] = {
@@ -17478,8 +17926,8 @@ Animations.SyncedSettings = {
         "Search",
         "search",
         AnimationOptions = {
-                EmoteMoving = true,
-                EmoteDuration = 9700,
+            EmoteMoving = true,
+            EmoteDuration = 9700
         }
     },
     ["besearched"] = {
@@ -17488,8 +17936,8 @@ Animations.SyncedSettings = {
         "Be searched",
         "besearched",
         AnimationOptions = {
-                EmoteMoving = true,
-                EmoteDuration = 9700,
+            EmoteMoving = true,
+            EmoteDuration = 9700
         }
     },
     ["followa(front)"] = {
@@ -17498,7 +17946,7 @@ Animations.SyncedSettings = {
         "Follow A (Front)",
         "followa(front)",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["followb(back)"] = {
@@ -17507,7 +17955,7 @@ Animations.SyncedSettings = {
         "Follow B (Back)",
         "followb(back)",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["kiss"] = {
@@ -17516,8 +17964,8 @@ Animations.SyncedSettings = {
         "Kiss",
         "kiss",
         AnimationOptions = {
-                EmoteDuration = 10000,
-                SyncOffsetFront = 0.08,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.08
         }
     },
     ["kiss2"] = {
@@ -17526,8 +17974,8 @@ Animations.SyncedSettings = {
         "Kiss 2",
         "kiss2",
         AnimationOptions = {
-                EmoteDuration = 10000,
-                SyncOffsetFront = 0.08,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.08
         }
     },
     ["kiss3"] = {
@@ -17536,8 +17984,8 @@ Animations.SyncedSettings = {
         "Kiss 3",
         "kiss3",
         AnimationOptions = {
-                EmoteDuration = 10000,
-                SyncOffsetFront = 0.08,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.08
         }
     },
     ["kiss4"] = {
@@ -17546,8 +17994,8 @@ Animations.SyncedSettings = {
         "Kiss 4",
         "kiss4",
         AnimationOptions = {
-                EmoteDuration = 10000,
-                SyncOffsetFront = 0.08,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.08
         }
     },
     ["kisscute-neck(male)"] = {
@@ -17556,8 +18004,8 @@ Animations.SyncedSettings = {
         "Kiss Cute - Neck (Male)",
         "kisscute-neck(male)",
         AnimationOptions = {
-                EmoteMoving = false,
-                SyncOffsetFront = 0.05,
+            EmoteMoving = false,
+            SyncOffsetFront = 0.05
         }
     },
     ["kisscute-neck(female)"] = {
@@ -17566,8 +18014,8 @@ Animations.SyncedSettings = {
         "Kiss Cute - Neck (Female)",
         "kisscute-neck(female)",
         AnimationOptions = {
-                EmoteMoving = false,
-                SyncOffsetFront = 0.05,
+            EmoteMoving = false,
+            SyncOffsetFront = 0.05
         }
     },
     ["kisscutecheek(male)"] = {
@@ -17576,8 +18024,8 @@ Animations.SyncedSettings = {
         "Kiss Cute Cheek (Male)",
         "kisscutecheek(male)",
         AnimationOptions = {
-                EmoteMoving = false,
-                SyncOffsetFront = 0.05,
+            EmoteMoving = false,
+            SyncOffsetFront = 0.05
         }
     },
     ["kisscutecheek(female)"] = {
@@ -17586,8 +18034,8 @@ Animations.SyncedSettings = {
         "Kiss Cute Cheek (Female)",
         "kisscutecheek(female)",
         AnimationOptions = {
-                EmoteMoving = false,
-                SyncOffsetFront = 0.05,
+            EmoteMoving = false,
+            SyncOffsetFront = 0.05
         }
     },
     ["kissforehead(male)"] = {
@@ -17596,8 +18044,8 @@ Animations.SyncedSettings = {
         "Kiss Forehead (Male)",
         "kissforehead(male)",
         AnimationOptions = {
-                EmoteMoving = false,
-                SyncOffsetFront = 0.05,
+            EmoteMoving = false,
+            SyncOffsetFront = 0.05
         }
     },
     ["kisscutelips(female)"] = {
@@ -17606,7 +18054,7 @@ Animations.SyncedSettings = {
         "Kiss Cute Lips (Female)",
         "kisscutelips(female)",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["kisscutelips(male)"] = {
@@ -17615,7 +18063,7 @@ Animations.SyncedSettings = {
         "Kiss Cute Lips (Male)",
         "kisscutelips(male)",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["kissforehead(female)"] = {
@@ -17624,8 +18072,8 @@ Animations.SyncedSettings = {
         "Kiss Forehead (Female)",
         "kissforehead(female)",
         AnimationOptions = {
-                EmoteMoving = false,
-                SyncOffsetFront = 0.05,
+            EmoteMoving = false,
+            SyncOffsetFront = 0.05
         }
     },
     ["coupledrinking(wineglasses)"] = {
@@ -17634,7 +18082,7 @@ Animations.SyncedSettings = {
         "Couple Drinking (Wine Glasses)",
         "coupledrinking(wineglasses)",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["coupledrinkingf(wineglasses)"] = {
@@ -17643,8 +18091,8 @@ Animations.SyncedSettings = {
         "Couple Drinking F (Wine Glasses)",
         "coupledrinkingf(wineglasses)",
         AnimationOptions = {
-                EmoteMoving = false,
-                SyncOffsetFront = 0.11,
+            EmoteMoving = false,
+            SyncOffsetFront = 0.11
         }
     },
     ["holdme"] = {
@@ -17653,7 +18101,7 @@ Animations.SyncedSettings = {
         "Hold Me",
         "holdme",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["beheld"] = {
@@ -17662,7 +18110,7 @@ Animations.SyncedSettings = {
         "Be Held",
         "beheld",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["holdme2"] = {
@@ -17671,7 +18119,7 @@ Animations.SyncedSettings = {
         "Hold Me 2",
         "holdme2",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["beheld2"] = {
@@ -17680,7 +18128,7 @@ Animations.SyncedSettings = {
         "Be Held 2",
         "beheld2",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["holdme3"] = {
@@ -17689,7 +18137,7 @@ Animations.SyncedSettings = {
         "Hold Me 3",
         "holdme3",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
     },
     ["beheld3"] = {
@@ -17698,7 +18146,8 @@ Animations.SyncedSettings = {
         "Be Held 3",
         "beheld3",
         AnimationOptions = {
-                EmoteMoving = false,
+            EmoteMoving = false
         }
-    },
+    }
 }
+
