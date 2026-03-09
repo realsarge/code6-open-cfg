@@ -1,5 +1,3 @@
--- Verified 57 pages
-
 Animations = {}
 
 Animations.List = {
@@ -1618,19 +1616,6 @@ Animations.List = {
         Secondprop = "prop_champ_cool",
         SecondpropPos = {0.0, 0.0, 0.01, 0.0, 0.0, 0.0}
     },
-    ["selfiesit"] = {
-        category = "prop",
-        label = "Selfie sit",
-        animDict = "mouse@female_sitting_selfie",
-        animName = "female_sitting_selfie_clip",
-        animFlag = 51,
-        bone = 57005,
-        prop = "prop_phone_ing",
-        propPos = {0.138, 0.03, -0.043, -111.0946, -117.8069, 11.7386},
-        SecondpropBone = 0,
-        Secondprop = "apa_mp_h_stn_chairarm_23",
-        SecondpropPos = {-0.01, -0.08, -0.68, -180.0, -180.0, 10.0}
-    },
     ["selfiefloor3"] = {
         category = "prop",
         label = "Selfie floor 3",
@@ -1644,19 +1629,6 @@ Animations.List = {
         Secondprop = "prop_phone_ing",
         SecondpropPos = {-0.01, 0.0, 0.02, -80.0, 0.0, -20.0}
     },
-    ["selfiefu3"] = {
-        category = "prop",
-        label = "Selfie fu 3",
-        animDict = "selfiekilye@queensisters",
-        animName = "kilye_clip",
-        animFlag = 51,
-        bone = 28422,
-        prop = "prop_cs_dildo_01",
-        propPos = {0.045, 0.005, -0.015, 92.081, 1.3049, -2.8863},
-        SecondpropBone = 26613,
-        Secondprop = "prop_phone_ing",
-        SecondpropPos = {0.065, -0.028, 0.044, 10.6808, 13.7526, 2.6457}
-    },
     ["selfiewine"] = {
         category = "prop",
         label = "Selfie wine",
@@ -1669,45 +1641,6 @@ Animations.List = {
         SecondpropBone = 4090,
         Secondprop = "prop_phone_ing",
         SecondpropPos = {0.025, -0.008, -0.005, -140.5541, -24.7476, 13.7795}
-    },
-    ["sitchairf6"] = {
-        category = "prop",
-        label = "Sit chair f6",
-        animDict = "mouse@female_sitting_laptop",
-        animName = "female_sitting_laptop_clip",
-        animFlag = 51,
-        bone = 57005,
-        prop = "ba_prop_club_laptop_dj_02",
-        propPos = {0.086, -0.137, -0.175, -79.9999, -90.0, 0.0},
-        SecondpropBone = 0,
-        Secondprop = "ba_prop_battle_club_chair_02",
-        SecondpropPos = {-0.04, -0.19, 0.0, -180.0, -180.0, 9.0999}
-    },
-    ["sitchairf7"] = {
-        category = "prop",
-        label = "Sit chair f7",
-        animDict = "mouse@female_sitting_tablet",
-        animName = "female_sitting_tablet_clip",
-        animFlag = 51,
-        bone = 28422,
-        prop = "hei_prop_dlc_tablet",
-        propPos = {0.087, 0.103, -0.124, 144.354, 157.8527, -4.6318},
-        SecondpropBone = 0,
-        Secondprop = "ba_prop_battle_club_chair_02",
-        SecondpropPos = {0.01, -0.08, 0.02, 150.0, -180.0, 10.0}
-    },
-    ["sitchairf8"] = {
-        category = "prop",
-        label = "Sit chair f8",
-        animDict = "mouse@female_sitting_tablet",
-        animName = "female_sitting_tablet_clip",
-        animFlag = 51,
-        bone = 28422,
-        prop = "v_ilev_mp_bedsidebook",
-        propPos = {0.13, 0.11, -0.12, 120.3356, -15.9891, 26.1497},
-        SecondpropBone = 0,
-        Secondprop = "ba_prop_battle_club_chair_02",
-        SecondpropPos = {0.01, -0.08, 0.02, 150.0, -180.0, 10.0}
     },
     ["dig"] = {
         category = "prop",
@@ -1763,7 +1696,7 @@ Animations.List = {
     },
     ["patrolf4"] = {
         category = "prop",
-        label = "Torch - 1",
+        label = "Flashlight - 1",
         animDict = "amb@incar@male@patrol@torch@base",
         animName = "base",
         animFlag = 51,
@@ -2225,15 +2158,6 @@ Animations.List = {
         bone = 28422,
         prop = "prop_fire_exting_1a",
         propPos = {0.15, 0.14, -0.52, 179.7874004, -178.5954846, 4.5961806}
-    },
-    ["takeoffmask"] = {
-        category = "prop",
-        label = "Take Off Mask",
-        animDict = "anim@scripted@bty5@ig1_intimidate_actor@female_heeled@",
-        animName = "mask_action_b",
-        animFlag = 1,
-        bone = 28422,
-        prop = ""
     },
     ["birthdaycake"] = {
         category = "prop",
@@ -5347,7 +5271,7 @@ Animations.List = {
     },
     ["taggingshakecanmale"] = {
         category = "prop",
-        label = "Tagging Shake Can Male",
+        label = "Graffiti Shake Can Male",
         animDict = "anim@scripted@freemode@postertag@graffiti_spray@male@",
         animName = "shake_can_male",
         animFlag = 1,
@@ -5357,7 +5281,7 @@ Animations.List = {
     },
     ["taggingshakecanfemale"] = {
         category = "prop",
-        label = "Tagging Shake Can Female",
+        label = "Graffiti Shake Can Female",
         animDict = "anim@scripted@freemode@postertag@graffiti_spray@heeled@",
         animName = "shake_can_female",
         animFlag = 1,
@@ -5367,7 +5291,7 @@ Animations.List = {
     },
     ["taggingmale1"] = {
         category = "prop",
-        label = "Tagging Male 1",
+        label = "Graffiti Male 1",
         animDict = "anim@scripted@freemode@postertag@graffiti_spray@male@",
         animName = "spray_can_var_01_male",
         animFlag = 1,
@@ -5377,7 +5301,7 @@ Animations.List = {
     },
     ["taggingmale2"] = {
         category = "prop",
-        label = "Tagging Male 2",
+        label = "Graffiti Male 2",
         animDict = "anim@scripted@freemode@postertag@graffiti_spray@male@",
         animName = "spray_can_var_02_male",
         animFlag = 1,
@@ -5387,7 +5311,7 @@ Animations.List = {
     },
     ["taggingfemale1"] = {
         category = "prop",
-        label = "Tagging Female 1",
+        label = "Graffiti Female 1",
         animDict = "anim@scripted@freemode@postertag@graffiti_spray@heeled@",
         animName = "spray_can_var_01_female",
         animFlag = 1,
@@ -5397,7 +5321,7 @@ Animations.List = {
     },
     ["taggingfemale2"] = {
         category = "prop",
-        label = "Tagging Female 2",
+        label = "Graffiti Female 2",
         animDict = "anim@scripted@freemode@postertag@graffiti_spray@heeled@",
         animName = "spray_can_var_02_female",
         animFlag = 1,
@@ -5407,7 +5331,7 @@ Animations.List = {
     },
     ["tagging7"] = {
         category = "prop",
-        label = "Tagging 7",
+        label = "Graffiti 7",
         animDict = "anim@scripted@freemode@tagcoll_ig_postertag@heeled@",
         animName = "postertag",
         animFlag = 1,
@@ -5785,16 +5709,6 @@ Animations.List = {
         prop = "prop_toilet_roll_01",
         propPos = {0.07, -0.02, -0.21, 0.0, 0.0, 0.0, 0.0}
     },
-    ["shitwhilewalking"] = {
-        category = "prop",
-        label = "Shit While Walking",
-        animDict = "missfbi3ig_0",
-        animName = "nill",
-        animFlag = 1,
-        bone = 28422,
-        prop = "prop_toilet_roll_01",
-        propPos = {0.07, -0.02, -0.21, 0.0, 0.0, 0.0, 0.0}
-    },
     ["selfie"] = {
         category = "prop",
         label = "Selfie",
@@ -6025,16 +5939,6 @@ Animations.List = {
         prop = "prop_phone_ing",
         propPos = {0.093, 0.023, 0.026, -158.8271, -82.904, -18.7472}
     },
-    ["selfiefloor2"] = {
-        category = "prop",
-        label = "Selfie Floor 2",
-        animDict = "anim@female_selfie_04",
-        animName = "f_selfie_04_clip",
-        animFlag = 1,
-        bone = 4185,
-        prop = "prop_phone_ing",
-        propPos = {0.017, -0.01, 0.02, -27.358, 54.9374, -6.1611}
-    },
     ["selfie&wine"] = {
         category = "prop",
         label = "Selfie & Wine",
@@ -6154,36 +6058,6 @@ Animations.List = {
         bone = 26613,
         prop = "prop_phone_ing",
         propPos = {0.068, -0.025, 0.034, -13.4299, 47.2288, -14.9588}
-    },
-    ["selfiehearthands"] = {
-        category = "prop",
-        label = "Selfie Heart Hands",
-        animDict = "heartselfiemirror@queensisters",
-        animName = "heartselfie_clip",
-        animFlag = 1,
-        bone = 64096,
-        prop = "prop_phone_ing",
-        propPos = {0.039, 0.02, 0.033, 90.0, 180.0, 13.0}
-    },
-    ["selfiemiddlefinger2"] = {
-        category = "prop",
-        label = "Selfie Middle Finger 2",
-        animDict = "fuckyouselfie@queensisters",
-        animName = "mirrorselfie_clip",
-        animFlag = 1,
-        bone = 64097,
-        prop = "prop_phone_ing",
-        propPos = {-0.021, 0.03, -0.003, -180.0, -180.0, 0.0}
-    },
-    ["selfiemiddlefingerthotpose"] = {
-        category = "prop",
-        label = "Selfie Middle Finger Thot Pose",
-        animDict = "selfiekilye@queensisters",
-        animName = "kilye_clip",
-        animFlag = 1,
-        bone = 28422,
-        prop = "prop_cs_dildo_01",
-        propPos = {0.045, 0.005, -0.015, 92.081, 1.3049, -2.8863}
     },
     ["selfiemalepose"] = {
         category = "prop",
@@ -7297,7 +7171,7 @@ Animations.List = {
     },
     ["patrol-onfoot"] = {
         category = "prop",
-        label = "Torch - 2",
+        label = "Flashlight - 2",
         animDict = "amb@world_human_security_shine_torch@male@base",
         animName = "base",
         animFlag = 1,
@@ -7307,7 +7181,7 @@ Animations.List = {
     },
     ["patrol-onfoot2"] = {
         category = "prop",
-        label = "Torch - 3",
+        label = "Flashlight - 3",
         animDict = "amb@world_human_security_shine_torch@male@idle_b",
         animName = "idle_e",
         animFlag = 1,
@@ -7317,7 +7191,7 @@ Animations.List = {
     },
     ["patrol-onfoot3"] = {
         category = "prop",
-        label = "Torch - 4",
+        label = "Flashlight - 4",
         animDict = "amb@world_human_security_shine_torch@male@idle_a",
         animName = "idle_a",
         animFlag = 1,
@@ -7327,7 +7201,7 @@ Animations.List = {
     },
     ["patrolcar-front"] = {
         category = "prop",
-        label = "Torch - Car Front",
+        label = "Flashlight - Car Front",
         animDict = "amb@incar@male@patrol@torch@base",
         animName = "base",
         animFlag = 1,
@@ -7357,7 +7231,7 @@ Animations.List = {
     },
     ["patrolcar-left"] = {
         category = "prop",
-        label = "Torch - Car Left",
+        label = "Flashlight - Car Left",
         animDict = "amb@incar@male@patrol@torch@idle_b",
         animName = "idle_d",
         animFlag = 1,
@@ -7367,7 +7241,7 @@ Animations.List = {
     },
     ["patrolcar-right"] = {
         category = "prop",
-        label = "Torch - Car Right",
+        label = "Flashlight - Car Right",
         animDict = "amb@incar@male@patrol@torch@idle_a",
         animName = "idle_a",
         animFlag = 1,
@@ -8857,83 +8731,11 @@ Animations.List = {
         animFlag = 1,
         can_shared = true
     },
-    ["filmshocking"] = {
-        label = "filmshocking",
-        category = "party",
-        animDict = "WORLD_HUMAN_MOBILE_FILM_SHOCKING",
-        animName = "Film Shocking",
-        animFlag = 1,
-        can_shared = true
-    },
     ["medic"] = {
         label = "medic",
         category = "sport",
         animDict = "CODE_HUMAN_MEDIC_TEND_TO_DEAD",
         animName = "Medic",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["texting"] = {
-        label = "texting",
-        category = "help",
-        animDict = "WORLD_HUMAN_STAND_MOBILE",
-        animName = "Texting",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["smoke"] = {
-        label = "smoke",
-        category = "party",
-        animDict = "WORLD_HUMAN_SMOKING",
-        animName = "Smoke",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["smokeweed"] = {
-        label = "smokeweed",
-        category = "help",
-        animDict = "WORLD_HUMAN_DRUG_DEALER",
-        animName = "Smoke Weed (Male)",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["smokeweed2"] = {
-        label = "smokeweed2",
-        category = "sport",
-        animDict = "WORLD_HUMAN_SMOKING_POT",
-        animName = "Smoke Weed (Female)",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["statue"] = {
-        label = "statue",
-        category = "other",
-        animDict = "WORLD_HUMAN_HUMAN_STATUE",
-        animName = "Statue",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["weld"] = {
-        label = "weld",
-        category = "main",
-        animDict = "WORLD_HUMAN_WELDING",
-        animName = "Weld",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["windowshop"] = {
-        label = "windowshop",
-        category = "stand",
-        animDict = "WORLD_HUMAN_WINDOW_SHOP_BROWSE",
-        animName = "Window Shop",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["yoga"] = {
-        label = "yoga",
-        category = "sport",
-        animDict = "WORLD_HUMAN_YOGA",
-        animName = "Yoga",
         animFlag = 1,
         can_shared = true
     },
@@ -11001,14 +10803,6 @@ Animations.List = {
         animFlag = 1,
         can_shared = true
     },
-    ["sitcute"] = {
-        label = "Sit Cute",
-        category = "stand",
-        animDict = "sitkylie@queensisters",
-        animName = "kylie_clip",
-        animFlag = 1,
-        can_shared = true
-    },
     ["situp"] = {
         label = "Sit Up",
         category = "stand",
@@ -11062,14 +10856,6 @@ Animations.List = {
         category = "party",
         animDict = "anim@mp_player_intcelebrationmale@slow_clap",
         animName = "slow_clap",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["smell"] = {
-        label = "Smell",
-        category = "other",
-        animDict = "move_p_m_two_idles@generic",
-        animName = "fidget_sniff_fingers",
         animFlag = 1,
         can_shared = true
     },
@@ -12118,14 +11904,6 @@ Animations.List = {
         category = "stand",
         animDict = "anim@amb@casino@valet_scenario@pose_d@",
         animName = "base_a_m_y_vinewood_01",
-        animFlag = 1,
-        can_shared = true
-    },
-    ["tighten(yoga)"] = {
-        label = "Tighten (Yoga)",
-        category = "sport",
-        animDict = "timetable@denice@ig_1",
-        animName = "idle_b",
         animFlag = 1,
         can_shared = true
     },
@@ -16065,36 +15843,6 @@ Animations.List = {
         animName = "base",
         animFlag = 1
     },
-    ["shopbag"] = {
-        label = "Shopping Bag",
-        category = "prop",
-        animDict = "move_weapon@jerrycan@generic",
-        animName = "idle",
-        animFlag = 1,
-        bone = 28422,
-        prop = "vw_prop_casino_shopping_bag_01a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
-    },
-    ["shopbag2"] = {
-        label = "Shopping Bag 2",
-        category = "prop",
-        animDict = "move_weapon@jerrycan@generic",
-        animName = "idle",
-        animFlag = 1,
-        bone = 28422,
-        prop = "prop_shopping_bags02",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
-    },
-    ["shopbag3"] = {
-        label = "Shopping Bag 3",
-        category = "prop",
-        animDict = "move_weapon@jerrycan@generic",
-        animName = "idle",
-        animFlag = 1,
-        bone = 28422,
-        prop = "prop_cs_shopping_bag",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
-    },
     ["shopbag4"] = {
         label = "Shopping Bag 3",
         category = "prop",
@@ -16301,13 +16049,6 @@ Animations.List = {
         animName = "sleeping_idle",
         animFlag = 1
     },
-    ["smokepot"] = {
-        label = "Smoke Weed (Female)",
-        category = "other",
-        animDict = "Scenario",
-        animName = "WORLD_HUMAN_SMOKING_POT",
-        animFlag = 1
-    },
     ["soda"] = {
         label = "Soda",
         category = "prop",
@@ -16324,96 +16065,6 @@ Animations.List = {
         animDict = "missexile3",
         animName = "ex03_train_roof_idle",
         animFlag = 1
-    },
-    ["ssign"] = {
-        label = "Steal Stop Sign ",
-        category = "prop",
-        animDict = "rcmnigel1d",
-        animName = "base_club_shoulder",
-        animFlag = 1,
-        bone = 60309,
-        prop = "prop_sign_road_01a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
-    },
-    ["ssign2"] = {
-        label = "Steal Yield Sign ",
-        category = "prop",
-        animDict = "rcmnigel1d",
-        animName = "base_club_shoulder",
-        animFlag = 1,
-        bone = 60309,
-        prop = "prop_sign_road_02a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
-    },
-    ["ssign3"] = {
-        label = "Steal Hospital Sign ",
-        category = "prop",
-        animDict = "rcmnigel1d",
-        animName = "base_club_shoulder",
-        animFlag = 1,
-        bone = 60309,
-        prop = "prop_sign_road_03d",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
-    },
-    ["ssign4"] = {
-        label = "Steal Parking Sign ",
-        category = "prop",
-        animDict = "rcmnigel1d",
-        animName = "base_club_shoulder",
-        animFlag = 1,
-        bone = 60309,
-        prop = "prop_sign_road_04a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
-    },
-    ["ssign5"] = {
-        label = "Steal Parking Sign 2 ",
-        category = "prop",
-        animDict = "rcmnigel1d",
-        animName = "base_club_shoulder",
-        animFlag = 1,
-        bone = 60309,
-        prop = "prop_sign_road_04w",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
-    },
-    ["ssign6"] = {
-        label = "Steal Pedestrian Sign ",
-        category = "prop",
-        animDict = "rcmnigel1d",
-        animName = "base_club_shoulder",
-        animFlag = 1,
-        bone = 60309,
-        prop = "prop_sign_road_05a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
-    },
-    ["ssign7"] = {
-        label = "Steal Street Sign ",
-        category = "prop",
-        animDict = "rcmnigel1d",
-        animName = "base_club_shoulder",
-        animFlag = 1,
-        bone = 60309,
-        prop = "prop_sign_road_05t",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
-    },
-    ["ssign8"] = {
-        label = "Steal Freeway Sign ",
-        category = "prop",
-        animDict = "rcmnigel1d",
-        animName = "base_club_shoulder",
-        animFlag = 1,
-        bone = 60309,
-        prop = "prop_sign_freewayentrance",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
-    },
-    ["ssign9"] = {
-        label = "Steal Stop Sign Snow ",
-        category = "prop",
-        animDict = "rcmnigel1d",
-        animName = "base_club_shoulder",
-        animFlag = 1,
-        bone = 60309,
-        prop = "prop_snow_sign_road_01a",
-        propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["stickup2"] = {
         label = "Stick Up",
@@ -16455,20 +16106,6 @@ Animations.List = {
         category = "other",
         animDict = "amb@world_human_sunbathe@female@back@base",
         animName = "base",
-        animFlag = 1
-    },
-    ["sunbathe3"] = {
-        label = "Sunbathe 3",
-        category = "other",
-        animDict = "Scenario",
-        animName = "WORLD_HUMAN_SUNBATHE",
-        animFlag = 1
-    },
-    ["sunbatheback"] = {
-        label = "Sunbathe Back",
-        category = "other",
-        animDict = "Scenario",
-        animName = "WORLD_HUMAN_SUNBATHE_BACK",
         animFlag = 1
     },
     ["swat"] = {
@@ -16605,7 +16242,7 @@ Animations.List = {
         animFlag = 1
     },
     ["tag"] = {
-        label = "Tagging Shake Can Male",
+        label = "Graffiti Shake Can Male",
         category = "prop",
         animDict = "anim@scripted@freemode@postertag@graffiti_spray@male@",
         animName = "shake_can_male",
@@ -16615,7 +16252,7 @@ Animations.List = {
         propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["tag2"] = {
-        label = "Tagging Shake Can Female",
+        label = "Graffiti Shake Can Female",
         category = "prop",
         animDict = "anim@scripted@freemode@postertag@graffiti_spray@heeled@",
         animName = "shake_can_female",
@@ -16625,7 +16262,7 @@ Animations.List = {
         propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["tag3"] = {
-        label = "Tagging Male 1",
+        label = "Graffiti Male 1",
         category = "prop",
         animDict = "anim@scripted@freemode@postertag@graffiti_spray@male@",
         animName = "spray_can_var_01_male",
@@ -16635,7 +16272,7 @@ Animations.List = {
         propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["tag4"] = {
-        label = "Tagging Male 2",
+        label = "Graffiti Male 2",
         category = "prop",
         animDict = "anim@scripted@freemode@postertag@graffiti_spray@male@",
         animName = "spray_can_var_02_male",
@@ -16645,7 +16282,7 @@ Animations.List = {
         propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["tag5"] = {
-        label = "Tagging Female 1",
+        label = "Graffiti Female 1",
         category = "prop",
         animDict = "anim@scripted@freemode@postertag@graffiti_spray@heeled@",
         animName = "spray_can_var_01_female",
@@ -16655,7 +16292,7 @@ Animations.List = {
         propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["tag6"] = {
-        label = "Tagging Female 2",
+        label = "Graffiti Female 2",
         category = "prop",
         animDict = "anim@scripted@freemode@postertag@graffiti_spray@heeled@",
         animName = "spray_can_var_02_female",
@@ -16665,7 +16302,7 @@ Animations.List = {
         propPos = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
     },
     ["tape"] = {
-        label = "Briefcase 2",
+        label = "Tape",
         category = "prop",
         animDict = "missheistdocksprep1hold_cellphone",
         animName = "static",
@@ -16675,7 +16312,7 @@ Animations.List = {
         propPos = {0.18, 0.04, 0.0, -30.0, -10.0, -50.0}
     },
     ["tighten"] = {
-        label = "Tigten (Yoga)",
+        label = "Tighten (Yoga)",
         category = "other",
         animDict = "timetable@denice@ig_1",
         animName = "idle_b",
@@ -16689,7 +16326,7 @@ Animations.List = {
         animFlag = 1
     },
     ["torch"] = {
-        label = "Torch 1",
+        label = "Flashlight 1",
         category = "prop",
         animDict = "export@torching",
         animName = "torching",
@@ -16699,7 +16336,7 @@ Animations.List = {
         propPos = {0.05, 0.0, -0.03, 10.0, 0.0, 0.0}
     },
     ["torch2"] = {
-        label = "Torch 2",
+        label = "Flashlight 2",
         category = "prop",
         animDict = "amb@world_human_security_shine_torch@male@base",
         animName = "base",
@@ -16709,7 +16346,7 @@ Animations.List = {
         propPos = {0.10, 0.0, 0.03, 10.0, 0.0, 110.0}
     },
     ["torch3"] = {
-        label = "Torch 3",
+        label = "Flashlight 3",
         category = "prop",
         animDict = "amb@world_human_security_shine_torch@male@idle_a",
         animName = "idle_a",
@@ -16793,16 +16430,6 @@ Animations.List = {
         animDict = "anim@amb@casino@hangout@ped_male@stand@03b@base",
         animName = "base",
         animFlag = 1
-    },
-    ["warrant"] = {
-        label = "Warrant",
-        category = "prop",
-        animDict = "export@badgepd2",
-        animName = "badgepd2",
-        animFlag = 1,
-        bone = 18905,
-        prop = "p_amb_clipboard_02",
-        propPos = {0.06, 0.0, 0.04, 5.0, 90.0, 270.0}
     },
     ["water"] = {
         label = "Water",
