@@ -43,7 +43,7 @@ local SETTINGS = {
             x = 0.275,
             y = -0.15,
             z = 0.15,
-            x_rotation = 90.0, 
+            x_rotation = 180.0, 
             y_rotation = 20.0,
             z_rotation = 160.0
         },
