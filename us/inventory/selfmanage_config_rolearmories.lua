@@ -1,6 +1,272 @@
+Config.RoleLockers = {
+    enabled = true,
+    slots = 80,
+    weight = 250000,
+    roles = {
+        civ = { label = 'Civilian Locker' },
+        pd = { label = 'Police Locker' },
+        so = { label = 'Sheriff Locker' },
+        hp = { label = 'Highway Patrol Locker' },
+        fd = { label = 'Fire / Safety Locker' },
+        dot = { label = 'DOT Locker' },
+        dispatch = { label = 'Dispatch Locker' },
+        fib = { label = 'FIB Locker' },
+        admin = { label = 'Admin Locker' },
+    },
+}
+
+Config.DefaultItems = {
+    enabled = true,
+    items = {
+        { name = 'phone', count = 1, unique = true },
+    },
+}
+
+local function armoryWeaponMetadata(roleArmory, extra)
+    local metadata = {
+        registered = true,
+        roleArmory = roleArmory,
+    }
+
+    if extra then
+        for key, value in pairs(extra) do
+            if type(value) == 'table' then
+                metadata[key] = {}
+                for childKey, childValue in pairs(value) do
+                    metadata[key][childKey] = childValue
+                end
+            else
+                metadata[key] = value
+            end
+        end
+    end
+
+    return metadata
+end
+
+local taserGreen = { tint = 1, weapontint = 'Green' }
+local taserGold = { tint = 2, weapontint = 'Gold' }
+local pistolLight = { components = { 'at_flashlight' } }
+local riflePatrol = { components = { 'at_flashlight', 'at_grip' } }
+
 Config.RoleArmories = {
     enabled = true,
     command = 'rolearmory',
+    unrestrictedRoles = {
+        civ = true,
+    },
+    target = {
+        enabled = true,
+        icon = 'fas fa-shield-halved',
+        label = 'Арсенал',
+        distance = 2.0,
+    },
+    marker = {
+        enabled = true,
+        drawDistance = 25.0,
+        type = 1,
+        scale = vector3(0.9, 0.9, 0.18),
+        color = { r = 66, g = 135, b = 245, a = 130 },
+    },
+    blip = {
+        enabled = true,
+        sprite = 110,
+        color = 38,
+        scale = 0.72,
+        shortRange = true,
+        name = 'Арсенал департамента',
+    },
+    locations = {
+        {
+            label = 'LSPD Mission Row',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(454.94, -996.26, 30.71),
+            radius = 3.0,
+        },
+        {
+            label = 'LSPD Alta',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(118.19, -350.07, 39.98),
+            radius = 3.0,
+        },
+        {
+            label = 'FIB HQ',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(118.45, -729.03, 242.15),
+            radius = 3.0,
+        },
+        {
+            label = 'NPS Los Santos',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(384.5, 799.5, 187.68),
+            radius = 3.0,
+        },
+        {
+            label = 'NPS Paleto Bay',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(-1487.27, 4980.99, 63.79),
+            radius = 3.0,
+        },
+        {
+            label = 'LSSD Davis',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(366.99, -1606.82, 29.29),
+            radius = 3.0,
+        },
+        {
+            label = 'LSSD Sandy Shores',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(1840.37, 3683.21, 38.93),
+            radius = 3.0,
+        },
+        {
+            label = 'LSSD Paleto',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(-430.34, 5999.04, 31.72),
+            radius = 3.0,
+        },
+        {
+            label = 'LSSD Harmony',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(1068.15, 2728.95, 38.66),
+            radius = 3.0,
+        },
+        {
+            label = 'SAHP HQ',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(834.92, -1295.36, 24.32),
+            radius = 3.0,
+        },
+        {
+            label = 'SAHP Grapeseed',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(2808.27, 4726.46, 47.89),
+            radius = 3.0,
+        },
+        {
+            label = 'LSCOFD Sandy Shores',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(1682.5, 3583.72, 35.63),
+            radius = 3.0,
+        },
+        {
+            label = 'LSCOFD Paleto',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(-363.91, 6108.13, 31.63),
+            radius = 3.0,
+        },
+        {
+            label = 'LSCOFD Grapeseed',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(1656.82, 4964.1, 42.42),
+            radius = 3.0,
+        },
+        {
+            label = 'LSCOFD El Burro',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(1194.95, -1477.59, 34.86),
+            radius = 3.0,
+        },
+        {
+            label = 'LSCOFD Davis',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(198.59, -1650.61, 30.08),
+            radius = 3.0,
+        },
+        {
+            label = 'LSCOFD Fleet',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(152.59, 2764.15, 43.58),
+            radius = 3.0,
+        },
+        {
+            label = 'LSFD Little Seoul',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(-827.41, -798.6, 19.18),
+            radius = 3.0,
+        },
+        {
+            label = 'LSFD Richman',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(-1702.15, 49.8, 67.55),
+            radius = 3.0,
+        },
+        {
+            label = 'DOT Paleto Bay',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(-290.33, 6114.36, 31.55),
+            radius = 3.0,
+        },
+        {
+            label = 'DOT Harmony',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(936.92, 2715.72, 40.3),
+            radius = 3.0,
+        },
+    },
     roles = {
         civ = {
             label = 'Ammu-Nation',
@@ -44,10 +310,9 @@ Config.RoleArmories = {
                 { name = 'WEAPON_TASER7', metadata = armoryWeaponMetadata('Police Armory', taserGreen) },
                 { name = 'WEAPON_COMBATPISTOL', metadata = armoryWeaponMetadata('Police Armory', pistolLight) },
                 { name = 'WEAPON_CARBINERIFLE', metadata = armoryWeaponMetadata('Police Armory', riflePatrol) },
-                { name = 'WEAPON_LSPD40MM' },
+                { name = 'WEAPON_LESSLAUNCHER' },
                 { name = 'WEAPON_LSSD40MM' },
                 { name = 'WEAPON_GRENADELAUNCHER_SMOKE' },
-                { name = 'WEAPON_LESSLAUNCHER' },
                 { name = 'WEAPON_LSPDBB' },
                 { name = 'WEAPON_LSSDBB' },
                 { name = 'WEAPON_FLASHBANG_MYRES' },
@@ -74,7 +339,6 @@ Config.RoleArmories = {
                 { name = 'WEAPON_AR15_BCSO', metadata = armoryWeaponMetadata('Sheriff Armory', riflePatrol) },
                 { name = 'WEAPON_BCSO40MM' },
                 { name = 'WEAPON_GRENADELAUNCHER_SMOKE' },
-                { name = 'WEAPON_LESSLAUNCHER' },
                 { name = 'WEAPON_BEANBAG' },
                 { name = 'WEAPON_FLASHBANG_MYRES' },
             },
