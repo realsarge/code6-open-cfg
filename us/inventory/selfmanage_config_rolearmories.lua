@@ -471,6 +471,9 @@ Config.RoleArmories = {
                 { name = 'WEAPON_HYDRANT' },
                 { name = 'WEAPON_REELBRANCH' },
                 { name = 'WEAPON_FOAMBRANCH' },
+                { name = 'WEAPON_SPREADER' },
+                { name = 'WEAPON_CUTTER' },
+                { name = 'WEAPON_GLASSMASTER' },
             },
         },
         dot = {
