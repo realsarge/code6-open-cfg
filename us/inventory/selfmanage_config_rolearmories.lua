@@ -146,6 +146,42 @@ local taserGold = { tint = 2, weapontint = 'Gold' }
 local pistolLight = { components = { 'at_flashlight' } }
 local riflePatrol = { components = { 'at_flashlight', 'at_grip' } }
 local shotgunPatrol = { components = { 'at_flashlight' } }
+local lawEnforcementAttachments = {
+    { name = 'at_flashlight' },
+    { name = 'at_grip' },
+    { name = 'at_suppressor_light' },
+    { name = 'at_suppressor_heavy' },
+    { name = 'at_clip_extended_pistol' },
+    { name = 'at_clip_extended_smg' },
+    { name = 'at_clip_extended_shotgun' },
+    { name = 'at_clip_extended_rifle' },
+    { name = 'at_compensator' },
+    { name = 'at_barrel' },
+    { name = 'at_scope_holo' },
+    { name = 'at_scope_macro' },
+    { name = 'at_scope_small' },
+    { name = 'at_scope_medium' },
+    { name = 'at_scope_large' },
+    { name = 'at_scope_advanced' },
+    { name = 'at_scope_nv' },
+    { name = 'at_scope_thermal' },
+    { name = 'at_muzzle_tactical' },
+    { name = 'at_muzzle_precision' },
+    { name = 'at_muzzle_heavy' },
+    { name = 'at_muzzle_slanted' },
+}
+
+local function appendArmoryItems(roleNames, items)
+    for _, roleName in ipairs(roleNames) do
+        local role = Config.RoleArmories.roles[roleName]
+
+        if role and role.items then
+            for _, item in ipairs(items) do
+                role.items[#role.items + 1] = item
+            end
+        end
+    end
+end
 
 Config.RoleArmories = {
     enabled = true,
@@ -579,3 +615,5 @@ Config.RoleArmories = {
         },
     },
 }
+
+appendArmoryItems({ 'pd', 'so', 'hp', 'fib' }, lawEnforcementAttachments)
