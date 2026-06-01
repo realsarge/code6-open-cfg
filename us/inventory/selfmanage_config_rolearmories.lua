@@ -1,4 +1,3 @@
-
 Config.ItemTemplates = {
     commands = {
         create = 'itemcreate',
@@ -40,7 +39,7 @@ Config.InventorySearch = {
     },
     targetIcon = 'fas fa-box-open',
     targetLabel = 'Обыскать',
-    targetDistance = 2.0,
+    targetDistance = 1.5,
 }
 
 Config.Radial = {
@@ -78,6 +77,45 @@ Config.DefaultItems = {
     enabled = true,
     items = {
         { name = 'phone', count = 1, unique = true },
+    },
+}
+
+Config.TerminalDocuments = {
+    enabled = GetConvarInt('code6:terminalDocumentsEnabled', 1) == 1,
+    path = GetConvar('code6:terminalDocumentsPath', '/code6-selfmanage/documents/print'),
+    secret = GetConvar('code6:terminalDocumentsSecret', ''),
+    allowedIps = {
+        GetConvar('code6:terminalDocumentsIp1', ''),
+        GetConvar('code6:terminalDocumentsIp2', ''),
+    },
+    requiredRole = 'civ',
+    baseItem = 'custom_document',
+    issuer = GetConvar('code6:terminalDocumentsIssuer', 'DMV'),
+    maxCopies = GetConvarInt('code6:terminalDocumentsMaxCopies', 5),
+    defaultImage = 'card_id.png',
+    images = {
+        official_id = GetConvar('code6:terminalDocumentsImageId', 'code6_id'),
+        driver_license = GetConvar('code6:terminalDocumentsImageDl', 'code6_dl'),
+        vehicle_registration = GetConvar('code6:terminalDocumentsImageRegistration', 'code6_registration'),
+        vehicle_insurance = GetConvar('code6:terminalDocumentsImageInsurance', 'code6_insurance'),
+        traffic_citation = GetConvar('code6:terminalDocumentsImageTrafficCitation', 'code6_traffic_citation'),
+        traffic_warning = GetConvar('code6:terminalDocumentsImageTrafficWarning', 'code6_traffic_warning'),
+        warrant = GetConvar('code6:terminalDocumentsImageWarrant', 'code6_warrant'),
+        report_receipt = GetConvar('code6:terminalDocumentsImageReport', 'code6_report'),
+        tow_impound = GetConvar('code6:terminalDocumentsImageTowImpound', 'code6_tow_impound'),
+        medical_contact = GetConvar('code6:terminalDocumentsImageMedical', 'code6_medical'),
+    },
+    documents = {
+        official_id = { roles = { 'civ' }, issuer = 'DMV' },
+        driver_license = { roles = { 'civ' }, issuer = 'DMV' },
+        vehicle_registration = { roles = { 'civ' }, issuer = 'DMV' },
+        vehicle_insurance = { roles = { 'civ' }, issuer = 'DMV' },
+        traffic_citation = { roles = { 'pd', 'so', 'hp', 'fib' }, issuer = 'Terminal' },
+        traffic_warning = { roles = { 'pd', 'so', 'hp', 'fib' }, issuer = 'Terminal' },
+        warrant = { roles = { 'pd', 'so', 'hp', 'fib' }, issuer = 'Terminal' },
+        report_receipt = { roles = { 'pd', 'so', 'hp', 'fd', 'dot', 'fib' }, issuer = 'Terminal' },
+        tow_impound = { roles = { 'pd', 'so', 'hp', 'fd', 'dot', 'fib' }, issuer = 'Terminal' },
+        medical_contact = { roles = { 'fd' }, issuer = 'Terminal' },
     },
 }
 
@@ -122,7 +160,7 @@ Config.RoleArmories = {
         distance = 2.0,
     },
     marker = {
-        enabled = true,
+        enabled = false,
         drawDistance = 25.0,
         type = 1,
         scale = vector3(0.9, 0.9, 0.18),
@@ -143,7 +181,7 @@ Config.RoleArmories = {
             target = true,
             marker = true,
             blip = true,
-            coords = vector3(454.94, -996.26, 30.71),
+            coords = vector3(455.07, -997.27, 31.61),
             radius = 3.0,
         },
         {
@@ -152,7 +190,7 @@ Config.RoleArmories = {
             target = true,
             marker = true,
             blip = true,
-            coords = vector3(118.19, -350.07, 39.98),
+            coords = vector3(118.86, -350.23, 40.98),
             radius = 3.0,
         },
         {
@@ -162,6 +200,15 @@ Config.RoleArmories = {
             marker = true,
             blip = true,
             coords = vector3(118.45, -729.03, 242.15),
+            radius = 3.0,
+        },
+        {
+            label = 'USBP HQ',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(2475.54, -384.04, 94.4),
             radius = 3.0,
         },
         {
@@ -188,7 +235,7 @@ Config.RoleArmories = {
             target = true,
             marker = true,
             blip = true,
-            coords = vector3(366.99, -1606.82, 29.29),
+            coords = vector3(366.84, -1607.39, 30.29),
             radius = 3.0,
         },
         {
@@ -197,7 +244,7 @@ Config.RoleArmories = {
             target = true,
             marker = true,
             blip = true,
-            coords = vector3(1840.37, 3683.21, 38.93),
+            coords = vector3(1840.11, 3683.13, 39.93),
             radius = 3.0,
         },
         {
@@ -206,7 +253,7 @@ Config.RoleArmories = {
             target = true,
             marker = true,
             blip = true,
-            coords = vector3(-430.34, 5999.04, 31.72),
+            coords = vector3(-430.01, 5998.92, 32.72),
             radius = 3.0,
         },
         {
@@ -215,7 +262,7 @@ Config.RoleArmories = {
             target = true,
             marker = true,
             blip = true,
-            coords = vector3(1068.15, 2728.95, 38.66),
+            coords = vector3(1068.05, 2728.46, 39.66),
             radius = 3.0,
         },
         {
@@ -224,7 +271,7 @@ Config.RoleArmories = {
             target = true,
             marker = true,
             blip = true,
-            coords = vector3(834.92, -1295.36, 24.32),
+            coords = vector3(834.5, -1295.77, 25.32),
             radius = 3.0,
         },
         {
@@ -233,16 +280,7 @@ Config.RoleArmories = {
             target = true,
             marker = true,
             blip = true,
-            coords = vector3(2808.27, 4726.46, 47.89),
-            radius = 3.0,
-        },
-        {
-            label = 'LSCOFD Sandy Shores',
-            enabled = true,
-            target = true,
-            marker = true,
-            blip = true,
-            coords = vector3(1682.5, 3583.72, 35.63),
+            coords = vector3(2808.01, 4726.95, 48.89),
             radius = 3.0,
         },
         {
@@ -251,7 +289,16 @@ Config.RoleArmories = {
             target = true,
             marker = true,
             blip = true,
-            coords = vector3(-363.91, 6108.13, 31.63),
+            coords = vector3(-363.26, 6107.67, 32.63),
+            radius = 3.0,
+        },
+                {
+            label = 'LSCOFD Sandy Shores',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(1682.3, 3583.68, 36.52),
             radius = 3.0,
         },
         {
@@ -260,7 +307,7 @@ Config.RoleArmories = {
             target = true,
             marker = true,
             blip = true,
-            coords = vector3(1656.82, 4964.1, 42.42),
+            coords = vector3(1656.56, 4963.96, 43.42),
             radius = 3.0,
         },
         {
@@ -269,7 +316,7 @@ Config.RoleArmories = {
             target = true,
             marker = true,
             blip = true,
-            coords = vector3(1194.95, -1477.59, 34.86),
+            coords = vector3(1194.56, -1478.01, 35.86),
             radius = 3.0,
         },
         {
@@ -278,7 +325,7 @@ Config.RoleArmories = {
             target = true,
             marker = true,
             blip = true,
-            coords = vector3(198.59, -1650.61, 30.08),
+            coords = vector3(198.04, -1650.72, 31.08),
             radius = 3.0,
         },
         {
@@ -287,7 +334,7 @@ Config.RoleArmories = {
             target = true,
             marker = true,
             blip = true,
-            coords = vector3(152.59, 2764.15, 43.58),
+            coords = vector3(152.72, 2764.16, 44.58),
             radius = 3.0,
         },
         {
@@ -296,7 +343,7 @@ Config.RoleArmories = {
             target = true,
             marker = true,
             blip = true,
-            coords = vector3(-827.41, -798.6, 19.18),
+            coords = vector3(-827.18, -798.09, 20.18),
             radius = 3.0,
         },
         {
@@ -305,7 +352,7 @@ Config.RoleArmories = {
             target = true,
             marker = true,
             blip = true,
-            coords = vector3(-1702.15, 49.8, 67.55),
+            coords = vector3(-1702.3, 49.47, 68.55),
             radius = 3.0,
         },
         {
@@ -314,7 +361,7 @@ Config.RoleArmories = {
             target = true,
             marker = true,
             blip = true,
-            coords = vector3(-290.33, 6114.36, 31.55),
+            coords = vector3(-289.89, 6114.11, 32.55),
             radius = 3.0,
         },
         {
@@ -323,7 +370,16 @@ Config.RoleArmories = {
             target = true,
             marker = true,
             blip = true,
-            coords = vector3(936.92, 2715.72, 40.3),
+            coords = vector3(937.62, 2715.6, 41.3),
+            radius = 3.0,
+        },
+        {
+            label = 'DOT Harmony',
+            enabled = true,
+            target = true,
+            marker = true,
+            blip = true,
+            coords = vector3(-194.41, -1164.57, 24.67),
             radius = 3.0,
         },
     },
