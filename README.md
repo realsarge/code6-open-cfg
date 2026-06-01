@@ -30,7 +30,7 @@
 | `us/us_weaponwheel_client.lua` | Названия оружия в колесе оружия | Отображаемые имена оружия |
 | `us/inventory/ox_items.lua` | Предметы ox_inventory | Название, вес, картинка, время использования, еда/вода, анимации |
 | `us/inventory/selfmanage_config_rolearmories.lua` | Локеры, арсеналы и стартовые предметы ролей | Состав арсеналов PD/SO/HP/FD/DOT/FIB, доступ по ролям, лимиты |
-| `us/inventory/images/*.png` | Иконки предметов | Добавление или замена картинок предметов |
+| `us/inventory/images/*.png` | Иконки предметов | Добавление или замена картинок предметов (100х100px) |
 | `us/inventory/images/item_editor.psd` | Шаблон для иконок | Исходник для подготовки новых картинок |
 
 ## Связь с `code6-game-us`
