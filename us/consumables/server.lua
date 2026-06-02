@@ -89,6 +89,23 @@ local function syncState(sourceId)
     TriggerClientEvent('code6_consumables:syncSubstances', sourceId, snapshot(sourceId))
 end
 
+local function isPlayerDead(sourceId, ped)
+    if Player then
+        local player = Player(sourceId)
+        local state = player and player.state
+
+        if state and (state.dead or state.isdead or state.inlaststand) then
+            return true
+        end
+    end
+
+    if GetEntityHealth then
+        return (GetEntityHealth(ped) or 0) <= 0
+    end
+
+    return false
+end
+
 local function finalUseAction(itemName, metadata)
     local item = exports.ox_inventory:Items(itemName)
     local consume = item and item.consume
@@ -170,7 +187,7 @@ local function canReach(sourceId, targetId)
     local sourcePed = GetPlayerPed(sourceId)
     local targetPed = GetPlayerPed(targetId)
 
-    if not sourcePed or sourcePed == 0 or not targetPed or targetPed == 0 or IsEntityDead(targetPed) then return false end
+    if not sourcePed or sourcePed == 0 or not targetPed or targetPed == 0 or isPlayerDead(targetId, targetPed) then return false end
 
     return #(GetEntityCoords(sourcePed) - GetEntityCoords(targetPed)) <= ((Config.Targeting.distance or 2.0) + 0.5)
 end
