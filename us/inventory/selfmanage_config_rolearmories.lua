@@ -287,6 +287,20 @@ local fireMedicalTestingEquipment = {
 local antidoteItems = {
     { name = 'narcan' },
 }
+local civilianShopItems = {
+    { name = 'burger' },
+    { name = 'sandwich' },
+    { name = 'donut' },
+    { name = 'water' },
+    { name = 'cola' },
+    { name = 'sprunk' },
+    { name = 'coffee' },
+    { name = 'beer' },
+    { name = 'whiskey' },
+    { name = 'wine' },
+    { name = 'phone' },
+    { name = 'lockpick' },
+}
 local civilianDrugItems = {
     { name = 'joint' },
     { name = 'bong' },
@@ -587,7 +601,7 @@ Config.RoleArmories = {
                 { name = 'bodycam' },
                 { name = 'police_duffle_bag' },
                 { name = 'police_duffle_bag_large' },
-                { name = 'police_backpack' },
+                { name = 'carry_box' },
                 { name = 'handcuffs' },
                 { name = 'handcuff_key' },
                 { name = 'cable_ties' },
@@ -621,7 +635,7 @@ Config.RoleArmories = {
                 { name = 'bodycam' },
                 { name = 'police_duffle_bag' },
                 { name = 'police_duffle_bag_large' },
-                { name = 'police_backpack' },
+                { name = 'carry_box' },
                 { name = 'handcuffs' },
                 { name = 'handcuff_key' },
                 { name = 'cable_ties' },
@@ -651,7 +665,7 @@ Config.RoleArmories = {
                 { name = 'bodycam' },
                 { name = 'police_duffle_bag' },
                 { name = 'police_duffle_bag_large' },
-                { name = 'police_backpack' },
+                { name = 'carry_box' },
                 { name = 'handcuffs' },
                 { name = 'handcuff_key' },
                 { name = 'cable_ties' },
@@ -681,7 +695,7 @@ Config.RoleArmories = {
                 { name = 'bodycam' },
                 { name = 'police_duffle_bag' },
                 { name = 'police_duffle_bag_large' },
-                { name = 'police_backpack' },
+                { name = 'carry_box' },
                 { name = 'handcuffs' },
                 { name = 'handcuff_key' },
                 { name = 'cable_ties' },
@@ -706,7 +720,7 @@ Config.RoleArmories = {
                 { name = 'bodycam' },
                 { name = 'police_duffle_bag' },
                 { name = 'police_duffle_bag_large' },
-                { name = 'police_backpack' },
+                { name = 'carry_box' },
                 { name = 'carry_medic_box' },
                 { name = 'medic_bag', metadata = medicBagLargePreset },
                 { name = 'medic_bag_2', metadata = medicBagPreset },
@@ -735,6 +749,7 @@ Config.RoleArmories = {
                 { name = 'police_duffle_bag' },
                 { name = 'police_duffle_bag_large' },
                 { name = 'police_backpack' },
+                { name = 'carry_box' },
                 { name = 'carry_tool_box' },
                 { name = 'WEAPON_FLASHLIGHT' },
                 { name = 'WEAPON_FIREEXTINGUISHER' },
@@ -750,6 +765,7 @@ Config.RoleArmories = {
                 { name = 'police_duffle_bag' },
                 { name = 'police_duffle_bag_large' },
                 { name = 'police_backpack' },
+                { name = 'carry_box' },
             },
         },
     },
@@ -758,5 +774,7 @@ Config.RoleArmories = {
 appendArmoryItems({ 'pd', 'so', 'hp', 'fib' }, lawEnforcementAttachments)
 appendArmoryItems({ 'pd', 'so', 'hp', 'fib' }, lawTestingEquipment)
 appendArmoryItems({ 'fd' }, fireMedicalTestingEquipment)
+appendArmoryItems({ 'civ' }, civilianShopItems)
+appendArmoryItems({ 'civ' }, lawEnforcementAttachments)
 appendArmoryItems({ 'pd', 'so', 'hp', 'fib', 'fd', 'civ', 'dispatch' }, antidoteItems)
 appendArmoryItems({ 'civ' }, civilianDrugItems)

@@ -689,6 +689,90 @@ return {
 		consume = 0,
 	},
 
+	['shell_casing_22'] = {
+		label = 'Гильза .22 LR',
+		weight = 2,
+		close = false,
+		client = { image = 'shell_casing_22.png' },
+	},
+
+	['shell_casing_38'] = {
+		label = 'Гильза .38 LC',
+		weight = 3,
+		close = false,
+		client = { image = 'shell_casing_38.png' },
+	},
+
+	['shell_casing_44'] = {
+		label = 'Гильза .44 Magnum',
+		weight = 4,
+		close = false,
+		client = { image = 'shell_casing_44.png' },
+	},
+
+	['shell_casing_45'] = {
+		label = 'Гильза .45 ACP',
+		weight = 3,
+		close = false,
+		client = { image = 'shell_casing_45.png' },
+	},
+
+	['shell_casing_50'] = {
+		label = 'Гильза .50 AE',
+		weight = 5,
+		close = false,
+		client = { image = 'shell_casing_50.png' },
+	},
+
+	['shell_casing_9'] = {
+		label = 'Гильза 9 мм',
+		weight = 2,
+		close = false,
+		client = { image = 'shell_casing_9.png' },
+	},
+
+	['shell_casing_heavysniper'] = {
+		label = 'Гильза .50 BMG',
+		weight = 8,
+		close = false,
+		client = { image = 'shell_casing_heavysniper.png' },
+	},
+
+	['shell_casing_musket'] = {
+		label = 'Стреляная гильза .50 Ball',
+		weight = 5,
+		close = false,
+		client = { image = 'shell_casing_musket.png' },
+	},
+
+	['shell_casing_rifle'] = {
+		label = 'Гильза 5.56x45',
+		weight = 3,
+		close = false,
+		client = { image = 'shell_casing_rifle.png' },
+	},
+
+	['shell_casing_rifle2'] = {
+		label = 'Гильза 7.62x39',
+		weight = 4,
+		close = false,
+		client = { image = 'shell_casing_rifle2.png' },
+	},
+
+	['shell_casing_shotgun'] = {
+		label = 'Стреляная гильза 12 калибра',
+		weight = 5,
+		close = false,
+		client = { image = 'shell_casing_shotgun.png' },
+	},
+
+	['shell_casing_sniper'] = {
+		label = 'Гильза 7.62x51',
+		weight = 4,
+		close = false,
+		client = { image = 'shell_casing_sniper.png' },
+	},
+
 	['radio'] = {
 		label = 'Рация',
 		weight = 1000,
